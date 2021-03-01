@@ -1,0 +1,1678 @@
+*
+*
+*
+---  AAA = ISA .                           Source code
+---  AAB = ISB .
+---  AAC = ISC .
+---  AAD = ISD .       
+---  AAE = ISE .
+---  AAF = ISF .
+---  AAG = ISG .                           Vector write flag
+---  aba = isa .                           Source code
+---  abb = isb .
+---  abc = isc .
+---  BAD = AAD .                           Primary source code to
+---  BAE = AAE .                             gate correct V reg
+---  BAF = AAF .                             input data
+---  BAJ = FCB .                           Vector integer
+---  BAK = FCC .                           Local memory
+---  BAL = FCD .                           Common memory
+---  BAM = FCE .                           Floating add
+---  BAN = FCF .                           Floating mul
+---  BAO = FCG .                           Vector logical
+---  BAP = FCH .                           Scalar logical
+---  BBA = ABA .                           V reg select j data
+---  BBB = ABB .
+---  BBC = ABC .
+---  CAA = ITA .                           Scalar reg dest code
+---  CAB = ITB .
+---  CAC = ITC .
+---  CAD = ITF + ITE + ITD .               Enable data to scalar
+---  cae = ITF + ITE + itd .               Constant to scalar
+---  caf = ITF + ite + ITD .               Local memory to scalar
+---  cag = ITF + ite + itd .               CM to scalar 
+---  cah = itf + ITE + ITD .               Floating add to scalar
+---  cai = itf + ITE + itd .               FM to scalar
+---  caj = itf + ite + ITD .               VL to scalar
+
+                        Vector 0 controls (IA terms from JC 1)
+
+---  DAC = IAC .                            Chip address
+---  DAD = IAD .                             ''    ''
+---  DAE = IAE .                             ''    ''
+---  DAF = IAF .                             ''    ''
+
+---  DAG = IAG .                             Write mode
+
+---  dai = iah + IAB + IAA .                     Bank O enable
+---  daj = iah + IAB + iaa .                          1 enable
+---  dak = iah + iab + IAA .                          2 enable
+---  dal = iah + iab + iaa .                          3
+
+---  DAM = DAI dag  .                          Bank select delay for
+---  DAN = DAJ dag .                          V register register readout
+---  DAO = DAK dag .
+---  DAP = DAL dag .                           
+
+                        Vector 1  controls (IB terms from JC 1)
+
+---  DBC = IBC .                            Chip Address
+---  DBD = IBD .
+---  DBE = IBE .
+---  DBF = IBF .
+
+---  DBG = IBG .                            Write mode
+
+---  dbi = ibh + IBB + IBA .                 Bank 0 enable
+---  dbj = ibh + IBB + iba .                      1
+---  dbk = ibh + ibb + IBA .                      2
+---  dbl = ibh + ibb + iba .                      3
+
+---  DBM = DBI dbg .                       Bank select delay for V register
+---  DBN = DBJ dbg .                           readout
+---  DBO = DBK dbg .
+---  DBP = DBL dbg .
+
+                         Vector 2 controls (IC terms from JC 1)
+
+---  DCC = ICC .                           Chip Address
+---  DCD = ICD .       
+---  DCE = ICE .       
+---  DCF = ICF .
+
+---  DCG = ICG .                           Write mode
+
+---  dci = ich + ICB + ICA .                 Bank 0 enable
+---  dcj = ich + ICB + ica .                      1
+---  dck = ich + icb + ICA .                      2
+---  dcl = ich + icb + ica .                      3
+
+---  DCM = DCI dcg .
+---  DCN = DCJ dcg .
+---  DCO = DCK dcg .
+---  DCP = DCL dcg .
+
+                          Vector 3 controls (ID terms from JC 1)
+
+---  DDC = IDC .                            Chip address
+---  DDD = IDD .
+---  DDE = IDE .
+---  DDF = IDF .
+
+---  DDG = IDG .                            Write mode
+
+---  ddi = idh + IDB + IDA .                 Bank 0 enable
+---  ddj = idh + IDB + ida .                      1
+---  ddk = idh + idb + IDA .                      2
+---  ddl = idh + idb + ida .                      3
+
+---  DDM = DDI ddg .
+---  DDN = DDJ ddg .
+---  DDO = DDK ddg .
+---  DDP = DDL ddg .
+
+                              Vector 4 controls (IE terms from JC 2)
+
+---  DEC = IEC .                            Chip Address
+---  DED = IED .
+---  DEE = IEE .
+---  DEF = IEF .
+
+---  DEG = IEG .                            Write mode
+
+---  dei = ieh + IEB + IEA .                  Bank 0 enable
+---  dej = ieh + IEB + iea .                       1
+---  dek = ieh + ieb + IEA .                       2
+---  del = ieh + ieb + iea .                       3
+
+---  DEM = DEI deg .
+---  DEN = DEJ deg .
+---  DEO = DEK deg .
+---  DEP = DEL deg .
+
+                           Vector 5 controls (IF terms from JC 2)
+
+---  DFC = IFC .                          Chip Address
+---  DFD = IFD .
+---  DFE = IFE .
+---  DFF = IFF .
+
+---  DFG = IFG .                           Write mode
+
+---  dfi = ifh + IFB + IFA .                   Bank 0 enable
+---  dfj = ifh + IFB + ifa .                        1
+---  dfk = ifh + ifb + IFA .                        2
+---  dfl = ifh + ifb + ifa .                        3
+
+---  DFM = DFI dfg .
+---  DFN = DFJ dfg .
+---  DFO = DFK dfg .
+---  DFP = DFL dfg .         
+      
+                                    Vector 6 controls (IG terms from JC 2)
+
+---  DGC = IGC .                            Chip Address
+---  DGD = IGD .
+---  DGE = IGE .
+---  DGF = IGF .
+
+---  DGG = IGG .                            Write mode
+
+---  dgi = igh + IGB + IGA .                  Bank 0 enable
+---  dgj = igh + IGB + iga .                       1
+---  dgk = igh + igb + IGA .                       2
+---  dgl = igh + igb + iga .                       3
+
+---  DGM = DGI dgg .
+---  DGN = DGJ dgg .
+---  DGO = DGK dgg .
+---  DGP = DGL dgg .
+
+                                   Vector 7 controls (IH terms from JC 2)
+
+---  DHC = IHC .                           Chip Address
+---  DHD = IHD .
+---  DHE = IHE .
+---  DHF = IHF .
+
+---  DHG = IHG .                           Write mode
+
+---  dhi = ihh + IHB + IHA .               Bank 0 select 
+---  dhj = ihh + IHB + iha .                    1 
+---  dhk = ihh + ihb + IHA .                    2
+---  dhl = ihh + ihb + iha .                    3
+
+---  DHM = DHI dhg .
+---  DHN = DHJ dhg .
+---  DHO = DHK dhg .
+---  DHP = DHL dhg .
+
+---  eaa = ska skb .                             Scalar
+---  eab = skc skd .                             test
+---  eac = ske skf .
+---  ead = skg skh .
+
+---  eae = skh .                                Scalar test
+
+---  FAA FAB FAC FAD FAE FAF FAG FAH FAI = AAC AAB AAA ; *** .  S reg
+---  FBA FBB FBC FBD FBE FBF FBG FBH FBI = CAC CAB CAA ; CAD .  S reg
+---  FCH FCG FCF FCE FCD FCC FCB FCA FCI = aaf aae aad ; QAA .  V reg
+---  FDA FDB FDC FDD FDE FDF FDG FDH FDI = AAF AAE AAD ; QBA .  V reg
+---  FEA FEB FEC FED FEE FEF FEG FEH FEI = AAF AAE AAD ; QAB .  S reg
+
+            constant    LM        CM    Logical
+---  GAA = IRA CAE + IPA CAF + IQA CAG + MAA .             SO-S3
+---  GAB = IRB CAE + IPB CAF + IQB CAG + MAB .             input
+---  GAC = IRC CAE + IPC CAF + IQC CAG + MAC .
+---  GAD = IRD CAE + IPD CAF + IQD CAG + MAD .
+---  GAE = IRE CAE + IPE CAF + IQE CAG + MAE .
+---  GAF = IRF CAE + IPF CAF + IQF CAG + MAF .
+---  GAG = IRG CAE + IPG CAF + IQG CAG + MAG .
+---  GAH = IRH CAE + IPH CAF + IQH CAG + MAH .
+
+---  GAI = IRA CAE + IPA CAF + IQA CAG + MAA .             S4-S7
+---  GAJ = IRB CAE + IPB CAF + IQB CAG + MAB .             input
+---  GAK = IRC CAE + IPC CAF + IQC CAG + MAC .
+---  GAL = IRD CAE + IPD CAF + IQD CAG + MAD .
+---  GAM = IRE CAE + IPE CAF + IQE CAG + MAE .
+---  GAN = IRF CAE + IPF CAF + IQF CAG + MAF .
+---  GAO = IRG CAE + IPG CAF + IQG CAG + MAG .
+---  GAP = IRH CAE + IPH CAF + IQH CAG + MAH .
+
+              FA       FM       VL       GA    GB
+---  GBA = INA CAH + IOA CAI + IMA CAJ + IIA + IJA .         SO-S3
+---  GBB = INB CAH + IOB CAI + IMB CAJ + IIB + IJB .
+---  GBC = INC CAH + IOC CAI + IMC CAJ + IIC + IJC .
+---  GBD = IND CAH + IOD CAI + IMD CAJ + IID + IJD .
+---  GBE = INE CAH + IOE CAI + IME CAJ + IIE + IJE .
+---  GBF = INF CAH + IOF CAI + IMF CAJ + IIF + IJF .
+---  GBG = ING CAH + IOG CAI + IMG CAJ + IIG + IJG .
+---  GBH = INH CAH + IOH CAI + IMH CAJ + IIH + IJH .
+
+---  GBI = INA CAH + IOA CAI + IMA CAJ + IIA + IJA .         S4-S7
+---  GBJ = INB CAH + IOB CAI + IMB CAJ + IIB + IJB .
+---  GBK = INC CAH + IOC CAI + IMC CAJ + IIC + IJC .
+---  GBL = IND CAH + IOD CAI + IMD CAJ + IID + IJD .
+---  GBM = INE CAH + IOE CAI + IME CAJ + IIE + IJE .
+---  GBN = INF CAH + IOF CAI + IMF CAJ + IIF + IJF .
+---  GBO = ING CAH + IOG CAI + IMG CAJ + IIG + IJG .
+---  GBP = INH CAH + IOH CAI + IMH CAJ + IIH + IJH .    
+    
+---  HAA = --- lab laa lac + KAA lab LAA lac + KBA LAB laa lac + KCA LAB LAA lac .
+---  HAB = --- lab laa lac + KAB lab LAA lac + KBB LAB laa lac + KCB LAB LAA lac .
+---  HAC = --- lab laa lac + KAC lab LAA lac + KBC LAB laa lac + KCC LAB LAA lac .
+---  HAD = --- lab laa lac + KAD lab LAA lac + KBD LAB laa lac + KCD LAB LAA lac .
+---  HAE = --- lab laa lac + KAE lab LAA lac + KBE LAB laa lac + KCE LAB LAA lac .
+---  HAF = --- lab laa lac + KAF lab LAA lac + KBF LAB laa lac + KCF LAB LAA lac .
+---  HAG = --- lab laa lac + KAG lab LAA lac + KBG LAB laa lac + KCG LAB LAA lac .
+---  HAH = --- lab laa lac + KAH lab LAA lac + KBH LAB laa lac + KCH LAB LAA lac .
+
+---  HAI = --- LAB LAA LAC + KFA LAB laa LAC + KEA lab LAA LAC + KDA lab laa LAC .
+---  HAJ = --- LAB LAA LAC + KFB LAB laa LAC + KEB lab LAA LAC + KDB lab laa LAC .
+---  HAK = --- LAB LAA LAC + KFC LAB laa LAC + KEC lab LAA LAC + KDC lab laa LAC .
+---  HAL = --- LAB LAA LAC + KFD LAB laa LAC + KED lab LAA LAC + KDD lab laa LAC .
+---  HAM = --- LAB LAA LAC + KFE LAB laa LAC + KEE lab LAA LAC + KDE lab laa LAC .
+---  HAN = --- LAB LAA LAC + KFF LAB laa LAC + KEF lab LAA LAC + KDF lab laa LAC .
+---  HAO = --- LAB LAA LAC + KFG LAB laa LAC + KEG lab LAA LAC + KDG lab laa LAC .
+---  HAP = --- LAB LAA LAC + KFH LAB laa LAC + KEH lab LAA LAC + KDH lab laa LAC .
+
+---  HBA = --- lbb lba lbc + KAA lbb LBA lbc + KBA LBB lba lbc + KCA LBB LBA lbc .
+---  HBB = --- lbb lba lbc + KAB lbb LBA lbc + KBB LBB lba lbc + KCB LBB LBA lbc .
+---  HBC = --- lbb lba lbc + KAC lbb LBA lbc + KBC LBB lba lbc + KCC LBB LBA lbc .
+---  HBD = --- lbb lba lbc + KAD lbb LBA lbc + KBD LBB lba lbc + KCD LBB LBA lbc .
+---  HBE = --- lbb lba lbc + KAE lbb LBA lbc + KBE LBB lba lbc + KCE LBB LBA lbc .
+---  HBF = --- lbb lba lbc + KAF lbb LBA lbc + KBF LBB lba lbc + KCF LBB LBA lbc .
+---  HBG = --- lbb lba lbc + KAG lbb LBA lbc + KBG LBB lba lbc + KCG LBB LBA lbc .
+---  HBH = --- lbb lba lbc + KAH lbb LBA lbc + KBH LBB lba lbc + KCH LBB LBA lbc .
+
+---  HBI = --- LBB LBA LBC + KFA LBB lba LBC + KEA lbb LBA LBC + KDA lbb lba LBC .
+---  HBJ = --- LBB LBA LBC + KFB LBB lba LBC + KEB lbb LBA LBC + KDB lbb lba LBC .
+---  HBK = --- LBB LBA LBC + KFC LBB lba LBC + KEC lbb LBA LBC + KDC lbb lba LBC .
+---  HBL = --- LBB LBA LBC + KFD LBB lba LBC + KED lbb LBA LBC + KDD lbb lba LBC .
+---  HBM = --- LBB LBA LBC + KFE LBB lba LBC + KEE lbb LBA LBC + KDE lbb lba LBC .
+---  HBN = --- LBB LBA LBC + KFF LBB lba LBC + KEF lbb LBA LBC + KDF lbb lba LBC .
+---  HBO = --- LBB LBA LBC + KFG LBB lba LBC + KEG lbb LBA LBC + KDG lbb lba LBC .
+---  HBP = --- LBB LBA LBC + KFH LBB lba LBC + KEH lbb LBA LBC + KDH lbb lba LBC .
+
+---  HCA = --- lcb lca lcc + KAA lcb LCA lcc + KBA LCB lca lcc + KCA LCB LCA lcc .
+---  HCB = --- lcb lca lcc + KAB lcb LCA lcc + KBB LCB lca lcc + KCB LCB LCA lcc .
+---  HCC = --- lcb lca lcc + KAC lcb LCA lcc + KBC LCB lca lcc + KCC LCB LCA lcc .
+---  HCD = --- lcb lca lcc + KAD lcb LCA lcc + KBD LCB lca lcc + KCD LCB LCA lcc .
+---  HCE = --- lcb lca lcc + KAE lcb LCA lcc + KBE LCB lca lcc + KCE LCB LCA lcc .
+---  HCF = --- lcb lca lcc + KAF lcb LCA lcc + KBF LCB lca lcc + KCF LCB LCA lcc .
+---  HCG = --- lcb lca lcc + KAG lcb LCA lcc + KBG LCB lca lcc + KCG LCB LCA lcc .
+---  HCH = --- lcb lca lcc + KAH lcb LCA lcc + KBH LCB lca lcc + KCH LCB LCA lcc .
+
+---  HCI = --- LCB LCA LCC + KFA LCB lca LCC + KEA lcb LCA LCC + KDA lcb lca LCC .
+---  HCJ = --- LCB LCA LCC + KFB LCB lca LCC + KEB lcb LCA LCC + KDB lcb lca LCC .
+---  HCK = --- LCB LCA LCC + KFC LCB lca LCC + KEC lcb LCA LCC + KDC lcb lca LCC .
+---  HCL = --- LCB LCA LCC + KFD LCB lca LCC + KED lcb LCA LCC + KDD lcb lca LCC .
+---  HCM = --- LCB LCA LCC + KFE LCB lca LCC + KEE lcb LCA LCC + KDE lcb lca LCC .
+---  HCN = --- LCB LCA LCC + KFF LCB lca LCC + KEF lcb LCA LCC + KDF lcb lca LCC .
+---  HCO = --- LCB LCA LCC + KFG LCB lca LCC + KEG lcb LCA LCC + KDG lcb lca LCC .
+---  HCP = --- LCB LCA LCC + KFH LCB lca LCC + KEH lcb LCA LCC + KDH lcb lca LCC .
+
+---  HDA = --- ldb lda ldc + KAA ldb LDA ldc + KBA LDB lda ldc + KCA LDB LDA ldc .
+---  HDB = --- ldb lda ldc + KAB ldb LDA ldc + KBB LDB lda ldc + KCB LDB LDA ldc .
+---  HDC = --- ldb lda ldc + KAC ldb LDA ldc + KBC LDB lda ldc + KCC LDB LDA ldc .
+---  HDD = --- ldb lda ldc + KAD ldb LDA ldc + KBD LDB lda ldc + KCD LDB LDA ldc .
+---  HDE = --- ldb lda ldc + KAE ldb LDA ldc + KBE LDB lda ldc + KCE LDB LDA ldc .
+---  HDF = --- ldb lda ldc + KAF ldb LDA ldc + KBF LDB lda ldc + KCF LDB LDA ldc .
+---  HDG = --- ldb lda ldc + KAG ldb LDA ldc + KBG LDB lda ldc + KCG LDB LDA ldc .
+---  HDH = --- ldb lda ldc + KAH ldb LDA ldc + KBH LDB lda ldc + KCH LDB LDA ldc .
+
+---  HDI = --- LDB LDA LDC + KFA LDB lda LDC + KEA ldb LDA LDC + KDA ldb lda LDC .
+---  HDJ = --- LDB LDA LDC + KFB LDB lda LDC + KEB ldb LDA LDC + KDB ldb lda LDC .
+---  HDK = --- LDB LDA LDC + KFC LDB lda LDC + KEC ldb LDA LDC + KDC ldb lda LDC .
+---  HDL = --- LDB LDA LDC + KFD LDB lda LDC + KED ldb LDA LDC + KDD ldb lda LDC .
+---  HDM = --- LDB LDA LDC + KFE LDB lda LDC + KEE ldb LDA LDC + KDE ldb lda LDC .
+---  HDN = --- LDB LDA LDC + KFF LDB lda LDC + KEF ldb LDA LDC + KDF ldb lda LDC .
+---  HDO = --- LDB LDA LDC + KFG LDB lda LDC + KEG ldb LDA LDC + KDG ldb lda LDC .
+---  HDP = --- LDB LDA LDC + KFH LDB lda LDC + KEH ldb LDA LDC + KDH ldb lda LDC .
+
+---  HEA = --- leb lea lec + KAA leb LEA lec + KBA LEB lea lec + KCA LEB LEA lec .
+---  HEB = --- leb lea lec + KAB leb LEA lec + KBB LEB lea lec + KCB LEB LEA lec .
+---  HEC = --- leb lea lec + KAC leb LEA lec + KBC LEB lea lec + KCC LEB LEA lec .
+---  HED = --- leb lea lec + KAD leb LEA lec + KBD LEB lea lec + KCD LEB LEA lec .
+---  HEE = --- leb lea lec + KAE leb LEA lec + KBE LEB lea lec + KCE LEB LEA lec .
+---  HEF = --- leb lea lec + KAF leb LEA lec + KBF LEB lea lec + KCF LEB LEA lec .
+---  HEG = --- leb lea lec + KAG leb LEA lec + KBG LEB lea lec + KCG LEB LEA lec .
+---  HEH = --- leb lea lec + KAH leb LEA lec + KBH LEB lea lec + KCH LEB LEA lec .
+
+---  HEI = --- LEB LEA LEC + KFA LEB lea LEC + KEA leb LEA LEC + KDA leb lea LEC .
+---  HEJ = --- LEB LEA LEC + KFB LEB lea LEC + KEB leb LEA LEC + KDB leb lea LEC .
+---  HEK = --- LEB LEA LEC + KFC LEB lea LEC + KEC leb LEA LEC + KDC leb lea LEC .
+---  HEL = --- LEB LEA LEC + KFD LEB lea LEC + KED leb LEA LEC + KDD leb lea LEC .
+---  HEM = --- LEB LEA LEC + KFE LEB lea LEC + KEE leb LEA LEC + KDE leb lea LEC .
+---  HEN = --- LEB LEA LEC + KFF LEB lea LEC + KEF leb LEA LEC + KDF leb lea LEC .
+---  HEO = --- LEB LEA LEC + KFG LEB lea LEC + KEG leb LEA LEC + KDG leb lea LEC .
+---  HEP = --- LEB LEA LEC + KFH LEB lea LEC + KEH leb LEA LEC + KDH leb lea LEC .
+
+---  HFA = --- lfb lfa lfc + KAA lfb LFA lfc + KBA LFB lfa lfc + KCA LFB LFA lfc .
+---  HFB = --- lfb lfa lfc + KAB lfb LFA lfc + KBB LFB lfa lfc + KCB LFB LFA lfc .
+---  HFC = --- lfb lfa lfc + KAC lfb LFA lfc + KBC LFB lfa lfc + KCC LFB LFA lfc .
+---  HFD = --- lfb lfa lfc + KAD lfb LFA lfc + KBD LFB lfa lfc + KCD LFB LFA lfc .
+---  HFE = --- lfb lfa lfc + KAE lfb LFA lfc + KBE LFB lfa lfc + KCE LFB LFA lfc .
+---  HFF = --- lfb lfa lfc + KAF lfb LFA lfc + KBF LFB lfa lfc + KCF LFB LFA lfc .
+---  HFG = --- lfb lfa lfc + KAG lfb LFA lfc + KBG LFB lfa lfc + KCG LFB LFA lfc .
+---  HFH = --- lfb lfa lfc + KAH lfb LFA lfc + KBH LFB lfa lfc + KCH LFB LFA lfc .
+
+---  HFI = --- LFB LFA LFC + KFA LFB lfa LFC + KEA lfb LFA LFC + KDA lfb lfa LFC .
+---  HFJ = --- LFB LFA LFC + KFB LFB lfa LFC + KEB lfb LFA LFC + KDB lfb lfa LFC .
+---  HFK = --- LFB LFA LFC + KFC LFB lfa LFC + KEC lfb LFA LFC + KDC lfb lfa LFC .
+---  HFL = --- LFB LFA LFC + KFD LFB lfa LFC + KED lfb LFA LFC + KDD lfb lfa LFC .
+---  HFM = --- LFB LFA LFC + KFE LFB lfa LFC + KEE lfb LFA LFC + KDE lfb lfa LFC .
+---  HFN = --- LFB LFA LFC + KFF LFB lfa LFC + KEF lfb LFA LFC + KDF lfb lfa LFC .
+---  HFO = --- LFB LFA LFC + KFG LFB lfa LFC + KEG lfb LFA LFC + KDG lfb lfa LFC .
+---  HFP = --- LFB LFA LFC + KFH LFB lfa LFC + KEH lfb LFA LFC + KDH lfb lfa LFC .
+
+---  HGA = --- lgb lga lgc + KAA lgb LGA lgc + KBA LGB lga lgc + KCA LGB LGA lgc .
+---  HGB = --- lgb lga lgc + KAB lgb LGA lgc + KBB LGB lga lgc + KCB LGB LGA lgc .
+---  HGC = --- lgb lga lgc + KAC lgb LGA lgc + KBC LGB lga lgc + KCC LGB LGA lgc .
+---  HGD = --- lgb lga lgc + KAD lgb LGA lgc + KBD LGB lga lgc + KCD LGB LGA lgc .
+---  HGE = --- lgb lga lgc + KAE lgb LGA lgc + KBE LGB lga lgc + KCE LGB LGA lgc .
+---  HGF = --- lgb lga lgc + KAF lgb LGA lgc + KBF LGB lga lgc + KCF LGB LGA lgc .
+---  HGG = --- lgb lga lgc + KAG lgb LGA lgc + KBG LGB lga lgc + KCG LGB LGA lgc .
+---  HGH = --- lgb lga lgc + KAH lgb LGA lgc + KBH LGB lga lgc + KCH LGB LGA lgc .
+
+---  HGI = --- LGB LGA LGC + KFA LGB lga LGC + KEA lgb LGA LGC + KDA lgb lga LGC .
+---  HGJ = --- LGB LGA LGC + KFB LGB lga LGC + KEB lgb LGA LGC + KDB lgb lga LGC .
+---  HGK = --- LGB LGA LGC + KFC LGB lga LGC + KEC lgb LGA LGC + KDC lgb lga LGC .
+---  HGL = --- LGB LGA LGC + KFD LGB lga LGC + KED lgb LGA LGC + KDD lgb lga LGC .
+---  HGM = --- LGB LGA LGC + KFE LGB lga LGC + KEE lgb LGA LGC + KDE lgb lga LGC .
+---  HGN = --- LGB LGA LGC + KFF LGB lga LGC + KEF lgb LGA LGC + KDF lgb lga LGC .
+---  HGO = --- LGB LGA LGC + KFG LGB lga LGC + KEG lgb LGA LGC + KDG lgb lga LGC .
+---  HGP = --- LGB LGA LGC + KFH LGB lga LGC + KEH lgb LGA LGC + KDH lgb lga LGC .
+
+---  HHA = --- lhb lha lhc + KAA lhb LHA lhc + KBA LHB lha lhc + KCA LHB LHA lhc .
+---  HHB = --- lhb lha lhc + KAB lhb LHA lhc + KBB LHB lha lhc + KCB LHB LHA lhc .
+---  HHC = --- lhb lha lhc + KAC lhb LHA lhc + KBC LHB lha lhc + KCC LHB LHA lhc .
+---  HHD = --- lhb lha lhc + KAD lhb LHA lhc + KBD LHB lha lhc + KCD LHB LHA lhc .
+---  HHE = --- lhb lha lhc + KAE lhb LHA lhc + KBE LHB lha lhc + KCE LHB LHA lhc .
+---  HHF = --- lhb lha lhc + KAF lhb LHA lhc + KBF LHB lha lhc + KCF LHB LHA lhc .
+---  HHG = --- lhb lha lhc + KAG lhb LHA lhc + KBG LHB lha lhc + KCG LHB LHA lhc .
+---  HHH = --- lhb lha lhc + KAH lhb LHA lhc + KBH LHB lha lhc + KCH LHB LHA lhc .
+
+---  HHI = --- LHB LHA LHC + KFA LHB lha LHC + KEA lhb LHA LHC + KDA lhb lha LHC .
+---  HHJ = --- LHB LHA LHC + KFB LHB lha LHC + KEB lhb LHA LHC + KDB lhb lha LHC .
+---  HHK = --- LHB LHA LHC + KFC LHB lha LHC + KEC lhb LHA LHC + KDC lhb lha LHC .
+---  HHL = --- LHB LHA LHC + KFD LHB lha LHC + KED lhb LHA LHC + KDD lhb lha LHC .
+---  HHM = --- LHB LHA LHC + KFE LHB lha LHC + KEE lhb LHA LHC + KDE lhb lha LHC .
+---  HHN = --- LHB LHA LHC + KFF LHB lha LHC + KEF lhb LHA LHC + KDF lhb lha LHC .
+---  HHO = --- LHB LHA LHC + KFG LHB lha LHC + KEG lhb LHA LHC + KDG lhb lha LHC .
+---  HHP = --- LHB LHA LHC + KFH LHB lha LHC + KEH lhb LHA LHC + KDH lhb lha LHC .
+
+---  hia = vaa lib lia lic + vba lib LIA lic + vca LIB lia lic + vda LIB LIA lic .
+---  hib = vab lib lia lic + vbb lib LIA lic + vcb LIB lia lic + vdb LIB LIA lic .
+---  hic = vac lib lia lic + vbc lib LIA lic + vcc LIB lia lic + vdc LIB LIA lic .
+---  hid = vad lib lia lic + vbd lib LIA lic + vcd LIB lia lic + vdd LIB LIA lic .
+---  hie = vae lib lia lic + vbe lib LIA lic + vce LIB lia lic + vde LIB LIA lic .
+---  hif = vaf lib lia lic + vbf lib LIA lic + vcf LIB lia lic + vdf LIB LIA lic .
+---  hig = vag lib lia lic + vbg lib LIA lic + vcg LIB lia lic + vdg LIB LIA lic .
+---  hih = vah lib lia lic + vbh lib LIA lic + vch LIB lia lic + vdh LIB LIA lic .
+
+---  hii = vha LIB LIA LIC + vga LIB lia LIC + vfa lib LIA LIC + vea lib lia LIC .
+---  hij = vhb LIB LIA LIC + vgb LIB lia LIC + vfb lib LIA LIC + veb lib lia LIC .
+---  hik = vhc LIB LIA LIC + vgc LIB lia LIC + vfc lib LIA LIC + vec lib lia LIC .
+---  hil = vhd LIB LIA LIC + vgd LIB lia LIC + vfd lib LIA LIC + ved lib lia LIC .
+---  him = vhe LIB LIA LIC + vge LIB lia LIC + vfe lib LIA LIC + vee lib lia LIC .
+---  hin = vhf LIB LIA LIC + vgf LIB lia LIC + vff lib LIA LIC + vef lib lia LIC .
+---  hio = vhg LIB LIA LIC + vgg LIB lia LIC + vfg lib LIA LIC + veg lib lia LIC .
+---  hip = vhh LIB LIA LIC + vgh LIB lia LIC + vfh lib LIA LIC + veh lib lia LIC .
+
+---  hja = vaa ljb lja ljc + vba ljb LJA ljc + vca LJB lja ljc + vda LJB LJA ljc .
+---  hjb = vab ljb lja ljc + vbb ljb LJA ljc + vcb LJB lja ljc + vdb LJB LJA ljc .
+---  hjc = vac ljb lja ljc + vbc ljb LJA ljc + vcc LJB lja ljc + vdc LJB LJA ljc .
+---  hjd = vad ljb lja ljc + vbd ljb LJA ljc + vcd LJB lja ljc + vdd LJB LJA ljc .
+---  hje = vad ljb lja ljc + vbe ljb LJA ljc + vce LJB lja ljc + vde LJB LJA ljc .
+---  hjf = vaf ljb lja ljc + vbf ljb LJA ljc + vcf LJB lja ljc + vdf LJB LJA ljc .
+---  hjg = vag ljb lja ljc + vbg ljb LJA ljc + vcg LJB lja ljc + vdg LJB LJA ljc .
+---  hjh = vah ljb lja ljc + vbh ljb LJA ljc + vch LJB lja ljc + vdh LJB LJA ljc .
+
+---  hji = vha LJB LJA LJC + vga LJB lja LJC + vfa ljb LJA LJC + vea ljb lja LJC .
+---  hjj = vhb LJB LJA LJC + vgb LJB lja LJC + vfb ljb LJA LJC + veb ljb lja LJC .
+---  hjk = vhc LJB LJA LJC + vgc LJB lja LJC + vfc ljb LJA LJC + vec ljb lja LJC .
+---  hjl = vhd LJB LJA LJC + vgd LJB lja LJC + vfd ljb LJA LJC + ved ljb lja LJC .
+---  hjm = vhe LJB LJA LJC + vge LJB lja LJC + vfe ljb LJA LJC + vee ljb lja LJC .
+---  hjn = vhf LJB LJA LJC + vgf LJB lja LJC + vff ljb LJA LJC + vef ljb lja LJC .
+---  hjo = vhg LJB LJA LJC + vgg LJB lja LJC + vfg ljb LJA LJC + veg ljb lja LJC .
+---  hjp = vhh LJB LJA LJC + vgh LJB lja LJC + vfh ljb LJA LJC + veh ljb lja LJC .
+
+---  hka = vaa lkb lka lkc + vba lkb LKA lkc + vca LKB lka lkc + vda LKB LKA lkc .
+---  hkb = vab lkb lka lkc + vbb lkb LKA lkc + vcb LKB lka lkc + vdb LKB LKA lkc .
+---  hkc = vac lkb lka lkc + vbc lkb LKA lkc + vcc LKB lka lkc + vdc LKB LKA lkc .
+---  hkd = vad lkb lka lkc + vbd lkb LKA lkc + vcd LKB lka lkc + vdd LKB LKA lkc .
+---  hke = vae lkb lka lkc + vbe lkb LKA lkc + vce LKB lka lkc + vde LKB LKA lkc .
+---  hkf = vaf lkb lka lkc + vbf lkb LKA lkc + vcf LKB lka lkc + vdf LKB LKA lkc .
+---  hkg = vag lkb lka lkc + vbg lkb LKA lkc + vcg LKB lka lkc + vdg LKB LKA lkc .
+---  hkh = vah lkb lka lkc + vbh lkb LKA lkc + vch LKB lka lkc + vdh LKB LKA lkc .
+
+---  hki = vha LKB LKA LKC + vga LKB lka LKC + vfa lkb LKA LKC + vea lkb lka LKC .
+---  hkj = vhb LKB LKA LKC + vgb LKB lka LKC + vfb lkb LKA LKC + veb lkb lka LKC .
+---  hkk = vhc LKB LKA LKC + vgc LKB lka LKC + vfc lkb LKA LKC + vec lkb lka LKC .
+---  hkl = vhd LKB LKA LKC + vgd LKB lka LKC + vfd lkb LKA LKC + ved lkb lka LKC .
+---  hkm = vhe LKB LKA LKC + vge LKB lka LKC + vfe lkb LKA LKC + vee lkb lka LKC .
+---  hkn = vhf LKB LKA LKC + vgf LKB lka LKC + vff lkb LKA LKC + vef lkb lka LKC .
+---  hko = vhg LKB LKA LKC + vgg LKB lka LKC + vfg lkb LKA LKC + veg lkb lka LKC .
+---  hkp = vhh LKB LKA LKC + vgh LKB lka LKC + vfh lkb LKA LKC + veh lkb lka LKC .
+
+---  hla = vai llb lla llc + vbi llb LLA llc + vci LLB lla llc + vdi LLB LLA llc .
+---  hlb = vaj llb lla llc + vbj llb LLA llc + vcj LLB lla llc + vdj LLB LLA llc .
+---  hlc = vak llb lla llc + vbk llb LLA llc + vck LLB lla llc + vdk LLB LLA llc .
+---  hld = val llb lla llc + vbl llb LLA llc + vcl LLB lla llc + vdl LLB LLA llc .
+---  hle = vam llb lla llc + vbm llb LLA llc + vcm LLB lla llc + vdm LLB LLA llc .
+---  hlf = van llb lla llc + vbn llb LLA llc + vcn LLB lla llc + vdn LLB LLA llc .
+---  hlg = vao llb lla llc + vbo llb LLA llc + vco LLB lla llc + vdo LLB LLA llc .
+---  hlh = vap llb lla llc + vbp llb LLA llc + vcp LLB lla llc + vdp LLB LLA llc .
+
+---  hli = vhi LLB LLA LLC + vgi LLB lla LLC + vfi llb LLA LLC + vei llb lla LLC .
+---  hlj = vhj LLB LLA LLC + vgj LLB lla LLC + vfj llb LLA LLC + vej llb lla LLC .
+---  hlk = vhk LLB LLA LLC + vgk LLB lla LLC + vfk llb LLA LLC + vek llb lla LLC .
+---  hll = vhl LLB LLA LLC + vgl LLB lla LLC + vfl llb LLA LLC + vel llb lla LLC .
+---  hlm = vhm LLB LLA LLC + vgm LLB lla LLC + vfm llb LLA LLC + vem llb lla LLC .
+---  hln = vhn LLB LLA LLC + vgn LLB lla LLC + vfn llb LLA LLC + ven llb lla LLC .
+---  hlo = vho LLB LLA LLC + vgo LLB lla LLC + vfo llb LLA LLC + veo llb lla LLC .
+---  hlp = vhp LLB LLA LLC + vgp LLB lla LLC + vfp llb LLA LLC + vep llb lla LLC .
+
+---  hma = vai lmb lma lmc + vbi lmb LMA lmc + vci LMB lma lmc + vdi LMB LMA lmc .
+---  hmb = vaj lmb lma lmc + vbj lmb LMA lmc + vcj LMB lma lmc + vdj LMB LMA lmc .
+---  hmc = vak lmb lma lmc + vbk lmb LMA lmc + vck LMB lma lmc + vdk LMB LMA lmc .
+---  hmd = val lmb lma lmc + vbl lmb LMA lmc + vcl LMB lma lmc + vdl LMB LMA lmc .
+---  hme = vam lmb lma lmc + vbm lmb LMA lmc + vcm LMB lma lmc + vdm LMB LMA lmc .
+---  hmf = van lmb lma lmc + vbn lmb LMA lmc + vcn LMB lma lmc + vdn LMB LMA lmc .
+---  hmg = vao lmb lma lmc + vbo lmb LMA lmc + vco LMB lma lmc + vdo LMB LMA lmc .
+---  hmh = vap lmb lma lmc + vbp lmb LMA lmc + vcp LMB lma lmc + vdp LMB LMA lmc .
+
+---  hmi = vhi LMB LMA LMC + vgi LMB lma LMC + vfi lmb LMA LMC + vei lmb lma LMC .
+---  hmj = vhj LMB LMA LMC + vgj LMB lma LMC + vfj lmb LMA LMC + vej lmb lma LMC .
+---  hmk = vhk LMB LMA LMC + vgk LMB lma LMC + vfk lmb LMA LMC + vek lmb lma LMC .
+---  hml = vhl LMB LMA LMC + vgl LMB lma LMC + vfl lmb LMA LMC + vel lmb lma LMC .
+---  hmm = vhm LMB LMA LMC + vgm LMB lma LMC + vfm lmb LMA LMC + vem lmb lma LMC .
+---  hmn = vhn LMB LMA LMC + vgn LMB lma LMC + vfn lmb LMA LMC + ven lmb lma LMC .
+---  hmo = vho LMB LMA LMC + vgo LMB lma LMC + vfo lmb LMA LMC + veo lmb lma LMC .
+---  hmp = vhp LMB LMA LMC + vgp LMB lma LMC + vfp lmb LMA LMC + vep lmb lma LMC .
+
+---  hna = vai lnb lna lnc + vbi lnb LNA lnc + vci LNB lna lnc + vdi LNB LNA lnc .
+---  hnb = vaj lnb lna lnc + vbj lnb LNA lnc + vcj LNB lna lnc + vdj LNB LNA lnc .
+---  hnc = vak lnb lna lnc + vbk lnb LNA lnc + vck LNB lna lnc + vdk LNB LNA lnc .
+---  hnd = val lnb lna lnc + vbl lnb LNA lnc + vcl LNB lna lnc + vdl LNB LNA lnc .
+---  hne = vam lnb lna lnc + vbm lnb LNA lnc + vcm LNB lna lnc + vdm LNB LNA lnc .
+---  hnf = van lnb lna lnc + vbn lnb LNA lnc + vcn LNB lna lnc + vdn LNB LNA lnc .
+---  hng = vao lnb lna lnc + vbo lnb LNA lnc + vco LNB lna lnc + vdo LNB LNA lnc .
+---  hnh = vap lnb lna lnc + vbp lnb LNA lnc + vcp LNB lna lnc + vdp LNB LNA lnc .
+
+---  hni = vhi LNB LNA LNC + vgi LNB lna LNC + vfi lnb LNA LNC + vei lnb lna LNC .
+---  hnj = vhj LNB LNA LNC + vgj LNB lna LNC + vfj lnb LNA LNC + vej lnb lna LNC .
+---  hnk = vhk LNB LNA LNC + vgk LNB lna LNC + vfk lnb LNA LNC + vek lnb lna LNC .
+---  hnl = vhl LNB LNA LNC + vgl LNB lna LNC + vfl lnb LNA LNC + vel lnb lna LNC .
+---  hnm = vhm LNB LNA LNC + vgm LNB lna LNC + vfm lnb LNA LNC + vem lnb lna LNC .
+---  hnn = vhn LNB LNA LNC + vgn LNB lna LNC + vfn lnb LNA LNC + ven lnb lna LNC .
+---  hno = vho LNB LNA LNC + vgo LNB lna LNC + vfo lnb LNA LNC + veo lnb lna LNC .
+---  hnp = vhp LNB LNA LNC + vgp LNB lna LNC + vfp lnb LNA LNC + vep lnb lna LNC .
+
+---  hoa = vaa lob loa loc + vba lob LOA loc + vca LOB loa loc + vda LOB LOA loc .
+---  hob = vab lob loa loc + vbb lob LOA loc + vcb LOB loa loc + vdb LOB LOA loc .
+---  hoc = vac lob loa loc + vbc lob LOA loc + vcc LOB loa loc + vdc LOB LOA loc .
+---  hod = vad lob loa loc + vbd lob LOA loc + vcd LOB loa loc + vdd LOB LOA loc .
+---  hoe = vae lob loa loc + vbe lob LOA loc + vce LOB loa loc + vde LOB LOA loc .
+---  hof = vaf lob loa loc + vbf lob LOA loc + vcf LOB loa loc + vdf LOB LOA loc .
+---  hog = vag lob loa loc + vbg lob LOA loc + vcg LOB loa loc + vdg LOB LOA loc .
+---  hoh = vah lob loa loc + vbh lob LOA loc + vch LOB loa loc + vdh LOB LOA loc .
+
+---  hoi = vha LOB LOA LOC + vga LOB loa LOC + vfa lob LOA LOC + vea lob loa LOC .
+---  hoj = vhb LOB LOA LOC + vgb LOB loa LOC + vfb lob LOA LOC + veb lob loa LOC .
+---  hok = vhc LOB LOA LOC + vgc LOB loa LOC + vfc lob LOA LOC + vec lob loa LOC .
+---  hol = vhd LOB LOA LOC + vgd LOB loa LOC + vfd lob LOA LOC + ved lob loa LOC .
+---  hom = vhe LOB LOA LOC + vge LOB loa LOC + vfe lob LOA LOC + vee lob loa LOC .
+---  hon = vhf LOB LOA LOC + vgf LOB loa LOC + vff lob LOA LOC + vef lob loa LOC .
+---  hoo = vhg LOB LOA LOC + vgg LOB loa LOC + vfg lob LOA LOC + veg lob loa LOC .
+---  hop = vhh LOB LOA LOC + vgh LOB loa LOC + vfh lob LOA LOC + veh lob loa LOC .
+
+---  hpa = vaa lpb lpa lpc + vba lpb LPA lpc + vca LPB lpa lpc + vda LPB LPA lpc .
+---  hpb = vab lpb lpa lpc + vbb lpb LPA lpc + vcb LPB lpa lpc + vdb LPB LPA lpc .
+---  hpc = vac lpb lpa lpc + vbc lpb LPA lpc + vcc LPB lpa lpc + vdc LPB LPA lpc .
+---  hpd = vad lpb lpa lpc + vbd lpb LPA lpc + vcd LPB lpa lpc + vdd LPB LPA lpc .
+---  hpe = vae lpb lpa lpc + vbe lpb LPA lpc + vce LPB lpa lpc + vde LPB LPA lpc .
+---  hpf = vaf lpb lpa lpc + vbf lpb LPA lpc + vcf LPB lpa lpc + vdf LPB LPA lpc .
+---  hpg = vag lpb lpa lpc + vbg lpb LPA lpc + vcg LPB lpa lpc + vdg LPB LPA lpc .
+---  hph = vah lpb lpa lpc + vbh lpb LPA lpc + vch LPB lpa lpc + vdh LPB LPA lpc .
+
+---  hpi = vha LPB LPA LPC + vga LPB lpa LPC + vfa lpb LPA LPC + vea lpb lpa LPC .
+---  hpj = vhb LPB LPA LPC + vgb LPB lpa LPC + vfb lpb LPA LPC + veb lpb lpa LPC .
+---  hpk = vhc LPB LPA LPC + vgc LPB lpa LPC + vfc lpb LPA LPC + vec lpb lpa LPC .
+---  hpl = vhd LPB LPA LPC + vgd LPB lpa LPC + vfd lpb LPA LPC + ved lpb lpa LPC .
+---  hpm = vhe LPB LPA LPC + vge LPB lpa LPC + vfe lpb LPA LPC + vee lpb lpa LPC .
+---  hpn = vhf LPB LPA LPC + vgf LPB lpa LPC + vff lpb LPA LPC + vef lpb lpa LPC .
+---  hpo = vhg LPB LPA LPC + vgg LPB lpa LPC + vfg lpb LPA LPC + veg lpb lpa LPC .
+---  hpp = vhh LPB LPA LPC + vgh LPB lpa LPC + vfh lpb LPA LPC + veh lpb lpa LPC .
+
+---  hqa = vaa lqb lqa lqc + vba lqb LQA lqc + vca LQB lqa lqc + vda LQB LQA lqc .
+---  hqb = vab lqb lqa lqc + vbb lqb LQA lqc + vcb LQB lqa lqc + vdb LQB LQA lqc .
+---  hqc = vac lqb lqa lqc + vbc lqb LQA lqc + vcc LQB lqa lqc + vdc LQB LQA lqc .
+---  hqd = vad lqb lqa lqc + vbd lqb LQA lqc + vcd LQB lqa lqc + vdd LQB LQA lqc .
+---  hqe = vae lqb lqa lqc + vbe lqb LQA lqc + vce LQB lqa lqc + vde LQB LQA lqc .
+---  hqf = vaf lqb lqa lqc + vbf lqb LQA lqc + vcf LQB lqa lqc + vdf LQB LQA lqc .
+---  hqg = vag lqb lqa lqc + vbg lqb LQA lqc + vcg LQB lqa lqc + vdg LQB LQA lqc .
+---  hqh = vah lqb lqa lqc + vbh lqb LQA lqc + vch LQB lqa lqc + vdh LQB LQA lqc .
+
+---  hqi = vha LQB LQA LQC + vga LQB lqa LQC + vfa lqb LQA LQC + vea lqb lqa LQC .
+---  hqj = vhb LQB LQA LQC + vgb LQB lqa LQC + vfb lqb LQA LQC + veb lqb lqa LQC .
+---  hqk = vhc LQB LQA LQC + vgc LQB lqa LQC + vfc lqb LQA LQC + vec lqb lqa LQC .
+---  hql = vhd LQB LQA LQC + vgd LQB lqa LQC + vfd lqb LQA LQC + ved lqb lqa LQC .
+---  hqm = vhe LQB LQA LQC + vge LQB lqa LQC + vfe lqb LQA LQC + vee lqb lqa LQC .
+---  hqn = vhf LQB LQA LQC + vgf LQB lqa LQC + vff lqb LQA LQC + vef lqb lqa LQC .
+---  hqo = vhg LQB LQA LQC + vgg LQB lqa LQC + vfg lqb LQA LQC + veg lqb lqa LQC .
+---  hqp = vhh LQB LQA LQC + vgh LQB lqa LQC + vfh lqb LQA LQC + veh lqb lqa LQC .
+
+---  hra = vai lrb lra lrc + vbi lrb LRA lrc + vci LRB lra lrc + vdi LRB LRA lrc .
+---  hrb = vaj lrb lra lrc + vbj lrb LRA lrc + vcj LRB lra lrc + vdj LRB LRA lrc .
+---  hrc = vak lrb lra lrc + vbk lrb LRA lrc + vck LRB lra lrc + vdk LRB LRA lrc .
+---  hrd = val lrb lra lrc + vbl lrb LRA lrc + vcl LRB lra lrc + vdl LRB LRA lrc .
+---  hre = vam lrb lra lrc + vbm lrb LRA lrc + vcm LRB lra lrc + vdm LRB LRA lrc .
+---  hrf = van lrb lra lrc + vbn lrb LRA lrc + vcn LRB lra lrc + vdn LRB LRA lrc .
+---  hrg = vao lrb lra lrc + vbo lrb LRA lrc + vco LRB lra lrc + vdo LRB LRA lrc .
+---  hrh = vap lrb lra lrc + vbp lrb LRA lrc + vcp LRB lra lrc + vdp LRB LRA lrc .
+
+---  hri = vhi LRB LRA LRC + vgi LRB lra LRC + vfi lrb LRA LRC + vei lrb lra LRC .
+---  hrj = vhj LRB LRA LRC + vgj LRB lra LRC + vfj lrb LRA LRC + vej lrb lra LRC .
+---  hrk = vhk LRB LRA LRC + vgk LRB lra LRC + vfk lrb LRA LRC + vek lrb lra LRC .
+---  hrl = vhl LRB LRA LRC + vgl LRB lra LRC + vfl lrb LRA LRC + vel lrb lra LRC .
+---  hrm = vhm LRB LRA LRC + vgm LRB lra LRC + vfm lrb LRA LRC + vem lrb lra LRC .
+---  hrn = vhn LRB LRA LRC + vgn LRB lra LRC + vfn lrb LRA LRC + ven lrb lra LRC .
+---  hro = vho LRB LRA LRC + vgo LRB lra LRC + vfo lrb LRA LRC + veo lrb lra LRC .
+---  hrp = vhp LRB LRA LRC + vgp LRB lra LRC + vfp lrb LRA LRC + vep lrb lra LRC .
+
+---  hsa = vai lsb lsa lsc + vbi lsb LSA lsc + vci LSB lsa lsc + vdi LSB LSA lsc .
+---  hsb = vaj lsb lsa lsc + vbj lsb LSA lsc + vcj LSB lsa lsc + vdj LSB LSA lsc .
+---  hsc = vak lsb lsa lsc + vbk lsb LSA lsc + vck LSB lsa lsc + vdk LSB LSA lsc .
+---  hsd = val lsb lsa lsc + vbl lsb LSA lsc + vcl LSB lsa lsc + vdl LSB LSA lsc .
+---  hse = vam lsb lsa lsc + vbm lsb LSA lsc + vcm LSB lsa lsc + vdm LSB LSA lsc .
+---  hsf = van lsb lsa lsc + vbn lsb LSA lsc + vcn LSB lsa lsc + vdn LSB LSA lsc .
+---  hsg = vao lsb lsa lsc + vbo lsb LSA lsc + vco LSB lsa lsc + vdo LSB LSA lsc .
+---  hsh = vap lsb lsa lsc + vbp lsb LSA lsc + vcp LSB lsa lsc + vdp LSB LSA lsc .
+
+---  hsi = vhi LSB LSA LSC + vgi LSB lsa LSC + vfi lsb LSA LSC + vei lsb lsa LSC .
+---  hsj = vhj LSB LSA LSC + vgj LSB lsa LSC + vfj lsb LSA LSC + vej lsb lsa LSC .
+---  hsk = vhk LSB LSA LSC + vgk LSB lsa LSC + vfk lsb LSA LSC + vek lsb lsa LSC .
+---  hsl = vhl LSB LSA LSC + vgl LSB lsa LSC + vfl lsb LSA LSC + vel lsb lsa LSC .
+---  hsm = vhm LSB LSA LSC + vgm LSB lsa LSC + vfm lsb LSA LSC + vem lsb lsa LSC .
+---  hsn = vhn LSB LSA LSC + vgn LSB lsa LSC + vfn lsb LSA LSC + ven lsb lsa LSC .
+---  hso = vho LSB LSA LSC + vgo LSB lsa LSC + vfo lsb LSA LSC + veo lsb lsa LSC .
+---  hsp = vhp LSB LSA LSC + vgp LSB lsa LSC + vfp lsb LSA LSC + vep lsb lsa LSC .
+
+---  hta = vai ltb lta ltc + vbi ltb LTA ltc + vci LTB lta ltc + vdi LTB LTA ltc .
+---  htb = vaj ltb lta ltc + vbj ltb LTA ltc + vcj LTB lta ltc + vdj LTB LTA ltc .
+---  htc = vak ltb lta ltc + vbk ltb LTA ltc + vck LTB lta ltc + vdk LTB LTA ltc .
+---  htd = val ltb lta ltc + vbl ltb LTA ltc + vcl LTB lta ltc + vdl LTB LTA ltc .
+---  hte = vam ltb lta ltc + vbm ltb LTA ltc + vcm LTB lta ltc + vdm LTB LTA ltc .
+---  htf = van ltb lta ltc + vbn ltb LTA ltc + vcn LTB lta ltc + vdn LTB LTA ltc .
+---  htg = vao ltb lta ltc + vbo ltb LTA ltc + vco LTB lta ltc + vdo LTB LTA ltc .
+---  hth = vap ltb lta ltc + vbp ltb LTA ltc + vcp LTB lta ltc + vdp LTB LTA ltc .
+
+---  hti = vhi LTB LTA LTC + vgi LTB lta LTC + vfi ltb LTA LTC + vei ltb lta LTC .
+---  htj = vhj LTB LTA LTC + vgj LTB lta LTC + vfj ltb LTA LTC + vej ltb lta LTC .
+---  htk = vhk LTB LTA LTC + vgk LTB lta LTC + vfk ltb LTA LTC + vek ltb lta LTC .
+---  htl = vhl LTB LTA LTC + vgl LTB lta LTC + vfl ltb LTA LTC + vel ltb lta LTC .
+---  htm = vhm LTB LTA LTC + vgm LTB lta LTC + vfm ltb LTA LTC + vem ltb lta LTC .
+---  htn = vhn LTB LTA LTC + vgn LTB lta LTC + vfn ltb LTA LTC + ven ltb lta LTC .
+---  hto = vho LTB LTA LTC + vgo LTB lta LTC + vfo ltb LTA LTC + veo ltb lta LTC .
+---  htp = vhp LTB LTA LTC + vgp LTB lta LTC + vfp ltb LTA LTC + vep ltb lta LTC .
+
+---  JAA = SAA NAA + SBA NBA + SCA NCA + SDA NDA .     Scalar readout
+---  JAB = SAB NAA + SBB NBA + SCB NCA + SDB NDA .     (copy 1)
+---  JAC = SAC NAB + SBC NBB + SCC NCB + SDC NDB .
+---  JAD = SAD NAB + SBD NBB + SCD NCB + SDD NDB .
+---  JAE = SAE NAC + SBE NBC + SCE NCC + SDE NDC .
+---  JAF = SAF NAC + SBF NBC + SCF NCC + SDF NDC .
+---  JAG = SAG NAD + SBG NBD + SCG NCD + SDG NDD .
+---  JAH = SAH NAD + SBH NBD + SCH NCD + SDH NDD .
+
+---  JAI = SAA NAA + SBA NBA + SCA NCA + SDA NDA .     copy 2
+---  JAJ = SAB NAA + SBB NBA + SCB NCA + SDB NDA .
+---  JAK = SAC NAB + SBC NBB + SCC NCB + SDC NDB .
+---  JAL = SAD NAB + SBD NBB + SCD NCB + SDD NDB .         
+---  JAM = SAE NAC + SBE NBC + SCE NCC + SDE NDC .
+---  JAN = SAF NAC + SBF NBC + SCF NCC + SDF NDC .
+---  JAO = SAG NAD + SBG NBD + SCG NCD + SDG NDD .
+---  JAP = SAH NAD + SBH NBD + SCH NCD + SDH NDD .
+
+---  JBA = SEA NEA + SFA NFA + SGA NGA + SHA NHA .     Scalar readout 4-7
+---  JBB = SEB NEA + SFB NFA + SGB NGA + SHB NHA .     (copy 1)
+---  JBC = SEC NEB + SFC NFB + SGC NGB + SHC NHB .
+---  JBD = SED NEB + SFD NFB + SGD NGB + SHD NHB .
+---  JBE = SEE NEC + SFE NFC + SGE NGC + SHE NHC .
+---  JBF = SEF NEC + SFF NFC + SGF NGC + SHF NHC .
+---  JBG = SEG NED + SFG NFD + SGG NGD + SHG NHD .
+---  JBH = SEH NED + SFH NFD + SGH NGD + SHH NHD .
+
+---  JBI = SEA NEA + SFA NFA + SGA NGA + SHA NHA .     copy 2
+---  JBJ = SEB NEA + SFB NFA + SGB NGA + SHB NHA .
+---  JBK = SEC NEB + SFC NFB + SGC NGB + SHC NHB .
+---  JBL = SED NEB + SFD NFB + SGD NGB + SHD NHB .
+---  JBM = SEE NEC + SFE NFC + SGE NGC + SHE NHC .
+---  JBN = SEF NEC + SFF NFC + SGF NGC + SHF NHC .
+---  JBO = SEG NED + SFG NFD + SGG NGD + SHG NHD .
+---  JBP = SEH NED + SFH NFD + SGH NGD + SHH NHD .
+
+---  jea = kba .                           Local memory data
+---  jeb = kbb .                           for parity check
+---  jec = kbc .
+---  jed = kbd .
+---  jee = kbe .
+---  jef = kbf .
+---  jeg = kbg .
+---  jeh = kbh .
+
+---  kaa = ika .                           Vector integer data
+---  kab = ikb .                           from VB   
+---  kac = ikc .
+---  kad = ikd .
+---  kae = ike .
+---  kaf = ikf .                                 
+---  kag = ikg .
+---  kah = ikh .
+
+---  kba = ipa .                           Local memory data
+---  kbb = ipb .                           from WA
+---  kbc = ipc .
+---  kbd = ipd .
+---  kbe = ipe .
+---  kbf = ipf .
+---  kbg = ipg .
+---  kbh = iph .   
+   
+---  kca = iqa .                           Common memory data
+---  kcb = iqb .                           from TD
+---  kcc = iqc .
+---  kcd = iqd .
+---  kce = iqe .
+---  kcf = iqf .            
+---  kcg = iqg .
+---  kch = iqh .
+
+---  kda = ina .                           Floating add data 
+---  kdb = inb .                           from FC
+---  kdc = inc .
+---  kdd = ind .
+---  kde = ine .                            
+---  kdf = inf .
+---  kdg = ing .
+---  kdh = inh .
+
+---  kea = ioa .                           Floating multiply data
+---  keb = iob .                           from ME
+---  kec = ioc .
+---  ked = iod .
+---  kee = ioe .
+---  kef = iof .
+---  keg = iog .
+---  keh = ioh .
+
+---  kfa = ima .                           Vector logical data
+---  kfb = imb .                           from VL
+---  kfc = imc .
+---  kfd = imd .
+---  kfe = ime .
+---  kff = imf .
+---  kfg = img .
+---  kfh = imh .
+
+---  LAA = BAD FDA + LAA fda .                  Input path selection
+---  LAB = BAE FDA + LAB fda .                  for VO
+---  LAC = BAF FDA + LAC fda .
+
+---  LBA = BAD FDB + LBA fdb .                  V1
+---  LBB = BAE FDB + LBB fdb .
+---  LBC = BAF FDB + LBC fdb .
+
+---  LCA = BAD FDC + LCA fdc .                  V2
+---  LCB = BAE FDC + LCB fdc .
+---  LCC = BAF FDC + LCC fdc .
+
+---  LDA = BAD FDD + LDA fdd .                  V3
+---  LDB = BAE FDD + LDB fdd .
+---  LDC = BAF FDD + LDC fdd .
+
+---  LEA = BAD FDE + LEA fde .                  V4
+---  LEB = BAE FDE + LEB fde .
+---  LEC = BAF FDE + LEC fde .
+
+---  LFA = BAD FDF + LFA fdf .                  V5
+---  LFB = BAE FDF + LFB fdf .
+---  LFC = BAF FDF + LFC fdf .
+
+---  LGA = BAD FDG + LGA fdg .                  V6
+---  LGB = BAE FDG + LGB fdg .
+---  LGC = BAF FDG + LGC fdg .
+
+---  LHA = BAD FDH + LHA fdh .                  V7
+---  LHB = BAE FDH + LHB fdh .
+---  LHC = BAF FDH + LHC fdh .
+
+---  LIA = BBA BAJ + LIA baj .                 Vector shift data
+---  LIB = BBB BAJ + LIB baj .
+---  LIC = BBC BAJ + LIC baj .
+
+---  LJA = BBA BAL + LJA bal .                 Common memory
+---  LJB = BBB BAL + LJB bal .
+---  LJC = BBC BAL + LJC bal .
+
+---  LKA = BBA BAJ + LKA baj .                 Vector integer add
+---  LKB = BBB BAJ + LKB baj .                 j data
+---  LKC = BBC BAJ + LKC baj .
+
+---  LLA = BBA BAM + LLA bam .                 Floating add, j data
+---  LLB = BBB BAM + LLB bam .
+---  LLC = BBC BAM + LLC bam .
+
+---  LMA = BBA BAN + LMA ban .                 Floating multiply, j data
+---  LMB = BBB BAN + LMB ban .
+---  LMC = BBC BAN + LMC ban .
+
+---  LNA = BBA BAO + LNA bao .                 Vector logical, j data
+---  LNB = BBB BAO + LNB bao .                       
+---  LNC = BBC BAO + LNC bao .
+
+---  LOA = ABA BAJ + LOA baj .                 V integer add , k data
+---  LOB = ABB BAJ + LOB baj .
+---  LOC = ABC BAJ + LOC baj .
+
+---  LPA = ABA BAL + LPA bal .                 Common memory data
+---  LPB = ABB BAL + LPB bal .
+---  LPC = ABC BAL + LPC bal .
+
+---  LQA = ABA BAK + LQA bak .                 Local memory data
+---  LQB = ABB BAK + LQB bak .
+---  LQC = ABC BAK + LQC bak .
+
+---  LRA = ABA BAM + LRA bam .                 Floating add k data
+---  LRB = ABB BAM + LRB bam .
+---  LRC = ABC BAM + LRC bam .
+
+---  LSA = ABA BAN + LSA ban .                 Floating mult k data
+---  LSB = ABB BAN + LSB ban .      
+---  LSC = ABC BAN + LSC ban .
+
+---  LTA = ABA BAO + LTA bao .                 Vector logical k data
+---  LTB = ABB BAO + LTB bao .
+---  LTC = ABC BAO + LTC bao .
+
+---  MAA = SJA SKA QDA + SJA ska QDB + sja SKA QDC .   Scalar logic
+---  MAB = SJB SKB QDA + SJB skb QDB + sjb SKB QDC .
+---  MAC = SJC SKC QDA + SJC skc QDB + sjc SKC QDC .
+---  MAD = SJD SKD QDA + SJD skd QDB + sjd SKD QDC .     
+---  MAE = SJE SKE QDA + SJE ske QDB + sje SKE QDC .
+---  MAF = SJF SKF QDA + SJF skf QDB + sjf SKF QDC .
+---  MAG = SJG SKG QDA + SJG skg QDB + sjg SKG QDC .
+---  MAH = SJH SKH QDA + SJH skh QDB + sjh SKH QDC .
+
+---  NAA = FAA .                          SO
+---  NAB = FAA .
+---  NAC = FAA .
+---  NAD = FAA .
+
+---  NBA = FAB .                          S1
+---  NBB = FAB .
+---  NBC = FAB .
+---  NBD = FAB .
+
+---  NCA = FAC .                          S2
+---  NCB = FAC .
+---  NCC = FAC .
+---  NCD = FAC .
+
+---  NDA = FAD .                          S3
+---  NDB = FAD .
+---  NDC = FAD .
+---  NDD = FAD .
+
+---  NEA = FAE .                          S4
+---  NEB = FAE .
+---  NEC = FAE .
+---  NED = FAE .
+
+---  NFA = FAF .                          S5
+---  NFB = FAF .    
+---  NFC = FAF .
+---  NFD = FAF .
+
+---  NGA = FAG .                          S6
+---  NGB = FAG .
+---  NGC = FAG .
+---  NGD = FAG .
+
+---  NHA = FAH .                          S7
+---  NHB = FAH .
+---  NHC = FAH .
+---  NHD = FAH .
+
+---  oaa = jaa jba .                        Scalar integer
+---  oab = jab jbb .                          to GA
+---  oac = jac jbc .
+---  oad = jad jbd .
+---  oae = jae jbe .
+---  oaf = jaf jbf .
+---  oag = jag jbg .
+---  oah = jah jbh .
+
+---  oba = jaa jba .                       Scalar integer shift
+---  obb = jab jbb .                         to GA
+---  obc = jac jbc .
+---  obd = jad jbd .    
+---  obe = jae jbe .
+---  obf = jaf jbf .
+---  obg = jag jbg .
+---  obh = jah jbh .
+
+---  oca = jaa jba .                        A register data
+---  ocb = jab jbb .                         to AR
+---  occ = jac jbc .
+---  ocd = jad jbd .
+---  oce = jae jbe .
+---  ocf = jaf jbf .                   
+---  ocg = jag jbg .
+---  och = jah jbh .
+
+---  ODA = HKA HKI .                         Vector integer add
+---  ODB = HKB HKJ .                         j operand to VA
+---  ODC = HKC HKK .
+---  ODD = HKD HKL .
+---  ODE = HKE HKM .
+---  ODF = HKF HKN .                               
+---  ODG = HKG HKO .
+---  ODH = HKH HKP .
+
+---  OEA = HOA HOI tjb + JAA TJB + JBA TKB .         Vector integer add
+---  OEB = HOB HOJ tjb + JAB TJB + JBB TKB .         k operand to VA
+---  OEC = HOC HOK tjb + JAC TJB + JBC TKB .
+---  OED = HOD HOL tjb + JAD TJB + JBD TKB .
+---  OEE = HOE HOM tjb + JAE TJB + JBE TKB .
+---  OEF = HOF HON tjb + JAF TJB + JBF TKB .
+---  OEG = HOG HOO tjb + JAG TJB + JBG TKB .
+---  OEH = HOH HOP tjb + JAH TJB + JBH TKB .
+
+---  OFA = HIA HII .                         Vector shift data
+---  OFB = HIB HIJ .                            to VB
+---  OFC = HIC HIK .
+---  OFD = HID HIL .
+---  OFE = HIE HIM .
+---  OFF = HIF HIN .
+---  OFG = HIG HIO .
+---  OFH = HIH HIP .
+
+---  OGA = HNA HNI .                        Vector logical
+---  OGB = HNB HNJ .                        j operand 
+---  OGC = HNC HNK .
+---  OGD = HND HNL .
+---  OGE = HNE HNM .
+---  OGF = HNF HNN .
+---  OGG = HNG HNO .
+---  OGH = HNH HNP .
+
+---  OHA = HTA HTI tjg + JAI TJG + JBI TKG .        Vector logical data 
+---  OHB = HTB HTJ tjg + JAJ TJG + JBJ TKG .        k operand to VL
+---  OHC = HTC HTK tjg + JAK TJG + JBK TKG .
+---  OHD = HTD HTL tjg + JAL TJG + JBL TKG .
+---  OHE = HTE HTM tjg + JAM TJG + JBM TKG .
+---  OHF = HTF HTN tjg + JAN TJG + JBN TKG .
+---  OHG = HTG HTO tjg + JAO TJG + JBO TKG .
+---  OHH = HTH HTP tjg + JAP TJG + JBP TKG .
+
+---  OIA = HLA HLI .                        Floating add data
+---  OIB = HLB HLJ .                        j operand to FA
+---  OIC = HLC HLK .
+---  OID = HLD HLL .                   
+---  OIE = HLE HLM .
+---  OIF = HLF HLN .
+---  OIG = HLG HLO .
+---  OIH = HLH HLP .
+
+---  OJA = HRA HRI tje + JAI TJE + JBI TKE .        Floating add data
+---  OJB = HRB HRJ tje + JAJ TJE + JBJ TKE .        k operand to FA
+---  OJC = HRC HRK tje + JAK TJE + JBK TKE .
+---  OJD = HRD HRL tje + JAL TJE + JBL TKE .
+---  OJE = HRE HRM tje + JAM TJE + JBM TKE .
+---  OJF = HRF HRN tje + JAN TJE + JBN TKE .
+---  OJG = HRG HRO tje + JAO TJE + JBO TKE .
+---  OJH = HRH HRP tje + JAP TJE + JBP TKE .
+
+---  OKA = HMA HMI .                        Floating multiply
+---  OKB = HMB HMJ .                        j operand to MA
+---  OKC = HMC HMK .                        MB, ME or RA
+---  OKD = HMD HML .
+---  OKE = HME HMM .
+---  OKF = HMF HMM .
+---  OKG = HMG HMO .
+---  OKH = HMH HMP .
+
+---  OLA = HSA HSI tjf + JAI TJF + JBI TKF .        Floating multiply
+---  OLB = HSB HSJ tjf + JAJ TJF + JBJ TKF .        k operand to MA
+---  OLC = HSC HSK tjf + JAK TJF + JBK TKF .        MB, ME or RA
+---  OLD = HSD HSL tjf + JAL TJF + JBL TKF .
+---  OLE = HSE HSM tjf + JAM TJF + JBM TKF .
+---  OLF = HSF HSN tjf + JAN TJF + JBN TKF .
+---  OLG = HSG HSO tjf + JAO TJF + JBO TKF .
+---  OLH = HSH HSP tjf + JAP TJF + JBP TKF .
+
+---  OMA = HQA HQI tjc + JAA TJC + JBA TKC .        Local memory data
+---  OMB = HQB HQJ tjc + JAB TJC + JBB TKC .        to WA
+---  OMC = HQC HQK tjc + JAC TJC + JBC TKC .
+---  OMD = HQD HQL tjc + JAD TJC + JBD TKC .
+---  OME = HQE HQM tjc + JAE TJC + JBE TKC .
+---  OMF = HQF HQN tjc + JAF TJC + JBF TKC .
+---  OMG = HQG HQO tjc + JAG TJC + JBG TKC .
+---  OMH = HQH HQP tjc + JAH TJC + JBH TKC .
+
+---  ONA = HJA HJI .                       Common memory addr/data
+---  ONB = HJB HJJ .                        to T-
+---  ONC = HJC HJK .
+---  OND = HJD HJL .
+---  ONE = HJE HJM .
+---  ONF = HJF HJN .
+---  ONG = HJG HJO .
+---  ONH = HJH HJP .
+
+---  OOA = HPA HPI tjd + JAA TJD + JBA TKD .        Common memory data
+---  OOB = HPB HPJ tjd + JAB TJD + JBB TKD .         to JB
+---  OOC = HPC HPK tjd + JAC TJD + JBC TKD .
+---  OOD = HPD HPL tjd + JAD TJD + JBD TKD .
+---  OOE = HPE HPM tjd + JAE TJD + JBE TKD .
+---  OOF = HPF HPN tjd + JAF TJD + JBF TKD .
+---  OOG = HPG HPO tjd + JAG TJD + JBG TKD .
+---  OOH = HPH HPP tjd + JAH TJD + JBH TKD .
+
+---  oqa = EAA + EAB + EAC + EAD .              Scalar zero test to IB
+---  OQB = EAE .                                Scalar sign test to IB
+
+---  ORA = QEA qeb qec + qea QEB qec + qea qeb QEC + QEA QEB QEC .
+
+---  QAA = ISF qaa + ISE qaa + ISD qaa .           Vector read
+---  QAB = ISF qaa + ISE qaa + ISD qaa .           Scalar read
+---  QAC = ISF qaa + ISE qaa + ISD qaa .           Vector write
+
+---  QBA = QAC AAG .
+
+---  qca = aad + bap .                      Enter S logical
+---  qcb = aae + bap .
+---  qcc = aaf + bap .
+
+---  QDA = QCA .
+---  QDB = QCB .
+---  QDC = QCC .
+
+---  QEA = JEA jeb jec + jea JEB jec + jea jeb JEC + JEA JEB JEC .
+---  QEB = JED jee jef + jed JEE jef + jed jee JEF + JED JEE JEF .
+---  QEC = JEG jeh + jeg JEH .
+
+---  RAA RAB RAC RAD = WAA WAB WAC WAD ; UAC UAD UAE UAF ; *** UAB . V0 B0
+---  RAE RAF RAG RAH = WAE WAF WAG WAH ; UAC UAD UAE UAF ; *** UAB .
+---  RAI RAJ RAK RAL = WAA WAB WAC WAD ; UAI UAJ UAK UAL ; *** UAH . V0 B1
+---  RAM RAN RAO RAP = WAE WAF WAG WAH ; UAI UAJ UAK UAL ; *** UAH .
+
+---  RBA RBB RBC RBD = WBA WBB WBC WBD ; UBC UBD UBE UBF ; *** UBB . V1
+---  RBE RBF RBG RBH = WBE WBF WBG WBH ; UBC UBD UBE UBF ; *** UBB .
+---  RBI RBJ RBK RBL = WBA WBB WBC WBD ; UBI UBJ UBK UBL ; *** UBH .
+---  RBM RBN RBO RBP = WBE WBF WBG WBH ; UBI UBJ UBK UBL ; *** UBH .
+
+---  RCA RCB RCC RCD = WCA WCB WCC WCD ; UCC UCD UCE UCF ; *** UCB . V2
+---  RCE RCF RCG RCH = WCE WCF WCG WCH ; UCC UCD UCE UCF ; *** UCB .
+---  RCI RCJ RCK RCL = WCA WCB WCC WCD ; UCI UCJ UCK UCL ; *** UCH .
+---  RCM RCN RCO RCP = WCE WCF WCG WCH ; UCI UCJ UCK UCL ; *** UCH .
+
+---  RDA RDB RDC RDD = WDA WDB WDC WDD ; UDC UDD UDE UDF ; *** UDB . V3
+---  RDE RDF RDG RDH = WDE WDF WDG WDH ; UDC UDD UDE UDF ; *** UDB .
+---  RDI RDJ RDK RDL = WDA WDB WDC WDD ; UDI UDJ UDK UDL ; *** UDH .
+---  RDM RDN RDO RDP = WDE WDF WDG WDH ; UDI UDJ UDK UDL ; *** UDH .
+
+---  REA REB REC RED = WEA WEB WEC WED ; UEC UED UEE UEF ; *** UEB . V4
+---  REE REF REG REH = WEE WEF WEG WEH ; UEC UED UEE UEF ; *** UEB .
+---  REI REJ REK REL = WEA WEB WEC WED ; UEI UEJ UEK UEL ; *** UEH .
+---  REM REN REO REP = WEE WEF WEG WEH ; UEI UEJ UEK UEL ; *** UEH .
+
+---  RFA RFB RFC RFD = WFA WFB WFC WFD ; UFC UFD UFE UFF ; *** UFB . V5
+---  RFE RFF RFG RFH = WFE WFF WFG WFH ; UFC UFD UFE UFF ; *** UFB .
+---  RFI RFJ RFK RFL = WFA WFB WFC WFD ; UFI UFJ UFK UFL ; *** UFH .
+---  RFM RFN RFO RFP = WFE WFF WFG WFH ; UFI UFJ UFK UFL ; *** UFH .
+
+---  RGA RGB RGC RGD = WGA WGB WGC WGD ; UGC UGD UGE UGF ; *** UGB . V6
+---  RGE RGF RGG RGH = WGE WGF WGG WGH ; UGC UGD UGE UGF ; *** UGB .
+---  RGI RGJ RGK RGL = WGA WGB WGC WGD ; UGI UGJ UGK UGL ; *** UGH .
+---  RGM RGN RGO RGP = WGE WGF WGG WGH ; UGI UGJ UGK UGL ; *** UGH .
+
+---  RHA RHB RHC RHD = WHA WHB WHC WHD ; UHC UHD UHE UHF ; *** UHB . V7
+---  RHE RHF RHG RHH = WHE WHF WHG WHH ; UHC UHD UHE UHF ; *** UHB .
+---  RHI RHJ RHK RHL = WHA WHB WHC WHD ; UHI UHJ UHK UHL ; *** UHH .
+---  RHM RHN RHO RHP = WHE WHF WHG WHH ; UHI UHJ UHK UHL ; *** UHH .
+
+---  RIA RIB RIC RID = WAA WAB WAC WAD ; UAO UAP UAQ UAR ; *** UAN . V0 B2
+---  RIE RIF RIG RIH = WAE WAF WAG WAH ; UAO UAP UAQ UAR ; *** UAN .
+---  RII RIJ RIK RIL = WAA WAB WAC WAD ; UAU UAV UAW UAX ; *** UAT . V0 B3
+---  RIM RIN RIO RIP = WAE WAF WAG WAH ; UAU UAV UAW UAX ; *** UAT .
+
+---  RJA RJB RJC RJD = WBA WBB WBC WBD ; UBO UBP UBQ UBR ; *** UBN . V1
+---  RJE RJF RJG RJH = WBE WBF WBG WBH ; UBO UBP UBQ UBR ; *** UBN .
+---  RJI RJJ RJK RJL = WBA WBB WBC WBD ; UBU UBV UBW UBX ; *** UBT .
+---  RJM RJN RJO RJP = WBE WBF WBG WBH ; UBU UBV UBW UBX ; *** UBT .
+
+---  RKA RKB RKC RKD = WCA WCB WCC WCD ; UCO UCP UCQ UCR ; *** UCN . V2 B2
+---  RKE RKF RKG RKH = WCE WCF WCG WCH ; UCO UCP UCQ UCR ; *** UCN .
+---  RKI RKJ RKK RKL = WCA WCB WCC WCD ; UCU UCV UCW UCX ; *** UCT . V2 B3
+---  RKM RKN RKO RKP = WCE WCF WCG WGH ; UCU UCV UCW UCX ; *** UCT .
+
+---  RLA RLB RLC RLD = WDA WDB WDC WDD ; UDO UDP UDQ UDR ; *** UDN . V3
+---  RLE RLF RLG RLH = WDE WDF WDG WDH ; UDO UDP UDQ UDR ; *** UDN .
+---  RLI RLJ RLK RLL = WDA WDB WDC WDD ; UDU UDV UDW UDX ; *** UDT .
+---  RLM RLN RLO RLP = WDE WDF WDG WDH ; UDU UDV UDW UDX ; *** UDT .
+
+---  RMA RMB RMC RMD = WEA WEB WEC WED ; UEO UEP UEQ UER ; *** UEN . V4
+---  RME RMF RMG RMH = WEE WEF WEG WEH ; UEO UEP UEQ UER ; *** UEN .
+---  RMI RMJ RMK RML = WEA WEB WEC WED ; UEU UEV UEW UEX ; *** UET .
+---  RMM RMN RMO RMP = WEE WEF WEG WEH ; UEU UEV UEW UEX ; *** UET .
+
+---  RNA RNB RNC RND = WFA WFB WFC WFD ; UFO UFP UFQ UFR ; *** UFN . V5
+---  RNE RNF RNG RNH = WFE WFF WFG WFH ; UFO UFP UFQ UFR ; *** UFN .
+---  RNI RNJ RNK RNL = WFA WFB WFC WFD ; UFU UFV UFW UFX ; *** UFT .
+---  RNM RNN RNO RNP = WFE WFF WFG WFH ; UFU UFV UFW UFX ; *** UFT .
+
+---  ROA ROB ROC ROD = WGA WGB WGC WGD ; UGO UGP UGQ UGR ; *** UGN . V6
+---  ROE ROF ROG ROH = WGE WGF WGG WGH ; UGO UGP UGQ UGR ; *** UGN .
+---  ROI ROJ ROK ROL = WGA WGB WGC WGD ; UGU UGV UGW UGX ; *** UGT .
+---  ROM RON ROO ROP = WGE WGF WGG WGH ; UGU UGV UGW UGX ; *** UGT .
+
+---  RPA RPB RPC RPD = WHA WHB WHC WHD ; UHO UHP UHQ UHR ; *** UHN . V7
+---  RPE RPF RPG RPH = WHE WHF WHG WHH ; UHO UHP UHQ UHR ; *** UHN .
+---  RPI RPJ RPK RPL = WHA WHB WHC WHD ; UHU UHV UHW UHX ; *** UHT .
+---  RPM RPN RPO RPP = WHE WHF WHG WHH ; UHU UHV UHH UHX ; *** UHT .
+
+---  SAA = GAA TSA + GBA TSA + SAA tsa .           Scalar register  S0
+---  SAB = GAB TSA + GBB TSA + SAB tsa .  
+---  SAC = GAC TSA + GBC TSA + SAC tsa .
+---  SAD = GAD TSA + GBD TSA + SAD tsa .
+---  SAE = GAE TSA + GBE TSA + SAE tsa .
+---  SAF = GAF TSA + GBF TSA + SAF tsa .
+---  SAG = GAG TSA + GBG TSA + SAG tsa .
+---  SAH = GAH TSA + GBH TSA + SAH tsa .
+
+---  SBA = GAA TSB + GBA TSB + SBA tsb .           S1
+---  SBB = GAB TSB + GBB TSB + SBB tsb .
+---  SBC = GAC TSB + GBC TSB + SBC tsb .
+---  SBD = GAD TSB + GBD TSB + SBD tsb .
+---  SBE = GAE TSB + GBE TSB + SBE tsb .
+---  SBF = GAF TSB + GBF TSB + SBF tsb .
+---  SBG = GAG TSB + GBG TSB + SBG tsb .
+---  SBH = GAH TSB + GBH TSB + SBH tsb .
+
+---  SCA = GAA TSC + GBA TSC + SCA tsc .           S2
+---  SCB = GAB TSC + GBB TSC + SCB tsc .
+---  SCC = GAC TSC + GBC TSC + SCC tsc .
+---  SCD = GAD TSC + GBD TSC + SCD tsc .
+---  SCE = GAE TSC + GBE TSC + SCE tsc .
+---  SCF = GAF TSC + GBF TSC + SCF tsc .
+---  SCG = GAG TSC + GBG TSC + SCG tsc .
+---  SCH = GAH TSC + GBH TSC + SCH tsc .
+
+---  SDA = GAA TSD + GBA TSD + SDA tsd .           Scalar register 3
+---  SDB = GAB TSD + GBB TSD + SDB tsd .  
+---  SDC = GAC TSD + GBC TSD + SDC tsd .
+---  SDD = GAD TSD + GBD TSD + SDD tsd .
+---  SDE = GAE TSD + GBE TSD + SDE tsd .
+---  SDF = GAF TSD + GBF TSD + SDF tsd .
+---  SDG = GAG TSD + GBG TSD + SDG tsd .
+---  SDH = GAH TSD + GBH TSD + SDH tsd .
+
+---  SEA = GAI TSE + GBI TSE + SEA tse .           S4
+---  SEB = GAJ TSE + GBJ TSE + SEB tse .
+---  SEC = GAK TSE + GBK TSE + SEC tse .
+---  SED = GAL TSE + GBL TSE + SED tse .
+---  SEE = GAM TSE + GBM TSE + SEE tse .
+---  SEF = GAN TSE + GBN TSE + SEF tse .
+---  SEG = GAO TSE + GBO TSE + SEG tse .
+---  SEH = GAP TSE + GBP TSE + SEH tse .
+
+---  SFA = GAI TSF + GBI TSF + SFA tsf .           S5
+---  SFB = GAJ TSF + GBJ TSF + SFB tsf .
+---  SFC = GAK TSF + GBK TSF + SFC tsf .
+---  SFD = GAL TSF + GBL TSF + SFD tsf .
+---  SFE = GAM TSF + GBM TSF + SFE tsf .
+---  SFF = GAN TSF + GBN TSF + SFF tsf .
+---  SFG = GAO TSF + GBO TSF + SFG tsf .
+---  SFH = GAP TSF + GBP TSF + SFH tsf .
+
+---  SGA = GAI TSG + GBI TSG + SGA tsg .           S6
+---  SGB = GAJ TSG + GBJ TSG + SGB tsg .
+---  SGC = GAK TSG + GBK TSG + SGC tsg .
+---  SGD = GAL TSG + GBL TSG + SGD tsg .
+---  SGE = GAM TSG + GBM TSG + SGE tsg .
+---  SGF = GAN TSG + GBN TSG + SGF tsg .
+---  SGG = GAO TSG + GBO TSG + SGG tsg .
+---  SGH = GAP TSG + GBP TSG + SGH tsg .
+
+---  SHA = GAI TSH + GBI TSH + SHA tsg .           S7
+---  SHB = GAJ TSH + GBJ TSH + SHB tsg .
+---  SHC = GAK TSH + GBK TSH + SHC tsg .
+---  SHD = GAL TSH + GBL TSH + SHD tsg .
+---  SHE = GAM TSH + GBM TSH + SHE tsg .
+---  SHF = GAN TSH + GBN TSH + SHF tsg .
+---  SHG = GAO TSH + GBO TSH + SHG tsg .
+---  SHH = GAP TSH + GBP TSH + SHH tsg .
+
+---  SJA = SKA .                             Sj data to scalar logical
+---  SJB = SKB .
+---  SJC = SKC .
+---  SJD = SKD .
+---  SJE = SKE .
+---  SJF = SKF .
+---  SJG = SKG .
+---  SJH = SKH .
+
+---  ska = jaa jba .                        Scalar sign zero test
+---  skb = jab jbb .
+---  skc = jac jbc .
+---  skd = jad jbd .
+---  ske = jae jbe .
+---  skf = jaf jbf .
+---  skg = jag jbg .
+---  skh = jah jbh .
+
+---  TAA = DAM dag .                        Bank select
+---  TAB = DAN dag .
+---  TAC = DAO dag .
+---  TAD = DAP dag .
+
+---  TBA = DBM dbg .                        V1
+---  TBB = DBN dbg .
+---  TBC = DBO dbg .
+---  TBD = DBP dbg .
+
+---  TCA = DCM dcg .                        V2
+---  TCB = DCN dcg .
+---  TCC = DCO dcg .
+---  TCD = DCP dcg .
+
+---  TDA = DDM ddg .                        V3
+---  TDB = DDN ddg .
+---  TDC = DDO ddg .
+---  TDD = DDP ddg .
+
+---  TEA = DEM deg .                        V4
+---  TEB = DEN deg .
+---  TEC = DEO deg .
+---  TED = DEP deg .
+
+---  TFA = DFM dfg .                        V5
+---  TFB = DFN dfg .
+---  TFC = DFO dfg . 
+---  TFD = DFP dfg .
+
+---  TGA = DGM dgg .                        V6
+---  TGB = DGN dgg .
+---  TGC = DGO dgg .
+---  TGD = DGP dgg .
+
+---  THA = DHM dhg .                        V7
+---  THB = DHN dhg .
+---  THC = DHO dhg .
+---  THD = DHP dhg .
+
+---  TIB = FEB .                          Vector integer
+---  TIC = FEC .                          Local memory
+---  TID = FED .                          Common memory
+---  TIE = FEE .                          Floating Add
+---  TIF = FEF .                          Floating Multiply
+---  TIG = FEG .                          Vector logical
+
+---  TJB = FEB + TIB .                      Vector integer add
+---  TJC = FEC + TIC .                      Local memory
+---  TJD = FED + TID .                      Common memory
+---  TJE = FEE + TIE .                      Floating add
+---  TJF = FEF + TIF .                      Floating multiply
+---  TJG = FEG + TIG .                      Vector logic
+
+---  TKB = FEB + TIB .                      Vector integer add
+---  TKC = FEC + TIC .                      Local memory
+---  TKD = FED + TID .                      Common memory
+---  TKE = FEE + TIE .                      Floating add
+---  TKF = FEF + TIF .                      Floating multiply
+---  TKG = FEG + TIG .                      Vector logical
+
+---  TSA = FBA .                          Gate data to S0-S3
+---  TSB = FBB .
+---  TSC = FBC .
+---  TSD = FBD .
+---  TSE = FBE .                          Gate data to S4-S7
+---  TSF = FBF .
+---  TSG = FBG .
+---  TSH = FBH .
+
+---  UAA = DAG DAI + --- dai .                 Bank O write strobe
+---  UAB = UAA DAI + UAA dai .
+---  UAC = DAC DAI + UAC dai .                 Bank O chip address
+---  UAD = DAD DAI + UAD dai .
+---  UAE = DAE DAI + UAE dai .
+---  UAF = DAF DAI + UAF dai .
+
+---  UAG = DAG DAJ + --- daj .                 Bank 1
+---  UAH = UAG DAJ + UAG daj .
+---  UAI = DAC DAJ + UAI daj .
+---  UAJ = DAD DAJ + UAJ daj .
+---  UAK = DAE DAJ + UAK daj .
+---  UAL = DAF DAJ + UAL daj .
+-
+---  UAM = DAG DAK + --- dak .                 Bank 2
+---  UAN = UAM DAK + UAM dak .
+---  UAO = DAC DAK + UAO dak .
+---  UAP = DAD DAK + UAP dak .
+---  UAQ = DAE DAK + UAQ dak .
+---  UAR = DAF DAK + UAR dak .
+
+---  UAS = DAG DAL + --- dal .                 Bank 3
+---  UAT = UAS DAL + UAS dal .
+---  UAU = DAC DAL + UAU dal .
+---  UAV = DAD DAL + UAV dal .
+---  UAW = DAE DAL + UAW dal .
+---  UAX = DAF DAL + UAX dal .
+.
+---  UBA = DBG DBI + --- dbi .                  Bank O write strobe
+---  UBB = UBA DBI + UBA dbi .
+---  UBC = DBC DBI + UBC dbi .                  Bank O chip address
+---  UBD = DBD DBI + UBD dbi .
+---  UBE = DBE DBI + UBE dbi .
+---  UBF = DBF DBI + UBF dbi .
+
+---  UBG = DBG DBJ + --- dbj .                  Bank 1
+---  UBH = UBG DBJ + UBG dbj .
+---  UBI = DBC DBJ + UBI dbj .
+---  UBJ = DBD DBJ + UBJ dbj .
+---  UBK = DBE DBJ + UBK dbj .
+---  UBL = DBF DBJ + UBL dbj .
+
+---  UBM = DBG DBK + --- dbk .                  Bank 2
+---  UBN = UBM DBK + UBM dbk .
+---  UBO = DBC DBK + UBO dbk .
+---  UBP = DBD DBK + UBP dbk .
+---  UBQ = DBE DBK + UBQ dbk .
+---  UBR = DBF DBK + UBR dbk .
+
+---  UBS = DBG DBL + --- dbl .                  Bank 3
+---  UBT = UBS DBL + UBS dbl .
+---  UBU = DBC DBL + UBU dbl .
+---  UBV = DBD DBL + UBV dbl .
+---  UBW = DBE DBL + UBW dbl .
+---  UBX = DBF DBL + UBX dbl .
+
+---  UCA = DCG DCI + --- dci .                  Bank O write strobe
+---  UCB = UCA DCI + UCA dci .
+---  UCC = DCC DCI + UCC dci .                  Bank O chip address
+---  UCD = DCD DCI + UCD dci .
+---  UCE = DCE DCI + UCE dci .
+---  UCF = DCF DCI + UCF dci .
+
+---  UCG = DCG DCJ + --- dcj .                  Bank 1
+---  UCH = UCG DCJ + UCG dcj .
+---  UCI = DCC DCJ + UCI dcj .
+---  UCJ = DCD DCJ + UCJ dcj .
+---  UCK = DCE DCJ + UCK dcj .
+---  UCL = DCF DCJ + UCL dcj .
+
+---  UCM = DCG DCK + --- dck .                  Bank 2
+---  UCN = UCM DCK + UCM dck .
+---  UCO = DCC DCK + UCO dck .
+---  UCP = DCD DCK + UCP dck .
+---  UCQ = DCE DCK + UCQ dck .
+---  UCR = DCF DCK + UCR dck .
+
+---  UCS = DCG DCL + --- dcl .                  Bank 3
+---  UCT = UCS DCL + UCS dcl .
+---  UCU = DCC DCL + UCU dcl .
+---  UCV = DCD DCL + UCV dcl .
+---  UCW = DCE DCL + UCW dcl .
+---  UCX = DCF DCL + UCX dcl .
+
+---  UDA = DDG DDI + --- ddi .                  Bank O write strobe
+---  UDB = UDA DDI + UDA ddi .
+---  UDC = DDC DDI + UDC ddi .                  Bank O chip address
+---  UDD = DDD DDI + UDD ddi .
+---  UDE = DDE DDI + UDE ddi .
+---  UDF = DDF DDI + UDF ddi .
+
+---  UDG = DDG DDJ + --- ddj .                  Bank 1
+---  UDH = UDG DDJ + UDG ddj .
+---  UDI = DDC DDJ + UDI ddj .
+---  UDJ = DDD DDJ + UDJ ddj .
+---  UDK = DDE DDJ + UDK ddj .
+---  UDL = DDF DDJ + UDL ddj .
+
+---  UDM = DDG DDK + --- ddk .                  Bank 2
+---  UDN = UDM DDK + UDM ddk .
+---  UDO = DDC DDK + UDO ddk .
+---  UDP = DDD DDK + UDP ddk .
+---  UDQ = DDE DDK + UDQ ddk .
+---  UDR = DDF DDK + UDR ddk .
+
+---  UDS = DDG DDL + --- ddl .                  Bank 3
+---  UDT = UDS DDL + UDS ddl .
+---  UDU = DDC DDL + UDU ddl .
+---  UDV = DDD DDL + UDV ddl .
+---  UDW = DDE DDL + UDW ddl .
+---  UDX = DDF DDL + UDX ddl .
+
+---  UEA = DEG DEI + --- dei .                  Bank O write strobe
+---  UEB = UEA DEI + UEA dei .                     
+---  UEC = DEC DEI + UEC dei .                 Bank O chip address
+---  UED = DED DEI + UED dei .
+---  UEE = DEE DEI + UEE dei .
+---  UEF = DEF DEI + UEF dei .
+
+---  UEG = DEG DEJ + --- dej .                  Bank 1
+---  UEH = UEG DEJ + UEG dej .
+---  UEI = DEC DEJ + UEI dej .
+---  UEJ = DED DEJ + UEJ dej .
+---  UEK = DEE DEJ + UEK dej .
+---  UEL = DEF DEJ + UEL dej .
+
+---  UEM = DEG DEK + --- dek .                  Bank 2
+---  UEN = UEM DEK + UEM dek .
+---  UEO = DEC DEK + UEO dek .
+---  UEP = DED DEK + UEP dek .
+---  UEQ = DEE DEK + UEQ dek .
+---  UER = DEF DEK + UER dek .
+
+---  UES = DEG DEL + --- del .                  Bank 3
+---  UET = UES DEL + UES del .
+---  UEU = DEC DEL + UEU del .
+---  UEV = DED DEL + UEV del .
+---  UEW = DEE DEL + UEW del .
+---  UEX = DEF DEL + UEX del .
+
+---  UFA = DFG DFI + --- dfi .                  Bank O write
+---  UFB = UFA DFI + UFA dfi .
+---  UFC = DFC DFI + UFC dfi .                  Bank O chip address
+---  UFD = DFD DFI + UFD dfi .
+---  UFE = DFE DFI + UFE dfi .
+---  UFF = DFF DFI + UFF dfi .
+
+---  UFG = DFG DFJ + --- dfj .                  Bank 1
+---  UFH = UFG DFJ + UFG dfj .
+---  UFI = DFC DFJ + UFI dfj .
+---  UFJ = DFD DFJ + UFJ dfj .
+---  UFK = DFE DFJ + UFK dfj .
+---  UFL = DFF DFJ + UFL dfj .
+
+---  UFM = DFG DFK + --- dfk .                  Bank 2
+---  UFN = UFM DFK + UFM dfk .
+---  UFO = DFC DFK + UFO dfk .
+---  UFP = DFD DFK + UFP dfk .
+---  UFQ = DFE DFK + UFQ dfk .
+---  UFR = DFF DFK + UFR dfk .
+
+---  UFS = DFG DFL + --- dfl .                  Bank 3
+---  UFT = UFS DFL + UFS dfl .
+---  UFU = DFC DFL + UFU dfl .
+---  UFV = DFD DFL + UFV dfl .
+---  UFW = DFE DFL + UFW dfl .
+---  UFX = DFF DFL + UFX dfl .
+
+---  UGA = DGG DGI + --- dgi .                  Bank O write
+---  UGB = UGA DGI + UGA dgi .
+---  UGC = DGC DGI + UGC dgi .                  Bank O chip
+---  UGD = DGD DGI + UGD dgi .
+---  UGE = DGE DGI + UGE dgi .
+---  UGF = DGF DGI + UGF dgi .
+
+---  UGG = DGG DGJ + --- dgj .                  Bank 1
+---  UGH = UGG DGJ + UGG dgj .               
+---  UGI = DGC DGJ + UGI dgj .
+---  UGJ = DGD DGJ + UGJ dgj .
+---  UGK = DGE DGJ + UGK dgj .
+---  UGL = DGF DGJ + UGL dgj .
+
+---  UGM = DGG DGK + --- dgk .                 Bank 2
+---  UGN = UGM DGK + UGM dgk .
+---  UGO = DGC DGK + UGO dgk .
+---  UGP = DGD DGK + UGP dgk .
+---  UGQ = DGE DGK + UGQ dgk .
+---  UGR = DGF DGK + UGR dgk .
+
+---  UGS = DGG DGL + --- dgl .                  Bank 3
+---  UGT = UGS DGL + UGS dgl .
+---  UGU = DGC DGL + UGU dgl .
+---  UGV = DGD DGL + UGV dgl .
+---  UGW = DGE DGL + UGW dgl .
+---  UGX = DGF DGL + UGX dgl .
+
+---  UHA = DHG DHI + --- dhi .                Bank O write
+---  UHB = UHA DHI + UHA dhi .
+---  UHC = DHC DHI + UHC dhi .                Bank O chip 
+---  UHD = DHD DHI + UHD dhi .
+---  UHE = DHE DHI + UHE dhi .
+---  UHF = DHF DHI + UHF dhi .
+
+---  UHG = DHG DHJ + --- dhj .                Bank 1
+---  UHH = UHG DHJ + UHG dhj .
+---  UHI = DHC DHJ + UHI dhj .
+---  UHJ = DHD DHJ + UHJ dhj .
+---  UHK = DHE DHJ + UHK dhj .
+---  UHL = DHF DHJ + UHL dhj .
+
+---  UHM = DHG DHK + --- dhk .                Bank 2
+---  UHN = UHM DHK + UHM dhk .
+---  UHO = DHC DHK + UHO dhk .
+---  UHP = DHD DHK + UHP dhk .
+---  UHQ = DHE DHK + UHQ dhk .
+---  UHR = DHF DHK + UHR dhk .
+
+---  UHS = DHG DHL + --- dhl .                Bank 3
+---  UHT = UHS DHL + UHS dhl .
+---  UHU = DHC DHL + UHU dhl .
+---  UHV = DHD DHL + UHV dhl .
+---  UHW = DHE DHL + UHW dhl .
+---  UHX = DHF DHL + UHX dhl .
+
+---  VAA = RAA TAA + RAI TAB + RIA TAC + RII TAD .    V reg O readout
+---  VAB = RAB TAA + RAJ TAB + RIB TAC + RIJ TAD .    Banks 0,1,2,3
+---  VAC = RAC TAA + RAK TAB + RIC TAC + RIK TAD .    (copy 1)
+---  VAD = RAD TAA + RAL TAB + RID TAC + RIL TAD .
+---  VAE = RAE TAA + RAM TAB + RIE TAC + RIM TAD .
+---  VAF = RAF TAA + RAN TAB + RIF TAC + RIN TAD .
+---  VAG = RAG TAA + RAO TAB + RIG TAC + RIO TAD .
+---  VAH = RAH TAA + RAP TAB + RIH TAC + RIP TAD .
+
+---  VAI = RAA TAA + RAI TAB + RIA TAC + RII TAD .    copy 2
+---  VAJ = RAB TAA + RAJ TAB + RIB TAC + RIJ TAD .
+---  VAK = RAC TAA + RAK TAB + RIC TAC + RIK TAD .
+---  VAL = RAD TAA + RAL TAB + RID TAC + RIL TAD .
+---  VAM = RAE TAA + RAM TAB + RIE TAC + RIM TAD .
+---  VAN = RAF TAA + RAN TAB + RIF TAC + RIN TAD .
+---  VAO = RAG TAA + RAO TAB + RIG TAC + RIO TAD .
+---  VAP = RAH TAA + RAP TAB + RIH TAC + RIP TAD .
+
+---  VBA = RBA TBA + RBI TBB + RJA TBC + RJI TBD .    V1 readout
+---  VBB = RBB TBA + RBJ TBB + RJB TBC + RJJ TBD .    (copy 1)
+---  VBC = RBC TBA + RBK TBB + RJC TBC + RJK TBD .
+---  VBD = RBD TBA + RBL TBB + RJD TBC + RJL TBD .
+---  VBE = RBE TBA + RBM TBB + RJE TBC + RJM TBD .
+---  VBF = RBF TBA + RBN TBB + RJF TBC + RJN TBD .
+---  VBG = RBG TBA + RBO TBB + RJG TBC + RJO TBD .
+---  VBH = RBH TBA + RBP TBB + RJH TBC + RJP TBD .
+
+---  VBI = RBA TBA + RBI TBB + RJA TBC + RJI TBD .    copy 2
+---  VBJ = RBB TBA + RBJ TBB + RJB TBC + RJJ TBD .          
+---  VBK = RBC TBA + RBK TBB + RJC TBC + RJK TBD .
+---  VBL = RBD TBA + RBL TBB + RJD TBC + RJL TBD .
+---  VBM = RBE TBA + RBM TBB + RJE TBC + RJM TBD .
+---  VBN = RBF TBA + RBN TBB + RJF TBC + RJN TBD .
+---  VBO = RBG TBA + RBO TBB + RJG TBC + RJO TBD .
+---  VBP = RBH TBA + RBP TBB + RJH TBC + RJP TBD .
+
+---  VCA = RCA TCA + RCI TCB + RKA TCC + RKI TCD .    V2
+---  VCB = RCB TCA + RCJ TCB + RKB TCC + RKJ TCD .
+---  VCC = RCC TCA + RCK TCB + RKC TCC + RKK TCD .
+---  VCD = RCD TCA + RCL TCB + RKD TCC + RKL TCD .
+---  VCE = RCE TCA + RCM TCB + RKE TCC + RKM TCD .
+---  VCF = RCF TCA + RCN TCB + RKF TCC + RKN TCD .
+---  VCG = RCG TCA + RCO TCB + RKG TCC + RKO TCD .
+---  VCH = RCH TCA + RCP TCB + RKH TCC + RKP TCD .
+
+---  VCI = RCA TCA + RCI TCB + RKA TCC + RKI TCD .
+---  VCJ = RCB TCA + RCJ TCB + RKB TCC + RKJ TCD .
+---  VCK = RCC TCA + RCK TCB + RKC TCC + RKK TCD .
+---  VCL = RCD TCA + RCL TCB + RKD TCC + RKL TCD .
+---  VCM = RCE TCA + RCM TCB + RKE TCC + RKM TCD .
+---  VCN = RCF TCA + RCN TCB + RKF TCC + RKN TCD .
+---  VCO = RCG TCA + RCO TCB + RKG TCC + RKO TCD .
+---  VCP = RCH TCA + RCP TCB + RKH TCC + RKP TCD .
+
+---  VDA = RDA TDA + RDI TDB + RLA TDC + RLI TDD .    V3
+---  VDB = RDB TDA + RDJ TDB + RLB TDC + RLJ TDD .
+---  VDC = RDC TDA + RDK TDB + RLC TDC + RLK TDD .
+---  VDD = RDD TDA + RDL TDB + RLD TDC + RLL TDD .
+---  VDE = RDE TDA + RDM TDB + RLE TDC + RLM TDD .
+---  VDF = RDF TDA + RDN TDB + RLF TDC + RLN TDD .
+---  VDG = RDG TDA + RDO TDB + RLG TDC + RLO TDD .
+---  VDH = RDH TDA + RDP TDB + RLH TDC + RLP TDD .
+
+---  VDI = RDA TDA + RDI TDB + RLA TDC + RLI TDD .
+---  VDJ = RDB TDA + RDJ TDB + RLB TDC + RLJ TDD .
+---  VDK = RDC TDA + RDK TDB + RLC TDC + RLK TDD .
+---  VDL = RDD TDA + RDL TDB + RLD TDC + RLL TDD .
+---  VDM = RDE TDA + RDM TDB + RLE TDC + RLM TDD .
+---  VDN = RDF TDA + RDN TDB + RLF TDC + RLN TDD .
+---  VDO = RDG TDA + RDO TDB + RLG TDC + RLO TDD .
+---  VDP = RDH TDA + RDP TDB + RLH TDC + RLP TDD .
+
+---  VEA = REA TEA + REI TEB + RMA TEC + RMI TED .    V4 readout
+---  VEB = REB TEA + REJ TEB + RMB TEC + RMJ TED .     (copy 1)
+---  VEC = REC TEA + REK TEB + RMC TEC + RMK TED .
+---  VED = RED TEA + REL TEB + RMD TEC + RML TED .
+---  VEE = REE TEA + REM TEB + RME TEC + RMM TED .
+---  VEF = REF TEA + REN TEB + RMF TEC + RMN TED .
+---  VEG = REG TEA + REO TEB + RMG TEC + RMO TED .
+---  VEH = REH TEA + REP TEB + RMH TEC + RMP TED .
+
+---  VEI = REA TEA + REI TEB + RMA TEC + RMI TED .    copy 2
+---  VEJ = REB TEA + REJ TEB + RMB TEC + RMJ TED .
+---  VEK = REC TEA + REK TEB + RMC TEC + RMK TED .
+---  VEL = RED TEA + REL TEB + RMD TEC + RML TED .
+---  VEM = REE TEA + REM TEB + RME TEC + RMM TED .
+---  VEN = REF TEA + REN TEB + RMF TEC + RMN TED .
+---  VEO = REG TEA + REO TEB + RMG TEC + RMO TED .
+---  VEP = REH TEA + REP TEB + RMH TEC + RMP TED .
+
+---  VFA = RFA TFA + RFI TFB + RNA TFC + RNI TFD .    V5
+---  VFB = RFB TFA + RFJ TFB + RNB TFC + RNJ TFD .
+---  VFC = RFC TFA + RFK TFB + RNC TFC + RNK TFD .
+---  VFD = RFD TFA + RFL TFB + RND TFC + RNL TFD .
+---  VFE = RFE TFA + RFM TFB + RNE TFC + RNM TFD .
+---  VFF = RFF TFA + RFN TFB + RNF TFC + RNN TFD .
+---  VFG = RFG TFA + RFO TFB + RNG TFC + RNO TFD .
+---  VFH = RFH TFA + RFP TFB + RNH TFC + RNP TFD .
+
+---  VFI = RFA TFA + RFI TFB + RNA TFC + RNI TFD .
+---  VFJ = RFB TFA + RFJ TFB + RNB TFC + RNJ TFD .
+---  VFK = RFC TFA + RFK TFB + RNC TFC + RNK TFD .
+---  VFL = RFD TFA + RFL TFB + RND TFC + RNL TFD .
+---  VFM = RFE TFA + RFM TFB + RNE TFC + RNM TFD .
+---  VFN = RFF TFA + RFN TFB + RNF TFC + RNN TFD .
+---  VFO = RFG TFA + RFO TFB + RNG TFC + RNO TFD .
+---  VFP = RFH TFA + RFP TFB + RNH TFC + RNP TFD .
+
+---  VGA = RGA TGA + RGI TGB + ROA TGC + ROI TGD .    V6
+---  VGB = RGB TGA + RGJ TGB + ROB TGC + ROJ TGD .
+---  VGC = RGC TGA + RGK TGB + ROC TGC + ROK TGD .
+---  VGD = RGD TGA + RGL TGB + ROD TGC + ROL TGD .
+---  VGE = RGE TGA + RGM TGB + ROE TGC + ROM TGD .
+---  VGF = RGF TGA + RGN TGB + ROF TGC + RON TGD .
+---  VGG = RGG TGA + RGO TGB + ROG TGC + ROO TGD .
+---  VGH = RGH TGA + RGP TGB + ROH TGC + ROP TGD .
+
+---  VGI = RGA TGA + RGI TGB + ROA TGC + ROI TGD .
+---  VGJ = RGB TGA + RGJ TGB + ROB TGC + ROJ TGD .           
+---  VGK = RGC TGA + RGK TGB + ROC TGC + ROK TGD .
+---  VGL = RGD TGA + RGL TGB + ROD TGC + ROL TGD .
+---  VGM = RGE TGA + RGM TGB + ROE TGC + ROM TGD .
+---  VGN = RGF TGA + RGN TGB + ROF TGC + RON TGD .
+---  VGO = RGG TGA + RGO TGB + ROG TGC + ROO TGD .
+---  VGP = RGH TGA + RGP TGB + ROH TGC + ROP TGD .
+
+---  VHA = RHA THA + RHI THB + RPA THC + RPI THD .    V7 readout
+---  VHB = RHB THA + RHJ THB + RPB THC + RPJ THD .    (copy 1)
+---  VHC = RHC THA + RHK THB + RPC THC + RPK THD .
+---  VHD = RHD THA + RHL THB + RPD THC + RPL THD .
+---  VHE = RHE THA + RHM THB + RPE THC + RPM THD .
+---  VHF = RHF THA + RHN THB + RPF THC + RPN THD .
+---  VHG = RHG THA + RHO THB + RPG THC + RPO THD .
+---  VHH = RHH THA + RHP THB + RPH THC + RPP THD .
+
+---  VHI = RHA THA + RHI THB + RPA THC + RPI THD .    copy 2
+---  VHJ = RHB THA + RHJ THB + RPB THC + RPJ THD .
+---  VHK = RHC THA + RHK THB + RPC THC + RPK THD .
+---  VHL = RHD THA + RHL THB + RPD THC + RPL THD .
+---  VHM = RHE THA + RHM THB + RPE THC + RPM THD .
+---  VHN = RHF THA + RHN THB + RPF THC + RPN THD .
+---  VHO = RHG THA + RHO THB + RPG THC + RPO THD .
+---  VHP = RHH THA + RHP THB + RPH THC + RPP THD .
+
+---  WAA = HAA + HAI .                     Data hold path
+---  WAB = HAB + HAJ .                     V0
+---  WAC = HAC + HAK .
+---  WAD = HAD + HAL .
+---  WAE = HAE + HAM .
+---  WAF = HAF + HAN .
+---  WAG = HAG + HAO .
+---  WAH = HAH + HAP .
+
+---  WBA = HBA + HBI .                     V1
+---  WBB = HBB + HBJ .
+---  WBC = HBC + HBK .
+---  WBD = HBD + HBL .
+---  WBE = HBE + HBM .
+---  WBF = HBF + HBN .                           
+---  WBG = HBG + HBO .
+---  WBH = HBH + HBP .
+
+---  WCA = HCA + HCI .                     V2
+---  WCB = HCB + HCJ .
+---  WCC = HCC + HCK .
+---  WCD = HCD + HCL .
+---  WCE = HCE + HCM .
+---  WCF = HCF + HCN .
+---  WCG = HCG + HCO .
+---  WCH = HCH + HCP .
+
+---  WDA = HDA + HDI .                     V3
+---  WDB = HDB + HDJ .
+---  WDC = HDC + HDK .
+---  WDD = HDD + HDL .
+---  WDE = HDE + HDM .
+---  WDF = HDF + HDN .
+---  WDG = HDG + HDO .
+---  WDH = HDH + HDP .
+
+---  WEA = HEA + HEI .                      V4
+---  WEB = HEB + HEJ .
+---  WEC = HEC + HEK .
+---  WED = HED + HEL .
+---  WEE = HEE + HEM .
+---  WEF = HEF + HEN .
+---  WEG = HEG + HEO .
+---  WEH = HEH + HEP .
+
+---  WFA = HFA + HFI .                      V5
+---  WFB = HFB + HFJ .
+---  WFC = HFC + HFK .
+---  WFD = HFD + HFL .
+---  WFE = HFE + HFM .
+---  WFF = HFF + HFN .
+---  WFG = HFG + HFO .
+---  WFH = HFH + HFP .
+
+---  WGA = HGA + HGI .                      V6
+---  WGB = HGB + HGJ .
+---  WGC = HGC + HGK .
+---  WGD = HGD + HGL .
+---  WGE = HGE + HGM .
+---  WGF = HGF + HGN .
+---  WGG = HGG + HGO .
+---  WGH = HGH + HGP .
+
+---  WHA = HHA + HHI .                      V7
+---  WHB = HHB + HHJ .
+---  WHC = HHC + HHK .
+---  WHD = HHD + HHL .
+---  WHE = HHE + HHM .                            
+---  WHF = HHF + HHN .
+---  WHG = HHG + HHO .
+---  WHH = HHH + HHP .
+
+--- ZYA = IZZ / izz .
+--- ZYA = IZZ / izz .
+--- ZYB = IZZ / izz .
+--- ZYB = IZZ / izz .
+--- ZYC = IZZ / izz .
+--- ZYC = IZZ / izz .
+--- ZYD = IZZ / izz .
+--- ZYD = IZZ / izz .
+--- ZYE = IZZ / izz .
+--- ZYE = IZZ / izz .
+--- ZYF = IZZ / izz .
+--- ZYF = IZZ / izz .

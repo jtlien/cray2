@@ -1,0 +1,1135 @@
+
+BPP   AAA = CAA TAA + IDP TBA + BAA TCA .   CP 9  enter data, data reversed
+EPP   AAB = CAB TAA + IDO TBA + BAB TCA .            or next element
+HPP   AAC = CAC TAA + IDN TBA + BAC TCA . 
+KPP   AAD = CAD TAA + IDM TBA + BAD TCA . 
+NPP   AAE = CAE TAA + IDL TBA + BAE TCA . 
+QPP   AAF = CAF TAA + IDK TBA + BAF TCA . 
+TPP   AAG = CAG TAA + IDJ TBA + BAG TCA . 
+WPP   AAH = CAH TAA + IDI TBA + BAH TCA . 
+    
+BQP   AAI = CAI TAB + IDH TBB + BAI TCB . 
+EQP   AAJ = CAJ TAB + IDG TBB + BAJ TCB . 
+HQP   AAK = CAK TAB + IDF TBB + BAK TCB . 
+KQP   AAL = CAL TAB + IDE TBB + BAL TCB . 
+NQP   AAM = CAM TAB + IDD TBB + BAM TCB . 
+QQP   AAN = CAN TAB + IDC TBB + BAN TCB . 
+TQP   AAO = CAO TAB + IDB TBB + BAO TCB . 
+WQP   AAP = CAP TAB + IDA TBB + BAP TCB . 
+    
+BRP   ABA = CBA TAC + ICP TBC + BBA TCC .  
+ERP   Abb = CBB TAC + ICO TBC + BBB TCC .   
+HRP   ABC = CBC TAC + ICN TBC + BBC TCC . 
+KRP   ABD = CBD TAC + ICM TBC + BBD TCC . 
+NRP   ABE = CBE TAC + ICL TBC + BBE TCC . 
+QRP   ABF = CBF TAC + ICK TBC + BBF TCC . 
+TRP   ABG = CBG TAC + ICJ TBC + BBG TCC . 
+WRP   ABH = CBH TAC + ICI TBC + BBH TCC . 
+    
+BSP   ABI = CBI TAD + ICH TBD + BBI TCD . 
+ESP   ABJ = CBJ TAD + ICG TBD + BBJ TCD . 
+HSP   ABK = CBK TAD + ICF TBD + BBK TCD . 
+KSP   ABL = CBL TAD + ICE TBD + BBL TCD . 
+NSP   ABM = CBM TAD + ICD TBD + BBM TCD . 
+QSP   ABN = CBN TAD + ICC TBD + BBN TCD . 
+TSP   ABO = CBO TAD + ICB TBD + BBO TCD . 
+WSP   ABP = CBP TAD + ICA TBD + BBP TCD . 
+
+BPP   ACA = CCA TAA + IBP TBA + BCA TCA .  
+EPP   ACB = CCB TAA + IBO TBA + BCB TCA .  
+HPP   ACC = CCC TAA + IBN TBA + BCC TCA . 
+KPP   ACD = CCD TAA + IBM TBA + BCD TCA . 
+NPP   ACE = CCE TAA + IBL TBA + BCE TCA . 
+QPP   ACF = CCF TAA + IBK TBA + BCF TCA . 
+TPP   ACG = CCG TAA + IBJ TBA + BCG TCA . 
+WPP   ACH = CCH TAA + IBI TBA + BCH TCA . 
+    
+BQP   ACI = CCI TAB + IBH TBB + BCI TCB . 
+EQP   ACJ = CCJ TAB + IBG TBB + BCJ TCB . 
+HQP   ACK = CCK TAB + IBF TBB + BCK TCB . 
+KQP   ACL = CCL TAB + IBE TBB + BCL TCB . 
+NQP   ACM = CCM TAB + IBD TBB + BCM TCB . 
+QQP   ACN = CCN TAB + IBC TBB + BCN TCB . 
+TQP   ACO = CCO TAB + IBB TBB + BCO TCB . 
+WQP   ACP = CCP TAB + IBA TBB + BCP TCB . 
+    
+BRP   ADA = CDA TAC + IAP TBC + BDA TCC .   
+ERP   ADB = CDB TAC + IAO TBC + BDB TCC .   
+HRP   ADC = CDC TAC + IAN TBC + BDC TCC . 
+KRP   ADD = CDD TAC + IAM TBC + BDD TCC . 
+NRP   ADE = CDE TAC + IAL TBC + BDE TCC . 
+QRP   ADF = CDF TAC + IAK TBC + BDF TCC . 
+TRP   ADG = CDG TAC + IAJ TBC + BDG TCC . 
+WRP   ADH = CDH TAC + IAI TBC + BDH TCC . 
+    
+BSP   ADI = CDI TAD + IAH TBD + BDI TCD . 
+ESP   ADJ = CDJ TAD + IAG TBD + BDJ TCD . 
+HSP   ADK = CDK TAD + IAF TBD + BDK TCD . 
+KSP   ADL = CDL TAD + IAE TBD + BDL TCD . 
+NSP   ADM = CDM TAD + IAD TBD + BDM TCD . 
+QSP   ADN = CDN TAD + IAC TBD + BDN TCD . 
+TSP   ADO = CDO TAD + IAB TBD + BDO TCD . 
+WSP   ADP = CDP TAD + IAA TBD + BDP TCD . 
+
+BTP   BAA = CAA TCA + IDP TEA + AAA TFA .   CP 9  enter data, data reversed
+ETP   BAB = CAB TCA + IDO TEA + AAB TFA .            or next element
+HTP   BAC = CAC TCA + IDN TEA + AAC TFA . 
+KTP   BAD = CAD TCA + IDM TEA + AAD TFA . 
+NTP   BAE = CAE TCA + IDL TEA + AAE TFA . 
+QTP   BAF = CAF TCA + IDK TEA + AAF TFA . 
+TTP   BAG = CAG TCA + IDJ TEA + AAG TFA . 
+WTP   BAH = CAH TCA + IDI TEA + AAH TFA . 
+    
+BUP   BAI = CAI TCB + IDH TEB + AAI TFB . 
+EUP   BAJ = CAJ TCB + IDG TEB + AAJ TFB . 
+HUP   BAK = CAK TCB + IDF TEB + AAK TFB . 
+KUP   BAL = CAL TCB + IDE TEB + AAL TFB . 
+NUP   BAM = CAM TCB + IDD TEB + AAM TFB . 
+QUP   BAN = CAN TCB + IDC TEB + AAN TFB . 
+TUP   BAO = CAO TCB + IDB TEB + AAO TFB . 
+WUP   BAP = CAP TCB + IDA TEB + AAP TFB . 
+    
+BVP   BBA = CBA TCC + ICP TEC + ABA TFC .   
+EVP   BBB = CBB TCC + ICO TEC + ABB TFC .   
+HVP   BBC = CBC TCC + ICN TEC + ABC TFC . 
+KVP   BBD = CBD TCC + ICM TEC + ABD TFC . 
+NVP   BBE = CBE TCC + ICL TEC + ABE TFC . 
+QVP   BBF = CBF TCC + ICK TEC + ABF TFC . 
+TVP   BBG = CBG TCC + ICJ TEC + ABG TFC . 
+WVP   BBH = CBH TCC + ICI TEC + ABH TFC . 
+    
+BWP   BBI = CBI TCD + ICH TED + ABI TFD . 
+EWP   BBJ = CBJ TCD + ICG TED + ABJ TFD . 
+HWP   BBK = CBK TCD + ICF TED + ABK TFD . 
+KWP   BBL = CBL TCD + ICE TED + ABL TFD . 
+NWP   BBM = CBM TCD + ICD TED + ABM TFD . 
+QWP   BBN = CBN TCD + ICC TED + ABN TFD . 
+TWP   BBO = CBO TCD + ICB TED + ABO TFD . 
+WWP   BBP = CBP TCD + ICA TED + ABP TFD . 
+
+BTP   BCA = CCA TCA + IBP TEA + ACA TFA .  
+ETP   BCB = CCB TCA + IBO TEA + ACB TFA .  
+HTP   BCC = CCC TCA + IBN TEA + ACC TFA . 
+KTP   BCD = CCD TCA + IBM TEA + ACD TFA . 
+NTP   BCE = CCE TCA + IBL TEA + ACE TFA . 
+QTP   BCF = CCF TCA + IBK TEA + ACF TFA . 
+TTP   BCG = CCG TCA + IBJ TEA + ACG TFA . 
+WTP   BCH = CCH TCA + IBI TEA + ACH TFA . 
+    
+BUP   BCI = CCI TCB + IBH TEB + ACI TFB . 
+EUP   BCJ = CCJ TCB + IBG TEB + ACJ TFB . 
+HUP   BCK = CCK TCB + IBF TEB + ACK TFB . 
+KUP   BCL = CCL TCB + IBE TEB + ACL TFB . 
+NUP   BCM = CCM TCB + IBD TEB + ACM TFB . 
+QUP   BCN = CCN TCB + IBC TEB + ACN TFB . 
+TUP   BCO = CCO TCB + IBB TEB + ACO TFB . 
+WUP   BCP = CCP TCB + IBA TEB + ACP TFB . 
+    
+BVP   BDA = CDA TCC + IAP TEC + ADA TFC .   
+EVP   BDB = CDB TCC + IAO TEC + ADB TFC .   
+HVP   BDC = CDC TCC + IAN TEC + ADC TFC . 
+KVP   BDD = CDD TCC + IAM TEC + ADD TFC . 
+NVP   BDE = CDE TCC + IAL TEC + ADE TFC . 
+QVP   BDF = CDF TCC + IAK TEC + ADF TFC . 
+TVP   BDG = CDG TCC + IAJ TEC + ADG TFC . 
+WVP   BDH = CDH TCC + IAI TEC + ADH TFC . 
+    
+BWP   BDI = CDI TCD + IAH TED + ADI TFD . 
+EWP   BDJ = CDJ TCD + IAG TED + ADJ TFD . 
+HWP   BDK = CDK TCD + IAF TED + ADK TFD . 
+KWP   BDL = CDL TCD + IAE TED + ADL TFD . 
+NWP   BDM = CDM TCD + IAD TED + ADM TFD . 
+QWP   BDN = CDN TCD + IAC TED + ADN TFD . 
+TWP   BDO = CDO TCD + IAB TED + ADO TFD . 
+WWP   BDP = CDP TCD + IAA TED + ADP TFD . 
+
+CLL   CAA = IAA .
+FQL   CAB = IAB .
+ILL   CAC = IAC .
+LLL   CAD = IAD .
+OLL   CAE = IAE .
+RLL   CAF = IAF .
+ULL   CAG = IAG .
+XLL   CAH = IAH .
+
+CLL   CAI = IAI .
+FQL   CAJ = IAJ .
+ILL   CAK = IAK .
+LLL   CAL = IAL .
+OLL   CAM = IAM .
+RLL   CAN = IAN .
+ULL   CAO = IAO .
+XLL   CAP = IAP .
+
+CLL   CBA = IBA .
+FQL   CBB = IBB .
+ILL   CBC = IBC .
+LLL   CBD = IBD .
+OLL   CBE = IBE .
+RLL   CBF = IBF .
+ULL   CBG = IBG .
+XLL   CBH = IBH .
+
+CML   CBI = IBI .
+FML   CBJ = IBJ .
+IML   CBK = IBK .
+LML   CBL = IBL .
+OML   CBM = IBM .
+RML   CBN = IBN .
+UML   CBO = IBO .
+XML   CBP = IBP .
+
+CML   CCA = ICA .
+FML   CCB = ICB .
+IML   CCC = ICC .
+LML   CCD = ICD .
+OML   CCE = ICE .
+RML   CCF = ICF .
+UML   CCG = ICG .
+XML   CCH = ICH .
+
+CML   CCI = ICI .
+FML   CCJ = ICJ .
+IML   CCK = ICK .
+LML   CCL = ICL .
+OML   CCM = ICM .
+RML   CCN = ICN .
+UML   CCO = ICO .
+XML   CCP = ICP .
+
+CNL   CDA = IDA .
+FNL   CDB = IDB .
+INL   CDC = IDC .
+LNL   CDD = IDD .
+ONL   CDE = IDE .
+RNL   CDF = IDF .
+UNL   CDG = IDG .
+XNL   CDH = IDH .
+
+CNL   CDI = IDI .
+FNL   CDJ = IDJ .
+INL   CDK = IDK .
+LNL   CDL = IDL .
+ONL   CDM = IDM .
+RNL   CDN = IDN .
+UNL   CDO = IDO .
+XNL   CDP = IDP .
+
+ADK   DAA = AAA TGA + ACA tga .       0 or 32 bit shift
+ADK   DAB = AAB TGA + ACB tga .
+DDK   DAC = AAC TGA + ACC tga .
+DDK   DAD = AAD TGA + ACD tga .
+GDK   DAE = AAE TGA + ACE tga .      
+GDK   DAF = AAF TGA + ACF tga .
+JDK   DAG = AAG TGA + ACG tga .
+JDK   DAH = AAH TGA + ACH tga .
+
+AHK   DAI = AAI TGB + ACI tgb .      
+AHK   DAJ = AAJ TGB + ACJ tgb .
+DHK   DAK = AAK TGB + ACK tgb .
+DHK   DAL = AAL TGB + ACL tgb .
+GHK   DAM = AAM TGB + ACM tgb .      
+GHK   DAN = AAN TGB + ACN tgb .
+JHK   DAO = AAO TGB + ACO tgb .
+JHK   DAP = AAP TGB + ACP tgb .
+
+ALK   DBA = ABA TGC + ADA tgc .      
+ALK   DBB = ABB TGC + ADB tgc .
+DLK   DBC = ABC TGC + ADC tgc .
+DLK   DBD = ABD TGC + ADD tgc .
+GLK   DBE = ABE TGC + ADE tgc .      
+GLK   DBF = ABF TGC + ADF tgc .
+JLK   DBG = ABG TGC + ADG tgc .
+JLK   DBH = ABH TGC + ADH tgc .
+
+APK   DBI = ABI TGD + ADI tgd .      
+APK   DBJ = ABJ TGD + ADJ tgd .
+DPK   DBK = ABK TGD + ADK tgd .
+DPK   DBL = ABL TGD + ADL tgd .
+GPK   DBM = ABM TGD + ADM tgd .      
+GPK   DBN = ABN TGD + ADN tgd .
+JPK   DBO = ABO TGD + ADO tgd .
+JPK   DBP = ABP TGD + ADP tgd .
+
+MDK   DCA = ACA TGE + BAA tge .      
+MDK   DCB = ACB TGE + BAB tge .
+PDK   DCC = ACC TGE + BAC tge .
+PDK   DCD = ACD TGE + BAD tge .
+SDK   DCE = ACE TGE + BAE tge .      
+SDK   DCF = ACF TGE + BAF tge .
+VDK   DCG = ACG TGE + BAG tge .
+VDK   DCH = ACH TGE + BAH tge .
+
+MHK   DCI = ACI TGF + BAI tgf .      
+MHK   DCJ = ACJ TGF + BAJ tgf .
+PHK   DCK = ACK TGF + BAK tgf .
+PHK   DCL = ACL TGF + BAL tgf .
+SHK   DCM = ACM TGF + BAM tgf .      
+SHK   DCN = ACN TGF + BAN tgf .
+VHK   DCO = ACO TGF + BAO tgf .
+VHK   DCP = ACP TGF + BAP tgf .
+
+MLK   DDA = ADA TGG + BBA tgg .      
+MLK   DDB = ADB TGG + BBB tgg .
+PLK   DDC = ADC TGG + BBC tgg .
+PLK   DDD = ADD TGG + BBD tgg .
+SLK   DDE = ADE TGG + BBE tgg .      
+SLK   DDF = ADF TGG + BBF tgg .
+VLK   DDG = ADG TGG + BBG tgg .
+VLK   DDH = ADH TGG + BBH tgg .
+
+MPK   DDI = ADI TGH + BBI tgh .      
+MPK   DDJ = ADJ TGH + BBJ tgh .
+PPK   DDK = ADK TGH + BBK tgh .
+PPK   DDL = ADL TGH + BBL tgh .
+SPK   DDM = ADM TGH + BBM tgh .      
+SPK   DDN = ADN TGH + BBN tgh .
+VPK   DDO = ADO TGH + BBO tgh .
+VPK   DDP = ADP TGH + BBP tgh .
+
+ACK   DEA = BAA TGI + BCA tgi .      
+ACK   DEB = BAB TGI + BCB tgi .
+DCK   DEC = BAC TGI + BCC tgi .
+DCK   DED = BAD TGI + BCD tgi .
+GCK   DEE = BAE TGI + BCE tgi .      
+GCK   DEF = BAF TGI + BCF tgi .
+JCK   DEG = BAG TGI + BCG tgi .
+JCK   DEH = BAH TGI + BCH tgi .
+
+MCK   DEI = BAI TGJ + BCI tgj .      
+MCK   DEJ = BAJ TGJ + BCJ tgj .
+PCK   DEK = BAK TGJ + BCK tgj .
+PCK   DEL = BAL TGJ + BCL tgj .
+SCK   DEM = BAM TGJ + BCM tgj .      
+SCK   DEN = BAN TGJ + BCN tgj .
+VCK   DEO = BAO TGJ + BCO tgj .
+VCK   DEP = BAP TGJ + BCP tgj .
+
+AGK   DFA = BBA TGK + BDA tgk .      
+AGK   DFB = BBB TGK + BDB tgk .
+DGK   DFC = BBC TGK + BDC tgk .
+DGK   DFD = BBD TGK + BDD tgk .
+GGK   DFE = BBE TGK + BDE tgk .      
+GGK   DFF = BBF TGK + BDF tgk .
+JGK   DFG = BBG TGK + BDG tgk .
+JGK   DFH = BBH TGK + BDH tgk .
+
+MGK   DFI = BBI TGL + BDI tgl .      
+MGK   DFJ = BBJ TGL + BDJ tgl .
+PGK   DFK = BBK TGL + BDK tgl .
+PGK   DFL = BBL TGL + BDL tgl .
+SGK   DFM = BBM TGL + BDM tgl .      
+SGK   DFN = BBN TGL + BDN tgl .
+VGK   DFO = BBO TGL + BDO tgl .
+     
+
+BAXE  EAA = DAA THA + DAI TIA + DBA TJA + DBI TKA .  0,8,16,24
+EAXE  EAB = DAB THA + DAJ TIA + DBB TJA + DBJ TKA . 
+HAXE  EAC = DAC THA + DAK TIA + DBC TJA + DBK TKA . 
+KAXE  EAD = DAD THA + DAL TIA + DBD TJA + DBL TKA . 
+NAXE  EAE = DAE THA + DAM TIA + DBE TJA + DBM TKA . 
+QAXE  EAF = DAF THA + DAN TIA + DBF TJA + DBN TKA . 
+TAXE  EAG = DAG THA + DAO TIA + DBG TJA + DBO TKA . 
+WAXE  EAH = DAH THA + DAP TIA + DBH TJA + DBP TKA . 
+
+BBXE  EAI = DAI THB + DBA TIB + DBI TJB + DCA TKB . 
+EBXE  EAJ = DAJ THB + DBB TIB + DBJ TJB + DCB TKB . 
+HBXE  EAK = DAK THB + DBC TIB + DBK TJB + DCC TKB . 
+KBXE  EAL = DAL THB + DBD TIB + DBL TJB + DCD TKB . 
+NBXE  EAM = DAM THB + DBE TIB + DBM TJB + DCE TKB . 
+QBXE  EAN = DAN THB + DBF TIB + DBN TJB + DCF TKB . 
+TBXE  EAO = DAO THB + DBG TIB + DBO TJB + DCG TKB . 
+WBXE  EAP = DAP THB + DBH TIB + DBP TJB + DCH TKB . 
+
+BCXE  EBA = DBA THA + DBI TIA + DCA TJA + DCI TKA .  0,8,16,24
+ECXE  EBB = DBB THA + DBJ TIA + DCB TJA + DCJ TKA . 
+HCXE  EBC = DBC THA + DBK TIA + DCC TJA + DCK TKA . 
+KCXE  EBD = DBD THA + DBL TIA + DCD TJA + DCL TKA . 
+NCXE  EBE = DBE THA + DBM TIA + DCE TJA + DCM TKA . 
+QCXE  EBF = DBF THA + DBN TIA + DCF TJA + DCN TKA . 
+TCXE  EBG = DBG THA + DBO TIA + DCG TJA + DCO TKA . 
+WCXE  EBH = DBH THA + DBP TIA + DCH TJA + DCP TKA . 
+
+BDXE  EBI = DBI THB + DCA TIB + DCI TJB + DDA TKB . 
+EDXE  EBJ = DBJ THB + DCB TIB + DCJ TJB + DDB TKB . 
+HDXE  EBK = DBK THB + DCC TIB + DCK TJB + DDC TKB . 
+KDXE  EBL = DBL THB + DCD TIB + DCL TJB + DDD TKB . 
+NDXE  EBM = DBM THB + DCE TIB + DCM TJB + DDE TKB . 
+QDXE  EBN = DBN THB + DCF TIB + DCN TJB + DDF TKB . 
+TDXE  EBO = DBO THB + DCG TIB + DCO TJB + DDG TKB . 
+WDXE  EBP = DBP THB + DCH TIB + DCP TJB + DDH TKB . 
+
+BEXE  ECA = DCA THA + DCI TIA + DDA TJA + DDI TKA .  0,8,16,24
+EEXE  ECB = DCB THA + DCJ TIA + DDB TJA + DDJ TKA . 
+HEXE  ECC = DCC THA + DCK TIA + DDC TJA + DDK TKA . 
+KEXE  ECD = DCD THA + DCL TIA + DDD TJA + DDL TKA . 
+NEXE  ECE = DCE THA + DCM TIA + DDE TJA + DDM TKA . 
+QEXE  ECF = DCF THA + DCN TIA + DDF TJA + DDN TKA . 
+TEXE  ECG = DCG THA + DCO TIA + DDG TJA + DDO TKA . 
+WEXE  ECH = DCH THA + DCP TIA + DDH TJA + DDP TKA . 
+
+BFXE  ECI = DCI THB + DDA TIB + DDI TJB + DEA TKB . 
+EFXE  ECJ = DCJ THB + DDB TIB + DDJ TJB + DEB TKB . 
+HFXE  ECK = DCK THB + DDC TIB + DDK TJB + DEC TKB . 
+KFXE  ECL = DCL THB + DDD TIB + DDL TJB + DED TKB . 
+NFXE  ECM = DCM THB + DDE TIB + DDM TJB + DEE TKB . 
+QFXE  ECN = DCN THB + DDF TIB + DDN TJB + DEF TKB . 
+TFXE  ECO = DCO THB + DDG TIB + DDO TJB + DEG TKB . 
+WFXE  ECP = DCP THB + DDH TIB + DDP TJB + DEH TKB . 
+
+BGXE  EDA = DDA THA + DDI TIA + DEA TJA + DEI TKA .  0,8,16,24
+EGXE  EDB = DDB THA + DDJ TIA + DEB TJA + DEJ TKA . 
+HGXE  EDC = DDC THA + DDK TIA + DEC TJA + DEK TKA . 
+KGXE  EDD = DDD THA + DDL TIA + DED TJA + DEL TKA . 
+NGXE  EDE = DDE THA + DDM TIA + DEE TJA + DEM TKA . 
+QGXE  EDF = DDF THA + DDN TIA + DEF TJA + DEN TKA . 
+TGXE  EDG = DDG THA + DDO TIA + DEG TJA + DEO TKA . 
+WGXE  EDH = DDH THA + DDP TIA + DEH TJA + DEP TKA . 
+
+BHXE  EDI = DDI THB + DEA TIB + DEI TJB + DFA TKB . 
+EHXE  EDJ = DDJ THB + DEB TIB + DEJ TJB + DFB TKB . 
+HHXE  EDK = DDK THB + DEC TIB + DEK TJB + DFC TKB . 
+KHXE  EDL = DDL THB + DED TIB + DEL TJB + DFD TKB . 
+NHXE  EDM = DDM THB + DEE TIB + DEM TJB + DFE TKB . 
+QHXE  EDN = DDN THB + DEF TIB + DEN TJB + DFF TKB . 
+THXE  EDO = DDO THB + DEG TIB + DEO TJB + DFG TKB . 
+WHXE  EDP = DDP THB + DEH TIB + DEP TJB + DFH TKB . 
+
+BIXE  FAA = DEA THB + DEI TIB + DFA TJB + DFI TKB . 
+EIXE  FAB = DEB THB + DEJ TIB + DFB TJB + DFJ TKB . 
+HIXE  FAC = DEC THB + DEK TIB + DFC TJB + DFK TKB . 
+KIXE  FAD = DED THB + DEL TIB + DFD TJB + DFL TKB . 
+NIXE  FAE = DEE THB + DEM TIB + DFE TJB + DFM TKB . 
+QIXE  FAF = DEF THB + DEN TIB + DFF TJB + DFN TKB . 
+WIXE  FAG = DEG THB + DEO TIB + DFG TJB + DFO TKB .
+
+AMK   GAA = EAA TLA + EAC TMA .          0,2
+AMK   GAB = EAB TLA + EAD TMA .          
+DMK   GAC = EAC TLA + EAE TMA .          
+DMK   GAD = EAD TLA + EAF TMA .          
+GMK   GAE = EAE TLA + EAG TMA .   
+GMK   GAF = EAF TLA + EAH TMA .          
+JMK   GAG = EAG TLA + EAI TMA .          
+JMK   GAH = EAH TLA + EAJ TMA .          
+    
+MMK   GAI = EAI TLA + EAK TMA .          
+MMK   GAJ = EAJ TLA + EAL TMA .          
+PMK   GAK = EAK TLA + EAM TMA .          
+PMK   GAL = EAL TLA + EAN TMA .          
+SMK   GAM = EAM TLA + EAO TMA .   
+SMK   GAN = EAN TLA + EAP TMA .          
+VMK   GAO = EAO TLA + EBA TMA .          
+VMK   GAP = EAP TLA + EBB TMA .          
+   
+ANK   GBA = EBA TLA + EBC TMA .          0,2
+ANK   GBB = EBB TLA + EBD TMA .          
+DNK   GBC = EBC TLA + EBE TMA .          
+DNK   GBD = EBD TLA + EBF TMA .          
+GNK   GBE = EBE TLA + EBG TMA .   
+GNK   GBF = EBF TLA + EBH TMA .          
+JNK   GBG = EBG TLA + EBI TMA .          
+JNK   GBH = EBH TLA + EBJ TMA .          
+    
+MNK   GBI = EBI TLA + EBK TMA .          
+MNK   GBJ = EBJ TLA + EBL TMA .          
+PNK   GBK = EBK TLA + EBM TMA .          
+PNK   GBL = EBL TLA + EBN TMA .          
+SNK   GBM = EBM TLA + EBO TMA .   
+SNK   GBN = EBN TLA + EBP TMA .          
+VNK   GBO = EBO TLA + ECA TMA .          
+VNK   GBP = EBP TLA + ECB TMA .          
+   
+AOK   GCA = ECA TLA + ECC TMA .          0,2
+AOK   GCB = ECB TLA + ECD TMA .          
+DOK   GCC = ECC TLA + ECE TMA .          
+DOK   GCD = ECD TLA + ECF TMA .          
+GOK   GCE = ECE TLA + ECG TMA .   
+GOK   GCF = ECF TLA + ECH TMA .          
+JOK   GCG = ECG TLA + ECI TMA .          
+JOK   GCH = ECH TLA + ECJ TMA .          
+    
+MOK   GCI = ECI TLA + ECK TMA .          
+MOK   GCJ = ECJ TLA + ECL TMA .          
+POK   GCK = ECK TLA + ECM TMA .          
+POK   GCL = ECL TLA + ECN TMA .          
+SOK   GCM = ECM TLA + ECO TMA .   
+SOK   GCN = ECN TLA + ECP TMA .          
+VOK   GCO = ECO TLA + EDA TMA .          
+VOK   GCP = ECP TLA + EDB TMA .          
+   
+APK   GDA = EDA TLA + EDC TMA .          0,2
+APK   GDB = EDB TLA + EDD TMA .          
+DPK   GDC = EDC TLA + EDE TMA .          
+DPK   GDD = EDD TLA + EDF TMA .          
+GPK   GDE = EDE TLA + EDG TMA .   
+GPK   GDF = EDF TLA + EDH TMA .          
+JPK   GDG = EDG TLA + EDI TMA .          
+JPK   GDH = EDH TLA + EDJ TMA .          
+    
+MPK   GDI = EDI TLA + EDK TMA .          
+MPK   GDJ = EDJ TLA + EDL TMA .          
+PPK   GDK = EDK TLA + EDM TMA .          
+PPK   GDL = EDL TLA + EDN TMA .          
+SPK   GDM = EDM TLA + EDO TMA .   
+SPK   GDN = EDN TLA + EDP TMA .          
+VPK   GDO = EDO TLA + FFA TMA .          
+VPK   GDP = EDP TLA + FFB TMA .          
+
+V1K   GEA = FFA TLA + FFC TMA .
+
+AQK   HAA = EAE TNA + EAG TOA .          4,6
+AQK   HAB = EAF TNA + EAH TOA .
+DQK   HAC = EAG TNA + EAI TOA .          
+DQK   HAD = EAH TNA + EAJ TOA .
+GQK   HAE = EAI TNA + EAK TOA .         
+GQK   HAF = EAJ TNA + EAL TOA .
+JQK   HAG = EAK TNA + EAM TOA .          
+JQK   HAH = EAL TNA + EAN TOA .
+   
+MQK   HAI = EAM TNA + EAO TOA .     
+MQK   HAJ = EAN TNA + EAP TOA .
+PQK   HAK = EAO TNA + EBA TOA .          
+PQK   HAL = EAP TNA + EBB TOA .
+SQK   HAM = EBA TNA + EBC TOA .         
+SQK   HAN = EBB TNA + EBD TOA .
+VQK   HAO = EBC TNA + EBE TOA .          
+VQK   HAP = EBD TNA + EBF TOA .
+   
+ARK   HBA = EBE TNA + EBG TOA .          4,6
+ARK   HBB = EBF TNA + EBH TOA .
+DRK   HBC = EBG TNA + EBI TOA .          
+DRK   HBD = EBH TNA + EBJ TOA .
+GRK   HBE = EBI TNA + EBK TOA .         
+GRK   HBF = EBJ TNA + EBL TOA .
+JRK   HBG = EBK TNA + EBM TOA .          
+JRK   HBH = EBL TNA + EBN TOA .
+   
+MRK   HBI = EBM TNA + EBO TOA .     
+MRK   HBJ = EBN TNA + EBP TOA .
+PRK   HBK = EBO TNA + ECA TOA .          
+PRK   HBL = EBP TNA + ECB TOA .
+SRK   HBM = ECA TNA + ECC TOA .         
+SRK   HBN = ECB TNA + ECD TOA .
+VRK   HBO = ECC TNA + ECE TOA .          
+VRK   HBP = ECD TNA + ECF TOA .
+   
+ASK   HCA = ECE TNA + ECG TOA .          4,6
+ASK   HCB = ECF TNA + ECH TOA .
+DSK   HCC = ECG TNA + ECI TOA .          
+DSK   HCD = ECH TNA + ECJ TOA .
+GSK   HCE = ECI TNA + ECK TOA .         
+GSK   HCF = ECJ TNA + ECL TOA .
+JSK   HCG = ECK TNA + ECM TOA .          
+JSK   HCH = ECL TNA + ECN TOA .
+   
+MSK   HCI = ECM TNA + ECO TOA .     
+MSK   HCJ = ECN TNA + ECP TOA .
+PSK   HCK = ECO TNA + EDA TOA .          
+PSK   HCL = ECP TNA + EDB TOA .
+SSK   HCM = EDA TNA + EDC TOA .         
+SSK   HCN = EDB TNA + EDD TOA .
+VSK   HCO = EDC TNA + EDE TOA .          
+VSK   HCP = EDD TNA + EDF TOA .
+   
+ATK   HDA = EDE TNA + EDG TOA .          4,6
+ATK   HDB = EDF TNA + EDH TOA .
+DTK   HDC = EDG TNA + EDI TOA .          
+DTK   HDD = EDH TNA + EDJ TOA .
+GTK   HDE = EDI TNA + EDK TOA .         
+GTK   HDF = EDJ TNA + EDL TOA .
+JTK   HDG = EDK TNA + EDM TOA .          
+JTK   HDH = EDL TNA + EDN TOA .
+   
+MTK   HDI = EDM TNA + EDO TOA .     
+MTK   HDJ = EDN TNA + EDP TOA .
+PTK   HDK = EDO TNA + FFA TOA .          
+PTK   HDL = EDP TNA + FFB TOA .
+STK   HDM = FFA TNA + FFC TOA .         
+STK   HDN = FFB TNA + FFD TOA .
+VTK   HDO = FFC TNA + FFE TOA .          
+VTK   HDP = FFD TNA + FFF TOA .
+
+V2K   HEA = FFE TNA + FFG TOA .
+     
+B1XE  MAA = GAA TPA + GAB TQA + HAA TRA + HAB TSA .   Final shift merge
+E1XE  MAB = GAB TPA + GAC TQA + HAB TRA + HAC TSA .   
+H1XE  MAC = GAC TPA + GAD TQA + HAC TRA + HAD TSA .   
+K1XE  MAD = GAD TPA + GAE TQA + HAD TRA + HAE TSA .   
+N1XE  MAE = GAE TPA + GAF TQA + HAE TRA + HAF TSA . 
+Q1XE  MAF = GAF TPA + GAG TQA + HAF TRA + HAG TSA .   
+T1XE  MAG = GAG TPA + GAH TQA + HAG TRA + HAH TSA .   
+W1XE  MAH = GAH TPA + GAI TQA + HAH TRA + HAI TSA .   
+
+B1XE  MAI = GAI TPA + GAJ TQA + HAI TRA + HAJ TSA . 
+E2XE  MAJ = GAJ TPA + GAK TQA + HAJ TRA + HAK TSA .   
+H2XE  MAK = GAK TPA + GAL TQA + HAK TRA + HAL TSA .   
+K2XE  MAL = GAL TPA + GAM TQA + HAL TRA + HAM TSA .   
+N2XE  MAM = GAM TPA + GAN TQA + HAM TRA + HAN TSA . 
+Q2XE  MAN = GAN TPA + GAO TQA + HAN TRA + HAO TSA .   
+T2XE  MAO = GAO TPA + GAP TQA + HAO TRA + HAP TSA .   
+W2XE  MAP = GAP TPA + GBA TQA + HAP TRA + HBA TSA .   
+
+B3XE  MBA = GBA TPA + GBB TQA + HBA TRA + HBB TSA .   Final shift merge
+E3XE  MBB = GBB TPA + GBC TQA + HBB TRA + HBC TSA .   
+H3XE  MBC = GBC TPA + GBD TQA + HBC TRA + HBD TSA .   
+K3XE  MBD = GBD TPA + GBE TQA + HBD TRA + HBE TSA .   
+N3XE  MBE = GBE TPA + GBF TQA + HBE TRA + HBF TSA . 
+Q3XE  MBF = GBF TPA + GBG TQA + HBF TRA + HBG TSA .   
+T3XE  MBG = GBG TPA + GBH TQA + HBG TRA + HBH TSA .   
+W3XE  MBH = GBH TPA + GBI TQA + HBH TRA + HBI TSA .   
+
+B4XE  MBI = GBI TPA + GBJ TQA + HBI TRA + HBJ TSA . 
+E4XE  MBJ = GBJ TPA + GBK TQA + HBJ TRA + HBK TSA .   
+H4XE  MBK = GBK TPA + GBL TQA + HBK TRA + HBL TSA .   
+K4XE  MBL = GBL TPA + GBM TQA + HBL TRA + HBM TSA .   
+N4XE  MBM = GBM TPA + GBN TQA + HBM TRA + HBN TSA . 
+Q4XE  MBN = GBN TPA + GBO TQA + HBN TRA + HBO TSA .   
+T4XE  MBO = GBO TPA + GBP TQA + HBO TRA + HBP TSA .   
+W4XE  MBP = GBP TPA + GCA TQA + HBP TRA + HCA TSA .   
+
+B5XE  MCA = GCA TPA + GCB TQA + HCA TRA + HCB TSA .   Final shift merge
+E5XE  MCB = GCB TPA + GCC TQA + HCB TRA + HCC TSA .   
+H5XE  MCC = GCC TPA + GCD TQA + HCC TRA + HCD TSA .   
+K5XE  MCD = GCD TPA + GCE TQA + HCD TRA + HCE TSA .   
+N5XE  MCE = GCE TPA + GCF TQA + HCE TRA + HCF TSA . 
+Q5XE  MCF = GCF TPA + GCG TQA + HCF TRA + HCG TSA .   
+T5XE  MCG = GCG TPA + GCH TQA + HCG TRA + HCH TSA .   
+W5XE  MCH = GCH TPA + GCI TQA + HCH TRA + HCI TSA .   
+
+B6XE  MCI = GCI TPA + GCJ TQA + HCI TRA + HCJ TSA . 
+E6XE  MCJ = GCJ TPA + GCK TQA + HCJ TRA + HCK TSA .   
+H6XE  MCK = GCK TPA + GCL TQA + HCK TRA + HCL TSA .   
+K6XE  MCL = GCL TPA + GCM TQA + HCL TRA + HCM TSA .   
+N6XE  MCM = GCM TPA + GCN TQA + HCM TRA + HCN TSA . 
+Q6XE  MCN = GCN TPA + GCO TQA + HCN TRA + HCO TSA .   
+T6XE  MCO = GCO TPA + GCP TQA + HCO TRA + HCP TSA .   
+W6XE  MCP = GCP TPA + GDA TQA + HCP TRA + HDA TSA .   
+
+B7XE  MDA = GDA TPA + GDB TQA + HDA TRA + HDB TSA .   Final shift merge
+E7XE  MDB = GDB TPA + GDC TQA + HDB TRA + HDC TSA .   
+H7XE  MDC = GDC TPA + GDD TQA + HDC TRA + HDD TSA .   
+K7XE  MDD = GDD TPA + GDE TQA + HDD TRA + HDE TSA .   
+N7XE  MDE = GDE TPA + GDF TQA + HDE TRA + HDF TSA . 
+Q7XE  MDF = GDF TPA + GDG TQA + HDF TRA + HDG TSA .   
+T7XE  MDG = GDG TPA + GDH TQA + HDG TRA + HDH TSA .   
+W7XE  MDH = GDH TPA + GDI TQA + HDH TRA + HDI TSA .   
+
+B8XE  MDI = GDI TPA + GDJ TQA + HDI TRA + HDJ TSA . 
+E8XE  MDJ = GDJ TPA + GDK TQA + HDJ TRA + HDK TSA .   
+H8XE  MDK = GDK TPA + GDL TQA + HDK TRA + HDL TSA .   
+K8XE  MDL = GDL TPA + GDM TQA + HDL TRA + HDM TSA .   
+N8XE  MDM = GDM TPA + GDN TQA + HDM TRA + HDN TSA . 
+Q8XE  MDN = GDN TPA + GDO TQA + HDN TRA + HDO TSA .   
+T8XE  MDO = GDO TPA + GDP TQA + HDO TRA + HDP TSA .   
+W8XE  MDP = GDP TPA + GEA TQA + HDP TRA + HEA TSA .   
+
+            L.Z.       Pop Count
+
+V3K   NAA = YOA TXA + XBA TZA .
+V3K   NAB = YOB TXA + XBB TZA .
+V4K   NAC = YOC TXA + YAC TZA .
+V4K   NAD = YOD TXA + YAD TZA .
+V5K   NAE = YOE TXA + YAE TZA .
+V5K   NAF = YOF TXA + YAF TZA .
+V6K   NAG = YOG TXA 
+
+XAJ   JAA = QDA QDB QMD .
+XBJ   JAB = QMD qda .
+XBJ   JAC = QMD QDA .
+XCJ   JAE = QMD qda QDB .
+
+AAP   LAA = LAA qmd + IIG JAA .
+ABP   LAB = LAB qmd + iig JAB .
+ABP   LAC = LAC qmd + iig JAC .
+AAP   LAE = LAE qmd + IIG JAE .
+
+      LHA = iig IIF JAE + iig IIF JAA .
+      LIA = iig iif JAE + iig iif JAA .
+      
+                    Output To VR
+
+CDP   OAA = MAA TUA + MDP TVA + IEA TWA + NAA .
+CDP   OAB = MAB TUA + MDO TVA + IEB TWA + NAB .
+CHP   OAC = MAC TUA + MDN TVA + IEC TWA + NAC .
+CHP   OAD = MAD TUA + MDM TVA + IED TWA + NAD .
+CLP   OAE = MAE TUA + MDL TVA + IEE TWA + NAE .
+CLP   OAF = MAF TUA + MDK TVA + IEF TWA + NAF .
+CPP   OAG = MAG TUA + MDJ TVA + IEG TWA + NAG .
+CPP   OAH = MAH TUA + MDI TVA + IEH TWA .
+      
+FDP   OAI = MAI TUA + MDH TVA + IEI TWA .   ie,if,ig,ih 64 bits from VA
+FDP   OAJ = MAJ TUA + MDG TVA + IEJ TWA .
+FHP   OAK = MAK TUA + MDF TVA + IEK TWA .
+FHP   OAL = MAL TUA + MDE TVA + IEL TWA .
+FLP   OAM = MAM TUA + MDD TVA + IEM TWA .
+FLP   OAN = MAN TUA + MDC TVA + IEN TWA .
+FPP   OAO = MAO TUA + MDB TVA + IEO TWA .
+FPP   OAP = MAP TUA + MDA TVA + IEP TWA .
+
+IDP   OBA = MBA TUA + MCP TVA + IFA TWA .
+IDP   OBB = MBB TUA + MCO TVA + IFB TWA .
+IHP   OBC = MBC TUA + MCN TVA + IFC TWA .
+IHP   OBD = MBD TUA + MCM TVA + IFD TWA .
+ILP   OBE = MBE TUA + MCL TVA + IFE TWA .
+ILP   OBF = MBF TUA + MCK TVA + IFF TWA .
+IPP   OBG = MBG TUA + MCJ TVA + IFG TWA .
+IPP   OBH = MBH TUA + MCI TVA + IFH TWA .
+      
+LDP   OBI = MBI TUA + MCH TVA + IFI TWA .
+LDP   OBJ = MBJ TUA + MCG TVA + IFJ TWA .
+LHP   OBK = MBK TUA + MCF TVA + IFK TWA .
+LHP   OBL = MBL TUA + MCE TVA + IFL TWA .
+LLP   OBM = MBM TUA + MCD TVA + IFM TWA .
+LLP   OBN = MBN TUA + MCC TVA + IFN TWA .
+LPP   OBO = MBO TUA + MCB TVA + IFO TWA .
+LPP   OBP = MBP TUA + MCA TVA + IFP TWA .
+
+ODP   OCA = MCA TUA + MBP TVA + IGA TWA .
+ODP   OCB = MCB TUA + MBO TVA + IGB TWA .
+OHP   OCC = MCC TUA + MBN TVA + IGC TWA .
+OHP   OCD = MCD TUA + MBM TVA + IGD TWA .
+OLP   OCE = MCE TUA + MBL TVA + IGE TWA .
+OLP   OCF = MCF TUA + MBK TVA + IGF TWA .
+OPP   OCG = MCG TUA + MBJ TVA + IGG TWA .
+OPP   OCH = MCH TUA + MBI TVA + IGH TWA .
+      
+RDP   OCI = MCI TUA + MBH TVA + IGI TWA .
+RDP   OCJ = MCJ TUA + MBG TVA + IGJ TWA .
+RHP   OCK = MCK TUA + MBF TVA + IGK TWA .
+RHP   OCL = MCL TUA + MBE TVA + IGL TWA .
+RLP   OCM = MCM TUA + MBD TVA + IGM TWA .
+RLP   OCN = MCN TUA + MBC TVA + IGN TWA .
+RPP   OCO = MCO TUA + MBB TVA + IGO TWA .
+RPP   OCP = MCP TUA + MBA TVA + IGP TWA .
+ 
+UDP   ODA = MDA TUA + MAP TVA + IHA TWA .
+UDP   ODB = MDB TUA + MAO TVA + IHB TWA .
+UHP   ODC = MDC TUA + MAN TVA + IHC TWA .
+UHP   ODD = MDD TUA + MAM TVA + IHD TWA .
+ULP   ODE = MDE TUA + MAL TVA + IHE TWA .
+ULP   ODF = MDF TUA + MAK TVA + IHF TWA .
+UPP   ODG = MDG TUA + MAJ TVA + IHG TWA .
+UPP   ODH = MDH TUA + MAI TVA + IHH TWA .
+      
+XDP   ODI = MDI TUA + MAH TVA + IHI TWA .
+XDP   ODJ = MDJ TUA + MAG TVA + IHJ TWA .
+XHP   ODK = MDK TUA + MAF TVA + IHK TWA .
+XHP   ODL = MDL TUA + MAE TVA + IHL TWA .
+XLP   ODM = MDM TUA + MAD TVA + IHM TWA .
+XLP   ODN = MDN TUA + MAC TVA + IHN TWA .
+XPP   ODO = MDO TUA + MAB TVA + IHO TWA .
+XPP   ODP = MDP TUA + MAA TVA + IHP TWA .
+ 
+B8L   TAA = LAA .
+B8L   TAB = LAA .
+B8L   TAC = LAA .
+B8L   TAD = LAA .
+     
+E8L   TBA = LAB.
+E8L   TBB = LAB .
+E8L   TBC = LAB .
+E8L   TBD = LAB .
+     
+H8L   TCA = LAC .
+H8L   TCB = LAC .
+H8L   TCC = LAC .
+H8L   TCD = LAC .
+     
+K8L   TEA = LAE .
+K8L   TEB = LAE .
+K8L   TEC = LAE .
+K8L   TED = LAE .
+
+K6M   TFA = LAA + LAB .
+K6M   TFB = LAA + LAB .
+K5M   TFC = LAA + LAB .
+K5M   TFD = LAA + LAB .
+
+K4M   TFE = LAA + LAB .
+K4M   TFF = LAA + LAB .
+K4M   TFG = LAA + LAB .
+K4M   TFH = LAA + LAB .
+
+N8L   TGA = QNF .   2^5  = 32
+N8L   TGB = QNF .
+N8L   TGC = QNF .
+N8L   TGD = QNF .
+
+Q8L   THA = qnd qne .
+Q8L   THB = qnd qne .
+Q8L   THC = qnd qne .
+Q8L   THD = qnd qne .
+
+T8L   TIA = QND qne .
+T8L   TIB = QND qne .
+T8L   TIC = QND qne .
+T8L   TID = QND qne .
+
+W8L   TJA = qnd QNE .
+W8L   TJB = qnd QNE .
+W8L   TJC = qnd QNE .
+W8L   TJD = qnd QNE .
+
+W7L   TKA = QND QNE .
+W7L   TKB = QND QNE .
+W7L   TKC = QND QNE .
+W7L   TKD = QND QNE .
+
+T7L   TLA = qnb qnc .
+T7L   TLB = qnb qnc .
+T7L   TLC = qnb qnc .
+T7L   TLD = qnb qnc .
+
+Q7L   TMA = QNB qnc .
+Q7L   TMB = QNB qnc .
+Q7L   TMC = QNB qnc .
+Q7L   TMD = QNB qnc .
+
+N7L   TNA = qnb QNC .
+N7L   TNB = qnb QNC .
+N7L   TNC = qnb QNC .
+N7L   TND = qnb QNC .
+
+K7L   TOA = QNB QNC .
+K7L   TOB = QNB QNC .
+K7L   TOC = QNB QNC .
+K7L   TOD = QNB QNC .
+
+C1L   QAA = ISB .
+C1L   QAB = ISC .
+C1L   QBA = QAA .
+C1L   QBB = QAB .
+C2L   QCA = QBA .
+C2L   QCB = QBB .
+C2L   QDA = QCA .
+C2L   QDB = QCB .
+
+C3L   QMA = ISA .                    Go Shift 150-153
+C3L   QMB = QMA .
+C3L   QMC = QMB .
+C3L   QMD = QMC .
+
+C4L   QNA = IIA .   2^0 shift count
+C4L   QNB = IIB .
+C4L   QNC = IIC .
+C4L   QND = IID .
+C5L   QNE = IIE .
+C5L   QNF = IIF .
+C5L   QNG = IIG .
+
+CLTB  RAA = IAD iab iac + iad IAB iac + iad iab IAC + IAD IAB IAC .
+FLTB  RAB = IAH iaf iag + iah IAF iag + iah iaf IAG + IAH IAF IAG .
+ILTB  RAC = IAL iaj iak + ial IAJ iak + ial iaj IAK + IAL IAJ IAK .
+LLTB  RAD = IAP ian iao + iap IAN iao + iap ian IAO + IAP IAN IAO .
+FDTB  RAE = IAA iae iai + iaa IAE iai + iaa iae IAI + IAA IAE IAI .
+LDLH  raf = iam .
+OLTB  RBA = IBD ibb ibc + ibd IBB ibc + ibd ibb IBC + IBD IBB IBC .
+RLTB  RBB = IBH ibf ibg + ibh IBF ibg + ibh ibf IBG + IBH IBF IBG .
+ULTB  RBC = IBL ibj ibk + ibl IBJ ibk + ibl ibj IBK + IBL IBJ IBK .
+XLTB  RBD = IBP ibn ibo + ibp IBN ibo + ibp ibn IBO + IBP IBN IBO .
+RDTB  RBE = IBA ibe ibi + iba IBE ibi + iba ibe IBI + IBA IBE IBI .
+XCLH  rbf = ibm .                
+C4TB  RCA = ICD icb icc + icd ICB icc + icd icb ICC + ICD ICB ICC .
+F4TB  RCB = ICH icf icg + ich ICF icg + ich icf ICG + ICH ICF ICG .
+I4TB  RCC = ICL icj ick + icl ICJ ick + icl icj ICK + ICL ICJ ICK .
+L4TB  RCD = ICP icn ico + icp ICN ico + icp icn ICO + ICP ICN ICO .
+FTTB  RCE = ICA ice ici + ica ICE ici + ica ice ICI + ICA ICE ICI .
+LSLH  rcf = icm .
+O4TB  RDA = IDD idb idc + idd IDB idc + idd idb IDC + IDD IDB IDC .
+R4TB  RDB = IDH idf idg + idh IDF idg + idh idf IDG + IDH IDF IDG .
+U4TB  RDC = IDL idj idk + idl IDJ idk + idl idj IDK + IDL IDJ IDK .
+X4TB  RDD = IDP idn ido + idp IDN ido + idp idn IDO + IDP IDN IDO .
+RTTB  RDE = IDA ide idi + ida IDE idi + ida ide IDI + IDA IDE IDI .
+XSLH  rdf = idm .
+CLTM  rea = IAD iab iac + iad IAB iac + iad iab IAC + iad iab iac .
+FLTM  reb = IAH iaf iag + iah IAF iag + iah iaf IAG + iah iaf iag .
+ILTM  rec = IAL iaj iak + ial IAJ iak + ial iaj IAK + ial iaj iak .
+LLTM  red = IAP ian iao + iap IAN iao + iap ian IAO + iap ian iao .
+FDTM  ree = IAA iae iai + iaa IAE iai + iaa iae IAI + iaa iae iai  .
+OLTM  rfa = IBD ibb ibc + ibd IBB ibc + ibd ibb IBC + ibd ibb ibc .
+RLTM  rfb = IBH ibf ibg + ibh IBF ibg + ibh ibf IBG + ibh ibf ibg .
+ULTM  rfc = IBL ibj ibk + ibl IBJ ibk + ibl ibj IBK + ibl ibj ibk .
+XLTM  rfd = IBP ibn ibo + ibp IBN ibo + ibp ibn IBO + ibp ibn ibo .
+RDTM  rfe = IBA ibe ibi + iba IBE ibi + iba ibe IBI + iba ibe ibi .
+C4TM  rga = ICD icb icc + icd ICB icc + icd icb ICC + icd icb icc .
+F4TM  rgb = ICH icf icg + ich ICF icg + ich icf ICG + ich icf icg .
+I4TM  rgc = ICL icj ick + icl ICJ ick + icl icj ICK + icl icj ick .
+L4TM  rgd = ICP icn ico + icp ICN ico + icp icn ICO + icp icn ico .
+FTTM  rge = ICA ice ici + ica ICE ici + ica ice ICI + ica ice ici .
+O4TM  rha = IDD idb idc + idd IDB idc + idd idb IDC + idd idb idc .
+R4TM  rhb = IDH idf idg + idh IDF idg + idh idf IDG + idh idf idg .
+U4TM  rhc = IDL idj idk + idl IDJ idk + idl idj IDK + idl idj idk .
+X4TM  rhd = IDP idn ido + idp IDN ido + idp idn IDO + idp idn ido .
+RTTM  rhe = IDA ide idi + ida IDE idi + ida ide IDI + ida ide idi .
+
+                  Pop Count
+
+ABXE  RMA = XMA YMA + XPA YMB + XSA YMC + XVA YMD .   Bit   O
+AFXE  RMB = XMB YMA + XPB YMB + XSB YMC + XVB YMD .    ''   1
+AJXE  RMC = XMC YMA + XPC YMB + XSC YMC + XVC YMD .    ''   2
+A2XE  RMD = XMD YMA + XPD YMB + XSD YMC + XVD YMD .    ''   3
+DBPB  rme = ymc yma .                                  ''   4
+DBPD  rmf = ymb yma .                                  ''   5
+DJLG  RMG = YME .                                      ''   6
+
+CPTB  SAA = JAA jab jae + jaa JAB jae + jaa jab JAE + JAA JAB JAE .
+OPTB  SAB = JAC jaf jag + jac JAF jag + jac jaf JAG + JAC JAF JAG .
+UPPB  SAC = JAD jah + JAH jad .
+CPTM  sba = JAA jab jae + jaa JAB jae + jaa jab JAE + jaa jab jae .
+OPTM  sbb = JAC jaf jag + jac JAF jag + jac jaf JAG + jac jaf jag .
+UPPD  sbc = jah + jad .
+FHTB  SBD = JBA rea ree + jba REA ree + jba rea REE + JBA REA REE .
+LHTB  SBE = JBC jbi rfa + jbc JBI rfa + jbc jbi RFA + JBC JBI RFA .
+UGTB  SBF = JBD jbj rfe + jbd JBJ rfe + jbd jbj RFE + JBD JBJ RFE .
+FXTB  SBG = JBE rga rge + jbe RGA rge + jbe rga RGE + JBE RGA RGE .
+O8TB  SBH = JBG jbk rha + jbg JBK rha + jbg jbk RHA + JBG JBK RHA . 
+U8TB  SBI = JBH jbl rhe + jbh JBL rhe + jbh jbl RHE + JBH JBL RHE .
+ILTH  SBJ = JBB .
+I4TH  SBK = JBF .
+FHTM  sca = JBA rea ree + jba REA ree + jba rea REE + jba rea ree . Bit 1
+LHTM  scb = JBC jbi rfa + jbc JBI rfa + jbc jbi RFA + jbc jbi rfa .  carry
+UGTM  scc = JBD jbj rfe + jbd JBJ rfe + jbd jbj RFE + jbd jbj rfe .
+FXTM  scd = JBE rga rge + jbe RGA rge + jbe rga RGE + jbe rga rge .
+O8TM  sce = JBG jbk rha + jbg JBK rha + jbg jbk RHA + jbg jbk rha .
+U8TM  scf = JBH jbl rhe + jbh JBL rhe + jbh jbl RHE + jbh jbl rhe .
+LXTB  SCG = JCA jcc jcd + jca JCC jcd + jca jcc JCD + JCA JCC JCD . Bit 2
+XLTH  SCH = JCB .                                                    carry
+LXTM  sda = JCA jcc jcd + jca JCC jcd + jca jcc JCD + jca jcc jcd .
+
+
+FCLG  swa = iaa . O
+CKLA  swb = iab .
+CKLG  swc = iac .
+CKLH  swd = iad .
+FCLH  swe = iae .
+FKLA  swf = iaf .
+FKLG  swg = iag .
+FKLH  swh = iah . 7
+
+FCLN  swi = iai . 8
+IKLA  swj = iaj .
+IKLG  swk = iak .
+IKLH  swl = ial .
+LDLG  swm = iam .
+LKLA  swn = ian .
+LKLG  swo = iao .
+LKLH  swp = iap .  15
+
+RCLG  sxa = iba .  16
+OKLA  sxb = ibb .
+OKLG  sxc = ibc .
+OKLH  sxd = ibd .
+RCLH  sxe = ibe .
+RKLA  sxf = ibf .
+RKLG  sxg = ibg .
+RKLH  sxh = ibh .  23
+
+RCLN  sxi = ibi .  24
+UKLA  sxj = ibj .
+UKLG  sxk = ibk .
+UKLH  sxl = ibl .
+XCLG  sxm = ibm .
+XKLA  sxn = ibn .
+XKLG  sxo = ibo .
+XKLH  sxp = ibp . 31
+
+FSLG  sya = ica . 32
+C3LA  syb = icb .
+C3LG  syc = icc .
+C3LH  syd = icd .
+FSLH  sye = ice .
+F3LA  syf = icf .
+F3LG  syg = icg .
+F3LH  syh = ich . 39
+
+FSLN  syi = ici . 4O                          VR scalar input
+I3LA  syj = icj .
+I3LG  syk = ick .
+I3LH  syl = icl  .
+LSLG  sym = icm .
+L3LA  syn = icn .
+L3LG  syo = ico .
+L3LH  syp = icp . 47
+
+RSLG  sza = ida . 48
+O3LA  szb = idb .
+O3LG  szc = idc .
+O3LH  szd = idd .
+RSLH  sze = ide .
+R3LA  szf = idf .
+R3LG  szg = idg .
+R3LH  szh = idh . 55
+
+RSLN  szi = idi . 56
+U3LA  szj = idj .
+U3LG  szk = idk .
+U3LH  szl = idl .
+XSLG  szm = idm .
+X3LA  szn = idn .
+X3LG  szo = ido .
+X3LH  szp = idp . 63
+
+VRLN  TFA = QED .                         Enable leading zero
+VRLA  TFB = TFA .
+
+            -- Pop count 3 bit adds
+
+OOQF  UAA = SAA sab sac + saa SAB sac + saa sab SAC + SAA SAB SAC .
+OOQE  uba = SAA sab sac + saa SAB sac + saa sab SAC + saa sab sac .
+FOQF  UBB = SBA sbd sbg + sba SBD sbg + sba sbd SBG + SBA SBD SBG .
+OSQF  UBC = SBB sbe sbh + sbb SBE sbh + sbb sbe SBH + SBB SBE SBH .
+UWQF  UBD = SBC sbf sbi + sbc SBF sbi + sbc sbf SBI + SBC SBF SBI .
+FOQE  uca = SBA sbd sbg + sba SBD sbg + sba sbd SBG + sba sbd sbg .
+OSQE  ucb = SBB sbe sbh + sbb SBE sbh + sbb sbe SBH + sbb sbe sbh .
+UWQE  ucc = SBC sbf sbi + sbc SBF sbi + sbc sbf SBI + sbc sbf sbi .
+LWQF  UCD = SCB sce scg + scb SCE scg + scb sce SCG + SCB SCE SCG .
+USQF  UCE = SCC scf sch + scc SCF sch + scc scf SCH + SCC SCF SCH .
+FPKH  UCF = sca SCD + SCA scd .
+LWQE  uda = SCB sce scg + scb SCE scg + scb sce SCG + scb sce scg .
+USQE  udb = SCC scf sch + scc SCF sch + scc scf SCH + scc scf sch .
+IPAD  UDC = SCA SCD sda + sca SDA + scd SDA .
+FPKF  UEA = SCA SDA SCD .
+OPTH  VAA = UAA .
+ISTB  VBA = UBB sbj sbk + ubb SBJ sbk + ubb sbj SBK + UBB SBJ SBK .
+OWTB  VBB = UBA ubc ubd + uba UBC ubd + uba ubc UBD + UBA UBC UBD .
+ISTM  vca = UBB sbj sbk + ubb SBJ sbk + ubb sbj SBK + ubb sbj sbk .
+OWTM  vcb = UBA ubc ubd + uba UBC ubd + uba ubc UBD + uba ubc ubd .
+FWTB  VCC = UCA ucd ucf + uca UCD ucf + uca ucd UCF + UCA UCD UCF .
+UOTB  VCD = UCB ucc uce + ucb UCC uce + ucb ucc UCE + UCB UCC UCE .
+FWTM  vda = UCA ucd ucf + uca UCD ucf + uca ucd UCF + uca ucd ucf .
+UOTM  vdb = UCB ucc uce + ucb UCC uce + ucb ucc UCE + ucb ucc uce .
+IWTB  VDC = UDA udb udc + uda UDB udc + uda udb UDC + UDA UDB UDC .
+IWTM  vea = UDA udb udc + uda UDB udc + uda udb UDC + uda udb udc .
+IWTH  VEB = UEA .
+
+
+AIXE  vma = SWA + SWB + SWC + SWD .             All zero 0-15
+DIXE  vmb = SWE + SWF + SWG + SWH .
+GIXE  vmc = SWI + SWJ + SWK + SWL .
+JIXE  vmd = SWM + SWN + SWO + SWP .
+
+AMPB  vna = SWB swc + SWD .                   Odd zeros
+DMPB  vnb = SWF swg + SWH .
+GMPB  vnc = SWJ swk + SWL .
+JMPB  vnd = SWN swo + SWP .
+
+AMPD  voa = SWD + SWC .                      Even zeros
+DMPD  vob = SWH + SWG .
+GMPD  voc = SWL + SWK .
+JMPD  vod = SWP + SWO .
+
+MIXE  vpa = SXA + SXB + SXC + SXD .              l6-31
+PIXE  vpb = SXE + SXF + SXG + SXH .
+SIXE  vpc = SXI + SXJ + SXK + SXL .
+VIXE  vpd = SXM + SXN + SXO + SXP .
+
+MMPB  vqa = SXB sxc + SXD .                    Odd zeros
+PMPB  vqb = SXF sxg + SXH .
+SMPB  vqc = SXJ sxk + SXL .
+VMPB  vqd = SXN sxo + SXP .
+
+MMPD  vra = SXD + SXC .                       Even zeros
+PMPD  vrb = SXH + SXG .
+SMPD  vrc = SXL + SXK .
+VMPD  vrd = SXP + SXO .
+
+A1XE  vsa = SYA + SYB + SYC + SYD .              32-47
+D1XE  vsb = SYE + SYF + SYG + SYH .
+G1XE  vsc = SYI + SYJ + SYK + SYL .
+J1XE  vsd = SYM + SYN + SYO + SYP .
+
+A5PB  vta = SYB syc + SYD .                    Odd zeros
+D5PB  vtb = SYF syg + SYH .
+G5PB  vtc = SYJ syk + SYL .
+J5PB  vtd = SYN syo + SYP .
+
+A5PD  vua = SYD + SYC .                          Even zeros
+D5PD  vub = SYH + SYG .
+G5PD  vuc = SYL + SYK .
+J5PD  vud = SYP + SYO .
+
+M1XE  vva = SZA + SZB + SZC + SZD .               48-63
+P1XE  vvb = SZE + SZF + SZG + SZH .
+S1XE  vvc = SZI + SZJ + SZK + SZL .
+V1XE  vvd = SZM + SZN + SZO + SZP .
+
+M5PB  vwa = SZB szc + SZD .                    Odd number of zeros in
+P5PB  vwb = SZF szg + SZH .                    group
+S5PB  vwc = SZJ szk + SZL .
+V5PB  vwd = SZN szo + SZP .            
+
+M5PD  vxa = SZD + SZC .                      Even number of 
+P5PD  vxb = SZH + SZG .                      zeros in group
+S5PD  vxc = SZL + SZK .
+V5PD  vxd = SZP + SZO .
+
+LOQF  WCA = VCA vcb vcc + vca VCB vcc + vca vcb VCC + VCA VCB VCC .
+LOQE  wda = VCA vcb vcc + vca VCB vcc + vca vcb VCC + vca vcb vcc .
+ROQF  WDB = VDA vdb vdc + vda VDB vdc + vda vdb VDC + VDA VDB VDC .
+ROQE  wea = VDA vdb vdc + vda VDB vdc + vda vdb VDC + vda vdb vdc .
+IOKH  WEB = VEA veb + VEB vea .
+
+IOKF  wfa = veb + vea .
+GJII  WMA = VMB VMC VMD .                     Leading zeros
+GJIE  WMB = vmb VMC VMD .                     Bits 4-63
+GJIG  WMC = vmc VMD .
+SJII  WPA = VPB VPC VPD .
+SJIE  WPB = vpb VPC VPD .
+SJIG  WPC = vpc VPD .
+G2II  WSA = VSB VSC VSD .
+G2IE  WSB = vsb VSC VSD .
+G2IG  WSC = vsc VSD .
+S2II  WVA = VVB VVC VVD .
+S2IE  WVB = vvb VVC VVD .
+S2IG  WVC = vvc VVD .
+
+LCPB  XAB = tea + VBB VBA .                   Bits 1-4 Pop Count
+LGPa  XAC = tea + WCA VCD .
+OGPB  XAD = tea + WDB WDA .
+OCPB  XAE = tea + WEB WEA .
+
+LBPB  xba = vaa + tec .                      Bits 1-4 Pop Count
+LCPD  xbb = tea + VBB VBA + vba vbb .
+LGPD  xbc = tea + WCA VCD + vcd wca .                 
+OGPD  xbd = tea + WDB WDA + wda wdb .
+OCPD  xbe = tea + WEB WEA + wea web .
+LBPD  xbf = wfa + tea .
+
+GEXE  XMA = WMA VNA + WMB VNB + WMC VNC + vmd VND .     O-15
+GFXE  XMB = WMA VOA + WMB VOB + WMC VOC + vmd VOD .
+DEPB  xmc = wmc vmb + wmc vmd .
+DEPD  xmd = vmd + vmc .
+DFME  xme = wma + vma .
+
+SEXE  XPA = WPA VQA + WPB VQB + WPC VQC + vpd VQD .     l6-31
+SFXE  XPB = WPA VRA + WPB VRB + WPC VRC + vpd VRD .
+PEPB  xpc = wpc vpb + wpc vpd .
+PEPE  xpd = vpd + vpc .
+PFME  xpe = wpa + vpa .
+
+GUXE  XSA = WSA VTA + WSB VTB + WSC VTC + vsd VTD .     32-47
+GVXE  XSB = WSA VUA + WSB VUB + WSC VUC + vsd VUD .
+DUPB  xsc = wsc vsb + wsc vsd .
+DUPD  xsd = vsd + vsc .
+DVME  xse = wsa + vsa .
+DVMF  xsf = wsa + vsa .
+
+SUXE  XVA = WVA VWA + WVB VWB + WVC VWC + vvd VWD .     48-63
+SVXE  XVB = WVA VXA + WVB VXB + WVC VXC + vvd VXD .
+PUPB  xvc = wvc vvb + wvc vvd .
+PUPD  xvd = vvd + vvc .
+PVME  xve = wva + vva + tfa .
+PVMF  xvf = wva + vva + tfa .
+
+CGKH  YAC = TEB XAB .                        Final carry pop count
+CGXF  YAD = XBC TEB XAB + TEB XAC .
+FGDF  YAE = XAB XBC XBD TEB + XAC XBD TEB + XAD TEB .
+IGDF  YAF = XAB XBC XBD XBE TEB + XAC XBD XBE TEB + XAD XBE TEB + XAE TEB .
+
+DRHG  YMA = XVF XSF XPE xme .                Bits 16-63 zero
+DNII  YMB = XVE XSE xpe .                    Bits 32-63 zero
+DNIE  YMC = XVE xse .                        Bits 48-68 zero
+DNIG  YMD = xve TFB .                        No group l6 bits zero
+DRHH  YME = XVF XSF XPE XME .                All zeros
+
+

@@ -1,0 +1,391 @@
+
+    AAA = IAA TCA .               First Address mul operand
+    AAB = IAB TCA .
+    AAC = IAC TCA .
+    AAD = IAD TCA .
+    AAE = IAE TCA .
+    AAF = IAF TCA .
+    AAG = IAG TCA .
+    AAH = IAH TCA .
+  
+    AAI = IAI TCA .               First Address mul operand
+    AAJ = IAJ TCA .
+    AAK = IAK TCA .
+    AAL = IAL TCA .
+    AAM = IAM TCA .
+    AAN = IAN TCA .
+    AAO = IAO TCA .
+    AAP = IAP TCA .
+  
+    ABA = IBA TCA .               First Address mul operand
+    ABB = IBB TCA .
+    ABC = IBC TCA .
+    ABD = IBD TCA .
+    ABE = IBE TCA .
+    ABF = IBF TCA .
+    ABG = IBG TCA .
+    ABH = IBH TCA .
+  
+    ABI = IBI TCA .               First Address mul operand
+    ABJ = IBJ TCA .
+    ABK = IBK TCA .
+    ABL = IBL TCA .
+    ABM = IBM TCA .
+    ABN = IBN TCA .
+    ABO = IBO TCA .
+    ABP = IBP TCA .
+
+    BAA = IAA TCA .               Second Address mul operand
+    BAB = IAB TCA .
+    BAC = IAC TCA .
+    BAD = IAD TCA .
+    BAE = IAE TCA .
+    BAF = IAF TCA .
+    BAG = IAG TCA .
+    BAH = IAH TCA .
+  
+    BAI = IAI TCA .                Second Address mul operand
+    BAJ = IAJ TCA .
+    BAK = IAK TCA .
+    BAL = IAL TCA .
+    BAM = IAM TCA .
+    BAN = IAN TCA .
+    BAO = IAO TCA .
+    BAP = IAP TCA .
+  
+    BBA = IBA TCA .               Second Address mul operand
+    BBB = IBB TCA .
+    BBC = IBC TCA .
+    BBD = IBD TCA .
+    BBE = IBE TCA .
+    BBF = IBF TCA .
+    BBG = IBG TCA .
+    BBH = IBH TCA .
+  
+    BBI = IBI TCA .               Second Address mul operand
+    BBJ = IBJ TCA .
+    BBK = IBK TCA .
+    BBL = IBL TCA .
+    BBM = IBM TCA .
+    BBN = IBN TCA .
+    BBO = IBO TCA .
+    BBP = IBP TCA .
+  
+    OAA = TAA ICA + taa VAA + taa WAA .     P Register or Adress Mul Res 
+    OAB = TAA ICB + taa VAB + taa WAB .
+    OAC = TAA ICC + taa VAC + taa WAC .
+    OAD = TAA ICD + taa VAD + taa WAD .
+    OAE = TAA ICE + taa VAE + taa WAE .
+    OAF = TAA ICF + taa VAF + taa WAF .
+    OAG = TAA ICG + taa VAG + taa WAG .
+    OAH = TAA ICH + taa VAH + taa WAH .
+
+    OAI = TAA ICI + taa VAI + taa WAI .     P Register or Adress Mul Res 
+    OAJ = TAA ICJ + taa VAJ + taa WAJ .
+    OAK = TAA ICK + taa VAK + taa WAK .
+    OAL = TAA ICL + taa VAL + taa WAL .
+    OAM = TAA ICM + taa VAM + taa WAM .
+    OAN = TAA ICN + taa VAN + taa WAN .
+    OAO = TAA ICO + taa VAO + taa WAO .
+    OAP = TAA ICP + taa VAP + taa WAP .
+
+    OBA = TAA IDA + taa VBA + taa WBA .     P Register or Adress Mul Res 
+    OBB = TAA IDB + taa VBB + taa WBB .
+    OBC = TAA IDC + taa VBC + taa WBC .
+    OBD = TAA IDD + taa VBD + taa WBD .
+    OBE = TAA IDE + taa VBE + taa WBE .
+    OBF = TAA IDF + taa VBF + taa WBF .
+    OBG = TAA IDG + taa VBG + taa WBG .
+    OBH = TAA IDH + taa VBH + taa WBH .
+
+    OBI = TAA IDI + taa VBI + taa WBI .     P Register or Adress Mul Res 
+    OBJ = TAA IDJ + taa VBJ + taa WBJ .
+    OBK = TAA IDK + taa VBK + taa WBK .
+    OBL = TAA IDL + taa VBL + taa WBL .
+    OBM = TAA IDM + taa VBM + taa WBM .
+    OBN = TAA IDN + taa VBN + taa WBN .
+    OBO = TAA IDO + taa VBO + taa WBO .
+    OBP = TAA IDP + taa VBP + taa WBP  .
+
+ --  Vector Length Fanout to IB, JB, JC1, JC2
+
+   OEA = IEA .
+   OEB = IEB .
+   OEC = IEC .
+   OED = IED .
+   OEE = IEE .
+   OEF = IEF .
+
+   OFA = IEA .
+   OFB = IEB .
+   OFC = IEC .
+   OFD = IED .
+   OFE = IEE .
+   OFF = IEF .
+
+   OGA = IEA .
+   OGB = IEB .
+   OGC = IEC .
+   OGD = IED .
+   OGE = IEE .
+   OGF = IEF .
+
+   OHA = IEA .
+   OHB = IEB .
+   OHC = IEC .
+   OHD = IED .
+   OHE = IEE .
+   OHF = IEF .
+  
+
+  -- JA SReg Entry Code to VR's fanout on AM
+
+CDL OLA = ITA .
+FDL OLB = ITB .
+IDL OLC = ITC .
+LDL OLD = ITD .
+ODL OLE = ITE .
+RDL OLF = ITF .
+
+CDL OMA = ITA .
+FDL OMB = ITB .
+IDL OMC = ITC .
+LDL OMD = ITD .
+ODL OME = ITE .
+RDL OMF = ITF .
+
+CDL ONA = ITA .
+FDL ONB = ITB .
+IDL ONC = ITC .
+LDL OND = ITD .
+ODL ONE = ITE .
+RDL ONF = ITF .
+
+CDL OOA = ITA .
+FDL OOB = ITB .
+IDL OOC = ITC .
+LDL OOD = ITD .
+ODL OOE = ITE .
+RDL OOF = ITF .
+
+CHL OPA = ITA .
+FHL OPB = ITB .
+IHL OPC = ITC .
+LHL OPD = ITD .
+OHL OPE = ITE .
+RHL OPF = ITF .
+
+CHL OQA = ITA .
+FHL OQB = ITB .
+IHL OQC = ITC .
+LHL OQD = ITD .
+OHL OQE = ITE .
+RHL OQF = ITF .
+
+CHL ORA = ITA .
+FHL ORB = ITB .
+IHL ORC = ITC .
+LHL ORD = ITD .
+OHL ORE = ITE .
+RHL ORF = ITF .
+
+CHL OSA = ITA .
+FHL OSB = ITB .
+IHL OSC = ITC .
+LHL OSD = ITD .
+OHL OSE = ITE .
+RHL OSF = ITF .
+
+   -- Ja VR code to VR via AM
+
+CLL OTA = ISA .
+FLL OTB = ISB .
+ILL OTC = ISC .
+LLL OTD = ISD .
+OLL OTE = ISE .
+RLL OTF = ISF .
+
+CLL OUA = ISA .
+FLL OUB = ISB .
+ILL OUC = ISC .
+LLL OUD = ISD .
+OLL OUE = ISE .
+RLL OUF = ISF .
+
+CLL OVA = ISA .
+FLL OVB = ISB .
+ILL OVC = ISC .
+LLL OVD = ISD .
+OLL OVE = ISE .
+RLL OVF = ISF .
+
+CLL OWA = ISA .
+FLL OWB = ISB .
+ILL OWC = ISC .
+LLL OWD = ISD .
+OLL OWE = ISE .
+RLL OWF = ISF .
+
+CPL OXA = ISA .
+FPL OXB = ISB .
+IPL OXC = ISC .
+LPL OXD = ISD .
+OPL OXE = ISE .
+RPL OXF = ISF .
+
+CPL OYA = ISA .
+FPL OYB = ISB .
+IPL OYC = ISC .
+LPL OYD = ISD .
+OPL OYE = ISE .
+RPL OYF = ISF .
+
+CPL OZA = ISA .
+FPL OZB = ISB .
+IPL OZC = ISC .
+LPL OZD = ISD .
+OPL OZE = ISE .
+RPL OZF = ISF .
+
+CPL OZG = ISA .
+FPL OZH = ISB .
+IPL OZI = ISC .
+LPL OZJ = ISD .
+OPL OZK = ISE .
+RPL OZL = ISF .
+
+ -- Vector register dest code  fanout from JA to VR's
+
+CUL OIA = IGA .
+FUL OIB = IGB .
+IUL OIC = IGC .
+LUL OID = IGD .
+OUL OIE = IGE .
+RUL OIF = IGF .
+
+CUL OJA = IGA .
+FUL OJB = IGB .
+IUL OJC = IGC .
+LUL OJD = IGD .
+OUL OJE = IGE .
+RUL OJF = IGF .
+
+CUL OKA = IGA .
+FUL OKB = IGB .
+IUL OKC = IGC .
+LUL OKD = IGD .
+OUL OKE = IGE .
+RUL OKF = IGF .
+
+CUL OLA = IGA .
+FUL OLB = IGB .
+IUL OLC = IGC .
+LUL OLD = IGD .
+OUL OLE = IGE .
+RUL OLF = IGF .
+
+CVL OMA = IGA .
+FVL OMB = IGB .
+IVL OMC = IGC .
+LVL OMD = IGD .
+OVL OME = IGE .
+RVL OMF = IGF .
+
+CVL ONA = IGA .
+FVL ONB = IGB .
+IVL ONC = IGC .
+LVL OND = IGD .
+OVL ONE = IGE .
+RVL ONF = IGF .
+
+CVL OOA = IGA .
+FVL OOB = IGB .
+IVL OOC = IGC .
+LVL OOD = IGD .
+OVL OOE = IGE .
+RVL OOF = IGF .
+
+CVL OPA = IGA .
+FVL OPB = IGB .
+IVL OPC = IGC .
+LVL OPD = IGD .
+OVL OPE = IGE .
+RVL OPF = IGF .
+
+ -- Vector register src code  fanout from JA to VR's
+
+CUL OII = IGA .
+FUL OIJ = IGB .
+IUL OIK = IGC .
+LUL OIL = IGD .
+OUL OIM = IGE .
+RUL OIN = IGF .
+UUL OIO = IGG .
+
+CUL OJI = IGA .
+FUL OJJ = IGB .
+IUL OJK = IGC .
+LUL OJL = IGD .
+OUL OJM = IGE .
+RUL OJN = IGF .
+UUL OJO = IGG .
+
+CUL OKI = IGA .
+FUL OKJ = IGB .
+IUL OKK = IGC .
+LUL OKL = IGD .
+OUL OKM = IGE .
+RUL OKN = IGF .
+UUL OKO = IGG .
+
+CUL OLI = IGA .
+FUL OLJ = IGB .
+IUL OLK = IGC .
+LUL OLL = IGD .
+OUL OLM = IGE .
+RUL OLN = IGF .
+UUL OLO = IGG .
+
+CVL OMI = IGA .
+FVL OMJ = IGB .
+IVL OMK = IGC .
+LVL OML = IGD .
+OVL OMM = IGE .
+RVL OMN = IGF .
+UVL OMO = IGG .
+
+CVL ONI = IGA .
+FVL ONJ = IGB .
+IVL ONK = IGC .
+LVL ONL = IGD .
+OVL ONM = IGE .
+RVL ONN = IGF .
+UVL ONO = IGG .
+
+CVL OOI = IGA .
+FVL OOJ = IGB .
+IVL OOK = IGC .
+LVL OOL = IGD .
+OVL OOM = IGE .
+RVL OON = IGF .
+UVL OOO = IGG .
+
+CVL OPI = IGA .
+FVL OPJ = IGB .
+IVL OPK = IGC .
+LVL OPL = IGD .
+OVL OPM = IGE .
+RVL OPN = IGF .
+UVL OPO = IGG .
+
+B1L QAA = IHA .     Go Address Multiply
+    QAB = QAA .
+    QAC = QAB .
+    QAD = QAC .
+    QAE = QAD .
+    QAF = QAE .
+    QAG = QAF .
+    QAH = QAG .
+    QAI = QAH .
+    QAJ = QAI .
+    QAK = QAJ .

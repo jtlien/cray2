@@ -1,0 +1,1468 @@
+
+           AR DATA   EA DATA   Instr     Hold or
+                               Const     Next Field DS
+
+CCX  AAA = IAA TAA + DAA TBA + IEA TCA + WAA TDA + TMA .   Parcel Exchange Reg
+FCX  AAB = IAB TAA + DAB TBA + IEB TCA + WAB TDA + TMA .   2^29 - 2^0,2^(-1),
+ICX  AAC = IAC TAA + DAC TBA + IEC TCA + WAC TDA + TMA .   2^(-2)
+LCX  AAD = IAD TAA + DAD TBA + IED TCA + WAD TDA + TMA .
+
+OCX  AAE = IAE TAE + DAE TBE + IEE TCE + WAE TDE + TMA .
+RCX  AAF = IAF TAE + DAF TBE + IEF TCE + WAF TDE + TMA .
+UCX  AAG = IAG TAE + DAG TBE + IEG TCE + WAG TDE + TMA .
+XCX  AAH = IAH TAE + DAH TBE + IEH TCE + WAH TDE + TMA .
+
+CGX  AAI = IAI TAB + DAI TBB + IEI TCB + WAI TDA + TMB .
+FGX  AAJ = IAJ TAB + DAJ TBB + IEJ TCB + WAJ TDA + TMB .
+IGX  AAK = IAK TAB + DAK TBB + IEK TCB + WAK TDA + TMB .
+LGX  AAL = IAL TAB + DAL TBB + IEL TCB + WAL TDA + TMB .
+
+OGX  AAM = IAM TAF + DAM TBF + IEM TCF + WAM TDF + TMB .
+RGX  AAN = IAF TAF + DAN TBF + IEN TCF + WAN TDF + TMB .
+UGX  AAO = IAG TAF + DAO TBF + IEO TCF + WAO TDF + TMB .
+XGX  AAP = IAH TAF + DAP TBF + IEP TCF + WAP TDF + TMB .
+
+
+CKX  ABA = IBA TAC + DBA TBC + EAA TCC + WBA TDC + TMC .
+FKX  ABB = IBB TAC + DBB TBC + EAB TCC + WBB TDC + TMC .
+IKX  ABC = IBC TAC + DBC TBC + EAC TCC + WBC TDC + TMC .
+LKX  ABD = IBD TAC + DBD TBC + EAD TCC + WBD TDC + TMC .
+		      
+OKX  ABE = IBE TAG + DBE TBG + EAE TCG + WBE TDG + TMC .
+RKX  ABF = IBF TAG + DBF TBG + EAF TCG + WBF TDG + TMC .
+UKX  ABG = IBG TAG + DBG TBG + EAG TCG + WBG TDG + TMC .
+XKX  ABH = IBH TAG + DBH TBG + EAH TCG + WBH TDG + TMC .
+		      
+COX  ABI = IBI TAD + DBI TBD + ECI TCD + WBI TDD + TMD .
+FOX  ABJ = IBJ TAD + DBJ TBD + ECJ TCD + WBJ TDD + TMD .
+IOX  ABK = IBK TAD + DBK TBD + ECK TCD + WBK TDD + TMD .
+LOX  ABL = IBL TAD + DBL TBD + ECL TCD + WBL TDD + TMD .
+		      
+OOX  ABM = IBM TAH + DBM TBH + ECM TCH + WBM TDH + TMD .
+ROX  ABN = IBF TAH + DBN TBH + ECN TCH + WBN TDH + TMD .
+UOX  ABO = IBG TAH + DBO TBH + ECO TCH + WBO TDH + TMD .
+XOX  ABP = IBH TAH + DBP TBH + ECP TCH + WBP TDH + TMD .
+	    
+           Hold or +1  Hold or +1   Branch Sequence
+
+SCM  BAG = BAG jdg tfa + bag JDG + AAG TFA .
+VCM  BAH = BAH jdh tfa + bah JDH + AAH TFA .
+AGM  BAI = BAI jdi tfb + bai JDI + AAI TFB .
+DGM  BAJ = BAJ jdj tfb + baj JDJ + AAJ TFB .
+GGM  BAK = BAK jdk tfb + bak JDK + AAK TFB .
+JGM  BAL = BAL jdl tfb + bal JDL + AAL TFB .
+MGM  BAM = BAM jdm tfb + bam JDM + AAM TFB .
+PGM  BAN = BAN jdn tfb + ban JDN + AAN TFB .
+SGM  BAO = BAO jdo tfb + bao JDO + AAO TFB .
+VGM  BAP = BAP jdp tfb + bap JDP + AAP TFB .
+
+AKM  BBA = BBA jea tfc + bba JEA + ABA TFC .
+DKM  BBB = BBB jeb tfc + bbb JEB + ABB TFC .
+GKM  BBC = BBC jec tfc + bbc JEC + ABC TFC .
+JKM  BBD = BBD jed tfc + bbd JED + ABD TFC .
+MKM  BBE = BBE jee tfc + bbe JEE + ABE TFC .
+PKM  BBF = BBF jef tfc + bbf JEF + ABF TFC .
+SKM  BBG = BBG jeg tfc + bbg JEG + ABG TFC .
+VKM  BBH = BBH jeh tfc + bbh JEH + ABH TFC .
+
+AOM  BBI = BBI jei tfd + bbi JEI + ABI TFD .
+DOM  BBJ = BBJ jej tfd + bbj JEJ + ABJ TFD .
+GOM  BBK = BBK jek tfd + bbk JEK + ABK TFD .
+JOM  BBL = BBL jel tfd + bbl JEL + ABL TFD .
+MOM  BBM = BBM jem tfd + bbm JEM + ABM TFD .
+POM  BBN = BBN jen tfd + bbn JEN + ABN TFD .
+SOM  BBO = BBO jeo tfd + bbo JEO + ABO TFD .
+VOM  BBP = BBP jep tfd + bbp JEP + ABP TFD .
+
+
+SCM  BCG = BAG jdg tfa + bag JDG + AAG TFA .       Copy 1
+VCM  BCH = BAH jdh tfa + bah JDH + AAH TFA .
+AGM  BCI = BAI jdi tfb + bai JDI + AAI TFB .
+DGM  BCJ = BAJ jdj tfb + baj JDJ + AAJ TFB .
+GGM  BCK = BAK jdk tfb + bak JDK + AAK TFB .
+JGM  BCL = BAL jdl tfb + bal JDL + AAL TFB .
+MGM  BCM = BAM jdm tfb + bam JDM + AAM TFB .
+PGM  BCN = BAN jdn tfb + ban JDN + AAN TFB .
+SGM  BCO = BAO jdo tfb + bao JDO + AAO TFB .
+VGM  BCP = BAP jdp tfb + bap JDP + AAP TFB .
+
+AKM  BDA = BBA jea tfc + bba JEA + ABA TFC .
+DKM  BDB = BBB jeb tfc + bbb JEB + ABB TFC .
+GKM  BDC = BBC jec tfc + bbc JEC + ABC TFC .
+JKM  BDD = BBD jed tfc + bbd JED + ABD TFC .
+MKM  BDE = BBE jee tfc + bbe JEE + ABE TFC .
+PKM  BDF = BBF jef tfc + bbf JEF + ABF TFC .
+SKM  BDG = BBG jeg tfc + bbg JEG + ABG TFC .
+VKM  BDH = BBH jeh tfc + bbh JEH + ABH TFC .
+
+AOM  BDI = BBI jei tfd + bbi JEI + ABI TFD .          
+DOM  BDJ = BBJ jej tfd + bbj JEJ + ABJ TFD .
+GOM  BDK = BBK jek tfd + bbk JEK + ABK TFD .
+JOM  BDL = BBL jel tfd + bbl JEL + ABL TFD .
+MOM  BDM = BBM jem tfd + bbm JEM + ABM TFD .
+POM  BDN = BBN jen tfd + bbn JEN + ABN TFD .
+SOM  BDO = BBO jeo tfd + bbo JEO + ABO TFD .
+VOM  BDP = BBP jep tfd + bbp JEP + ABP TFD .
+
+
+SCM  BEG = BAG jdg tfa + bag JDG + AAG TFA .          Copy 2
+VCM  BEH = BAH jdh tfa + bah JDH + AAH TFA .
+AGM  BEI = BAI jdi tfb + bai JDI + AAI TFB .
+DGM  BEJ = BAJ jdj tfb + baj JDJ + AAJ TFB .
+GGM  BEK = BAK jdk tfb + bak JDK + AAK TFB .
+JGM  BEL = BAL jdl tfb + bal JDL + AAL TFB .
+MGM  BEM = BAM jdm tfb + bam JDM + AAM TFB .
+PGM  BEN = BAN jdn tfb + ban JDN + AAN TFB .
+SGM  BEO = BAO jdo tfb + bao JDO + AAO TFB .
+VGM  BEP = BAP jdp tfb + bap JDP + AAP TFB .
+
+AKM  BFA = BBA jea tfc + bba JEA + ABA TFC .
+DKM  BFB = BBB jeb tfc + bbb JEB + ABB TFC .
+GKM  BFC = BBC jec tfc + bbc JEC + ABC TFC .
+JKM  BFD = BBD jed tfc + bbd JED + ABD TFC .
+MKM  BFE = BBE jee tfc + bbe JEE + ABE TFC .
+PKM  BFF = BBF jef tfc + bbf JEF + ABF TFC .
+SKM  BFG = BBG jeg tfc + bbg JEG + ABG TFC .
+VKM  BFH = BBH jeh tfc + bbh JEH + ABH TFC .
+
+AOM  BFI = BBI jei tfd + bbi JEI + ABI TFD .
+DOM  BFJ = BBJ jej tfd + bbj JEJ + ABJ TFD .
+GOM  BFK = BBK jek tfd + bbk JEK + ABK TFD .
+JOM  BFL = BBL jel tfd + bbl JEL + ABL TFD .
+MOM  BFM = BBM jem tfd + bbm JEM + ABM TFD .
+POM  BFN = BBN jen tfd + bbn JEN + ABN TFD .
+SOM  BFO = BBO jeo tfd + bbo JEO + ABO TFD .
+VOM  BFP = BBP jep tfd + bbp JEP + ABP TFD .
+
+F4L  CAA = ILA .                    Semaphore pointers from EA
+F4L  CAB = ILB .
+F4L  CAC = ILC .
+
+CFL  DAA = ICA .                   External Data from EA
+FFL  DAB = ICB .
+IFL  DAC = ICC .
+LFL  DAD = ICD .
+OFL  DAE = ICE .
+RFL  DAF = ICF .
+UFL  DAG = ICG .
+XFL  DAH = ICH .
+
+CFL  DAI = ICI .           
+FFL  DAJ = ICJ .
+IFL  DAK = ICK .
+LFL  DAL = ICL .
+OFL  DAM = ICM .
+RFL  DAN = ICN .
+UFL  DAO = ICO .
+XFL  DAP = ICP .
+
+CJL  DBA = IDA .                   External Data from EA
+FJL  DBB = IDB .
+IJL  DBC = IDC .
+LJL  DBD = IDD .
+OJL  DBE = IDE .
+RJL  DBF = IDF .
+UJL  DBG = IDG .
+XJL  DBH = IDH .
+
+CJL  DBI = IDI .           
+FJL  DBJ = IDJ .
+IJL  DBK = IDK .
+LJL  DBL = IDL .
+OJL  DBM = IDM .
+RJL  DBN = IDN .
+UJL  DBO = IDO .
+XJL  DBP = IDP .
+
+          Rank E data, instruction Data from JA
+
+CAM  eaa = iea .                                 k0
+FAM  eab = ieb .                                 k1
+IAM  eac = iec .                                 k2
+
+LAM  ead = ied .                                 j0
+OAM  eae = iee .                                 j1
+RAM  eaf = ief .                                 j2
+
+UAM  eag = ieg .                                 i0
+XAM  eah = ieh .                                 i1
+CEM  eai = iei .                                 i2
+
+FEM  eaj = iej .                                 f0
+IEM  eak = iek .                                 f1
+LEM  eal = iel .                                 f2
+OEM  eam = iem .                                 f3
+REM  ean = ien .                                 f4
+UEM  eao = ieo .                                 f5
+XEM  eap = iep .                                 f6
+
+FEM  ebj = iej .                                 f0
+IEM  ebk = iek .                                 f1
+LEM  ebl = iel .                                 f2
+XEM  ebp = iep .                                 f6
+
+CEM  eci = iei .                                 i2
+
+FEM  ecj = iej .                                 f0
+IEM  eck = iek .                                 f1
+LEM  ecl = iel .                                 f2
+OEM  ecm = iem .                                 f3
+REM  ecn = ien .                                 f4
+UEM  eco = ieo .                                 f5
+XEM  ecp = iep .                                 f6
+
+CFL  EDA = EAA .                                Rank E data delayed
+FFL  EDB = EAB .
+IFL  EDC = EAC .      
+LFL  EDD = EAD .
+OFL  EDE = EAE .                             
+RFL  EDF = EAF .
+UFL  EDG = EAG .      
+XFL  EDH = EAH .
+
+CFL  EDI = EAI .                                
+FFL  EDJ = EAJ .
+IFL  EDK = EAK .      
+LFL  EDL = EAL .
+OFL  EDM = EAM .                             
+RFL  EDN = EAN .
+UFL  EDO = EAO .      
+XFL  EDP = EAP .
+
+   Rank F translations
+
+BDH  FAA = ebp eao ean eam .                              00x
+EDH  FAB = ebp eao ean EAM .                              01x
+HDH  FAC = ebp eao ean .                                  00-17
+KDH  FAD = ebp eao ean eam .                              00X
+NDH  FAE = eap EAO ean eam .                              04X
+OOH  FAF = eap EAO ean EAM .                              05X
+TDH  FAG = eap EAO EAN eam .                              06X
+WDH  FAH = eap EAO EAN EAM .                              07X
+
+BDH  FAI = eal eak eaj .                                  XX0
+EDH  FAJ = eal eak EAJ .                                  XX1
+HDH  FAK = eal EAK eaj .                                  XX2
+KDH  FAL = eal EAK EAJ .                                  XX3
+WDH  FAP = EAL EAK EAJ .                                  XX7
+
+BHH  FBA = ebl ebk .                                      XX0,XX1
+EHH  FBB = ebl EBK .                                      XX2,XX3
+HHH  FBC = EBL ebk .                                      XX4,XX5
+KHH  FBD = EBL EBK .                                      XX6,XX7
+NHH  FBE = EBL .                                          XX4,XX7
+THH  FBF = EBJ .                                          XX1,XX2,XX5,XX7
+WHH  FBH = EBK .                                          XX2,XX3,XX6,XX7
+
+          Rank G data
+
+BCP  gaa = fbg TGA + gaa tga .                      xx1,xx3,xx5,xx7
+ECP  gab = fbh TGA + gab tga .                      xx2,xx3,xx6,xx7
+HCP  gac = fac TGA + gac tga .                      00-17
+KCP  gad = fad TGA + gad tga .                      00x
+NCP  gae = FAB TGA + GAE tga .                      01X
+QCP  gaf = fag TGA + gaf tga .                      06x
+TCP  gag = eag TGA + gag tga .                      i0
+WCP  gah = eah TGA + gah tga .                      i1
+BCP  gai = eai TGA + gai tga .                      i2
+KCP  gal = fad TGA + gal tga + fap TGB .            007
+NCP  gam = fad TGA + gam tga + FBE TGB .            00-03
+OCP  gan = fad TGA + gan tga + fbe TGB .            04-07
+TCP  gao = fab TGA + gao tga + FBE TGB .            10-13
+WCP  gap = fab TGA + gap tga + fbe TGB .            14-17
+BGP  gba = faa TGC + fak TGD + gba tgc .            02
+HGP  gbc = faa TGC + fal TGD + gbc tgc .            03
+KGP  gbd = faa TGC + fbc TGD + gbd tgc .            04-05
+NGP  gbe = fae TGC + fbb TGD + gbe tgc .            42-43
+OGP  gbf = faf TGC + FBE TGD + gbf tgc .            50-53
+TGP  gbg = fag TGC + fbe TGD + gbg tgc .            64-67
+WGP  gbh = fae TGC + fba TGD + gbh tgc .            40-41
+BGP  gbi = fae TGC + fbc TGD + gbi tgc .            44-45
+EGP  gbj = faf TGC + fbc TGD + gbj tgc .            54-55
+HGP  gbk = faf TGC + fal TGD + gbk tgc .            53
+NGP  gbm = fah TGC + fai TGD + gbm tgc .            70
+OGP  gbn = fah TGC + faj TGD + gbn tgc .            71
+TGP  gbo = fah TGC + fak TGD + gbo tgc .            72
+WGP  gbp = fah TGC + fal TGD + gbp tgc .            73
+BKP  gca = fag TGE + fba TGF + gca tge .            60,61
+EKP  gcb = fag TGE + fbb TGF + gcb tge .            62,63
+HKP  gcc = fag TGE + fbc TGF + gcc tge .            64,65
+KKP  gcd = fag TGE + fbd TGF + gcd tge .            66,67
+WKP  gch = faa TGE + fba TGF + gch tge .            00,01
+BKP  gci = eaa TGE + gci tge .                      k0
+EKP  gcj = eab TGE + gcj tge .                      k1
+HKP  gck = eac TGE + gck tge .                      k2
+KKP  gcl = ead TGE + gcl tge .                      j0
+NKP  gcm = eae TGE + gcm tge .                      j1
+QKP  gcn = eaf TGE + gcn tge .                      j2
+
+        CP 2
+
+BMP  haa = GAB + GAA .                              xx0,xx4
+BMP  hab = GAB + gaa .                              xx1,xx5
+BNP  hac = gab + GAA .                              xx2,xx6
+BNP  had = gab + gaa .                              xx3,xx7
+BLP  hae = gam + gad .                              00-03
+BLP  haf = gan + gad .                              04-07
+ELP  hag = gao + gad .                              10-13
+ELP  hah = gap + gad .                              14-17
+
+        CP 3
+
+AQL  hba = haa .                                    xx0,xx4
+ARL  hbb = hab .                                    xx1,xx5
+ASL  hbc = hac .                                    xx2,xx6
+ATL  hbd = had .                                    xx3,xx7
+AUL  hbe = hae .                                    00-03
+AVL  hbf = haf .                                    04-07
+AWL  hbg = hag .                                    10-13
+AXL  hbh = hah .                                    14-17
+
+        CP 4
+
+AQL  hca = hba .                                    xx0,xx4
+ARL  hcb = hbb .                                    xx1,xx5
+ASL  hcc = hbc .                                    xx2,xx6
+ATL  hcd = hbd .                                    xx3,xx7
+AUL  hce = hbe .                                    00-03
+AVL  hcf = hbf .                                    04-07
+AWL  hcg = hbg .                                    10-13
+AXL  hch = hbh .                                    14-17
+
+        CP 5
+
+AQL  hda = hca .                                    xx0,xx4
+ARL  hdb = hcb .                                    xx1,xx5
+ASL  hdc = hcc .                                    xx2,xx6
+ATL  hdd = hcd .                                    xx3,xx7
+AUL  hde = hce .                                    00-03
+AVL  hdf = hcf .                                    04-07
+AWL  hdg = hcg .                                    10-13
+AXL  hdh = hch .                                    14-17
+
+        CP 6
+
+AQL  hea = hda .                                    xx0,xx4
+ARL  heb = hdb .                                    xx1,xx5
+ASL  hec = hdc .                                    xx2,xx6
+ATL  hed = hdd .                                    xx3,xx7
+AUL  hee = hde .                                    00-03
+AVL  hef = hdf .                                    04-07
+AWL  heg = hdg .                                    10-13
+AXL  heh = hdh .                                    14-17
+
+        CP 7
+
+A1L  hfa = hea .                                    xx0,xx4
+A2L  hfb = heb .                                    xx1,xx5
+A3L  hfc = hec .                                    xx2,xx6
+A4L  hfd = hed .                                    xx3,xx7
+A4L  hfh = heh .                                    14-17
+
+        CP 6
+
+BUJ  JAD = HED HEE .                                 instr 03
+BUJ  JAE = HEA HEF .                                 instr 04
+BUJ  JAF = HEB HEF .                                 instr 05
+B1J  JAI = HEA HEG .                                 instr 10
+B1J  JAJ = HEB HEG .                                 instr 11
+B1J  JAK = HEC HEG .                                 instr 12
+B1J  JAL = HED HEG .                                 instr 13
+
+       CP  7
+
+B5J  JAM = HFA HFH .                                instr 14
+B5J  JAN = HFB HFH .                                instr 15
+B5J  JAO = HFC HFH .                                instr 16
+B5J  JAP = HFD HFH .                                instr 17
+
+       CP  5
+
+A8J  jaq = hdf qtm .                                (04-07) or dead start
+
+       CP  6
+
+A8J  jar = hef qtm .                                (04-07) or dead start
+
+FWI  jba = qga qgb . 
+
+EXB  JBB = qkf QKG + QKF QKH + QKI + RJI .   04,05,03,10-13,02 or Restart
+
+F3U  JBC = RGA cab caa + RGB cab CAA + RGC CAB caa + RGD CAB CAA ; cac .
+F3U  JBD = RGA cab caa + RGB cab CAA + RGC CAB caa + RGD CAB CAA ; CAC .
+
+BSI  JBE = HAF hac had .              Instr 04,05 
+
+OVH  jca = raa rab rac rad rae raf .   Branch or const seq in progress
+
+OTH  jcb = rba rbb rbc rbd rbe rbf .   Bound seq in progress
+
+O1I  jcc = rag rbg .                   Last clock period of branch to
+
+ORH  jcd = rja rjb rjc raa rab .       Return jump or branch const
+
+OVH  jce = raa rja .        Clock period 1 of branch to const or return jump
+
+QXH  jcf = reb qqa qqc qka qta qtx .   Branch on fetch, interrupt or idle
+
+Q4I  JCG = RAG qkj .                   Branch condition not met
+
+TXH  jch = qqa qqb qqn qta qtx .       Fetch, abort fetch, interrupt or idle
+
+      CP 1
+
+TNH  JCI = GAN gal .                    instr 04,06
+TNH  jcj = gbm gbo .                    instr 70,72
+WNH  jck = gbm qbn qbp .                instr 70,71,73
+WNH  jcl = gbm gbn gbo gbp .            instr 70-73
+
+N4I  JCM = RAG qkg .                    Branch cond not met
+
+H4I  JCN = RAG QKJ .                    Go Branch
+K4I  JCO = RAG QKJ .                    (CP 8 Branch condition satisfied)
+N4I  JCP = RAG QKJ .         
+Q4I  JCQ = RAG QKJ .
+
+OII  JCR = RQB .                        Fetch Sequence
+QWJ  JCS = RQC .        
+
+BWI  JCT = QTP .                        Dead Start used for 002 instruction
+
+        Advance field address
+
+SLH  JDA = BEG BEH QWB .                 0,1
+ALH  JDB = BEI BEJ BEK BEL .             2,3,4,5
+VLH  JDC = BEM BEN BEO BEP .             6,7,8,9
+ALH  JDD = BFA BFB BFC BFD .             10,11,12,13
+VLH  JDE = BFE BFF BFG BFH .             14,15,16,17
+DLH  JDF = BFI BFJ BFK BFL .             18,19,20,21
+
+SDH  JDG = QWC .                         Toggle bit 0 next field address
+VDH  JDH = QWC BCG .                     1
+
+ADH  JDI = QWD .                         2
+DDH  JDJ = QWD BCI .                     3
+GDH  JDK = QWD BCI BCJ .                 4
+JDH  JDL = QWD BCI BCJ BCK .             5
+
+MDH  JDM = QWE .                         6
+PDH  JDN = QWE BCM .                     7
+SDH  JDO = QWE BCM BCN .                 8
+VDH  JDP = QWE BCM BCN BCO .             9
+
+APH  JEA = QWF .                         10
+DPH  JEB = QWF BDA .                     11
+GPH  JEC = QWF BDA BDB .                 12
+JPH  JED = QWF BDA BDB BDC .             13
+
+MPH  JEE = QWG .                         14
+PPH  JEF = QWG BDE .                     15
+SPH  JEG = QWG BDE BDF .                 16
+VPH  JEH = QWG BDE BDF BDG .             17
+
+APH  JEI = QWH .                         18
+DPH  JEJ = QWH BDI .                     19
+GPH  JEK = QWH BDI BDJ .                 20
+JPH  JEL = QWH BDI BDJ BDK .             21
+
+MPH  JEM = QWH QWI .                     22
+PPH  JEN = QWH QWI BDM .                 23
+SPH  JEO = QWH QWI BDM BDN .             24
+WMH  JEP = QWH QWI BDM BDN BDO .         25
+
+AJH  JFA = PEB PEC PED .              Bits 1,2,3 of program address cntr set
+
+SJH  JFB = PEE PEF PEG PEH .             4-7
+AJH  JFC = PEI PEJ PEK PEL .             8-11
+SJH  JFD = PEM PEN PEO PEP .             12-15
+DJH  JFE = PFA PFB PFC PFD .             16-19
+VJH  JFF = PFE PFF PFG PFH .             20-23
+DJH  JFG = PFI PFJ PFK PFL .             24-27
+
+ONH  jfh = qbm qbn .                     instr 70,71
+BEH  jfi = qbn qbi qbj .                 2 Parcel format
+BEH  jfj = gbc gbd gbe gbf gbg gae .     3 or 5 Parcel format
+
+ABH  JGA = QVA .                         Toggle bit 0 of program address
+DBH  JGB = QVB .                                    1
+GBH  JGC = QVB PCB .                                2
+JBH  JGD = QVB PCB PCC .                            3
+
+MBH  JGE = QVC .                         Toggle bit 4 of program address
+PBH  JGF = QVC PCE .                                5
+SBH  JGG = QVC PCE PCF .                            6
+VBH  JGH = QVC PCE PCF PCG .                        7
+
+ABH  JGI = QVD .                         Toggle bit 8 of program address
+DBH  JGJ = QVD PCI .                                9
+GBH  JGK = QVD PCI PCJ .                            10
+JBH  JGL = QVD PCI PCJ PCK .                        11
+
+MBH  JGM = QVE .                         Toggle bit 12 of program address
+PBH  JGN = QVE PCM .                                13
+SBH  JGO = QVE PCM PCN .                            14
+VBH  JGP = QVE PCM PCN PCO .                        15
+
+ANH  JHA = QVF .                         Toggle bit 16 of program address
+DNH  JHB = QVF PDA .                                17
+GNH  JHC = QVF PDA PDB .                            18
+JNH  JHD = QVF PDA PDB PDC .                        19
+
+MNH  JHE = QVF QVH .                      Toggle bit 20 of program address
+PNH  JHF = QVF QVH PDE .                             21
+SNH  JHG = QVF QVH PDE PDF .                         22
+VJH  JHH = QVF QVH PDE PDF PDG .                     23
+
+ANH  JHI = QVG QVI .                      Toggle bit 24 of program address
+DNH  JHJ = QVG QVI PDI .                             25
+GNH  JHK = QVG QVI PDI PDJ .                         26
+JNH  JHL = QVG QVI PDI PDJ PDK .                     27
+
+MNH  JHM = QVG QVJ .                      Toggle bit 28 of program address
+PNH  JHN = QVG QVJ PDM .                             29
+SNH  JHO = QVG QVJ PDM PDN .                         30
+VNH  JHP = QVG QVJ PDM PDN PDO .                     31
+
+D2H  jic = qha rha rhb rhc rhd rhe .      Port quiet
+D3H  jid = rhf rhg rhh rhi rhj qhc .  
+
+H4I  JJA = RBG .                          CP 8 Boundary sequence
+KWK  JJB = RBG qcc + RJK .      
+N4I  JJC = RBG .
+Q4I  JJD = RBG .
+
+QWJ  JJE = QQE .                          Fetch Sequence
+QWJ  JJF = QQE . 
+
+J7I  jjg = qln .                          End vector sequence
+
+QTH  JJH = QQC .                          Fetch sequence
+RMJ  JJI = QQC .
+RMJ  JJJ = QQC .
+
+K4I  jjk = rlc .                          Valid data
+P7I  JJL = QQL .                          Abort Fetch
+P7I  jjm = qln .                          End vector sequence
+QNH  JJN = QQL .                          End fetch
+QSI  JJP = QQL QQC .                      Abort Fetch
+JRH  jka = qlf rka rkb rkc rkd .          Go Vector + Begin gather
+JRH  JBK = QLL QLM .                      
+LIH  jkc = qlg qli .                      Hold (72) + hold (73)
+XMH  jkd = qmj qnm qnq qnj . (70,71)cp3 + (62,63)cp2 + (64,65)cp2 + (60,61)cp3 
+TXH  jke = qnj qnr qnv .           (60,61) cp3 + (64,65) cp3 + (66,67) cp3
+
+B8H  JLA = QLE .                          Vector Length
+E8H  JLB = QLE lba .
+H8H  JLC = QLE lba lbb .
+K8H  JLD = QLE lba lbb lbc .
+N8H  JLE = QLE lba lbb lbc lbd .
+O8H  JLF = QLE lba lbb lbc lbd lbe .      Vector Length = 1
+
+CII  JMA = QOA .                          Valid Data
+CII  JMB = QOA KAA .
+
+CUK  JNA = MAA QNG + NAA RQC .            Destination tag
+FUK  JNB = MAB QNG + NAB RQC .            translations
+IUK  JNC = MAC QNG .
+CII  JND = QNG .
+FUK  JNE = QNG + RQC .
+
+ACA  JPA = QVA paa + qva PAA .            P Register Increment
+
+J7I  jqa = qln qqm qqk .                  Clear port busy
+J7I  JQB = qql qlp qqw .           No abort fetch, port not busy and no fetch
+
+F7I  JQC = qql qlp .               No abort fetch and port not busy
+
+QWJ  JQD = QQA .                          Fetch request
+QSI  JQE = QQA qqb .                      Fetch request
+URI  JQF = QQB qtp .                      Fetch in progress
+
+LIH  jra = qia qib qic qid .               Force retry
+D4H  jrb = ria rib ric rid rie rif .       Continuation test
+
+HMH  jrc = rna rnb rnc rnd .               Enable Valid data
+
+K3I  jrd = qia qib qic .                   Conflict
+K4I  jre = qlq qsi .                       Memory port busy
+
+CMI  JSA = QQI .                           Advance fetch
+CMI  JSB = QQI NBA .
+CMI  JSC = QQI NBA NBB .
+FMH  JSD = QQI NBA NBB NBC .
+
+QXH  JTB = qqa qlq qtw qqb .       No fetch, no fetch request or port not busy
+
+UUI  JXA = QLN QSD .                       End external sequence
+WTI  JXB = QSC qlq qqa .                   Go external sequence
+
+CSM  KAA = KAA tlc jma + kaa JMA + JNA .     Mem ref destination tag
+FSM  KAB = KAB tlc jmb + kab JMB + JNB .     00-07 no dest selected
+I5X  KAC = KAC tlc + MAA QMG + JNC .         10-17 External data
+L5X  KAD = KAD tlc + MAB QMG + JND + RSC QSB .   20-27 Instruction data
+O5X  KAE = KAE tlc + MAC QMG + JNE .             30-37 S Register Data
+R5X  KAF = KAF tlc + QMG .                       40-57 lower VRs , 60-67 upper
+
+            V Length     I/O Length
+  
+C8M  LAA = IPA tlb jcr + IQA TLB .             Length Entry Register
+F8M  LAB = IPB tlb jcr + IQB TLB .            
+I8M  LAC = IPC tlb jcr + IQC TLB .             JCR = Fetch Sequence
+L8M  LAD = IPD tlb jcr + IQD TLB .
+O8M  LAE = IPE tlb jcr + IQE TLB + JCR .    
+R8M  LAF = IPF tlb jcr + IQF TLB .
+
+B7M  LBA = LBA jla tla + lba JLA + LAA TLA .    Vector Length Counter
+L7M  LBB = LBB jlb tla + lbb JLB + LAB TLA . 
+H7M  LBC = LBC jlc tla + lbc JLC + LAC TLA .
+K7M  LBD = LBD jld tla + lbd JLD + LAD TLA .
+N7M  LBE = LBE jle tla + lbe JLE + LAE TLA .
+Q7M  LBF = LBF jlf tla + lbf JLF + LAF TLA .
+
+IMM  MAA = MAA tld + GAG TLD .                 Si or Vi Designator
+LMM  MAB = MAB tld + GAH TLD .
+OMM  MAC = MAC tld + GAI TLD .
+
+BPM  NAA = NAA jsa tha + naa JSA + WCC THA .   Fetch address scan
+EPM  NAB = NAB jsb tha + nab JSB + WCD THA .
+HPM  NAC = NAC jsc tha + nac JSC + WCE THA .   2^5 - 2^2
+KPM  NAD = NAD jsd tha + nad JSD + WCF THA .
+
+BPM  NBA = NAA jsa tha + naa JSA + WCC THA .   Copy
+EPM  NBB = NAB jsb tha + nab JSB + WCD THA .
+HPM  NBC = NAC jsc tha + nac JSC + WCE THA .  
+
+           BA OR LA  Constant  Fetch
+
+CDP  OAA = DAA TEA + EAA TEC + NAA TEE .       Address Data to T_
+FDP  OAB = DAB TEA + EAB TEC + NAB TEE .
+IDP  OAC = DAC TEA + EAC TEC + NAC TEE .
+LDP  OAD = DAD TEA + EAD TEC + NAD TEE .
+ODP  OAE = DAE TEA + EAE TEC + WCG TEE .
+RDP  OAF = DAF TEA + EAF TEC + WCH TEE .
+UDP  OAG = DAG TEA + EAG TEC + WCI TEE .
+XDP  OAH = DAH TEA + EAH TEC + WCJ TEE .
+
+CDP  OAI = DAI TEA + ECI TEC + WCK TEE .
+FDP  OAJ = DAJ TEA + ECJ TEC + WCL TEE .
+IDP  OAK = DAK TEA + ECK TEC + WCM TEE .
+LDP  OAL = DAL TEA + ECL TEC + WCN TEE .
+ODP  OAM = DAM TEA + ECM TEC + WCO TEE .
+RDP  OAN = DAN TEA + ECN TEC + WCP TEE .
+UDP  OAO = DAO TEA + ECO TEC + WDA TEE .
+XDP  OAP = DAP TEA + ECP TEC + WDB TEE .
+
+CPP  OBA = DBA TEB + EDA TED + WDC TEF .
+FPP  OBB = DBB TEB + EDB TED + WDD TEF .
+IPP  OBC = DBC TEB + EDC TED + WDE TEF .
+LPP  OBD = DBD TEB + EDD TED + WDF TEF .
+OPP  OBE = DBE TEB + EDE TED + WDG TEF .
+RPP  OBF = DBF TEB + EDF TED + WDH TEF .
+UPP  OBG = DBG TEB + EDG TED + WDI TEF .
+XPP  OBH = DBH TEB + EDH TED + WDJ TEF .
+
+CPP  OBI = DBI TEB + EDI TED + WDK TEF .
+FPP  OBJ = DBJ TEB + EDJ TED + WDL TEF .
+IPP  OBK = DBK TEB + EDK TED + WDM TEF .
+LPP  OBL = DBL TEB + EDL TED + WDN TEF .
+OPP  OBM = DBM TEB + EDM TED + WDO TEF .
+RPP  OBN = DBN TEB + EDN TED + WDP TEF .
+UPP  OBO = DBO TEB + EDO TED .
+XPP  OBP = DBP TEB + EDP TED .
+
+CTL  oca = pca .                 P Register Data to AM
+FTL  ocb = pcb .
+ITL  occ = pcc .
+LTL  ocd = pcd .
+OTL  oce = pce .
+RTL  ocf = pcf .
+UTL  ocg = pcg .
+XTL  och = pch .
+
+CTL  oci = pci .
+FTL  ocj = pcj .
+ITL  ock = pck .
+LTL  ocl = pcl .
+OTL  ocm = pcm .
+RTL  ocn = pcn .
+UTL  oco = pco .
+XTL  ocp = pcp .
+
+CTL  oda = pda .                
+FTL  odb = pdb .
+ITL  odc = pdc .
+LTL  odd = pdd .
+OTL  ode = pde .
+RTL  odf = pdf .
+UTL  odg = pdg .
+XTL  odh = pdh .
+
+CTL  odi = pdi .
+FTL  odj = pdj .
+ITL  odk = pdk .
+LTL  odl = pdl .
+OTL  odm = pdm .
+RTL  odn = pdn .
+UTL  odo = pdo .
+XTL  odp = pdp .
+
+     Control to T_
+
+C4L  OEA = KAA .                        Memory reference dest tag
+F4L  OEB = KAB .
+I4L  OEC = KAC .
+L4L  OED = KAD .
+O4L  OEE = KAE .
+R4L  OEF = KAF .
+
+XWX  OEG = RLD qqg + RLD QQJ .               Valid Reference
+U4L  OEH = QRF .                             Retry
+L4P  oei = gfc + QSG .                       Enable range test
+RXX  OEJ = IOI RMA + IOB RMI + IOC RMI + IOD RMI + RMN .   Gather conflict
+X7M  OEK = JJK QSG .                         Plus one to adder
+X3P  OEL = RKA + QLJ + JKD .                 A data to first adder
+R3X  OEM = QMK + QNN + QNR + QSE .           Carry to first adder
+X4L  0EN = JKC .                             Hold to first adder
+X4L  OEO = JKC .                             V Data to second adder
+R7X  OEP = QMK + QNB + QSE + JCS .           Enable to Second adder
+U4L  OEQ = QQF .                             Hold 2nd adder data
+U4L  oer = rsa .                             I/O Adder to 3rd adder
+UWX  OES = JJK QMK + JKE + JJF .             Incr to 3rd adder
+U3X  OET = JKC + QMJ + QNA + RQB .           B data to 3rd adder
+X8P  OEU = QMI + QNI .                       A data to incr
+X3P  OEV = QNQ + QNU + QQD .                 IB data incr
+X8P  OEW = QMK + QMJ .                       Hold incr
+X4L  OEX = QYB .                             IB to base address
+X4L  OEY = QYC .                             IB to limit address
+
+  Control to TB
+
+U7P  OFA = RLB QNB .                         Go S Data
+U8P  ofb = rlb + qsh + QSB .                 Go EB data
+UXL  OFC = QRD .                             Retry
+
+    Field Address data to IA
+
+  
+           AR Data    EA Data  Constant  Parcel
+                                         Exchange  DS
+
+UCX  OGA = IAG TAE + DAG TBE + IEG TCE + WAG TDE + TMA . Field address to IA
+XCX  OGB = IAH TAE + DAH TBE + IEH TCE + WAH TDE + TMA .  2^29 - 2^16
+
+CGX  OGC = IAI TAB + DAI TBB + IEI TCB + WAI TDB + TMB .
+FGX  OGD = IAJ TAB + DAJ TBB + IEJ TCB + WAJ TDB + TMB .
+IGX  OGE = IAK TAB + DAK TBB + IEK TCB + WAK TDB + TMB .
+LGX  OGF = IAL TAB + DAL TBB + IEL TCB + WAL TDB + TMB .
+OGX  OGG = IAM TAF + DAM TBF + IEM TCF + WAM TDF + TMB .
+RGX  OGH = IAN TAF + DAN TBF + IEN TCF + WAN TDF + TMB .
+UGX  OGI = IAO TAF + DAO TBF + IEO TCF + WAO TDF + TMB .
+XGX  OGJ = IAP TAF + DAP TBF + IEP TCF + WAP TDF + TMB .
+
+CKX  OGK = IBA TAC + DBA TBC + EAA TCC + WBA TDC + TMC .
+FKX  OGL = IBB TAC + DBB TBC + EAB TCC + WBB TDC + TMC .
+IKX  OGM = IBC TAC + DBC TBC + EAC TCC + WBC TDC + TMC .
+LKX  OGN = IBD TAC + DBD TBC + EAD TCC + WBD TDC + TMC .
+OKX  OGO = IBE TAG + DBE TBG + EAE TCG + WBE TDG + TMC .
+RKX  OGP = IBF TAG + DBF TBG + EAF TCG + WBF TDG + TMC .
+UKX  OGQ = IBG TAG + DBG TBG + EAG TCG + WBG TDG + TMC .
+XKX  OGR = IBH TAG + DBH TBG + EAH TCG + WBH TDG + TMC .
+
+CDX  OGS = IBI TAD + DBI TBD + ECI TCD + WBI TDD + TMD .
+FDX  OGT = IBJ TAD + DBJ TBD + ECJ TCD + WBJ TDD + TMD .
+IDX  OGU = IBK TAD + DBK TBD + ECK TCD + WBK TDD + TMD .
+LDX  OGV = IBL TAD + DBL TBD + ECL TCD + WBL TDD + TMD .
+ODX  OGW = IBM TAH + DBM TBH + ECM TCH + WBM TDH + TMD .
+RDX  OGX = IBN TAH + DBN TBH + ECN TCH + WBN TDH + TMD .
+
+ICX  OHA = IAC TAA + DAC TBA + IEC TCA + WAC TDA + TMA .  Word Address to IA
+LCX  OHB = IAD TAA + DAD TBA + IED TCA + WAC TDA + TMA .
+OCX  OHC = IAE TAE + DAE TBE + IEE TCE + WAE TDE + TMA .
+RCX  OHD = IAF TAE + DAF TBE + IEF TCE + WAF TDE + TMA .
+
+  Control to IA
+
+OSX  OIA = JCA + JCB + JCC qca + JCM + QQH .              Branch preamble
+OXP  OIB = RAC + RBC .                                    Branch test
+OWM  OIC = JCP QCA + JJC QCA .                            Branch in
+OXP  OID = QQH JJI .                                      Branch out
+O4L  OIE = JCM .                                          Branch fall through
+
+  Control to JA
+
+FVM  OJA = RFA reb + WCA REB .                            Parcel ptr
+F2M  OJB = RFB reb + WCB REB .                            Parcel ptr
+LMX  OJC = RIX + JRA + IJD + JRE + QSA .                  Mem port busy
+L7X  OJD = JCO + JJB + JCA + JCB + JCF .                  Hold Issue
+L6M  OJE = JCO .                                          Go Branch
+
+I3M  OKA = IKA jbc + IKA qkk + JBC QKB .                  Semaphore flags
+I7M  OKB = IKB jbd + IKB qkk + JBD QKB .     
+
+ Controls to EA
+
+U7P  OLA = qkd QKE .                                      Set Semaphores
+UXL  OLB = QKK .                                          Clr Semaphores
+O4L  OLC = QTX .                                          Idle
+USP  old = qaa + qch .                                    Exit
+LSM  OLF = QFB QLS + QFA qls .
+
+LXX  OMA = QLG jrc + JRB + JRD + IJD .                    Hold Advance to JB1
+LXL  OMB = QLG jrc + JRB + JRD + IJD .                    Hold Advance to JB2
+
+U8P  oqa = rla + qsh + QSB .                              Go write to EB
+UXL  OQB = JXA .                                          End sequenct to EB
+
+   jk data to EA
+
+CLL  ora = qci .                                          K0
+FLL  orb = qcj .                                          K1
+ILL  orc = qck .                                          K2
+LLL  ord = qcl .                                          J0
+OLL  ore = qcm .                                          J1
+RLL  orf = qcn .                                          J2
+
+   Indicator Lights
+
+O4L  OTA = QTX .                                         Idle
+CLL  OTB = QTW .                                         Port Not quite
+L2L  OTC = QLQ .                                         Port Busy
+O7L  otd = qrf .                                         Retry
+R4L  ote = qqf .                                         Fetch
+UXL  otf = qsd .
+
+AAM  PAA = PAA jga tpe + paa JGA + AAA TPE .          Program Address Reg
+DAM  PAB = PAB jgb tpe + pab JGB + AAB TPE .
+GAM  PAC = PAC jgc tpe + pac JGC + AAC TPE .          
+JAM  PAD = PAD jgd tpa + pad JGD + AAD TPA .
+MAM  PAE = PAE jge tpa + pae JGE + AAE TPA .         
+PAM  PAF = PAF jgf tpa + paf JGF + AAF TPA .
+SAM  PAG = PAG jgg tpa + pag JGG + AAG TPA .          
+VAM  PAH = PAH jgh tpa + pah JGH + AAH TPA .
+
+AEM  PAI = PAI jgi tpb + pai JGI + AAI TPB .          
+DEM  PAJ = PAJ jgj tpb + paj JGJ + AAJ TPB .
+GEM  PAK = PAK jgk tpb + pak JGK + AAK TPB .          
+JEM  PAL = PAL jgl tpb + pal JGL + AAL TPB .
+MEM  PAM = PAM jgm tpb + pam JGM + AAM TPB .         
+PEM  PAN = PAN jgn tpb + pan JGN + AAN TPB .
+SEM  PAO = PAO jgo tpb + pao JGO + AAO TPB .          
+VEM  PAP = PAP jgp tpb + pap JGP + AAP TPB .
+
+AIM  PBA = PBA jha tpc + pba JHA + ABA TPC .          
+DIM  PBB = PBB jhb tpc + pbb JHB + ABB TPC .
+GIM  PBC = PBC jhc tpc + pbc JHC + ABC TPC .          
+JIM  PBD = PBD jhd tpc + pbd JHD + ABD TPC .
+MIM  PBE = PBE jhe tpc + pbe JHE + ABE TPC .         
+PIM  PBF = PBF jhf tpc + pbf JHF + ABF TPC .
+SIM  PBG = PBG jhg tpc + pbg JHG + ABG TPC .          
+VIM  PBH = PBH jhh tpc + pbh JHH + ABH TPC .
+
+AMM  PBI = PBI jhi tpd + pbi JHA + ABI TPD .          
+DMM  PBJ = PBJ jhj tpd + pbj JHB + ABJ TPD .
+GMM  PBK = PBK jhk tpd + pbk JHC + ABK TPD .          
+JMM  PBL = PBL jhl tpd + pbl JHD + ABL TPD .
+MMM  PBM = PBM jhm tpd + pbm JHE + ABM TPD .         
+PMM  PBN = PBN jhn tpd + pbn JHF + ABN TPD .
+SMM  PBO = PBO jho tpd + pbo JHG + ABO TPD .          
+VMM  PBP = PBP jhp tpd + pbp JHH + ABP TPD .
+
+AAM  PCA = PAA jga tpe + paa JGA + AAA TPE .        Program Address Reg (copy)
+DAM  PCB = PAB jgb tpe + pab JGB + AAB TPE .
+GAM  PCC = PAC jgc tpe + pac JGC + AAC TPE .          
+JAM  PCD = PAD jgd tpa + pad JGD + AAD TPA .
+MAM  PCE = PAE jge tpa + pae JGE + AAE TPA .         
+PAM  PCF = PAF jgf tpa + paf JGF + AAF TPA .
+SAM  PCG = PAG jgg tpa + pag JGG + AAG TPA .          
+VAM  PCH = PAH jgh tpa + pah JGH + AAH TPA .
+
+AEM  PCI = PAI jgi tpb + pai JGI + AAI TPB .          
+DEM  PCJ = PAJ jgj tpb + paj JGJ + AAJ TPB .
+GEM  PCK = PAK jgk tpb + pak JGK + AAK TPB .          
+JEM  PCL = PAL jgl tpb + pal JGL + AAL TPB .
+MEM  PCM = PAM jgm tpb + pam JGM + AAM TPB .         
+PEM  PCN = PAN jgn tpb + pan JGN + AAN TPB .
+SEM  PCO = PAO jgo tpb + pao JGO + AAO TPB .          
+VEM  PCP = PAP jgp tpb + pap JGP + AAP TPB .
+
+AIM  PDA = PBA jha tpc + pba JHA + ABA TPC .          
+DIM  PDB = PBB jhb tpc + pbb JHB + ABB TPC .
+GIM  PDC = PBC jhc tpc + pbc JHC + ABC TPC .          
+JIM  PDD = PBD jhd tpc + pbd JHD + ABD TPC .
+MIM  PDE = PBE jhe tpc + pbe JHE + ABE TPC .         
+PIM  PDF = PBF jhf tpc + pbf JHF + ABF TPC .
+SIM  PDG = PBG jhg tpc + pbg JHG + ABG TPC .          
+VIM  PDH = PBH jhh tpc + pbh JHH + ABH TPC .
+
+AMM  PDI = PBI jhi tpd + pbi JHA + ABI TPD .          
+DMM  PDJ = PBJ jhj tpd + pbj JHB + ABJ TPD .
+GMM  PDK = PBK jhk tpd + pbk JHC + ABK TPD .          
+JMM  PDL = PBL jhl tpd + pbl JHD + ABL TPD .
+MMM  PDM = PBM jhm tpd + pbm JHE + ABM TPD .         
+PMM  PDN = PBN jhn tpd + pbn JHF + ABN TPD .
+SMM  PDO = PBO jho tpd + pbo JHG + ABO TPD .          
+VMM  PDP = PBP jhp tpd + pbp JHH + ABP TPD .
+
+AAM  PEA = PAA jga tpe + paa JGA + AAA TPE .        Program Address Reg (copy)
+DAM  PEB = PAB jgb tpe + pab JGB + AAB TPE .
+GAM  PEC = PAC jgc tpe + pac JGC + AAC TPE .          
+JAM  PED = PAD jgd tpa + pad JGD + AAD TPA .
+MAM  PEE = PAE jge tpa + pae JGE + AAE TPA .         
+PAM  PEF = PAF jgf tpa + paf JGF + AAF TPA .
+SAM  PEG = PAG jgg tpa + pag JGG + AAG TPA .          
+VAM  PEH = PAH jgh tpa + pah JGH + AAH TPA .
+
+AEM  PEI = PAI jgi tpb + pai JGI + AAI TPB .          
+DEM  PEJ = PAJ jgj tpb + paj JGJ + AAJ TPB .
+GEM  PEK = PAK jgk tpb + pak JGK + AAK TPB .          
+JEM  PEL = PAL jgl tpb + pal JGL + AAL TPB .
+MEM  PEM = PAM jgm tpb + pam JGM + AAM TPB .         
+PEM  PEN = PAN jgn tpb + pan JGN + AAN TPB .
+SEM  PEO = PAO jgo tpb + pao JGO + AAO TPB .          
+VEM  PEP = PAP jgp tpb + pap JGP + AAP TPB .
+
+AIM  PFA = PBA jha tpc + pba JHA + ABA TPC .          
+DIM  PFB = PBB jhb tpc + pbb JHB + ABB TPC .
+GIM  PFC = PBC jhc tpc + pbc JHC + ABC TPC .          
+JIM  PFD = PBD jhd tpc + pbd JHD + ABD TPC .
+MIM  PFE = PBE jhe tpc + pbe JHE + ABE TPC .         
+PIM  PFF = PBF jhf tpc + pbf JHF + ABF TPC .
+SIM  PFG = PBG jhg tpc + pbg JHG + ABG TPC .          
+VIM  PFH = PBH jhh tpc + pbh JHH + ABH TPC .
+
+AMM  PFI = PBI jhi tpd + pbi JHA + ABI TPD .          
+DMM  PFJ = PBJ jhj tpd + pbj JHB + ABJ TPD .
+GMM  PFK = PBK jhk tpd + pbk JHC + ABK TPD .          
+JMM  PFL = PBL jhl tpd + pbl JHD + ABL TPD .
+MMM  PFM = PBM jhm tpd + pbm JHE + ABM TPD .         
+PMM  PFN = PBN jhn tpd + pbn JHF + ABN TPD .
+SMM  PFO = PBO jho tpd + pbo JHG + ABO TPD .          
+VMM  PFP = PBP jhp tpd + pbp JHH + ABP TPD .
+
+XSL  QAA = IJA IJB .                             Go Issue (cp1)
+XSL  QAB = IJA IJB .
+XSL  QAC = IJA IJB .
+XSL  QAD = IJA IJB .
+
+XJL  QBA = IJC .                                 Advance queue
+
+LUL  QCA = IHA .                                 Barrel response
+LUL  QCB = IHA .
+
+KTP  QEA = QYB + QYC .                           External to T-
+KTP  QEB = QNQ + QNU .                           Constant to T- (64-67)
+
+ISL  QFA = IMG .                                 Enable Common Memory
+LSM  QFB = QFB QLS + QFA qls .                   range test
+
+XWX  qfc = RLD qqg + RLD QQJ .                   Valid data
+
+    Branch criterion
+
+FXX  QGA = ifa + ifb + ifc + ifd .               S reg branch data
+IXX  QGB = ife + iff + ifg + ifh . 
+CWL  QGC = IFI .
+CXP  QGD = IGA + IGB .                           A reg branch data
+CWL  QGE = IGC .
+
+EQX  QHA = RHJ QRC + QLD qlk + GAF QAA + JJH qrc .  Enter history chain
+RWX  QHC = IOA + IOB + IOC + IOD .                  Buffer busy
+RXX  QHD = IOA RMI + IOB RMI + IOC RMI + IOD RMI + RMN .  Gather conflict chain
+RVL  QHE = QHD .
+RVL  QHF = QHE .
+
+L3M  qia = ijd qhf + ijd QRA .                       Conflict chain
+L2L  qib = qia .
+L2L  qic = qib .
+L2L  qid = qic .
+
+HNP  QKA = QKA qkk + GAL QAC .                              Request chain
+HNP  QKB = JCI QAC + QKB jaq .                         (04-06) cp 2,3,4,5
+I1M  QKC = QKC jar + JBE .                             (04-05) cp 3,4,5,6
+I2P  QKD = IKA JBC + IKB JBD .                         Arriving flag value
+I2P  QKE = QKB JBC + QKB JBD .                         (04-06) departure time
+ERM  QKF = QKF hbf + QKC QKD .                         Semaphore value
+ESL  QKG = JAE .                                       (04) cp 7
+ESL  QKH = JAF .                                       (05) cp 7
+ETX  QKI = qgd JAI + QGD JAJ + qge JAK + QGE JAL + JAD . (10-13,03) cp 7
+FQX  QKJ = jbe JAM + JBA JAN + qgc JAO + QGC JAP + JBB . (14-17,2-5,10-13) cp 8
+EUM  QKK = QKA jic jid + QKK qkn .                       Clear window
+E1L  QKL = QKK .
+E1L  QKM = QKL .
+E1L  QKN = QKM .
+
+J3L  QLA = JBC .                                        Gather sequence
+J3L  QLB = QLA .
+J3L  QLC = QLB .
+JWM  QLD = JKA qrb qlo + QLC .                          
+JVM  QLE = JKA qrb + QLC + JJE RLB .                    Go vector or data
+K5M  QLF = QLF jjg + JCK QAB + RSA .                    Reduce count
+J8P  QLG = QLG jjg + RKA .                              Hold (72)
+J8P  QLI = QLI jjg + QLJ .                              Hold (73)
+KNM  QLJ = GBP QAB .                                    Go (73)
+JXM  QLK = QLK jjg + QLD JLG .                          Length complete
+J4M  QLL = QLL qlm + RKD reg .                          Delayed restart
+KUM  QLM = QLL jic jid .                                Go restart
+J2X  QLN = RML rha + QLF QLK + QTP .                    End vector sequence
+J2X  QLO = RML rha + QLF QLK + QTP .                    End vector sequence
+K1X  QLP = QLP jqa + JCL QAB + JXB + JQB JQD .          Port busy
+K1X  QLQ = QLP jqa + JCL QAB + JXB + JQB JQD .          Port busy
+LRL  QLR = QLQ .
+LRL  QLS = QLR .
+
+NLP  qma = qac + jcl .                                 (70-3) cp 2
+NPL  qmb = qma .
+NPL  qmc = qmb .
+NLP  qme = qac + jcj .                                 (70,72) cp 2
+NPL  qmf = qme .
+NPL  qmg = qmf .
+QLP  qmi = qaa + jfh .                                 (70,71) cp 2
+QPL  qmj = qmi .
+QLP  QMK = QMJ + QMK jjm .                             Hold 70,71
+
+TLP  qna = qac + gaf .                                 (60-67) cp 2
+TPL  qnb = qna .
+TPL  qnc = qnb .
+B4P  QND = QNC .
+TLP  qne = qac + gaf + GAA .                            (60,62,64,66) cp 2
+TPL  qnf = qne .
+TPL  qng = qnf .
+HLP  qni = qac + gca .                                  (60,61) cp 2
+HOL  qnj = qni .
+HLP  qnm = qac + gcb .                                  (62,63) cp 2
+HOL  qnn = qnm .
+KLP  qnq = qac + gcb .                                  (64,65) cp 2
+KOL  qnr = qnq .
+KLP  qnu = qac + gcd .                                  (66,67) cp 2
+KOL  qnv = qnu .
+
+B4P  qoa = rld + QND .
+
+      Increment for program register
+
+BIP  qpa = qab .                                        Go Issue CP 2
+BIP  qpb = qab + jfi .                                  2 Parcel cp 2
+EIP  qpc = qab + jfj .                                  3 or 5 Parcel cp 2
+EIP  qpd = qab + gbk .                                  5 Parcel cp 2
+
+R1N  QQA = QQA jjl qtr qqc + RAB + RBE jce .            Fetch request
+R2M  QQB = JQF jjp ihc + JQC JQE .                      Fetch in progress
+RUM  QQC = QQC jjn jjp + JQC QJE .                      Fetch sequence
+Q3L  QQD = JJJ .
+Q3L  QQE = QQD .
+Q3L  QQF = JJE .
+Q3L  QQG = QQF .
+QUM  QQH = QQH qqc qtq + JJD qcc + JCQ qcc .            Continue preamble
+P4P  QQI = RLA QQD .                                    Advance fetch
+Q1M  QQJ = QQJ qqk qtq + JJD qcc + JCQ qcc .            Enable fetch
+Q5M  QQK = JJE RLC JLG .                                End fetch
+PXM  QQL = JCC QCC + JCG .                              Abort fetch
+P4P  QQM = QQL JJJ .                                    Clear port
+P8L  QQN = QQL .                                        Abort fetch
+R2M  QQW = JQF jjp ihc + JQC JQE .                      Fetch in progress
+QPL  qqx = qqd .                                        Fetch sequence
+
+LVX  QRA = RIX + JRA + QHF + IJD .                      Retry Chain
+KXL  QRB = QRA .
+KXL  QRC = QRB .
+KXL  QRD = QRC .
+KXL  QRE = QRD .
+LUL  QRF = QRE .
+
+XRM  QSA = QSA jxa qtp + IQG .                          External sequence
+XQM  QSB = QSB jxa qtp + IQH .
+WWM  QSC = QSC jxb + RRF .
+WXM  QSD = QSD jjm + RRH .
+W4L  QSE = QSD .
+W4L  QSF = QSE .
+W4L  QSG = QSF .
+X1L  QSH = QSF QSD .
+
+ULL  qsi = iqi .        Block CPU memory references during refresh
+
+CRM  QTA = QTA qtx + QAA QCH + IMB .                    Interrupt
+CQL  QTB = QTA .
+CQL  QTC = QTB .
+CQL  QTD = QTC .
+CQL  QTE = QTD .
+BTL  QTF = QTE .
+BTL  QTG = QTF .
+BTL  QTH = QTG .
+BTL  QTI = QTH .
+C2L  QTJ = QTI .
+
+CWL  QTM = IMA .                                         Dead Start
+CWL  QTN = QTM .
+CXP  qtp = QTM + qtn .
+RVL  qtq = qtp .
+RVL  qtr = qtp .
+
+BOM  QTW = JIC + JID .                                  Port Busy
+BRM  QTX = QTX rji + QTJ JTB + QTN .                    Idle
+
+       Increment program address
+
+GJM  QUA = QPA qpb .                                    Toggle lowest bit
+GFL  QUB = QPD .                                        5 parcel cp3
+GFL  QUC = QUB .                                        5 parcel cp4
+JJM  QUD = QUC + QPC .          5 parcel cp5 + 3 or 5 parcel cp3
+GFL  QUE = QUD .                5 parcel cp6 + 3 or 5 parcel cp4
+KJM  QUF = QPA JPA + QPB + QUE .                        Advance 2 counts
+
+AFP  qva = qua .                                 Toggle bit 0 of program address
+JFX  qvb = quf .                                 Toggle bit 0,1,3
+MFX  qvc = quf + jfa .                           Toggle bit 4-7
+PFX  qvd = quf + jfa + jfb .                     Toggle bit 8-11
+SFX  qve = quf + jfa + jfb + jfc .               Toggle bit 12-15
+VFX  qvf = quf + jfa + jfb + jfc + jfd .         Toggle bit 16-19
+VFX  qvg = quf + jfa + jfb + jfc + jfd .         Toggle bit 20-31
+DFP  qvh = jfe .                                 Toggle bit 20-23
+DFP  qvi = jfe + jff .                           Toggle bit 24-27
+AFP  qvj = jfe + jff + jfg .                     Toggle bit 28-31
+
+  Next Field Advance
+
+GHP  QWA = JCN + JJA .                           Branch or boundary
+DHL  QWB = QWA .
+DHL  QWC = QWB .                                 0,1
+JHX  qwd = jda .                                 2-5
+MHX  qwe = jda + jdb .                           6-9
+PHX  qwf = jda + jdb + jdc .                     10-13
+SHX  qwg = jda + jdb + jdc + jdd .               14-17
+VHX  qwh = jda + jdb + jdc + jdd + jde .         18-25
+DHL  qwi = jdf .                                 22-25
+
+GHP  QWJ = JCN + QZF .                           Go Branch
+
+   Parcel Exchange
+
+OIX  QXA = REC + JJI + RAA + RBA + QZE .         Hold Reg Data
+OIX  QXB = REC + JJI + RAA + RBA + QZE . 
+RIX  QXC = REC + JJJ + RAA + RBA + QZE . 
+RIX  QXD = REC + JJJ + RAA + RBA + QZE . 
+BOP  QXE = GAC QAA .                             Enter constant data
+BOP  QXF = GAC QAA + RJC + QYA .               (00-17)
+
+C3L  QYA = IMC .                                Enter P (from EA)
+C3L  QYB = IMD .                                Enter BA (from EA)
+C3L  QYC = IME .                                Enter LA (from EA)
+C3L  QYD = IMF .                                Start
+
+FRL  qza = qya .                                Enter P
+FRL  qzb = qya .
+C2L  QZD = QYD .                                Start
+C6M  QZE = QZE qzd + QYA .                      Hold Parcel address
+IJL  QZF = QZE .
+
+NWM  RAA = QAC GAC gba + RJC + QYD .            Branch sequence
+OUL  RAB = RAA .
+OUL  RAC = RAB .
+OUL  RAD = RAC .
+OUL  RAE = RAD .
+NXL  RAF = RAE .
+NXL  RAG = RAF .
+
+RSX  rba = ihb + JCB + JCD + JCH .              Boundary sequence
+RRL  RBB = RBA jce .
+RRL  RBC = RBB jce .
+RRL  RBD = RBC jce .
+RRL  RBE = RBD jce .
+RQP  RBF = RBE jce .
+RQP  RBG = RBF .
+
+L6M  REB = JCO .                                 Go Branch
+OSX  REC = JCA + JCB + JCC qca + JCM + QQH .     Branch preamble
+
+FVM  RFA = RFA reb + WCA REB .                   Parcel pointer
+F2M  RFB = RFB reb + WCB REB . 
+
+F7L  RGA = INA .                                 Phase chain
+F7L  RGB = RGA .
+F7L  RGC = RGB .
+F7L  RGD = RGC .
+
+DRL  RHA = QHA .                                 History chain
+DRL  RHB = RHA .
+DRL  RHC = RHB .
+DRL  RHD = RHC .
+DSL  RHE = RHD .
+DSL  RHF = RHE .
+DSL  RHG = RHF .
+DSL  RHH = RHG .
+DTL  RHI = RHH .
+DTL  RHJ = RHI .
+
+DVP  RIA = QHA QIC .                              Snapshot chain
+DVP  RIB = RHA QIC + RIA qic .
+DWP  RIC = RHB QIC + RIB qic .
+DWP  RID = RHC QIC + RIC qic .
+DXP  RIE = RHD QIC + RID qic .
+DXP  RIF = RHE QIC + RIE qic .
+
+LUL  RIX = JRB .                                  Continuation test
+
+NSP  RJA = QAC GBA .                              Resturn jump
+NTL  RJB = RJA .
+NTL  RJC = RJB .
+NTL  RJD = RJC .
+
+NSP  RJE = RJD + QZD .                            Merge start
+ODL  RJF = RJE .
+ODL  RJG = RJF .
+ODL  RJH = RJG .
+ODL  RJI = RJH .
+NRM  RJK = RJK rjl jct + RJA .
+NTL  RJL = RJC .
+
+
+
+
+
+
+
+
+KMM  RKA = GBO QAB .                  Gather sequence
+JSL  RKB = RKA .
+JSL  RKC = RKB .
+JSL  RKD = RKC .
+
+KDX  RLA = QLD qlk + GAF QAB + JJH qrt .       Valid Data
+JTL  RLB = RLA .
+JTL  RLC = RLB .
+JTL  RLD = RLC .
+
+GSL  RMA = JKB .                       Main gather sequence
+H1M  RMB = RMQ qra + RMA .
+GSL  RMC = RMB .
+GSL  RMD = RMC .
+HUM  RME = RKA jic jid + RMD .
+G4P  RMF = RME + RNP .
+GWL  RMG = RMF .
+GWL  RMH = RMG .
+GWL  RMI = RMH .
+GWL  RMJ = RMI .
+GXP  RMK = RMJ qhd + RMU .
+G3L  RML = RMK .
+G3L  RMM = RML .
+GXP  RMN = RMQ QRA .
+G3L  RMO = RMN .
+G3L  RMP = RMO .
+G7L  RMQ = RMP .
+G4P  RMR = RMQ QRA .
+G7L  RMS = RMR .
+G7L  RMT = RMS .
+G7L  RMU = RMT .
+
+    Gather Support
+
+HRP  RNA = JKB + RME .
+HQL  RNB = RNA .
+HQL  RNC = RNB .
+HQL  RND = RNC .
+
+HRP  RNK = RMJ QHD .                   Buffer not quiet
+HOL  RNL = RNK .
+GTL  RNM = RNL .
+GTL  RNN = RNM .
+GTL  RNO = RNN .
+GTL  RNP = RNO .
+
+P3P  rqa = jqb + jqd .                 Fetch sequence
+P8L  RQB = RQA .
+P8L  rqc = rqb .
+
+XVL  RRA = IOG .                        External Reference request chain
+XVL  RRB = RRA .
+XVL  RRC = RRB .
+XVL  RRD = RRC .
+XUL  RRE = RRD .
+XUL  RRF = RRE .
+
+XUL  RRG = JXB .                        Go External sequence
+XUL  RRH = RRG .
+W3L  RSA = RRH .
+W3L  RSB = RSA .
+W3L  RSC = RSB .
+
+CIJ  taa = rjd .                        Enter A reg data
+CIJ  tab = rjd .
+CIJ  tac = rjd .
+CIJ  tad = rjd .
+
+UMJ  TAE = RJL .                        Enter A reg data
+UMJ  TAF = RJL .
+UMJ  TAG = RJL .
+UMJ  TAH = RJL .
+
+FIJ  TBA = QZA .                        Enter P
+FIJ  TBB = QZA .
+FIJ  tbc = qza .
+FIJ  tbd = qza .
+
+FSJ  TBE = QZB .
+FSJ  TBF = QZB .
+FSJ  TBG = QZB .
+FSJ  TBH = QZB .
+
+IIJ  tca = qxe .                         Enter Constant Data
+IIJ  tcb = qxe .
+IIJ  tcc = qxe .
+IIJ  tcd = qxe .
+
+QMJ  TCE = QXE . 
+QMJ  TCF = QXE .
+QMJ  TCG = QXE .
+QMJ  TCH = QXE .
+
+LIJ  tda = QXF .                         Merge
+LIJ  tdb = QXF .
+LIJ  tdc = QXF .
+LIJ  tdd = QXF .
+
+UIJ  tde = QXF .
+UIJ  tdf = QXF .
+UIJ  tdg = QXF .
+UIJ  tdh = QXF .
+
+LQJ  tea = qea .                        External to T_
+LQJ  teb = qea .
+
+LQJ  tec = qeb .                        Constant to T_
+LQJ  ted = qeb .
+
+RMJ  TEE = QQX .                        Fetch Addres to T_
+RMJ  TEF = QQX .
+
+GCJ  TFA = QWA .                        Branch or boundary sequence
+GCJ  TFB = QWA .
+PLJ  tfc = qwa .
+PLJ  tfd = qwa .
+
+
+             Advance Queue
+
+WLJ  tga = qba .
+WLJ  tgb = qba .
+WLJ  tgc = qba .
+WLJ  tgd = qba .
+
+XIJ  TGE = QBA .
+XIJ  TGF = QBA .
+
+T7I  tha = rqb .                           Fetch Sequence
+W7I  tla = qma rsb rqc .                   70-73 Cp 2 + ext seq + fetch
+W7I  tlb = rsa .                           External sequence
+W8H  tlc = qmc qnc rsc rqc .          70-73 cp4 + 60-67 cp 4 + ext seq + fetch
+NOI  tld = qma qne .            
+
+CSJ  tma = qtn .                           Dead Start
+CSJ  tmb = qtn .
+CSJ  tmc = qtn .
+CSJ  tmd = qtn .
+
+GCJ  TPA = QWJ .                           Enter Program Counter on Branch
+QCJ  TPB = QWJ .
+PJJ  tpc = qwj .
+PJJ  tpd = qwj .
+GDH  TPE = QWJ .
+
+CBK  WAA = AAA QXA .                       Parcel Exchange Request
+FBK  WAB = AAB QXA . 
+IBK  WAC = AAC QXA .
+LBK  WAD = AAD QXA .
+OBK  WAE = AAE QXA .
+RBK  WAF = AAF QXC .
+UBK  WAG = BAG qxc + AAG QXC .
+XBK  WAH = BAH qxc + AAH QXC .
+CBK  WAI = BAI qxa + AAI QXA .
+FBK  WAJ = BAJ qxa + AAJ QXA .
+IBK  WAK = BAK qxa + AAK QXA .
+LBK  WAL = BAL qxa + AAL QXA .
+OBK  WAM = BAM qxa + AAM QXA .
+RBK  WAN = BAN qxc + AAN QXC .
+UBK  WAO = BAO qxc + AAO QXC .
+XBK  WAP = BAP qxc + AAP QXC .
+
+CNK  WBA = BBA qxb + ABA QXB .
+FNK  WBB = BBB qxb + ABB QXB .
+INK  WBC = BBC qxb + ABC QXB .
+LNK  WBD = BBD qxb + ABD QXB .
+ONK  WBE = BBE qxb + ABE QXB .
+RNK  WBF = BBF qxd + ABF QXD .
+UNK  WBG = BBG qxd + ABG QXD .
+XNK  WBH = BBH qxd + ABH QXD .
+CNK  WBI = BBI qxb + ABI QXB .
+FNK  WBJ = BBJ qxb + ABJ QXB .
+INK  WBK = BBK qxb + ABK QXB .
+LNK  WBL = BBL qxb + ABL QXB .
+ONK  WBM = BBM qxb + ABM QXB .
+RNK  WBN = BBN qxd + ABN QXD .
+UNK  WBO = BBO qxd + ABO QXD .
+XNK  WBP = BBP qxd + ABP QXD .
+
+
+CHJ  wca = aaa .         Parcel Exchange Address data to T_
+FHJ  wcb = aab .
+IHJ  wcc = aac .
+LHJ  wcd = aad .
+OHJ  wce = aae .
+RHJ  wcf = aaf .
+UHJ  wcg = aag .
+XHJ  wch = aah .
+
+CHJ  wci = aai .
+FHJ  wcj = aaj .
+IHJ  wck = aak .
+LHJ  wcl = aal .
+OHJ  wcm = aam .
+RHJ  wcn = aan .
+UHJ  wco = aao .
+XHJ  wcp = aap .
+
+
+CHJ  wda = aba .
+FHJ  wdb = abb .
+IHJ  wdc = abc .
+LHJ  wdd = abd .
+OHJ  wde = abe .
+RHJ  wdf = abf .
+UHJ  wdg = abg .
+XHJ  wdh = abh .
+
+CHJ  wdi = abi .
+FHJ  wdj = abj .
+IHJ  wdk = abk .
+LHJ  wdl = abl .
+OHJ  wdm = abm .
+RHJ  wdn = abn .
+UHJ  wdo = abo .
+XHJ  wdp = abp .
+
+
+KJW  ZYA = IZZ / izz .
+NJW  ZYA = IZZ / izz .
+KJW  ZYB = IZZ / izz .
+NJW  ZYB = IZZ / izz .
+
+KJW  ZYC = IZZ / izz .
+NJW  ZYC = IZZ / izz .
+KJW  ZYD = IZZ / izz .
+NJW  ZYD = IZZ / izz .
+
+KJW  ZYE = IZZ / izz .
+NJW  ZYE = IZZ / izz .
+KJW  ZYF = IZZ / izz .
+NJW  ZYF = IZZ / izz .
+
+BBW  ZZA = ZYA / zya .
+EBW  ZZA = ZYA / zya .
+
+HBW  ZZA = ZYA / zya .
+KBW  ZZA = ZYA / zya .
+
+NBW  ZZA = ZYA / zya .
+QBW  ZZA = ZYA / zya .
+
+TBW  ZZA = ZYA / zya .
+WBW  ZZA = ZYA / zya .
+

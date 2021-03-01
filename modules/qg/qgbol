@@ -1,0 +1,168 @@
+
+                   Fanout for each memory quad packet bus
+		   One of these in each cpu quad
+	
+	   CPU A     CPU B    CPU C     CPU D
+	   Ph 0      PH 1     PH 2      PH 3
+	   
+---  AAA = IAA LAA + IBA LBA + ICA LCA + IDA LDA .    Select cpu packet to
+---  AAB = IAB LAA + IBB LBA + ICB LCA + IDB LDA .       go out to memory
+---  AAC = IAC LAA + IBC LBA + ICC LCA + IDC LDA .        
+---  AAD = IAD LAA + IBD LBA + ICD LCA + IDD LDA .
+---  AAE = IAE LAA + IBE LBA + ICE LCA + IDE LDA .
+---  AAF = IAF LAA + IBF LBA + ICF LCA + IDF LDA .
+---  AAG = IAG LAB + IBG LBB + ICG LCB + IDG LDB .
+---  AAH = IAH LAB + IBH LBB + ICH LCB + IDH LDB .
+---  AAI = IAI LAB + IBI LBB + ICI LCB + IDI LDB .
+---  AAJ = IAJ LAB + IBJ LBB + ICJ LCB + IDJ LDB .
+---  AAK = IAK LAB + IBK LBB + ICK LCB + IDK LDB .
+---  AAL = IAL LAB + IBL LBB + ICL LCB + IDL LDB .
+	  
+---  AAM = IAM LAC + IBM LBC + ICM LCC + IDM LDC .
+---  AAN = IAN LAC + IBN LBC + ICN LCC + IDN LDC .
+---  AAO = IAO LAC + IBO LBC + ICO LCC + IDO LDC .
+---  AAP = IAP LAC + IBP LBC + ICP LCC + IDP LDC .
+---  AAQ = IAQ LAC + IBQ LBC + ICQ LCC + IDQ LDC .
+---  AAR = IAR LAC + IBR LBC + ICR LCC + IDR LDC .
+---  AAS = IAS LAD + IBS LBD + ICS LCD + IDS LDD .
+---  AAT = IAT LAD + IBT LBD + ICT LCD + IDT LDD .
+---  AAU = IAU LAD + IBU LBD + ICU LCD + IDU LDD .
+---  AAV = IAV LAD + IBV LBD + ICV LCD + IDV LDD .
+---  AAW = IAW LAD + IBW LBD + ICW LCD + IDW LDD .
+---  AAX = IAX LAD + IBX LBD + ICX LCD + IDX LDD .
+
+
+---  OAA = AAA .
+---  OAB = AAB .
+---  OAC = AAC .
+---  OAD = AAD .
+---  OAE = AAE .
+---  OAF = AAF .
+---  OAG = AAG .
+---  OAH = AAH .
+
+---  OAI = AAI .
+---  OAJ = AAJ .
+---  OAK = AAK .
+---  OAL = AAL .
+---  OAM = AAM .
+---  OAN = AAN .
+---  OAO = AAO .
+---  OAP = AAP .
+
+---  OAQ = AAQ .
+---  OAR = AAR .
+---  OAS = AAS .
+---  OAT = AAT .
+---  OAU = AAU .
+---  OAV = AAV .
+---  OAW = AAW .
+---  OAX = AAX .
+
+---  OBA = AAA .
+---  OBB = AAB .
+---  OBC = AAC .
+---  OBD = AAD .
+---  OBE = AAE .
+---  OBF = AAF .
+---  OBG = AAG .
+---  OBH = AAH .
+
+---  OBI = AAI .
+---  OBJ = AAJ .
+---  OBK = AAK .
+---  OBL = AAL .
+---  OBM = AAM .
+---  OBN = AAN .
+---  OBO = AAO .
+---  OBP = AAP .
+
+---  OBQ = AAQ .
+---  OBR = AAR .
+---  OBS = AAS .
+---  OBT = AAT .
+---  OBU = AAU .
+---  OBV = AAV .
+---  OBW = AAW .
+---  OBX = AAX .
+
+---  OCA = AAA .
+---  OCB = AAB .
+---  OCC = AAC .
+---  OCD = AAD .
+---  OCE = AAE .
+---  OCF = AAF .
+---  OCG = AAG .
+---  OCH = AAH .
+
+---  OCI = AAI .
+---  OCJ = AAJ .
+---  OCK = AAK .
+---  OCL = AAL .
+---  OCM = AAM .
+---  OCN = AAN .
+---  OCO = AAO .
+---  OCP = AAP .
+
+---  OCQ = AAQ .
+---  OCR = AAR .
+---  OCS = AAS .
+---  OCT = AAT .
+---  OCU = AAU .
+---  OCV = AAV .
+---  OCW = AAW .
+---  OCX = AAX .
+
+---  ODA = AAA .
+---  ODB = AAB .
+---  ODC = AAC .
+---  ODD = AAD .
+---  ODE = AAE .
+---  ODF = AAF .
+---  ODG = AAG .
+---  ODH = AAH .
+
+---  ODI = AAI .
+---  ODJ = AAJ .
+---  ODK = AAK .
+---  ODL = AAL .
+---  ODM = AAM .
+---  ODN = AAN .
+---  ODO = AAO .
+---  ODP = AAP .
+
+---  ODQ = AAQ .
+---  ODR = AAR .
+---  ODS = AAS .
+---  ODT = AAT .
+---  ODU = AAU .
+---  ODV = AAV .
+---  ODW = AAW .
+---  ODX = AAX .
+
+---  kaa = iii .                       Packet phase 0
+---  kab = kaa .                                    1
+---  kac = kab .                                    2
+---  kad = kac .                                    3
+
+---  laa = iia KAA + laa kaa .         Write CPU A Bank N + 00
+---  lab = iib KAA + lab kaa .                              10
+---  lac = iic KAA + lac kaa .                              20
+---  lad = iid KAA + lad kaa .                              30
+
+---  lba = iia KAB + lba kab .         Write CPU B Bank N + 00
+---  lbb = iib KAB + lbb kab .                              10
+---  lbc = iic KAB + lbc kab .                              20
+---  lbd = iid KAB + lbd kab .                              30
+
+---  lca = iia KAC + lca kac .         Write CPU C Bank N + 00
+---  lcb = iib KAC + lcb kac .                              10
+---  lcc = iic KAC + lcc kac .                              20
+---  lcd = iid KAC + lcd kac .                              30
+
+---  lda = iia KAD + lda kad .         Write CPU D Bank N + 00
+---  ldb = iib KAD + ldb kad .                              10
+---  ldc = iic KAD + ldc kad .                              20
+---  ldd = iid KAD + ldd kad .                              30
+
+

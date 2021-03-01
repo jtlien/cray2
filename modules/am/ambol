@@ -1,0 +1,2115 @@
+---  AAA = IAA tea + AAB TEA .    ak01  Ak Data and Ak Data Shifted
+---  AAB = IAB tea + AAC TEA .    ak12
+---  AAC = IAC tea + AAD TEA .    ak23
+---  AAD = IAD tea + AAE TEA .    ak34
+---  AAE = IAE tea + AAF TEA .
+---  AAF = IAF tea + AAG TEA .
+---  AAG = IAG tea + AAH TEA .
+---  AAH = IAH tea + AAI TEA .
+---  AAI = IAI teb + AAJ TEB .
+---  AAJ = IAJ teb + AAK TEB .
+---  AAK = IAK teb + AAL TEB .
+---  AAL = IAL teb + AAM TEB .
+---  AAM = IAM teb + AAN TEB .
+---  AAN = IAN teb + AAO TEB .
+---  AAO = IAO teb + AAP TEB .
+---  AAP = IAP teb + ABA TEB .
+
+---  AAQ = AAA TEB .
+
+---  ABA = IBA tec + ABB TEC .   
+---  ABB = IBB tec + ABC TEC .
+---  ABC = IBC tec + ABD TEC .
+---  ABD = IBD tec + ABE TEC .
+---  ABE = IBE tec + ABF TEC .
+---  ABF = IBF tec + ABG TEC .
+---  ABG = IBG tec + ABH TEC .
+---  ABH = IBH tec + ABI TEC .
+---  ABI = IBI ted + ABJ TED .
+---  ABJ = IBJ ted + ABK TED .
+---  ABK = IBK ted + ABL TED .
+---  ABL = IBL ted + ABM TED .
+---  ABM = IBM ted + ABN TED .
+---  ABN = IBN ted + ABO TED .
+---  ABO = IBO ted + ABP TED .   ak3031
+---  ABP = IBP ted .            
+
+---  ACA = AAA .
+---  ACB = AAA .
+---  ACC = AAC .
+---  ACD = AAC .
+---  ACE = AAE .
+---  ACF = AAE .
+---  ACG = AAG .
+---  ACH = AAG .
+---  ACI = AAI .
+---  ACJ = AAI .
+---  ACK = AAK .
+---  ACL = AAK .
+---  ACM = AAM .
+---  ACN = AAM .
+---  ACO = AAO .
+---  ACP = AAO .
+---  ACQ = AAQ .
+
+---  ADA = ABA .
+---  ADB = ABA .
+---  ADC = ABC .
+---  ADD = ABC .
+---  ADE = ABE .
+---  ADF = ABE .
+---  ADG = ABG .
+---  ADH = ABG .
+---  ADI = ABI .
+---  ADJ = ABI .
+---  ADK = ABK .
+---  ADL = ABK .
+---  ADM = ABM .
+---  ADN = ABM .
+---  ADO = ABO .
+---  ADP = ABO .
+
+---  BAA = IAA tee + BAA TEE .    Aj data 0
+---  BAB = IAB tee + BAB TEE .
+---  BAC = IAC tee + BAC TEE .
+---  BAD = IAD tee + BAD TEE .
+---  BAE = IAE tee + BAE TEE .
+---  BAF = IAF tee + BAF TEE .
+---  BAG = IAG tee + BAG TEE .
+---  BAH = IAH tee + BAH TEE .
+---  BAI = IAI tef + BAI TEF .
+---  BAJ = IAJ tef + BAJ TEF .
+---  BAK = IAK tef + BAK TEF .
+---  BAL = IAL tef + BAL TEF .
+---  BAM = IAM tef + BAM TEF .
+---  BAN = IAN tef + BAN TEF .
+---  BAO = IAO tef + BAO TEF .
+---  BAP = IAP tef + BAP TEF .
+
+---  BBA = IBA teg + BBA TEG .
+---  BBB = IBB teg + BBB TEG .
+---  BBC = IBC teg + BBC TEG .
+---  BBD = IBD teg + BBD TEG .
+---  BBE = IBE teg + BBE TEG .
+---  BBF = IBF teg + BBF TEG .
+---  BBG = IBG teg + BBG TEG .
+---  BBH = IBH teg + BBH TEG .
+---  BBI = IBI teh + BBI TEH .
+---  BBJ = IBJ teh + BBJ TEH .
+---  BBK = IBK teh + BBK TEH .
+---  BBL = IBL teh + BBL TEH .
+---  BBM = IBM teh + BBM TEH .
+---  BBN = IBN teh + BBN TEH .
+---  BBO = IBO teh + BBO TEH .
+---  BBP = IBP teh + BBP TEH .   31
+
+---  CAA = ACA BAA .   Aj 0 and Ak 0,1
+---  CAB = ACC BAA .               2,3
+---  CAC = ACE BAA .               4,5
+---  CAD = ACG BAA .               6,7
+---  CAE = ACI BAA .               8,9
+---  CAF = ACK BAA .              10,11
+---  CAG = ACM BAA .              12,13
+---  CAH = ACO BAA .              14,15
+---  CAI = ADA BAA .              16,17
+---  CAJ = ADC BAA .              18,19
+---  CAK = ADE BAA .              20,21
+---  CAL = ADG BAA .              22,23
+---  CAM = ADI BAA .              24,25
+---  CAN = ADK BAA .              26,27
+---  CAO = ADM BAA .              28,29
+---  CAP = ADO BAA .              30,31
+
+---  CBA = ACB BAB .    Need reversed selects for odd diagonals   2^1
+---  CBB = ACD BAB .
+---  CBC = ACF BAB . 
+---  CBD = ACH BAB . 
+---  CBE = ACJ BAB . 
+---  CBF = ACL BAB . 
+---  CBG = ACN BAB .  
+---  CBH = ACP BAB .
+---  CBI = ADB BAB .
+---  CBJ = ADD BAB .
+---  CBK = ADF BAB . 
+---  CBL = ADH BAB .
+---  CBM = ADJ BAB .
+---  CBN = ADL BAB .
+---  CBO = ADN BAB .
+---  CBP = ADO BAB .
+                        
+---  CCA = ACA BAC .    2^2
+---  CCB = ACC BAC .
+---  CCC = ACE BAC .
+---  CCD = ACG BAC .
+---  CCE = ACI BAC .
+---  CCF = ACK BAC .
+---  CCG = ACM BAC .
+---  CCH = ACO BAC .
+---  CCI = ADA BAC .
+---  CCJ = ADC BAC .
+---  CCK = ADE BAC .
+---  CCL = ADG BAC .
+---  CCM = ADI BAC .
+---  CCN = ADK BAC .
+---  CCO = ADM BAC .
+
+---  CDA = ACB BAD .   2^3
+---  CDB = ACD BAD .
+---  CDC = ACF BAD .
+---  CDD = ACH BAD .
+---  CDE = ACJ BAD .
+---  CDF = ACL BAD .
+---  CDG = ACN BAD .
+---  CDH = ACP BAD .
+---  CDI = ADB BAD .
+---  CDJ = ADD BAD .
+---  CDK = ADF BAD .
+---  CDL = ADH BAD .
+---  CDM = ADJ BAD .
+---  CDN = ADL BAD .
+---  CDO = ADN BAD .
+
+---  CEA = ACA BAE .     2^4
+---  CEB = ACC BAE .
+---  CEC = ACE BAE .
+---  CED = ACG BAE .
+---  CEE = ACI BAE .
+---  CEF = ACK BAE .
+---  CEG = ACM BAE .
+---  CEH = ACO BAE .
+---  CEI = ADA BAE .
+---  CEJ = ADC BAE .
+---  CEK = ADE BAE .
+---  CEL = ADG BAE .
+---  CEM = ADI BAE .
+---  CEN = ADK BAE .
+
+---  CFA = ACB BAF .     2^5
+---  CFB = ACD BAF .
+---  CFC = ACF BAF .
+---  CFD = ACH BAF .
+---  CFE = ACJ BAF .
+---  CFF = ACL BAF .
+---  CFG = ACN BAF .
+---  CFH = ACP BAF .
+---  CFI = ADB BAF .
+---  CFJ = ADD BAF .
+---  CFK = ADF BAF .
+---  CFL = ADH BAF .
+---  CFM = ADJ BAF .
+---  CFN = ADL BAF .
+
+---  CGA = ACA BAG .    2^6
+---  CGB = ACC BAG .
+---  CGC = ACE BAG .
+---  CGD = ACG BAG .
+---  CGE = ACI BAG .
+---  CGF = ACK BAG .
+---  CGG = ACM BAG .
+---  CGH = ACO BAG .
+---  CGI = ADA BAG .
+---  CGJ = ADC BAG .
+---  CGK = ADE BAG .
+---  CGL = ADG BAG .
+---  CGM = ADI BAG .
+
+---  CHA = ACB BAH .    2^7
+---  CHB = ACD BAH .
+---  CHC = ACF BAH .
+---  CHD = ACH BAH .
+---  CHE = ACJ BAH .
+---  CHF = ACL BAH .
+---  CHG = ACN BAH .
+---  CHH = ACP BAH .
+---  CHI = ADB BAH .
+---  CHJ = ADD BAH .
+---  CHK = ADF BAH .
+---  CHL = ADH BAH .
+---  CHM = ADJ BAH .
+
+---  CIA = ACA BAI .    2^8
+---  CIB = ACC BAI .
+---  CIC = ACE BAI .
+---  CID = ACG BAI .
+---  CIE = ACI BAI .
+---  CIF = ACK BAI .
+---  CIG = ACM BAI .
+---  CIH = ACO BAI .
+---  CII = ADA BAI .
+---  CIJ = ADC BAI .
+---  CIK = ADE BAI .
+---  CIL = ADG BAI .
+
+---  CJA = BAJ ACB .       2^9
+---  CJB = BAJ ACD .
+---  CJC = BAJ ACF .
+---  CJD = BAJ ACH .
+---  CJE = BAJ ACJ .
+---  CJF = BAJ ACL .
+---  CJG = BAJ ACN .
+---  CJH = BAJ ACP .
+---  CJI = BAJ ADB .
+---  CJJ = BAJ ADD .
+---  CJK = BAJ ADF .
+---  CJL = BAJ ADH .
+
+---  CKA = BAK ACA .    2^10
+---  CKB = BAK ACC .
+---  CKC = BAK ACE .
+---  CKD = BAK ACG .
+---  CKE = BAK ACI .
+---  CKF = BAK ACK .
+---  CKG = BAK ACM .
+---  CKH = BAK ACO .
+---  CKI = BAK ADA .
+---  CKJ = BAK ADC .
+---  CKK = BAK ADE .
+
+---  CLA = BAL ACB .    2^11
+---  CLB = BAL ACD .
+---  CLC = BAL ACF .
+---  CLD = BAL ACH .
+---  CLE = BAL ACJ .
+---  CLF = BAL ACL .
+---  CLG = BAL ACN .
+---  CLH = BAL ACP .
+---  CLI = BAL ADB .
+---  CLJ = BAL ADD .
+---  CLK = BAL ADF .
+
+---  CMA = BAM ACA .    2^12
+---  CMB = BAM ACC .
+---  CMC = BAM ACE .
+---  CMD = BAM ACG .
+---  CME = BAM ACI .
+---  CMF = BAM ACK .
+---  CMG = BAM ACM .
+---  CMH = BAM ACO .
+---  CMI = BAM ADA .
+---  CMJ = BAM ADC .
+
+---  CNA = BAN ACB .    2^13
+---  CNB = BAN ACD .
+---  CNC = BAN ACF .
+---  CND = BAN ACH .
+---  CNE = BAN ACJ .
+---  CNF = BAN ACL .
+---  CNG = BAN ACN .
+---  CNH = BAN ACP .
+---  CNI = BAN ADB .
+---  CNJ = BAN ADD .
+
+---  COA = BAO ACA .   2^14
+---  COB = BAO ACC .
+---  COC = BAO ACE .
+---  COD = BAO ACG .
+---  COE = BAO ACI .
+---  COF = BAO ACK .
+---  COG = BAO ACM .
+---  COH = BAO ACO .
+---  COI = BAO ADA .
+
+---  CPA = BAP ACB .   2^15
+---  CPB = BAP ACD .
+---  CPC = BAP ACF .
+---  CPD = BAP ACH .
+---  CPE = BAP ACJ .
+---  CPF = BAP ACL .
+---  CPG = BAP ACN .
+---  CPH = BAP ACP .
+---  CPI = BAP ADB .
+
+---  CQA = BBA ACA .   2^16
+---  CQB = BBA ACC .
+---  CQC = BBA ACE .
+---  CQD = BBA ACG .
+---  CQE = BBA ACI .
+---  CQF = BBA ACK .
+---  CQG = BBA ACM .
+---  CQH = BBA ACO .
+
+---  CRA = BBB ACB .    2^17
+---  CRB = BBB ACD .
+---  CRC = BBB ACF .
+---  CRD = BBB ACH .
+---  CRE = BBB ACJ .
+---  CRF = BBB ACL .
+---  CRG = BBB ACN .
+---  CRH = BBB ACP .
+
+---  CSA = BBC ACA .    2^18
+---  CSB = BBC ACC .
+---  CSC = BBC ACE .
+---  CSD = BBC ACG .
+---  CSE = BBC ACI .
+---  CSF = BBC ACK .
+---  CSG = BBC ACM .
+
+---  CTA = BBD ACB .    2^19
+---  CTB = BBD ACD .
+---  CTC = BBD ACF .
+---  CTD = BBD ACH .
+---  CTE = BBD ACJ .
+---  CTF = BBD ACL .
+---  CTG = BBD ACN .
+ 
+---  CUA = BBE ACA .   2^20
+---  CUB = BBE ACC .
+---  CUC = BBE ACE .
+---  CUD = BBE ACG .
+---  CUE = BBE ACI .
+---  CUF = BBE ACK .
+
+---  CVA = ACB BBF .    2^21
+---  CVB = ACD BBF .
+---  CVC = ACF BBF .
+---  CVD = ACH BBF .
+---  CVE = ACJ BBF .
+---  CVF = ACL BBF .
+
+---  CWA = ACA BBG .    2^22
+---  CWB = ACC BBG .
+---  CWC = ACE BBG .
+---  CWD = ACG BBG .
+---  CWE = ACI BBG .
+
+---  CXA = BBH ACB .     2^23
+---  CXB = BBH ACD .
+---  CXC = BBH ACF .
+---  CXD = BBH ACH .
+---  CXE = BBH ACJ .
+
+---  CYA = BBI ACA .     2^24
+---  CYB = BBI ACC . 
+---  CYC = BBI ACE .
+---  CYD = BBI ACG .
+
+---  CZA = BBJ ACB .     2^25
+---  CZB = BBJ ACD .
+---  CZC = BBJ ACF .
+---  CZD = BBJ ACH .
+
+---  DAA = BBK ACA .    2^26
+---  DAB = BBK ACC .
+---  DAC = BBK ACE .
+
+---  DBA = BBL ACB .    2^27
+---  DBB = BBL ACD .
+---  DBC = BBL ACF .
+
+---  DCA = BBM ACA .    2^28
+---  DCB = BBM ACC .
+
+---  DDA = BBN ACB .    2^29
+---  DDB = BBN ACD .
+
+---  DEA = BBO ACA .   2^30
+
+---  DFA = BBP ACB .    2^31
+
+                 Latched adds
+         f0
+--- DGA = CAA .   0,0
+    f1
+--- DGB = CBA .   1,0
+    f2
+--- DHA = CAB .   0,2
+--- DHB = CCA .   2,0
+    f3
+--- DHC = CBB .   1,2 
+--- DHD = CDA .   3,0
+    f4                     0,4 2,2 4,0
+--- DHE = CAC ccb cea + cac CCB cea + cac ccb CEA + CAC CCB CEA . 
+--- dhf = CAC ccb cea + cac CCB cea + cac ccb CEA + cac ccb cea . 
+    f5                     1,4 3,2 5,0
+--- DIA = CBC cdb cfa + cbc CDB cfa + cbc cdb CFA + CBC CDB CFA . 
+--- dib = CBC cdb cfa + cbc CDB cfa + cbc cdb CFA + cbc cdb cfa . 
+    f6                    0,6 2,4 4,2 6,0
+--- DIC = CAD ccc ceb + cad CCC ceb + cad ccc CEB + CAD CCC CEB . 
+--- did = CAD ccc ceb + cad CCC ceb + cad ccc CEB + cad ccc ceb . 
+--- DIE = CGA . 
+    f7                    1,6 3,4 5,2 7,0
+--- DJA = CBD cdc cfb + cbd CDC cfb + cbd cdc CFB + CBD CDC CFB . 
+--- djb = CBD cdc cfb + cbd CDC cfb + cbd cdc CFB + cbd cdc cfb . 
+--- DJC = CHA . 
+    f8
+--- DKA = CAE ccd cec + cae CCD cec + cae ccd CEC + CAE CCD CEC . 
+--- dkb = CAE ccd cec + cae CCD cec + cae ccd CEC + cae ccd cec . 
+--- DKC = CGB . 
+--- DKD = CIA . 
+    f9
+--- DLA = CBE cdd cfc + cbe CDD cfc + cbe cdd CFC + CBE CDD CFC . 
+--- dlb = CBE cdd cfc + cbe CDD cfc + cbe cdd CFC + cbe cdd cfc . 
+--- DLC = CHB . 
+--- DLD = CJA . 
+    f10
+--- DMA = CAF cce ced + caf CCE ced + caf cce CED + CAF CCE CED . 
+--- dmb = CAF cce ced + caf CCE ced + caf cce CED + caf cce ced . 
+--- DMC = CGC cib cka + cgc CIB cka + cgc cib CKA + CGC CIB CKA . 
+--- dmd = CGC cib cka + cgc CIB cka + cgc cib CKA + cgc cib cka . 
+    f11             1,10 3,8 5,6 7,4 9,2 11,0
+--- DNA = CBF cde cfd + cbf CDE cfd + cbf cde CFD + CBF CDE CFD . 
+--- dnb = CBF cde cfd + cbf CDE cfd + cbf cde CFD + cbf cde cfd . 
+--- DNC = CHC cjb cla + chc CJB cla + chc cjb CLA + CHC CJB CLA . 
+--- dnd = CHC cjb cla + chc CJB cla + chc cjb CLA + chc cjb cla . 
+    f12           0,12 2,10 4,8 6,6 8,4 10,2 12,0
+--- DOA = CAG ccf cee + cag CCF cee + cag ccf CEE + CAG CCF CEE . 
+--- dob = CAG ccf cee + cag CCF cee + cag ccf CEE + cag ccf cee . 
+--- DOC = CGD cic ckb + cgd CIC ckb + cgd cic CKB + CGD CIC CKB . 
+--- dod = CGD cic ckb + cgd CIC ckb + cgd cic CKB + cgd cic ckb . 
+--- DOE = CMA . 
+    f13       1,12 3,10 5,8 7,6 9,4 11,2 13,0
+--- DPA = CBG cdf cfe + cbg CDF cfe + cbg cdf CFE + CBG CDF CFE . 
+--- dpb = CBG cdf cfe + cbg CDF cfe + cbg cdf CFE + cbg cdf cfe . 
+--- DPC = CHD cjc clb + chd CJC clb + chd cjc CLB + CHD CJC CLB . 
+--- dpd = CHD cjc clb + chd CJC clb + chd cjc CLB + chd cjc clb . 
+--- DPE = CNA . 
+    f14          0,14  2,12  4,10 6,8 8,6 10,4 12,2 14,0
+--- DQA = CAH ccg cef + cah CCG cef + cah ccg CEF + CAH CCG CEF . 
+--- dqb = CAH ccg cef + cah CCG cef + cah ccg CEF + cah ccg cef . 
+--- DQC = CGE cid ckc + cge CID ckc + cge cid CKC + CGE CID CKC . 
+--- dqd = CGE cid ckc + cge CID ckc + cge cid CKC + cge cid ckc . 
+--- DQE = CMB . 
+--- DQF = COA . 
+    f15
+--- DRA = CBH cdg cff + cbh CDG cff + cbh cdg CFF + CBH CDG CFF . 
+--- drb = CBH cdg cff + cbh CDG cff + cbh cdg CFF + cbh cdg cff . 
+--- DRC = CHE cjd clc + che CJD clc + che cjd CLC + CHE CJD CLC . 
+--- drd = CHE cjd clc + che CJD clc + che cjd CLC + che cjd clc . 
+--- DRE = CNB . 
+--- DRF = CPA . 
+    f16        0,16 2,14 4,12 6,10 8,8 10,6 12,4 14,2 16,0
+--- DSA = CAI cch ceg + cai CCH ceg + cai cch CEG + CAI CCH CEG . 
+--- dsb = CAI cch ceg + cai CCH ceg + cai cch CEG + cai cch ceg . 
+--- DSC = CGF cie ckd + cgf CIE ckd + cgf cie CKD + CGF CIE CKD . 
+--- dsd = CGF cie ckd + cgf CIE ckd + cgf cie CKD + cgf cie ckd . 
+--- DSE = CMC cob cqa + cmc COB cqa + cmc cob CQA + CMC COB CQA . 
+--- dsf = CMC cob cqa + cmc COB cqa + cmc cob CQA + cmc cob cqa . 
+    f17
+--- DTA = CBI cdh cfg + cbi CDH cfg + cbi cdh CFG + CBI CDH CFG . 
+--- dtb = CBI cdh cfg + cbi CDH cfg + cbi cdh CFG + cbi cdh cfg . 
+--- DTC = CHF cje cld + chf CJE cld + chf cje CLD + CHF CJE CLD . 
+--- dtd = CHF cje cld + chf CJE cld + chf cje CLD + chf cje cld . 
+--- DTE = CNC cpb cra + cnc CPB cra + cnc cpb CRA + CNC CPB CRA . 
+--- dtf = CNC cpb cra + cnc CPB cra + cnc cpb CRA + cnc cpb cra . 
+    f18
+--- DUA = CAJ cci ceh + caj CCI ceh + caj cci CEH + CAJ CCI CEH . 
+--- dub = CAJ cci ceh + caj CCI ceh + caj cci CEH + caj cci ceh . 
+--- DUC = CGG cif cke + cgg CIF cke + cgg cif CKE + CGG CIF CKE . 
+--- dud = CGG cif cke + cgg CIF cke + cgg cif CKE + cgg cif cke . 
+--- DUE = CMD coc cqb + cmd COC cqb + cmd coc CQB + CMD COC CQB . 
+--- duf = CMD coc cqb + cmd COC cqb + cmd coc CQB + cmd coc cqb . 
+--- DUG = CSA . 
+    f19
+--- DVA = CBJ cdi cfh + cbj CDI cfh + cbj cdi CFH + CBJ CDI CFH . 
+--- dvb = CBJ cdi cfh + cbj CDI cfh + cbj cdi CFH + cbj cdi cfh . 
+--- DVC = CHG cjf cle + chg CJF cle + chg cjf CLE + CHG CJF CLE . 
+--- dvd = CHG cjf cle + chg CJF cle + chg cjf CLE + chg cjf cle . 
+--- DVE = CND cpc crb + cnd CPC crb + cnd cpc CRB + CND CPC CRB . 
+--- dvf = CND cpc crb + cnd CPC crb + cnd cpc CRB + cnd cpc crb . 
+--- DVG = CTA . 
+    f20
+--- DWA = CAK ccj cei + cak CCJ cei + cak ccj CEI + CAK CCJ CEI . 
+--- dwb = CAK ccj cei + cak CCJ cei + cak ccj CEI + cak ccj cei . 
+--- DWC = CGH cig ckf + cgh CIG ckf + cgh cig CKF + CGH CIG CKF . 
+--- dwd = CGH cig ckf + cgh CIG ckf + cgh cig CKF + cgh cig ckf . 
+--- DWE = CME cod cqc + cme COD cqc + cme cod CQC + CME COD CQC . 
+--- dwf = CME cod cqc + cme COD cqc + cme cod CQC + cme cod cqc . 
+--- DWG = CSB . 
+--- DWH = CUA . 
+    f21          1,20 3,18 5,16 7,14 9,12 11,10 13,8 15,6 17,4 19,2 21,0
+--- DXA = CBK cdj cfi + cbk CDJ cfi + cbk cdj CFI + CBK CDJ CFI . 
+--- dxb = CBK cdj cfi + cbk CDJ cfi + cbk cdj CFI + cbk cdj cfi . 
+--- DXC = CHH cjg clf + chh CJG clf + chh cjg CLF + CHH CJG CLF . 
+--- dxd = CHH cjg clf + chh CJG clf + chh cjg CLF + chh cjg clf . 
+--- DXE = CNE cpd crc + cne CPD crc + cne cpd CRC + CNE CPD CRC . 
+--- dxf = CNE cpd crc + cne CPD crc + cne cpd CRC + cne cpd crc . 
+--- DXG = CTB . 
+--- DXH = CVA . 
+    f22
+--- DYA = CAL cck cej + cal CCK cej + cal cck CEJ + CAL CCK CEJ . 
+--- dyb = CAL cck cej + cal CCK cej + cal cck CEJ + cal cck cej . 
+--- DYC = CGI cih ckg + cgi CIH ckg + cgi cih CKG + CGI CIH CKG . 
+--- dyd = CGI cih ckg + cgi CIH ckg + cgi cih CKG + cgi cih ckg . 
+--- DYE = CMF coe cqd + cmf COE cqd + cmf coe CQD + CMF COE CQD . 
+--- dyf = CMF coe cqd + cmf COE cqd + cmf coe CQD + cmf coe cqd . 
+--- DYG = CSC cub cwa + csc CUB cwa + csc cub CWA + CSC CUB CWA . 
+--- dyh = CSC cub cwa + csc CUB cwa + csc cub CWA + csc cub cwa . 
+    f23
+--- DZA = CBL cdk cfj + cbl CDK cfj + cbl cdk CFJ + CBL CDK CFJ . 
+--- dzb = CBL cdk cfj + cbl CDK cfj + cbl cdk CFJ + cbl cdk cfj . 
+--- DZC = CHI cjh clg + chi CJH clg + chi cjh CLG + CHI CJH CLG . 
+--- dzd = CHI cjh clg + chi CJH clg + chi cjh CLG + chi cjh clg . 
+--- DZE = CNF cpe crd + cnf CPE crd + cnf cpe CRD + CNF CPE CRD . 
+--- dzf = CNF cpe crd + cnf CPE crd + cnf cpe CRD + cnf cpe crd . 
+--- DZG = CTC cvb cxa + ctc CVB cxa + ctc cvb CXA + CTC CVB CXA . 
+--- dzh = CTC cvb cxa + ctc CVB cxa + ctc cvb CXA + ctc cvb cxa . 
+    f24    0,24  2,22  4,20  6,18  8,16  10,14 12,12 14,10 16,8 18,6 20,4 22,2 24.0 
+--- DZI = CAM ccl cek + cam CCL cek + cam ccl CEK + CAM CCL CEK . 
+--- dzj = CAM ccl cek + cam CCL cek + cam ccl CEK + cam ccl cek . 
+--- DZK = CGJ cii ckh + cgj CII ckh + cgj cii CKH + CGJ CII CKH . 
+--- dzl = CGJ cii ckh + cgj CII ckh + cgj cii CKH + cgj cii ckh . 
+--- DZM = CMG cof cqe + cmg COF cqe + cmg cof CQE + CMG COF CQE . 
+--- dzn = CMG cof cqe + cmg COF cqe + cmg cof CQE + cmg cof cqe . 
+--- DZO = CSD cuc cwb + csd CUC cwb + csd cuc CWB + CSD CUC CWB . 
+--- dzp = CSD cuc cwb + csd CUC cwb + csd cuc CWB + csd cuc cwb . 
+--- DZQ = CYA . 
+    f25     1,24 3,22 5,20 7,18 9,16 11,14 13,12 15,10 17,8 19,6 21,4 23,2 25,0
+--- QYA = CBM cdl cfk + cbm CDL cfk + cbm cdl CFK + CBM CDL CFK . 
+--- qyb = CBM cdl cfk + cbm CDL cfk + cbm cdl CFK + cbm cdl cfk . 
+--- QYC = CHJ cji clh + chj CJI clh + chj cji CLH + CHJ CJI CLH . 
+--- qyd = CHJ cji clh + chj CJI clh + chj cji CLH + chj cji clh . 
+--- QYE = CNG cpf cre + cng CPF cre + cng cpf CRE + CNG CPF CRE . 
+--- qyf = CNG cpf cre + cng CPF cre + cng cpf CRE + cng cpf cre . 
+--- QYG = CTD cvc cxb + ctd CVC cxb + ctd cvc CXB + CTD CVC CXB . 
+--- qyh = CTD cvc cxb + ctd CVC cxb + ctd cvc CXB + ctd cvc cxb . 
+--- QYI = CZA . 
+    f26   0,26 2,24 4,22 6,20 8,18 10,16 12,14 14,12 16,10 18,8 20,6 22,4 24,2 26,0
+--- QYJ = CAN ccm cel + can CCM cel + can ccm CEL + CAN CCM CEL . 
+--- qyk = CAN ccm cel + can CCM cel + can ccm CEL + can ccm cel . 
+--- QYL = CGK cij cki + cgk CIJ cki + cgk cij CKI + CGK CIJ CKI . 
+--- qym = CGK cij cki + cgk CIJ cki + cgk cij CKI + cgk cij cki . 
+--- QYN = CMH cog cqf + cmh COG cqf + cmh cog CQF + CMH COG CQF . 
+--- qyo = CMH cog cqf + cmh COG cqf + cmh cog CQF + cmh cog cqf . 
+--- QYP = CSE cud cwc + cse CUD cwc + cse cud CWC + CSE CUD CWC . 
+--- qyq = CSE cud cwc + cse CUD cwc + cse cud CWC + cse cud cwc . 
+--- QYR = CYB daa + cyb DAA . 
+--- QYS = DAA CYB . 
+    f27    1,26 3,24 5,22 7,20 9,18 11,16 13,14 15,12 17,10 19,8 21,6 23,4 25,2 27,0
+--- QZA = CBN cdm cfl + cbn CDM cfl + cbn cdm CFL + CBN CDM CFL . 
+--- qzb = CBN cdm cfl + cbn CDM cfl + cbn cdm CFL + cbn cdm cfl . 
+--- QZC = CHK cjj cli + chk CJJ cli + chk cjj CLI + CHK CJJ CLI . 
+--- qzd = CHK cjj cli + chk CJJ cli + chk cjj CLI + chk cjj cli . 
+--- QZE = CNH cpg crf + cnh CPG crf + cnh cpg CRF + CNH CPG CRF . 
+--- qzf = CNH cpg crf + cnh CPG crf + cnh cpg CRF + cnh cpg crf . 
+--- QZG = CTE cvd cxc + cte CVD cxc + cte cvd CXC + CTE CVD CXC . 
+--- qzh = CTE cvd cxc + cte CVD cxc + cte cvd CXC + cte cvd cxc . 
+--- QZI = CZB dba + czb DBA . 
+--- QZJ = DBA DBA . 
+    f28
+--- QZK = CAO ccn cem + cao CCN cem + cao ccn CEM + CAO CCN CEM . 
+--- qzl = CAO ccn cem + cao CCN cem + cao ccn CEM + cao ccn cem . 
+--- QZM = CGL cik ckj + cgl CIK ckj + cgl cik CKJ + CGL CIK CKJ . 
+--- qzn = CGL cik ckj + cgl CIK ckj + cgl cik CKJ + cgl cik ckj . 
+--- QZO = CMI coh cqg + cmi COH cqg + cmi coh CQG + CMI COH CQG . 
+--- qzp = CMI coh cqg + cmi COH cqg + cmi coh CQG + cmi coh cqg . 
+--- QZQ = CSF cue cwd + csf CUE cwd + csf cue CWD + CSF CUE CWD . 
+--- qzr = CSF cue cwd + csf CUE cwd + csf cue CWD + csf cue cwd . 
+--- QZS = CYC dab dca + cyc DAB dca + cyc dab DCA + CYC DAB DCA . 
+--- qzt = CYC dab dca + cyc DAB dca + cyc dab DCA + cyc dab dca . 
+    f29
+--- QXA = CBO cdn cfm + cbo CDN cfm + cbo cdn CFM + CBO CDN CFM . 
+--- qxb = CBO cdn cfm + cbo CDN cfm + cbo cdn CFM + cbo cdn cfm . 
+--- QXC = CHL cjk clj + chl CJK clj + chl cjk CLJ + CHL CJK CLJ . 
+--- qxd = CHL cjk clj + chl CJK clj + chl cjk CLJ + chl cjk clj . 
+--- QXE = CNI cph crg + cni CPH crg + cni cph CRG + CNI CPH CRG . 
+--- qxf = CNI cph crg + cni CPH crg + cni cph CRG + cni cph crg . 
+--- QXG = CTF cve cxd + ctf CVE cxd + ctf cve CXD + CTF CVE CXD . 
+--- qxh = CTF cve cxd + ctf CVE cxd + ctf cve CXD + ctf cve cxd . 
+--- QXI = CZC dbb dda + czc DBB dda + czc dbb DDA + CZC DBB DDA . 
+--- qxj = CZC dbb dda + czc DBB dda + czc dbb DDA + czc dbb dda . 
+    f30
+--- QXK = CAP cco cen + cap CCO cen + cap cco CEN + CAP CCO CEN . 
+--- qxl = CAP cco cen + cap CCO cen + cap cco CEN + cap cco cen . 
+--- QXM = CGM cil ckk + cgm CIL ckk + cgm cil CKK + CGM CIL CKK . 
+--- qxn = CGM cil ckk + cgm CIL ckk + cgm cil CKK + cgm cil ckk . 
+--- QXO = CMJ coi cqh + cmj COI cqh + cmj coi CQH + CMJ COI CQH . 
+--- qxp = CMJ coi cqh + cmj COI cqh + cmj coi CQH + cmj coi cqh . 
+--- QXQ = CSG cuf cwe + csg CUF cwe + csg cuf CWE + CSG CUF CWE . 
+--- qxr = CSG cuf cwe + csg CUF cwe + csg cuf CWE + csg cuf cwe . 
+--- QXS = CYD dac dcb + cyd DAC dcb + cyd dac DCB + CYD DAC DCB . 
+--- qxt = CYD dac dcb + cyd DAC dcb + cyd dac DCB + cyd dac dcb . 
+--- QXU = DEA . 
+    f31         1,30 3,28 5,26 7,24 9,22 11,20 13,18 15,16 17,14 19,12 21,10
+                       23,8 25,6 27,4 29,2 31,0
+--- QXV = CBP cdo cfn + cbp CDO cfn + cbp cdo CFN + CBP CDO CFN . 
+--- qxw = CBP cdo cfn + cbp CDO cfn + cbp cdo CFN + cbp cdo cfn . 
+--- QXX = CHM cjl clk + chm CJL clk + chm cjl CLK + CHM CJL CLK . 
+--- qxy = CHM cjl clk + chm CJL clk + chm cjl CLK + chm cjl clk . 
+--- QXZ = CNJ cpi crh + cnj CPI crh + cnj cpi CRH + CNJ CPI CRH . 
+--- qva = CNJ cpi crh + cnj CPI crh + cnj cpi CRH + cnj cpi crh . 
+--- QVB = CTG cvf cxe + ctg CVF cxe + ctg cvf CXE + CTG CVF CXE .
+--- qvc = CTG cvf cxe + ctg CVF cxe + ctg cvf CXE + ctg cvf cxe . 
+--- QVD = CZD dbc ddb + czd DBC ddb + czd dbc DDB + CZD DBC DDB . 
+--- qve = CZD dbc ddb + czd DBC ddb + czd dbc DDB + czd dbc ddb . 
+--- QVF = DBC . 
+--- QVG = DDB .
+
+                Unlatched Adds
+    f0
+--- EAA = DGA . 
+    f1
+--- EBA = DGB . 
+    f2
+--- ECA = DHA . 
+--- ECB = DHB . 
+    f3
+--- EDA = DHC . 
+--- EDB = DHD . 
+    f4
+--- EEA = DHE . 
+    f5
+--- EFA = DIA . 
+--- EFB = DHF . 
+    f6
+--- EIA = DIC dib die + dic DIB die + dic dib DIE + DIC DIB DIE . 
+--- eib = DIC dib die + dic DIB die + dic dib DIE + dic dib die . 
+    f7
+--- EJA = DJA did djc + dja DID djc + dja did DJC + DJA DID DJC . 
+--- ejb = DJA did djc + dja DID djc + dja did DJC + dja did djc . 
+    f8
+--- EKA = DKA djb dkc + dka DJB dkc + dka djb DKC + DKA DJB DKC . 
+--- ekb = DKA djb dkc + dka DJB dkc + dka djb DKC + dka djb dkc . 
+--- EKC = DKD . 
+    f9
+--- ELA = DLA dkb dlc + dla DKB dlc + dla dkb DLC + DLA DKB DLC . 
+--- elb = DLA dkb dlc + dla DKB dlc + dla dkb DLC + dla dkb dlc . 
+--- ELC = DLD . 
+    f10
+--- EMA = DMA dlb dmc + dma DLB dmc + dma dlb DMC + DMA DLB DMC . 
+--- emb = DMA dlb dmc + dma DLB dmc + dma dlb DMC + dma dlb dmc . 
+    f11
+--- ENA = DNA dmb dnc + dna DMB dnc + dna dmb DNC + DNA DMB DNC . 
+--- enb = DNA dmb dnc + dna DMB dnc + dna dmb DNC + dna dmb dnc . 
+--- ENC = DMD . 
+    f12
+--- EOA = DOA dnb doc + doa DNB doc + doa dnb DOC + DOA DNB DOC . 
+--- eob = DOA dnb doc + doa DNB doc + doa dnb DOC + doa dnb doc . 
+--- EOC = DOE . 
+--- EOD = DND . 
+    f13
+--- EPA = DPA dob dpc + dpa DOB dpc + dpa dob DPC + DPA DOB DPC . 
+--- epb = DPA dob dpc + dpa DOB dpc + dpa dob DPC + dpa dob dpc . 
+--- EPC = DPE . 
+--- EPD = DOD . 
+    f14
+--- EQA = DQA dpb dqc + dqa DPB dqc + dqa dpb DQC + DQA DPB DQC . 
+--- eqb = DQA dpb dqc + dqa DPB dqc + dqa dpb DQC + dqa dpb dqc . 
+--- EQC = DQF dqe dpd + dqf DQE dpd + dqf dqe DPD + DQF DQE DPD . 
+--- eqd = DQF dqe dpd + dqf DQE dpd + dqf dqe DPD + dqf dqe dpd . 
+    f15
+--- ERA = DRA dqb drc + dra DQB drc + dra dqb DRC + DRA DQB DRC . 
+--- erb = DRA dqb drc + dra DQB drc + dra dqb DRC + dra dqb drc . 
+--- ERC = DRF dqd dre + drf DQD dre + drf dqd DRE + DRF DQD DRE . 
+--- erd = DRF dqd dre + drf DQD dre + drf dqd DRE + drf dqd dre . 
+--- ERE = --- . 
+    f16
+--- ESA = DSA drb dsc + dsa DRB dsc + dsa drb DSC + DSA DRB DSC . 
+--- esb = DSA drb dsc + dsa DRB dsc + dsa drb DSC + dsa drb dsc . 
+--- ESC = DSE . 
+--- ESD = DRD . 
+    f17
+--- ETA = DTA dsb dtc + dta DSB dtc + dta dsb DTC + DTA DSB DTC . 
+--- etb = DTA dsb dtc + dta DSB dtc + dta dsb DTC + dta dsb dtc . 
+--- ETC = DTE dsf dsd + dte DSF dsd + dte dsf DSD + DTE DSF DSD . 
+--- etd = DTE dsf dsd + dte DSF dsd + dte dsf DSD + dte dsf dsd .
+    f18
+--- EUA = DUA dtb duc + dua DTB duc + dua dtb DUC + DUA DTB DUC . 
+--- eub = DUA dtb duc + dua DTB duc + dua dtb DUC + dua dtb duc . 
+--- EUC = DUE dtf dug + due DTF dug + due dtf DUG + DUE DTF DUG . 
+--- eud = DUE dtf dug + due DTF dug + due dtf DUG + due dtf dug .
+--- EUE = DTD .
+    f19
+--- EVA = DVA dub dvc + dva DUB dvc + dva dub DVC + DVA DUB DVC . 
+--- evb = DVA dub dvc + dva DUB dvc + dva dub DVC + dva dub dvc . 
+--- EVC = DVE dvg duf + dve DVG duf + dve dvg DUF + DVE DVG DUF . 
+--- evd = DVE dvg duf + dve DVG duf + dve dvg DUF + dve dvg duf .
+--- EVE = DVG .
+--- EVF = DUD .
+    f20
+--- EWA = DWA dvb dwb + dwa DVB dwb + dwa dvb DWB + DWA DVB DWB . 
+--- ewb = DWA dvb dwb + dwa DVB dwb + dwa dvb DWB + dwa dvb dwb . 
+--- EWC = DWC dwe dvd + dwc DWE dvd + dwc dwe DVD + DWC DWE DVD . 
+--- ewd = DWC dwe dvd + dwc DWE dvd + dwc dwe DVD + dwc dwe dvd . 
+--- EWE = DWG dwh dvf + dwg DWH dvf + dwg dwh DVF + DWG DWH DVF . 
+--- ewf = DWG dwh dvf + dwg DWH dvf + dwg dwh DVF + dwg dwh dvf . 
+    f21
+--- EXA = DXA dwb dxc + dxa DWB dxc + dxa dwb DXC + DXA DWB DXC . 
+--- exb = DXA dwb dxc + dxa DWB dxc + dxa dwb DXC + dxa dwb dxc . 
+--- EXC = DXE dxg dwd + dxe DXG dwd + dxe dxg DWD + DXE DXG DWD . 
+--- exd = DXE dxg dwd + dxe DXG dwd + dxe dxg DWD + dxe dxg dwd . 
+--- EXE = DXH . 
+--- EXF = DWF . 
+    f22
+--- EYA = DYA dxb dyc + dya DXB dyc + dya dxb DYC + DYA DXB DYC . 
+--- eyb = DYA dxb dyc + dya DXB dyc + dya dxb DYC + dya dxb dyc . 
+--- EYC = DYE dyg dxd + dye DYG dxd + dye dyg DXD + DYE DYG DXD . 
+--- eyd = DYE dyg dxd + dye DYG dxd + dye dyg DXD + dye dyg dxd . 
+--- EYE = DXF . 
+    f23
+--- EZA = DZA dyb dzc + dza DYB dzc + dza dyb DZC + DZA DYB DZC . 
+--- ezb = DZA dyb dzc + dza DYB dzc + dza dyb DZC + dza dyb dzc . 
+--- EZC = DZE dzg dyd + dze DZG dyd + dze dzg DYD + DZE DZG DYD . 
+--- ezd = DZE dzg dyd + dze DZG dyd + dze dzg DYD + dze dzg dyd . 
+--- EZE = DYF . 
+--- EZF = DYH . 
+    f24
+--- EZG = DZI dzb dzk + dzi DZB dzk + dzi dzb DZK + DZI DZB DZK . 
+--- ezh = DZI dzb dzk + dzi DZB dzk + dzi dzb DZK + dzi dzb dzk . 
+--- EZI = DZM dzo dzd + dzm DZO dzd + dzm dzo DZD + DZM DZO DZD . 
+--- ezj = DZM dzo dzd + dzm DZO dzd + dzm dzo DZD + dzm dzo dzd . 
+--- EZK = DZQ dzf dzh + dzq DZF dzh + dzq dzf DZH + DZQ DZF DZH . 
+--- ezl = DZQ dzf dzh + dzq DZF dzh + dzq dzf DZH + dzq dzf dzh . 
+    f25
+--- EZM = QYA qyc dzj + qya QYC dzj + qya qyc DZJ + QYA QYC DZJ . 
+--- ezn = QYA qyc dzj + qya QYC dzj + qya qyc DZJ + qya qyc dzj . 
+--- EZO = QYE qyg dzl + qye QYG dzl + qye qyg DZL + QYE QYG DZL . 
+--- ezp = QYE qyg dzl + qye QYG dzl + qye qyg DZL + qye qyg dzl . 
+--- EZQ = QYI dzn dzp + qyi DZN dzp + qyi dzn DZP + QYI DZN DZP . 
+--- ezr = QYI dzn dzp + qyi DZN dzp + qyi dzn DZP + qyi dzn dzp . 
+    f26
+--- EZS = QYJ qyl qyb + qyj QYL qyb + qyj qyl QYB + QYJ QYL QYB . 
+--- ezt = QYJ qyl qyb + qyj QYL qyb + qyj qyl QYB + qyj qyl qyb . 
+--- EZU = QYN qyp qyd + qyn QYP qyd + qyn qyp QYD + QYN QYP QYD . 
+--- ezv = QYN qyp qyd + qyn QYP qyd + qyn qyp QYD + qyn qyp qyd . 
+--- EZW = QYR qyh qyf + qyr QYH qyf + qyr qyh QYF + QYR QYH QYF . 
+--- ezx = QYR qyh qyf + qyr QYH qyf + qyr qyh QYF + qyr qyh qyf .
+    f27
+--- EYF = QZA qyk qzc + qza QYK qzc + qza qyk QZC + QZA QYK QZC . 
+--- eyg = QZA qyk qzc + qza QYK qzc + qza qyk QZC + qza qyk qzc . 
+--- EYH = QZE qzg qym + qze QZG qym + qze qzg QYM + QZE QZG QYM . 
+--- eyi = QZE qzg qym + qze QZG qym + qze qzg QYM + qze qzg qym . 
+--- EYJ = QZI qys qyo + qzi QYS qyo + qzi qys QYO + QZI QYS QYO . 
+--- eyk = QZI qys qyo + qzi QYS qyo + qzi qys QYO + qzi qys qyo . 
+--- EYL = QYQ . 
+    f28
+--- EYM = QZK qzm qzb + qzk QZM qzb + qzk qzm QZB + QZK QZM QZB . 
+--- eyn = QZK qzm qzb + qzk QZM qzb + qzk qzm QZB + qzk qzm qzb . 
+--- EYO = QZO qzq qzd + qzo QZQ qzd + qzo qzq QZD + QZO QZQ QZD . 
+--- eyp = QZO qzq qzd + qzo QZQ qzd + qzo qzq QZD + qzo qzq qzd . 
+--- EYQ = QZS qzf qzh + qzs QZF qzh + qzs qzf QZH + QZS QZF QZH . 
+--- eyr = QZS qzf qzh + qzs QZF qzh + qzs qzf QZH + qzs qzf qzh . 
+    f29
+--- EYS = QXA qxc qzl + qxa QXC qzl + qxa qxc QZL + QXA QXC QZL . 
+--- eyt = QXA qxc qzl + qxa QXC qzl + qxa qxc QZL + qxa qxc qzl . 
+--- EYU = QXE qxg qzn + qxe QXG qzn + qxe qxg QZN + QXE QXG QZN . 
+--- eyv = QXE qxg qzn + qxe QXG qzn + qxe qxg QZN + qxe qxg qzn . 
+--- EYW = QZP qzr qzt + qzp QZR qzt + qzp qzr QZT + QZP QZR QZT . 
+--- eyx = QZP qzr qzt + qzp QZR qzt + qzp qzr QZT + qzp qzr qzt . 
+--- EYY = QXI . 
+    f30
+--- EXG = QXK qxm qxb + qxk QXM qxb + qxk qxm QXB + QXK QXM QXB . 
+--- exh = QXK qxm qxb + qxk QXM qxb + qxk qxm QXB + qxk qxm qxb . 
+--- EXI = QXQ qxs qxd + qxq QXS qxd + qxq qxs QXD + QXQ QXS QXD . 
+--- exj = QXQ qxs qxd + qxq QXS qxd + qxq qxs QXD + qxq qxs qxd . 
+--- EXK = QXU qxf qxh + qxu QXF qxh + qxu qxf QXH + QXU QXF QXH . 
+--- exl = QXU qxf qxh + qxu QXF qxh + qxu qxf QXH + qxu qxf qxh . 
+--- EXM = QXJ qxo + qxj QXO .
+--- EYZ = QXJ QXO .
+    f31
+--- EXN = QXV qxx qxl + qxv QXX qxl + qxv qxx QXL + QXV QXX QXL . 
+--- exo = QXV qxx qxl + qxv QXX qxl + qxv qxx QXL + qxv qxx qxl . 
+--- EXP = QXZ qvb qxn + qxz QVB qxn + qxz qvb QXN + QXZ QVB QXN . 
+--- exq = QXZ qvb qxn + qxz QVB qxn + qxz qvb QXN + qxz qvb qxn . 
+--- EXR = QVD qvf qvg + qvd QVF qvg + qvd qvf QVG + QVD QVF QVG . 
+--- exs = QVD qvf qvg + qvd QVF qvg + qvd qvf QVG + qvd qvf qvg . 
+--- EXT = QXP qxr qxt + qxp QXR qxt + qxp qxr QXT + QXP QXR QXT . 
+--- exu = QXP qxr qxt + qxp QXR qxt + qxp qxr QXT + qxp qxr qxt . 
+
+             Latched Adds
+
+   f0
+--- FAA = EAA . 
+    f1
+--- FBA = EBA . 
+    f2
+--- FCA = ECA . 
+--- FCB = ECB .    not a carry
+    f3
+--- FDA = EDA . 
+--- FDB = EDB .   not a carry 
+    f4
+--- FEA = EEA . 
+    f5
+--- FFA = EFA efb + efa EFB . 
+--- FFB = EFB EFA .   carry
+    f6
+--- FGA = EIA . 
+    f7
+--- FHA = EJA . 
+--- FHB = EIB .    not a carry 
+    f8
+--- FIA = EKA ekc ejb + eka EKC ejb + eka ekc EJB + EKA EKC EJB . 
+--- fib = EKA ekc ejb + eka EKC ejb + eka ekc EJB + eka ekc ejb . 
+    f9
+--- FJA = ELA elc ekb + ela ELC ekb + ela elc EKB + ELA ELC EKB . 
+--- fjb = ELA elc ekb + ela ELC ekb + ela elc EKB + ela elc ekb . 
+    f10
+--- FMA = EMA . 
+--- FMB = ELB . 
+    f11
+--- FNA = ENA enc emb + ena ENC emb + ena enc EMB + ENA ENC EMB . 
+--- fnb = ENA enc emb + ena ENC emb + ena enc EMB + ena enc emb . 
+    f12
+--- FOA = EOA enb eoc + eoa ENB eoc + eoa enb EOC + EOA ENB EOC . 
+--- fob = EOA enb eoc + eoa ENB eoc + eoa enb EOC + eoa enb eoc . 
+--- FOC = EOD . 
+    f13
+--- FPA = EPA epc eob + epa EPC eob + epa epc EOB + EPA EPC EOB . 
+--- fpb = EPA epc eob + epa EPC eob + epa epc EOB + epa epc eob . 
+--- FPC = EPD . 
+    f14
+--- FQA = EQA eqc epb + eqa EQC epb + eqa eqc EPB + EQA EQC EPB . 
+--- fqb = EQA eqc epb + eqa EQC epb + eqa eqc EPB + eqa eqc epb .
+--- FQC = --- .
+    f15
+--- FRA = ERA erc eqb + era ERC eqb + era erc EQB + ERA ERC EQB . 
+--- frb = ERA erc eqb + era ERC eqb + era erc EQB + era erc eqb . 
+--- FRC = ERE . 
+--- FRD = EQD . 
+    f16
+--- FSA = ESA esc erb + esa ESC erb + esa esc ERB + ESA ESC ERB . 
+--- fsb = ESA esc erb + esa ESC erb + esa esc ERB + esa esc erb . 
+--- FSC = ERD . 
+--- FSD = ESD . 
+    f17
+--- FTA = ETA etc esb + eta ETC esb + eta etc ESB + ETA ETC ESB . 
+--- ftb = ETA etc esb + eta ETC esb + eta etc ESB + eta etc esb .
+--- FTC = --- .
+    f18
+--- FUA = EUA euc etb + eua EUC etb + eua euc ETB + EUA EUC ETB . 
+--- fub = EUA euc etb + eua EUC etb + eua euc ETB + eua euc etb .
+--- FUC = ETD .
+--- FUD = EUE .
+    f19
+--- FVA = EVA evc eub + eva EVC eub + eva evc EUB + EVA EVC EUB . 
+--- fvb = EVA evc eub + eva EVC eub + eva evc EUB + eva evc eub . 
+--- FVC = EUD eve evf + eud EVE evf + eud eve EVF + EUD EVE EVF .
+--- fvd = EUD eve evf + eud EVE evf + eud eve EVF + eud eve evf .
+    f20
+--- FWA = EWA ewc evb + ewa EWC evb + ewa ewc EVB + EWA EWC EVB . 
+--- fwb = EWA ewc evb + ewa EWC evb + ewa ewc EVB + ewa ewc evb . 
+--- FWC = EWE . 
+--- FWD = EVD . 
+    f21
+--- FXA = EXA exc ewb + exa EXC ewb + exa exc EWB + EXA EXC EWB . 
+--- fxb = EXA exc ewb + exa EXC ewb + exa exc EWB + exa exc ewb . 
+--- FXC = EXE exf ewd + exe EXF ewd + exe exf EWD + EXE EXF EWD . 
+--- fxd = EXE exf ewd + exe EXF ewd + exe exf EWD + exe exf ewd . 
+--- FXE = EWF . 
+    f22
+--- FYA = EYA eyc exb + eya EYC exb + eya eyc EXB + EYA EYC EXB . 
+--- fyb = EYA eyc exb + eya EYC exb + eya eyc EXB + eya eyc exb . 
+--- FYC = EYE exd + eye EXD . 
+--- FYD = EXD EYE . 
+    f23
+--- FZA = EZA ezc eze + eza EZC eze + eza ezc EZE + EZA EZC EZE . 
+--- fzb = EZA ezc eze + eza EZC eze + eza ezc EZE + eza ezc eze . 
+--- FZC = EZF eyb eyd + ezf EYB eyd + ezf eyb EYD + EZF EYB EYD . 
+--- fzd = EZF eyb eyd + ezf EYB eyd + ezf eyb EYD + ezf eyb eyd . 
+    f24
+--- FZE = EZG ezi ezk + ezg EZI ezk + ezg ezi EZK + EZG EZI EZK . 
+--- fzf = EZG ezi ezk + ezg EZI ezk + ezg ezi EZK + ezg ezi ezk . 
+--- FZG = EZB . 
+--- FZH = EZD . 
+    f25
+--- FZI = EZM ezo ezq + ezm EZO ezq + ezm ezo EZQ + EZM EZO EZQ . 
+--- fzj = EZM ezo ezq + ezm EZO ezq + ezm ezo EZQ + ezm ezo ezq . 
+--- FZK = EZH ezj ezl + ezh EZJ ezl + ezh ezj EZL + EZH EZJ EZL . 
+--- fzl = EZH ezj ezl + ezh EZJ ezl + ezh ezj EZL + ezh ezj ezl .
+    f26
+--- FZM = EZS ezu ezw + ezs EZU ezw + ezs ezu EZW + EZS EZU EZW . 
+--- fzn = EZS ezu ezw + ezs EZU ezw + ezs ezu EZW + ezs ezu ezw . 
+--- FZO = EZR ezn ezp + ezr EZN ezp + ezr ezn EZP + EZR EZN EZP . 
+--- fzp = EZR ezn ezp + ezr EZN ezp + ezr ezn EZP + ezr ezn ezp . 
+    f27
+--- FZR = EYF eyh eyj + eyf EYH eyj + eyf eyh EYJ + EYF EYH EYJ . 
+--- fzs = EYF eyh eyj + eyf EYH eyj + eyf eyh EYJ + eyf eyh eyj . 
+--- FZT = EYL ezt ezv + eyl EZT ezv + eyl ezt EZV + EYL EZT EZV . 
+--- fzu = EYL ezt ezv + eyl EZT ezv + eyl ezt EZV + eyl ezt ezv . 
+--- FZV = EZX . 
+    f28
+--- FZW = EYM eyo eyq + eym EYO eyq + eym eyo EYQ + EYM EYO EYQ . 
+--- fzx = EYM eyo eyq + eym EYO eyq + eym eyo EYQ + eym eyo eyq . 
+--- FZY = EYG eyi eyk + eyg EYI eyk + eyg eyi EYK + EYG EYI EYK . 
+--- fzz = EYG eyi eyk + eyg EYI eyk + eyg eyi EYK + eyg eyi eyk . 
+    f29
+--- FYE = EYS eyu eyw + eys EYU eyw + eys eyu EYW + EYS EYU EYW . 
+--- fyf = EYS eyu eyw + eys EYU eyw + eys eyu EYW + eys eyu eyw . 
+--- FYG = EYY eyn eyp + eyy EYN eyp + eyy eyn EYP + EYY EYN EYP . 
+--- fyh = EYY eyn eyp + eyy EYN eyp + eyy eyn EYP + eyy eyn eyp . 
+--- FYI = EYR . 
+    f30
+--- FYJ = EXG exi exk + exg EXI exk + exg exi EXK + EXG EXI EXK . 
+--- fyk = EXG exi exk + exg EXI exk + exg exi EXK + exg exi exk . 
+--- FYL = EXM eyt eyv + exm EYT eyv + exm eyt EYV + EXM EYT EYV . 
+--- fym = EXM eyt eyv + exm EYT eyv + exm eyt EYV + exm eyt eyv . 
+--- FYN = EYX . 
+    f31
+--- FYO = EXN exp exr + exn EXP exr + exn exp EXR + EXN EXP EXR . 
+--- fyp = EXN exp exr + exn EXP exr + exn exp EXR + exn exp exr . 
+--- FYQ = EXT exh exj + ext EXH exj + ext exh EXJ + EXT EXH EXJ . 
+--- fyr = EXT exh exj + ext EXH exj + ext exh EXJ + ext exh exj . 
+--- FYS = EXL eyz + exl EYZ .
+
+             Unlatched Adds
+        f0
+     --- GAA = FAA .
+    f1
+     --- GBA = FBA .
+    f2
+     --- GCA = FCA .
+     --- GCB = FCB .    not a carry
+    f3
+     --- GDA = FDA .
+     --- GDB = FDB .    not a carry
+    f4
+     --- GEA = FEA .
+    f5
+     --- GFA = FFA .
+    f6
+     --- GGA = FGA ffb + fga FFB .
+     --- GGB = FGA FFB .      carry
+    f7
+     --- GHA = FHA .
+     --- GHB = FHB .
+    f8
+     --- GIA = FIA . 
+    f9
+     --- GJA = FJA . 
+     --- GJB = FIB .  
+    f10
+--- GMA = FMA fmb fjb + fma FMB fjb + fma fmb FJB + FMA FMB FJB . 
+--- gmb = FMA fmb fjb + fma FMB fjb + fma fmb FJB + fma fmb fjb . 
+    f11
+--- GNA = FNA . 
+    f12
+--- GOA = FOA foc fnb + foa FOC fnb + foa foc FNB + FOA FOC FNB . 
+--- gob = FOA foc fnb + foa FOC fnb + foa foc FNB + foa foc fnb . 
+    f13
+--- GPA = FPA fpc fob + fpa FPC fob + fpa fpc FOB + FPA FPC FOB . 
+--- gpb = FPA fpc fob + fpa FPC fob + fpa fpc FOB + fpa fpc fob . 
+    f14
+--- GQA = FQA fqc fpb + fqa FQC fpb + fqa fqc FPB + FQA FQC FPB . 
+--- gqb = FQA fqc fpb + fqa FQC fpb + fqa fqc FPB + fqa fqc fpb . 
+    f15
+--- GRA = FRA fqb frd + fra FQB frd + fra fqb FRD + FRA FQB FRD . 
+--- grb = FRA fqb frd + fra FQB frd + fra fqb FRD + fra fqb frd .
+--- GRC = FRC .
+    f16
+--- GSA = FSA fsc fsd + fsa FSC fsd + fsa fsc FSD + FSA FSC FSD . 
+--- gsb = FSA fsc fsd + fsa FSC fsd + fsa fsc FSD + fsa fsc fsd .
+--- GSC = FRB .
+    f17
+--- GTA = FTA ftc fsb + fta FTC fsb + fta ftc FSB + FTA FTC FSB . 
+--- gtb = FTA ftc fsb + fta FTC fsb + fta ftc FSB + fta ftc fsb . 
+    f18
+--- GUA = FUA fuc ftb + fua FUC ftb + fua fuc FTB + FUA FUC FTB . 
+--- gub = FUA fuc ftb + fua FUC ftb + fua fuc FTB + fua fuc ftb .
+--- GUC = FUD .
+    f19
+--- GVA = FVA fvc fub + fva FVC fub + fva fvc FUB + FVA FVC FUB . 
+--- gvb = FVA fvc fub + fva FVC fub + fva fvc FUB + fva fvc fub .
+--- GVC = --- .
+    f20
+--- GWA = FWA fwc fvb + fwa FWC fvb + fwa fwc FVB + FWA FWC FVB . 
+--- gwb = FWA fwc fvb + fwa FWC fvb + fwa fwc FVB + fwa fwc fvb . 
+--- GWC = FWD fvd + fwd FVD.
+--- GWD = FWD FVD .
+    f21
+--- GXA = FXA fxc fwb + fxa FXC fwb + fxa fxc FWB + FXA FXC FWB . 
+--- gxb = FXA fxc fwb + fxa FXC fwb + fxa fxc FWB + fxa fxc fwb . 
+--- GXC = FXE . 
+    f22
+--- GYA = FYA fyc fxb + fya FYC fxb + fya fyc FXB + FYA FYC FXB . 
+--- gyb = FYA fyc fxb + fya FYC fxb + fya fyc FXB + fya fyc fxb . 
+--- GYC = FXD . 
+    f23
+--- GZA = FZA fzc fyb + fza FZC fyb + fza fzc FYB + FZA FZC FYB . 
+--- gzb = FZA fzc fyb + fza FZC fyb + fza fzc FYB + fza fzc fyb .
+--- GYL = FYD .
+    f24
+--- GZC = FZE fzg fzb + fze FZG fzb + fze fzg FZB + FZE FZG FZB . 
+--- gzd = FZE fzg fzb + fze FZG fzb + fze fzg FZB + fze fzg fzb . 
+--- GZE = FZH fzd + fzh FZD . 
+--- GZF = FZD FZH . 
+    f25
+--- GZG = FZI fzk fzf + fzi FZK fzf + fzi fzk FZF + FZI FZK FZF . 
+--- gzh = FZI fzk fzf + fzi FZK fzf + fzi fzk FZF + fzi fzk fzf .
+--- GYJ = --- .
+    f26
+--- GZI = FZM fzo fzj + fzm FZO fzj + fzm fzo FZJ + FZM FZO FZJ . 
+--- gzj = FZM fzo fzj + fzm FZO fzj + fzm fzo FZJ + fzm fzo fzj . 
+--- GZK = FZL .
+    f27
+--- GZM = FZR fzt fzn + fzr FZT fzn + fzr fzt FZN + FZR FZT FZN . 
+--- gzn = FZR fzt fzn + fzr FZT fzn + fzr fzt FZN + fzr fzt fzn . 
+--- GZO = FZP fzv + fzp FZV . 
+--- GZP = FZP FZV . 
+    f28
+--- GZQ = FZW fzy fzs + fzw FZY fzs + fzw fzy FZS + FZW FZY FZS . 
+--- gzr = FZW fzy fzs + fzw FZY fzs + fzw fzy FZS + fzw fzy fzs . 
+--- GZS = FZU . 
+    f29
+--- GZT = FYE fyg fzx + fye FYG fzx + fye fyg FZX + FYE FYG FZX . 
+--- gzu = FYE fyg fzx + fye FYG fzx + fye fyg FZX + fye fyg fzx . 
+--- GZV = FYI . 
+--- GZW = FZZ . 
+    f30
+--- GZX = FYJ fyl fyf + fyj FYL fyf + fyj fyl FYF + FYJ FYL FYF . 
+--- gzy = FYJ fyl fyf + fyj FYL fyf + fyj fyl FYF + fyj fyl fyf . 
+--- GZZ = FYH fyn + fyh FYN . 
+--- GYE = FYN FYH . 
+    f31
+--- GYF = FYO fyq fyk + fyo FYQ fyk + fyo fyq FYK + FYO FYQ FYK . 
+--- gyg = FYO fyq fyk + fyo FYQ fyk + fyo fyq FYK + fyo fyq fyk . 
+--- GYH = FYM . 
+--- GYI = FYS . 
+
+        Latched Adds
+   f0
+--- HAA = FAA . 
+   f1
+--- HBA = FBA . 
+   f2
+--- HCA = FCA . 
+--- HCB = FCB .   not a carry
+   f3
+--- HDA = FDA . 
+--- HDB = FDB .   not a carry
+   f4
+--- HEA = FEA . 
+   f5
+--- HFA = FFA .
+--- HFB = --- .
+   f6
+--- HGA = FGA ffb + fga FFB .
+--- HGB = FGA FFB .    carry
+   f7
+--- HHA = FHA . 
+--- HHB = FHB .     not a carry
+   f8
+--- HIA = FIA . 
+   f9
+--- HJA = FJA . 
+--- HJB = FIB .     not a carry 
+   f10
+--- HMA = GMA . 
+   f11
+--- HNA = GNA . 
+--- HNB = GMB . 
+   f12
+--- HOA = GOA . 
+   f13
+--- HPA = GPA . 
+--- HPB = GOB . 
+   f14
+--- HQA = GQA . 
+--- HQB = GPB . 
+   f15
+--- HRA = GRA grc gqb + gra GRC gqb + gra grc GQB + GRA GRC GQB . 
+--- hrb = GRA grc gqb + gra GRC gqb + gra grc GQB + gra grc gqb . 
+   f16
+--- HSA = GSA grb gsc + gsa GRB gsc + gsa grb GSC + GSA GRB GSC .
+--- hsb = GSA grb gsc + gsa GRB gsc + gsa grb GSC + gsa grb gsc .
+   f17
+--- HTA = GTA gsb + gta GSB . 
+--- HTB = GSB GTA . 
+   f18
+--- HUA = GUA gtb guc + gua GTB guc + gua gtb GUC + GUA GTB GUC .
+--- hub = GUA gtb guc + gua GTB guc + gua gtb GUC + gua gtb guc .
+   f19
+--- HVA = GVA gub gvc + gva GUB gvc + gva gub GVC + GVA GUB GVC .
+--- hvb = GVA gub gvc + gva GUB gvc + gva gub GVC + gva gub gvc .
+   f20
+--- HWA = GWA gwc gvb + gwa GWC gvb + gwa gwc GVB + GWA GWC GVB . 
+--- hwb = GWA gwc gvb + gwa GWC gvb + gwa gwc GVB + gwa gwc gvb . 
+   f21
+--- HXA = GXA gxc gwb + gxa GXC gwb + gxa gxc GWB + GXA GXC GWB . 
+--- hxb = GXA gxc gwb + gxa GXC gwb + gxa gxc GWB + gxa gxc gwb .
+--- HXC = GWD .
+   f22
+--- HYA = GYA gyc gxb + gya GYC gxb + gya gyc GXB + GYA GYC GXB . 
+--- hyb = GYA gyc gxb + gya GYC gxb + gya gyc GXB + gya gyc gxb .  
+   f23
+--- HZA = GZA gyl gyb + gza GYL gyb + gza gyl GYB + GZA GYL GYB . 
+--- hzb = GZA gyl gyb + gza GYL gyb + gza gyl GYB + gza gyl gyb . 
+   f24
+--- HZC = GZC gze gzb + gzc GZE gzb + gzc gze GZB + GZC GZE GZB . 
+--- hzd = GZC gze gzb + gzc GZE gzb + gzc gze GZB + gzc gze gzb .
+   f25
+--- HZG = GZG gzf gzd + gzg GZF gzd + gzg gzf GZD + GZG GZF GZD . 
+--- hzh = GZG gzf gzd + gzg GZF gzd + gzg gzf GZD + gzg gzf gzd .
+   f26
+--- HZI = GZI gzk gzh + gzi GZK gzh + gzi gzk GZH + GZI GZK GZH . 
+--- hzj = GZI gzk gzh + gzi GZK gzh + gzi gzk GZH + gzi gzk gzh . 
+--- HZK = --- . 
+   f27
+--- HZM = GZM gzo gzj + gzm GZO gzj + gzm gzo GZJ + GZM GZO GZJ . 
+--- hzn = GZM gzo gzj + gzm GZO gzj + gzm gzo GZJ + gzm gzo gzj .
+--- HZO = --- .
+   f28
+--- HZQ = GZQ gzs gzn + gzq GZS gzn + gzq gzs GZN + GZQ GZS GZN . 
+--- hzr = GZQ gzs gzn + gzq GZS gzn + gzq gzs GZN + gzq gzs gzn . 
+   f29
+--- HZT = GZT gzv gzr + gzt GZV gzr + gzt gzv GZR + GZT GZV GZR . 
+--- hzu = GZT gzv gzr + gzt GZV gzr + gzt gzv GZR + gzt gzv gzr . 
+--- HZV = GZW . 
+   f30
+--- HZW = GZX gzz gzu + gzx GZZ gzu + gzx gzz GZU + GZX GZZ GZU . 
+--- hzx = GZX gzz gzu + gzx GZZ gzu + gzx gzz GZU + gzx gzz gzu . 
+   f31
+--- HZY = GYF gyh gzy + gyf GYH gzy + gyf gyh GZY + GYF GYH GZY . 
+--- hzz = GYF gyh gzy + gyf GYH gzy + gyf gyh GZY + gyf gyh gzy . 
+--- HYD = GYI gye + gyi GYE . 
+
+                     Unlatched Adds
+      f0
+  --- JAA = HAA . 
+   f1
+  --- JBA = HBA . 
+   f2
+  --- JCA = HCA . 
+  --- JCB = HCB . 
+   f3
+  --- JDA = HDA . 
+  --- JDB = HDB . 
+   f4
+  --- JEA = HEA . 
+   f5
+  --- JFA = HFA .
+  --- JFB = HFB . 
+   f6
+  --- JGA = HGA . 
+   f7
+  --- JHA = HHA . 
+  --- JHB = HHB . 
+   f8
+  --- JIA = HIA . 
+   f9
+  --- JJA = HJA . 
+  --- JJB = HJB . 
+   f10
+  --- JMA = HMA . 
+   f11
+  --- JNA = HNA . 
+  --- JNB = HNB . 
+   f12
+  --- JOA = HOA . 
+   f13
+  --- JPA = HPA . 
+  --- JPB = HPB . 
+   f14
+  --- JQA = HQA . 
+  --- JQB = HQB . 
+   f15
+  --- JRA = HRA . 
+   f16
+   --- JSA = HSA hrb + hsa HRB . 
+   --- JSB = HSA HRB .
+   f17
+  --- JTA = HTA . 
+  --- JTB = HTB . 
+   f18
+  --- JUA = HUA . 
+   f19
+  --- JVA = HVA . 
+  --- JVB = HUB . 
+   f20
+  --- JWA = HWA . 
+   f21
+  --- JXA = HXA . 
+  --- JXB = HWB . 
+   f22
+  --- JYA = HYA hxb + hya HXB .
+  --- JYB = HYA HXB .
+   f23
+   --- JZA = HZA hzb hyb + hza HZB hyb + hza hzb HYB + HZA HZB HYB . 
+   --- jzb = HZA hzb hyb + hza HZB hyb + hza hzb HYB + hza hzb hyb . 
+   f24
+  --- JZC = HZC . 
+  --- JZD = --- . 
+   f25
+  --- JZG = HZG hzh hzd + hzg HZH hzd + hzg hzh HZD + HZG HZH HZD . 
+  --- jzh = HZG hzh hzd + hzg HZH hzd + hzg hzh HZD + hzg hzh hzd . 
+   f26
+  --- JZI = HZI . 
+  --- JZJ = HZK . 
+   f27
+---
+  --- jzn = HZM hzo hzj + hzm HZO hzj + hzm hzo HZJ + hzm hzo hzj . 
+   f28
+  --- JZQ = HZQ . 
+  --- JZR = HZN . 
+   f29
+--- JZT = HZT hzv hzr + hzt HZV hzr + hzt hzv HZR + HZT HZV HZR . 
+--- jzu = HZT hzv hzr + hzt HZV hzr + hzt hzv HZR + hzt hzv hzr . 
+   f30
+  --- JZW = HZW . 
+  --- JZX = HZU . 
+   f31
+--- JZY = HZY hyd hzx + hzy HYD hzx + hzy hyd HZX + HZY HYD HZX . 
+--- jzz = HZY hyd hzx + hzy HYD hzx + hzy hyd HZX + hzy hyd hzx . 
+
+              Latch adds
+
+  f0
+--- KAA = HAA . 
+  f1
+--- KBA = HBA . 
+  f2
+--- KCA = HCA . 
+--- KCB = HCB . 
+  f3
+--- KDA = HDA . 
+--- KDB = HDB . 
+  f4
+--- KEA = HEA . 
+  f5
+--- KFA = HFA . 
+  f6
+--- KGA = HGA .
+  f7
+--- KHA = HHA hhb hgb + hha HHB hgb + hha hhb HGB + HHA HHB HGB . 
+--- khb = HHA hhb hgb + hha HHB hgb + hha hhb HGB + hha hhb hgb .      carry 
+  f8
+--- KIA = HIA . 
+  f9
+--- KJA = HJA . 
+--- KJB = HJB . 
+  f10
+--- KMA = HMA . 
+  f11
+--- KNA = HNA . 
+--- KNB = HNB . 
+  f12
+--- KOA = HOA . 
+  f13
+--- KPA = HPA . 
+--- KPB = HPB . 
+  f14
+--- KQA = HQA . 
+--- KQB = HQB . 
+  f15
+--- KRA = HRA . 
+  f16
+--- KSA = HSA .
+--- KSB = HRB .
+  f17
+--- KTA = HTA hsb + hta HSB .
+--- KTB = HTA HSB . 
+  f18
+--- KUA = HUA htb + hua HTB .
+--- KUB = HTB HUA .
+  f19
+--- KVA = HVA hub + hva HUB .
+--- KVB = HVA HUB .
+  f20
+--- KWA = HWA hvb + hwa HVB .
+--- KWB = HVB HWA .
+  f21
+--- KXA = HXA hxc hwb + hxa HXC hwb + hxa hxc HWB + HXA HXC HWB . 
+--- kxb = HXA hxc hwb + hxa HXC hwb + hxa hxc HWB + hxa hxc hwb . 
+  f22
+--- KYA = HYA hxb + hya HXB .
+--- KYB = HYA HXB . 
+  f23
+--- KZA = HZA hyb + hza HYB .
+--- KZB = HZA HYB .
+  f24
+--- KZC = HZC hzb  + hzc HZB .
+--- KZD = HZC HZB .
+  f25
+--- KZG = HZG hzd + hzg HZD .
+--- KZH = HZG HZD .
+  f26
+--- KZI = HZH hzi hzk + hzh HZI hzk + hzh hzi HZK + HZH HZI HZK . 
+--- kzj = HZH hzi hzk + hzh HZI hzk + hzh hzi HZK + hzh hzi hzk . 
+  f27
+--- KZM = HZM hzo hzj + hzm HZO hzj + hzm hzo HZJ + HZM HZO HZJ .
+--- kzn = HZM hzo hzj + hzm HZO hzj + hzm hzo HZJ + hzm hzo hzj . 
+  f28
+--- KZQ = HZQ hzn + hzq HZN .
+--- KZR = HZQ HZN .
+  f29
+--- KZT = JZT . 
+  f30
+--- KZW = HZW hzu + hzw HZU .
+--- KZX = HZW HZU .
+  f31
+--- KZY = JZY . 
+
+   Merge H,K terms
+                   Latched
+    f0
+--- LAA = KAA . 
+  f1
+--- LBA = HAA . 
+--- LBB = KBA . 
+  f2
+--- LCA = HBA kca kcb + hba KCA kcb + hba kca KCB + HBA KCA KCB . 
+--- lcb = HBA kca kcb + hba KCA kcb + hba kca KCB + hba kca kcb . 
+  f3
+--- LDA = KDA hca hcb + kda HCA hcb + kda hca HCB + KDA HCA HCB . 
+--- ldb = KDA hca hcb + kda HCA hcb + kda hca HCB + kda hca hcb .
+--- LDC = KDB .
+  f4
+--- LEA = KEA hda hdb + kea HDA hdb + kea hda HDB + KEA HDA HDB . 
+--- leb = KEA hda hdb + kea HDA hdb + kea hda HDB + kea hda hdb . 
+  f5
+--- LFA = KFA hea + kfa HEA .
+--- LFB = KFA HEA .
+--- LFC = --- .
+  f6
+--- LGA = KGA hfa hfb + kga HFA hfb + kga hfa HFB + KGA HFA HFB . 
+--- lgb = KGA hfa hfb + kga HFA hfb + kga hfa HFB + kga hfa hfb . 
+  f7
+--- LHA = HGA kha + hga KHA .
+--- LHB = HGA KHA .
+  f8
+--- LIA = KIA hha hhb + kia HHA hhb + kia hha HHB + KIA HHA HHB . 
+--- lib = KIA hha hhb + kia HHA hhb + kia hha HHB + kia hha hhb .
+--- LIC = HGB khb + hgb KHB .
+--- LID = HGB KHB .
+  f9
+--- LJA = KJA kjb hia + kja KJB hia + kja kjb HIA + KJA KJB HIA . 
+--- ljb = KJA kjb hia + kja KJB hia + kja kjb HIA + kja kjb hia . 
+  f10
+--- LKA = KMA hja hjb + kma HJA hjb + kma hja HJB + KMA HJA HJB . 
+--- lkb = KMA hja hjb + kma HJA hjb + kma hja HJB + kma hja hjb . 
+  f11
+--- LLA = KNA knb hma + kna KNB hma + kna knb HMA + KNA KNB HMA . 
+--- llb = KNA knb hma + kna KNB hma + kna knb HMA + kna knb hma . 
+  f12
+--- LMA = KOA hna hnb + koa HNA hnb + koa hna HNB + KOA HNA HNB . 
+--- lmb = KOA hna hnb + koa HNA hnb + koa hna HNB + koa hna hnb . 
+  f13
+--- LNA = HOA kpa kpb + hoa KPA kpb + hoa kpa KPB + HOA KPA KPB . 
+--- lnb = HOA kpa kpb + hoa KPA kpb + hoa kpa KPB + hoa kpa kpb . 
+  f14
+--- LOA = HPA hpb kqa + hpa HPB kqa + hpa hpb KQA + HPA HPB KQA . 
+--- lob = HPA hpb kqa + hpa HPB kqa + hpa hpb KQA + hpa hpb kqa . 
+--- LOC = KQB . 
+  f15
+--- LQA = KRA hqa hqb + kra HQA hqb + kra hqa HQB + KRA HQA HQB . 
+--- lqb = KRA hqa hqb + kra HQA hqb + kra hqa HQB + kra hqa hqb . 
+  f16
+--- LRA = KSA ksb hra + ksa KSB hra + ksa ksb HRA + KSA KSB HRA .
+--- lrb = KSA ksb hra + ksa KSB hra + ksa ksb HRA + ksa ksb hra .
+  f17
+--- LSA = KTA hsa hrb + kta HSA hrb + kta hsa HRB + KTA HSA HRB . 
+--- lsb = KTA hsa hrb + kta HSA hrb + kta hsa HRB + kta hsa hrb . 
+--- LSC = --- . 
+  f18
+--- LTA = KUA hta hsb + kua HTA hsb + kua hta HSB + KUA HTA HSB . 
+--- ltb = KUA hta hsb + kua HTA hsb + kua hta HSB + kua hta hsb . 
+--- LTC = KTB .
+  f19
+--- LUA = KVA htb hua + kva HTB hua + kva htb HUA + KVA HTB HUA . 
+--- lub = KVA htb hua + kva HTB hua + kva htb HUA + kva htb hua .
+--- LUC = KUB .
+  f20
+--- LVA = HVA hub kwa + hva HUB kwa + hva hub KWA + HVA HUB KWA . 
+--- lvb = HVA hub kwa + hva HUB kwa + hva hub KWA + hva hub kwa .
+--- LVC = KVB .
+  f21
+--- LWA = HWA hvb kxa + hwa HVB kxa + hwa hvb KXA + HWA HVB KXA . 
+--- lwb = HWA hvb kxa + hwa HVB kxa + hwa hvb KXA + hwa hvb kxa .
+--- LWC = KWB .
+  f22
+--- LXA = HXA hwb kya + hxa HWB kya + hxa hwb KYA + HXA HWB KYA . 
+--- lxb = HXA hwb kya + hxa HWB kya + hxa hwb KYA + hxa hwb kya .
+--- LXC = KXB .
+  f23
+--- LYA = HYA hxb kza + hya HXB kza + hya hxb KZA + HYA HXB KZA . 
+--- lyb = HYA hxb kza + hya HXB kza + hya hxb KZA + hya hxb kza .
+--- LYC = KYB .
+  f24
+--- LZA = HZA hyb kzc + hza HYB kzc + hza hyb KZC + HZA HYB KZC . 
+--- lzb = HZA hyb kzc + hza HYB kzc + hza hyb KZC + hza hyb kzc . 
+--- LZC = KZB . 
+  f25
+--- LZD = KZD kzg hzc + kzd KZG hzc + kzd kzg HZC + KZD KZG HZC . 
+--- lze = KZD kzg hzc + kzd KZG hzc + kzd kzg HZC + kzd kzg hzc . 
+--- LZF = HZB .
+  f26
+--- LZI = KZI hzd hzg + kzi HZD hzg + kzi hzd HZG + KZI HZD HZG . 
+--- lzj = KZI hzd hzg + kzi HZD hzg + kzi hzd HZG + kzi hzd hzg . 
+--- LZK = KZH .
+  f27
+--- LZL = KZJ hzi hzh + kzj HZI hzh + kzj hzi HZH + KZJ HZI HZH . 
+--- lzm = KZJ hzi hzh + kzj HZI hzh + kzj hzi HZH + kzj hzi hzh . 
+--- LZN = KZM .
+  f28
+--- LZO = HZM kzn hzj + hzm KZN hzj + hzm kzn HZJ + HZM KZN HZJ . 
+--- lzp = HZM kzn hzj + hzm KZN hzj + hzm kzn HZJ + hzm kzn hzj . 
+--- LZQ = KZQ .
+  f29
+--- LZR = KZT hzq hzn + kzt HZQ hzn + kzt hzq HZN + KZT HZQ HZN . 
+--- lzs = KZT hzq hzn + kzt HZQ hzn + kzt hzq HZN + kzt hzq hzn . 
+--- LZT = KZR . 
+  f30
+--- LZU = HZT hzv hzr + hzt HZV hzr + hzt hzv HZR + HZT HZV HZR . 
+--- lzv = HZT hzv hzr + hzt HZV hzr + hzt hzv HZR + hzt hzv hzr . 
+--- LZW = KZW . 
+  f31
+--- LZX = HZW kzx hzu + hzw KZX hzu + hzw kzx HZU + HZW KZX HZU . 
+--- lzy = HZW kzx hzu + hzw KZX hzu + hzw kzx HZU + hzw kzx hzu . 
+--- LZZ = KZY . 
+
+       
+              Unlatched adds
+     f0
+--- MAA = LAA . 
+    f1
+--- MBA = LBA . 
+--- MBB = LBB . 
+    f2
+--- MCA = LCA . 
+    f3
+--- MDA = LDA ldc lcb + lda LDC lcb + lda ldc LCB + LDA LDC LCB . 
+--- mdb = LDA ldc lcb + lda LDC lcb + lda ldc LCB + lda ldc lcb . 
+    f4
+--- MEA = LEA ldb + lea LDB .
+--- MEB = LEA LDB .
+    f5
+--- MFA = LFA leb + lfa LEB .
+--- MFB = LFA LEB .
+    f6
+--- MGA = LGA lfb + lga LFB . 
+--- MGB = LGA LFB . 
+    f7
+--- MHA = LHA lgb + lha LGB .
+--- MHB = LHA LGB .
+    f8
+--- MIA = LIA lhb lic + lia LHB lic + lia lhb LIC + LIA LHB LIC .
+--- mib = LIA lhb lic + lia LHB lic + lia lhb LIC + lia lhb lic .
+    f9
+--- MJA = LJA lib lid + lja LIB lid + lja lib LID + LJA LIB LID .
+--- mjb = LJA lib lid + lja LIB lid + lja lib LID + lja lib lid .
+    f10
+--- MKA = LKA ljb + lka LJB . 
+--- MKB = LJB LKA . 
+    f11
+--- MLA = LLA lkb + lla LKB . 
+--- MLB = LKB LLA . 
+    f12
+--- MMA = LMA llb + lma LLB . 
+--- MMB = LLB LMA . 
+    f13
+--- MNA = LNA lmb + lna LMB . 
+--- MNB = LMB LNA . 
+    f14
+--- MOA = LOA loc lnb + loa LOC lnb + loa loc LNB + LOA LOC LNB . 
+--- mob = LOA loc lnb + loa LOC lnb + loa loc LNB + loa loc lnb . 
+    f15
+--- MQA = LQA lob + lqa LOB . 
+--- MQB = LOB LQA . 
+    f16
+--- MRA = LRA lqb + lra LQB . 
+--- MRB = LRA LQB .
+    f17
+--- MSA = LSA lsc lrb + lsa LSC lrb + lsa lsc LRB + LSA LSC LRB . 
+--- msb = LSA lsc lrb + lsa LSC lrb + lsa lsc LRB + lsa lsc lrb . 
+    f18
+--- MTA = LTA ltc lsb + lta LTC lsb + lta ltc LSB + LTA LTC LSB . 
+--- mtb = LTA ltc lsb + lta LTC lsb + lta ltc LSB + lta ltc lsb .
+    f19
+--- MUA = LUA ltb luc + lua LTB luc + lua ltb LUC + LUA LTB LUC . 
+--- mub = LUA ltb luc + lua LTB luc + lua ltb LUC + lua ltb luc . 
+    f20
+--- MVA = LVA lub lvc + lva LUB lvc + lva lub LVC + LVA LUB LVC . 
+--- mvb = LVA lub lvc + lva LUB lvc + lva lub LVC + lva lub lvc .
+    f21
+--- MWA = LWA lwc lvb + lwa LWC lvb + lwa lwc LVB + LWA LWC LVB . 
+--- mwb = LWA lwc lvb + lwa LWC lvb + lwa lwc LVB + lwa lwc lvb .
+    f22
+--- MXA = LXA lxc lwb + lxa LXC lwb + lxa lxc LWB + LXA LXC LWB . 
+--- mxb = LXA lxc lwb + lxa LXC lwb + lxa lxc LWB + lxa lxc lwb . 
+    f23
+--- MYA = LYA lyc lxb + lya LYC lxb + lya lyc LXB + LYA LYC LXB . 
+--- myb = LYA lyc lxb + lya LYC lxb + lya lyc LXB + lya lyc lxb .  
+    f24
+--- MZA = LZA lzc lyb + lza LZC lyb + lza lzc LYB + LZA LZC LYB . 
+--- mzb = LZA lzc lyb + lza LZC lyb + lza lzc LYB + lza lzc lyb .
+    f25
+--- MZD = LZD lzf lzb + lzd LZF lzb + lzd lzf LZB + LZD LZF LZB . 
+--- mze = LZD lzf lzb + lzd LZF lzb + lzd lzf LZB + lzd lzf lzb . 
+    f26
+--- MZI = LZI lzk lze + lzi LZK lze + lzi lzk LZE + LZI LZK LZE . 
+--- mzj = LZI lzk lze + lzi LZK lze + lzi lzk LZE + lzi lzk lze .
+    f27
+--- MZL = LZL lzn lzj + lzl LZN lzj + lzl lzn LZJ + LZL LZN LZJ . 
+--- mzm = LZL lzn lzj + lzl LZN lzj + lzl lzn LZJ + lzl lzn lzj .
+    f28
+--- MZO = LZO lzq lzm + lzo LZQ lzm + lzo lzq LZM + LZO LZQ LZM . 
+--- mzp = LZO lzq lzm + lzo LZQ lzm + lzo lzq LZM + lzo lzq lzm .
+    f29
+--- MZR = LZR lzt lzp + lzr LZT lzp + lzr lzt LZP + LZR LZT LZP . 
+--- mzs = LZR lzt lzp + lzr LZT lzp + lzr lzt LZP + lzr lzt lzp .
+    f30
+--- MZU = LZU lzw lzs + lzu LZW lzs + lzu lzw LZS + LZU LZW LZS . 
+--- mzv = LZU lzw lzs + lzu LZW lzs + lzu lzw LZS + lzu lzw lzs . 
+    f31
+--- MZX = LZX lzz lzv + lzx LZZ lzv + lzx lzz LZV + LZX LZZ LZV . 
+--- mzy = LZX lzz lzv + lzx LZZ lzv + lzx lzz LZV + lzx lzz lzv . 
+
+      First Adder
+   f0
+--- NAA = MAA . 
+   f1
+--- NAB = MBA mbb + mba MBB . 
+--- NEB = MBA MBB . 
+   f2
+--- NAC = MCA . 
+   f3
+--- NAD = MDA . 
+   f4
+--- NAE = MEA + MDB .
+--- NEE = MEA MDB .
+   f5
+--- NAF = MFA + MEB .
+--- NEF = MFA MEB .
+   f6
+--- NAG = MGA + MFB .
+--- NEG = MGA MFB .
+   f7
+--- NAH = MHA + MGB .
+--- NEH = MHA MGB . 
+   f8
+--- NAI = MIA + MHB .
+--- NEI = MIA MHB .
+   f9
+--- NAJ = MJA + MIB .
+--- NEJ = MJA MIB .
+   f10
+--- NAK = MKA + MJB . 
+--- NEK = MKA MJB . 
+   f11
+--- NAL = MLA + MKB . 
+--- NEL = MLA MKB . 
+   f12
+--- NAM = MMA + MLB . 
+--- NEM = MMA MLB . 
+   f13
+--- NAN = MNA + MMB . 
+--- NEN = MNA MMB . 
+   f14
+--- NAO = MOA + MNB .
+--- NEO = MOA MNB .
+   f15
+--- NAP = MQA + MOB .
+--- NEP = MQA MOB .
+   f16
+--- NBA = MRA + MQB .
+--- NAQ = MRA MQB .
+   f17
+--- NBB = MSA + MRB . 
+--- NFB = MRB MSA .
+   f18
+--- NBC = MTA + MSB .
+--- NFC = MTA MSB .
+   f19
+--- NBD = MUA + MTB .
+--- NFD = MUA MTB .
+   f20
+--- NBE = MVA + MUB . 
+--- NFE = MVA MUB . 
+   f21
+--- NBF = MWA + MVB . 
+--- NFF = MWA MVB . 
+   f22
+--- NBG = MXA + MWB . 
+--- NFG = MXA MWB . 
+   f23
+--- NBH = MYA + MXB .
+--- NFH = MYA MXB . 
+   f24
+--- NBI = MZA + MYB . 
+--- NFI = MZA MYB . 
+   f25
+--- NBJ = MZD + MZB . 
+--- NFJ = MZD MZB . 
+   f26
+--- NBK = MZI + MZE . 
+--- NFK = MZI MZE . 
+   f27
+--- NBL = MZL + MZJ .
+--- NFL = MZL MZJ .
+   f28
+--- NBM = MZO + MZM .
+--- NFM = MZO MZM .
+   f29
+--- NBN = MZR + MZP .
+--- NFN = MZR MZP .
+   f30
+--- NBO = MZU + MZS . 
+--- NFO = MZU MZS . 
+   f31
+--- NBP = MZX + MZV . 
+--- NFP = MZX MZV . 
+
+              Carries within group, Latch
+
+
+---  NGD = NEB NAC .
+---  NGE = NEB NAC NAD .
+
+---  NHB = NEE .                                        Group 1
+---  NHC = NEE NAF + NEF .                             NAE-H,NEE-H
+---  NHD = NEE NAF NAG + NEF NAG + NEG .
+---  NHE = NEE NAF NAG NAH + NEF NAG NAH + NEG NAH + NEH .
+  
+---  NIB = NEI .                                        Group 2
+---  NIC = NEI NAJ + NEJ .                             NAI-L,NEI-L
+---  NID = NEI NAJ NAK + NEJ NAK + NEK .
+---  NIE = NEI NAJ NAK NAL + NEJ NAK NAL + NEK NAL + NEL .
+
+---  NJB = NEM .                                        Group 3
+---  NJC = NEM NAN + NEN .                             NAM-P,NEM-P
+---  NJD = NEM NAN NAO + NEN NAO + NEO .
+---  NJE = NEM NAN NAO NAP + NEN NAO NAP + NEO NAP + NEP .
+
+---  NKB = NAQ .                                        Group 4
+---  NKC = NAQ NBB + NFB .                             NBA-NBD,NFA-NFD
+---  NKD = NAQ NBB NBC + NFB NBC + NFC .
+---  NKE = NAQ NBB NBC NBD + NFB NBC NBD + NFC NBD + NFD .
+
+---  NLB = NFE .                                         Group 5
+---  NLC = NFE NBF + NFF .                             NBE-NBH,NFE-NFH
+---  NLD = NFE NBF NBG + NFF NBG + NFG .
+---  NLE = NFE NBF NBG NBH + NFF NBG NBH + NFG NBH + NFH .
+
+---  NMB = NFI .                                           Group 6
+---  NMC = NFI NBJ + NFJ .                               NBI-NBL,NFI-L
+---  NMD = NFI NBJ NBK + NFJ NBK + NFK .
+---  NME = NFI NBJ NBK NBL + NFJ NBK NBL + NFK NBL + NFL .
+
+---  NNB = NFM .                                           Group 7
+---  NNC = NFM NBN + NFN .                               NBM-NBP,NFM-P
+---  NND = NFM NBN NBO + NFN NBO + NFO .
+---  NNE = NFM NBN NBO NBP + NFN NBO NBP + NFO NBP + NFP .
+
+                 Carries in Groups With Carry,latched
+
+---  npb = nae .                            Group 1
+---  npc = nef nae + naf .
+---  npd = nef neg nae + neg naf + nag .
+
+---  nqb = nai .                                          Group 2
+---  nqc = nej nai + naj .
+---  nqd = nek nej nai + nek naj + nak .
+
+---  nrb = nam .                                          Group 3
+---  nrc = nen nam + nan .
+---  nrd = neo nen nam + neo nan + nao .
+
+---  nsb = nba .                                        Group 4
+---  nsc = nfb nba + nbb .
+---  nsd = nfb nfc nba + nfc nbb + nbc .
+
+---  ntb = nbe .                                         Group 5
+---  ntc = nff nbe + nbf .
+---  ntd = nff nfg nbe + nfg nbf + nbg .
+
+---  nub = nbi .                                          Group 6
+---  nuc = nfj nbi + nbj .
+---  nud = nfj nfk nbi + nfk nbj + nbk .
+
+---  nvb = nbm .                                          Group 7
+---  nvc = nfn nbm + nbn .
+---  nvd = nfn nfo nbm + nfo nbn + nbo .
+
+
+---  nxb = nae + naf + nag + nah .             4-7 all one
+---  nxc = nai + naj + nak + nal .             8-11
+---  nxd = nam + nan + nao + nap .            12-15
+
+---  nxe = nba + nbb + nbc + nbd .            16-19
+---  nxf = nbe + nbf + nbg + nbh .            20-23
+---  nxg = nbi + nbj + nbk + nbl .            24-27
+
+---  nxi = nae + naf + nag + nah + nai .      4-23 all one
+---  nxj = naj + nak + nal + nam + nan .
+---  nxk = nao + nap + nba + nbb + nbc .
+---  nxl = nbd + nbe + nbf + nbg + nbh .
+
+---  PAB = NGE  .                                     Select 4-7
+---  PAC = NGE NXB + NHE .                                   Select 8-11
+---  PAD = NGE NXB NXC + NHE NXC + NIE .                     Select 12-15
+---  PAE = NGE NXB NXC NXD + NHE NXC NXD + NIE NXD + NJE .   Select 16-19
+---  PAF = NGE NXB NXC NXD NXE + NHE NXC NXD NXE + NIE NXD NXE + NJE NXE + NKE .  Select 20-23
+
+---  PAG = NHE NXC NXD NXE NXF + NIE NXD NXE NXF + NJE NXE NXF + NKE NXF + NLE .  Select 24-27 low
+
+---  PAH = NIE NXD NXE NXF NXG + NJE NXE NXF NXG + NKE NXF NXG + NLE NXG + NME .   Select 28-31 low
+---  pai = nxc + nxd + nxe + nxf + nxg .  Select 28-31, 8-28 all one
+---  pak = nxi + nxj + nxk + nxl .  Select 24-27 high, 4-23 all one
+---  PAL = NXB .
+---  PAM = PAO PAI PAL + PAQ PAI .          Select 28-31, 4-28 all one 
+---  PAO = NGE .
+---  PAP = PAO PAK .
+---  PAQ = NHE .
+                Final Sums, No carries, Latched
+
+---  PBA = NAA .                      Group 0
+---  PBB = NAB .
+---  PBC = NAC neb + nac NEB .
+---  PBD = NAD ngd + nad NGD .
+
+---  PBE = RAE .                      Group 1
+---  PBF = RAF nhb + raf NHB .
+---  PBG = RAG nhc + rag NHC .
+---  PBH = RAH nhd + rah NHD .
+
+---  PBI = RAI .                      Group 2
+---  PBJ = RAJ nib + raj NIB .
+---  PBK = RAK nic + rak NIC .
+---  PBL = RAL nid + ral NID .
+
+---  PBM = RAM .                      Group 3
+---  PBN = RAN njb + ran NJB .
+---  PBO = RAO njc + rao NJC .
+---  PBP = RAP njd + rap NJD .
+
+---  PCA = RBA .                      Group 4
+---  PCB = RBB nkb + rbb NKB .
+---  PCC = RBC nkc + rbc NKC .
+---  PCD = RBD nkd + rbd NKD .
+
+---  PCE = RBE .                      Group 5
+---  PCF = RBF nlb + rbf NLB .
+---  PCG = RBG nlc + rbg NLC .
+---  PCH = RBH nld + rbh NLD .
+
+---  PCI = RBI .                      Group 6
+---  PCJ = RBJ nmb + rbj NMB .
+---  PCK = RBK nmc + rbk NMC .
+---  PCL = RBL nmd + rbl NMD .
+
+---  PCM = RBM .                      Group 7
+---  PCN = RBN nnb + rbn NNB .
+---  PCO = RBO nnc + rbo NNC .
+---  PCP = RBP nnd + rbp NND .
+
+                 Final Sums, Groups with carries
+
+
+---  PDE = rae .                        Group 1
+---  PDF = RAF npb + raf NPB .
+---  PDG = RAG npc + rag NPC .
+---  PDH = RAH npd + rah NPD .
+
+---  PDI = rai .                        Group 2
+---  PDJ = RAJ nqb + raj NQB .
+---  PDK = RAK nqc + rak NQC .
+---  PDL = RAL nqd + ral NQD .
+
+---  PDM = ram .                        Group 3
+---  PDN = RAN nrb + ran NRB .
+---  PDO = RAO nrc + rao NRC .
+---  PDP = RAP nrd + rap NRD .
+
+---  PEA = rba .                        Group 4
+---  PEB = RBB nsb + rbb NSB .
+---  PEC = RBC nsc + rbc NSC .
+---  PED = RBD nsd + rbd NSD .
+
+---  PEE = rbe .                        Group 5
+---  PEF = RBF ntb + rbf NTB .
+---  PEG = RBG ntc + rbg NTC .
+---  PEH = RBH ntd + rbh NTD .
+
+---  PEI = rbi .                        Group 6
+---  PEJ = RBJ nub + rbj NUB .
+---  PEK = RBK nuc + rbk NUC .
+---  PEL = RBL nud + rbl NUD .
+
+---  PEM = rbm .                        Group 7
+---  PEN = RBN nvb + rbn NVB .
+---  PEO = RBO nvc + rbo NVC .
+---  PEP = RBP nvd + rbp NVD .
+
+                       Select groups
+
+---  PFA = PBA .
+---  PFB = PBB .
+---  PFC = PBC .
+---  PFD = PBD .
+
+---  PFE = PDE PAB + PBE pab .           4-7
+---  PFF = PDF PAB + PBF pab .
+---  PFG = PDG PAB + PBG pab .
+---  PFH = PDH PAB + PBH pab .
+
+---  PFI = PDI PAC + PBI pac .           8-11
+---  PFJ = PDJ PAC + PBJ pac .
+---  PFK = PDK PAC + PBK pac .
+---  PFL = PDL PAC + PBL pac .
+
+---  PFM = PDM PAD + PBM pad .           12-15
+---  PFN = PDN PAD + PBN pad .
+---  PFO = PDO PAD + PBO pad .
+---  PFP = PDP PAD + PBP pad .
+
+---  PGA = PEA PAE + PCA pae .           16-19
+---  PGB = PEB PAE + PCB pae .
+---  PGC = PEC PAE + PCC pae .
+---  PGD = PED PAE + PCD pae .
+
+---  PGE = PEE PAF + PCE paf .           20-23
+---  PGF = PEF PAF + PCF paf .
+---  PGG = PEG PAF + PCG paf .
+---  PGH = PEH PAF + PCH paf .
+
+---  PGI = PCI pag pap + PEI PAG + PEI PAP .           24-27
+---  PGJ = PCJ pag pap + PEJ PAG + PEJ PAP .
+---  PGK = PCK pag pap + PEK PAG + PEK PAP .
+---  PGL = PCL pag pap + PEL PAG + PEL PAP .
+
+---  PGM = PCM pah pam + PEM PAH + PEM PAM .           28-31
+---  PGN = PCN pah pam + PEN PAH + PEN PAM .
+---  PGO = PCO pah pam + PEO PAH + PEO PAM .
+---  PGP = PCP pah pam + PEP PAH + PEP PAM .
+
+---  OAA = PFA TFA + ICA tfa .               P reg to EA
+---  OAB = PFB TFA + ICB tfa .
+---  OAC = PFC TFA + ICC tfa .
+---  OAD = PFD TFA + ICD tfa .
+---  OAE = PFE TFA + ICE tfa .
+---  OAF = PFF TFA + ICF tfa .
+---  OAG = PFG TFA + ICG tfa .
+---  OAH = PFH TFA + ICH tfa .
+
+---  OAI = PFI TFB + ICI tfb .
+---  OAJ = PFJ TFB + ICJ tfb .
+---  OAK = PFK TFB + ICK tfb .
+---  OAL = PFL TFB + ICL tfb .
+---  OAM = PFM TFB + ICM tfb .
+---  OAN = PFN TFB + ICN tfb .
+---  OAO = PFO TFB + ICO tfb .
+---  OAP = PFP TFB + ICP tfb .
+
+---  OBA = PGA TFC + IDA tfc .
+---  OBB = PGB TFC + IDB tfc .
+---  OBC = PGC TFC + IDC tfc .
+---  OBD = PGD TFC + IDD tfc .
+---  OBE = PGE TFC + IDE tfc .
+---  OBF = PGF TFC + IDF tfc .
+---  OBG = PGG TFC + IDG tfc .
+---  OBH = PGH TFC + IDH tfc .
+
+---  OBI = PGI TFD + IDI tfd .
+---  OBJ = PGJ TFD + IDJ tfd .
+---  OBK = PGK TFD + IDK tfd .
+---  OBL = PGL TFD + IDL tfd .
+---  OBM = PGM TFD + IDM tfd .
+---  OBN = PGN TFD + IDN tfd .
+---  OBO = PGO TFD + IDO tfd .
+---  OBP = PGP TFD + IDP tfd .
+
+---  OEA = IEA .               Vector length fanout to IB
+---  OEB = IEB .
+---  OEC = IEC .
+---  OED = IED .
+---  OEE = IEE .
+---  OEF = IEF .
+
+---  OFA = IEA .               Vector length fanout to JB
+---  OFB = IEB .
+---  OFC = IEC .
+---  OFD = IED .
+---  OFE = IEE .
+---  OFF = IEF .
+
+---  oga = iea .               Vector length fanout to JC1
+---  ogb = ieb .
+---  ogc = iec .
+---  ogd = ied .
+---  oge = iee .
+---  ogf = ief .
+
+---  oha = iea .               Vector length fanout to JC2
+---  ohb = ieb .
+---  ohc = iec .
+---  ohd = ied .
+---  ohe = iee .
+---  ohf = ief .
+
+---  oia = ifa .               Vector Register 0 Source Code Fanout
+---  oib = ifb .
+---  oic = ifc .
+---  oid = ifd .
+---  oie = ife .
+---  oif = iff .
+---  oig = ifg .
+
+---  oih = iga .               Scalar Register 0 Dest Code Fanout
+---  oii = igb .
+---  oij = igc .
+---  oik = igd .
+---  oil = ige .
+---  oim = igf .
+
+---  OJA = IFA .               Vector Register 1 Source Code Fanout
+---  OJB = IFB .
+---  OJC = IFC .
+---  OJD = IFD .
+---  OJE = IFE .
+---  OJF = IFF .
+---  OJG = IFG .
+
+---  OJH = IGA .               Scalar Register 1 Dest Code Fanout
+---  OJI = IGB .
+---  OJJ = IGC .
+---  OJK = IGD .
+---  OJL = IGE .
+---  OJM = IGF .
+
+---  oka = ifa .               Scalar Register 2 Source Code Fanout
+---  okb = ifb .
+---  okc = ifc .
+---  okd = ifd .
+---  oke = ife .
+---  okf = iff .
+---  okg = ifg .
+
+---  okh = iga .               Scalar Register 2 Dest Code Fanout
+---  oki = igb .
+---  okj = igc .
+---  okk = igd .
+---  okl = ige .
+---  okm = igf .
+
+
+---  OLA = IFA .               Vector Register 3 Source Code Fanout
+---  OLB = IFB .
+---  OLC = IFC .
+---  OLD = IFD .
+---  OLE = IFE .
+---  OLF = IFF .
+---  OLG = IFG .
+
+---  OLH = IGA .               Scalar Register 3 Dest Code Fanout
+---  OLI = IGB .
+---  OLJ = IGC .
+---  OLK = IGD .
+---  OLL = IGE .
+---  OLM = IGF .
+
+---  oma = ifa .               Vector Register 4 Source Code Fanout
+---  omb = ifb .
+---  omc = ifc .
+---  omd = ifd .
+---  ome = ife .
+---  omf = iff .
+---  omg = ifg .
+
+---  omh = iga .               Scalar Register 4 Dest Code Fanout
+---  omi = igb .
+---  omj = igc .
+---  omk = igd .
+---  oml = ige .
+---  omm = igf .
+
+---  ONA = IFA .               Vector Register 5 Source Code Fanout
+---  ONB = IFB .
+---  ONC = IFC .
+---  OND = IFD .
+---  ONE = IFE .
+---  ONF = IFF .
+---  ONG = IFG .
+
+---  ONH = IGA .               Scalar Register 5 Dest Code Fanout
+---  ONI = IGB .
+---  ONJ = IGC .
+---  ONK = IGD .
+---  ONL = IGE .
+---  ONM = IGF .
+
+---  ooa = ifa .              Vector Register 6 Source Code Fanout
+---  oob = ifb .
+---  ooc = ifc .
+---  ood = ifd .
+---  ooe = ife .
+---  oof = iff .
+---  oog = ifg .
+
+---  ooh = iga .               Scalar Register 6 Dest Code Fanout
+---  ooi = igb .
+---  ooj = igc .
+---  ook = igd .
+---  ool = ige .
+---  oom = igf .
+
+---  OPA = IFA .               Vector Register 7 Source Code Fanout
+---  OPB = IFB .
+---  OPC = IFC .
+---  OPD = IFD .
+---  OPE = IFE .
+---  OPF = IFF .
+---  OPG = IFG .
+
+---  OPH = IGA .               Scalar Register 7 Dest Code Fanout
+---  OPI = IGB .
+---  OPJ = IGC .
+---  OPK = IGD .
+---  OPL = IGE .
+---  OPM = IGF .
+
+---  QAA = IHA .
+
+---  QAB = QAA .               Timing Chain
+---  QAC = QAB .
+---  QAD = QAC .
+---  QAE = QAD .
+---  QAF = QAE .
+---  QAG = QAF .
+---  QAH = QAG .
+---  QAI = QAH .
+---  QAJ = QAI .
+---  QAK = QAJ .
+---  QAL = QAK .
+
+                            Final Sums
+
+---  RAE = NAE nee .
+---  RAF = NAF nef .
+---  RAG = NAG neg .
+---  RAH = NAH neh .
+
+---  RAI = NAI nei .                      Group 2
+---  RAJ = NAJ nej .
+---  RAK = NAK nek .
+---  RAL = NAL nel .
+
+---  RAM = NAM nem .                      Group 3
+---  RAN = NAN nen .
+---  RAO = NAO neo .
+---  RAP = NAP nep .
+
+---  RBA = NBA naq .                      Group 4
+---  RBB = NBB nfb .
+---  RBC = NBC nfc .
+---  RBD = NBD nfd .
+
+---  RBE = NBE nfe .                       Group 5
+---  RBF = NBF nff .
+---  RBG = NBG nfg .
+---  RBH = NBH nfh .
+
+---  RBI = NBI nfi .                       Group 6
+---  RBJ = NBJ nfj .
+---  RBK = NBK nfk .
+---  RBL = NBL nfl .
+
+---  RBM = NBM nfm .                           Group 7
+---  RBN = NBN nfn .
+---  RBO = NBO nfo .
+---  RBP = NBP nfp .
+
+---  TEA = QAB .
+---  TEB = QAB .
+---  TEC = QAB .
+---  TED = QAB .
+
+---  TEE = QAA + QAB + QAC .
+---  TEF = QAA + QAB + QAC .
+---  TEG = QAA + QAB + QAC .
+---  TEH = QAA + QAB + QAC .
+
+---  TFA = QAJ .
+---  TFB = QAJ .
+---  TFC = QAJ .
+---  TFD = QAJ .
+

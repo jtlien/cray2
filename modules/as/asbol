@@ -1,0 +1,1209 @@
+
+---  AAA = RAA TAA + RCA TAA + AAA taa . O         Shared register O
+---  AAB = RAB TAA + RCB TAA + AAB taa .
+---  AAC = RAC TAA + RCC TAA + AAC taa .
+---  AAD = RAD TAA + RCD TAA + AAD taa .
+---  AAE = RAE TAA + RCE TAA + AAE taa .
+---  AAF = RAF TAA + RCF TAA + AAF taa .
+---  AAG = RAG TAA + RCG TAA + AAG taa .
+---  AAH = RAH TAA + RCH TAA + AAH taa .
+---  AAI = RAI TAA + RCI TAA + AAI taa .
+---  AAJ = RAJ TAA + RCJ TAA + AAJ taa .
+---  AAK = RAK TAA + RCK TAA + AAK taa .
+---  AAL = RAL TAA + RCL TAA + AAL taa .
+---  AAM = RAM TAA + RCM TAA + AAM taa .
+---  AAN = RAN TAA + RCN TAA + AAN taa .
+---  AAO = RAO TAA + RCO TAA + AAO taa .
+---  AAP = RAP TAA + RCP TAA + AAP taa . 15
+
+---  ABA = RAA TAB + RCA TAB + ABA tab . O         Shared register 1
+---  ABB = RAB TAB + RCB TAB + ABB tab .
+---  ABC = RAC TAB + RCC TAB + ABC tab .
+---  ABD = RAD TAB + RCD TAB + ABD tab .
+---  ABE = RAE TAB + RCE TAB + ABE tab .
+---  ABF = RAF TAB + RCF TAB + ABF tab .
+---  ABG = RAG TAB + RCG TAB + ABG tab .
+---  ABH = RAH TAB + RCH TAB + ABH tab .
+---  ABI = RAI TAB + RCI TAB + ABI tab .
+---  ABJ = RAJ TAB + RCJ TAB + ABJ tab .
+---  ABK = RAK TAB + RCK TAB + ABK tab .
+---  ABL = RAL TAB + RCL TAB + ABL tab .
+---  ABM = RAM TAB + RCM TAB + ABM tab .
+---  ABN = RAN TAB + RCN TAB + ABN tab .
+---  ABO = RAO TAB + RCO TAB + ABO tab .
+---  ABP = RAP TAB + RCP TAB + ABP tab . 15
+
+---  ACA = RAA TAC + RCA TAC + ACA tac . O         Shared register 2
+---  ACB = RAB TAC + RCB TAC + ACB tac .
+---  ACC = RAC TAC + RCC TAC + ACC tac .
+---  ACD = RAD TAC + RCD TAC + ACD tac .
+---  ACE = RAE TAC + RCE TAC + ACE tac .
+---  ACF = RAF TAC + RCF TAC + ACF tac .
+---  ACG = RAG TAC + RCG TAC + ACG tac .
+---  ACH = RAH TAC + RCH TAC + ACH tac .
+---  ACI = RAI TAC + RCE TAC + ACI tac .
+---  ACJ = RAJ TAC + RCJ TAC + ACJ tac .
+---  ACK = RAK TAC + RCK TAC + ACK tac .
+---  ACL = RAL TAC + RCL TAC + ACL tac .
+---  ACM = RAM TAC + RCM TAC + ACM tac .
+---  ACN = RAN TAC + RCN TAC + ACN tac .
+---  ACO = RAO TAC + RCO TAC + ACO tac .
+---  ACP = RAP TAC + RCP TAC + ACP tac . 15
+
+---  ADA = RAA TAD + RCA TAD + ADA tad . O         Shared register 3
+---  ADB = RAB TAD + RCB TAD + ADB tad .
+---  ADC = RAC TAD + RCC TAD + ADC tad .
+---  ADD = RAD TAD + RCD TAD + ADD tad .
+---  ADE = RAE TAD + RCE TAD + ADE tad .
+---  ADF = RAF TAD + RCF TAD + ADF tad .
+---  ADG = RAG TAD + RCG TAD + ADG tad .
+---  ADH = RAH TAD + RCH TAD + ADH tad .
+---  ADI = RAI TAD + RCI TAD + ADI tad .
+---  ADJ = RAJ TAD + RCJ TAD + ADJ tad .
+---  ADK = RAK TAD + RCK TAD + ADK tad .
+---  ADL = RAL TAD + RCL TAD + ADL tad .
+---  ADM = RAM TAD + RCM TAD + ADM tad .
+---  ADN = RAN TAD + RCN TAD + ADN tad .
+---  ADO = RAO TAD + RCO TAD + ADO tad .
+---  ADP = RAP TAD + RCP TAD + ADP tad . 15
+
+---  AEA = RAA TAE + RCA TAE + AEA tae . O         Shared register 4
+---  AEB = RAB TAE + RCB TAE + AEB tae .
+---  AEC = RAC TAE + RCC TAE + AEC tae .
+---  AED = RAD TAE + RCD TAE + AED tae .
+---  AEE = RAE TAE + RCE TAE + AEE tae .
+---  AEF = RAF TAE + RCF TAE + AEF tae .
+---  AEG = RAG TAE + RCG TAE + AEG tae .
+---  AEH = RAH TAE + RCH TAE + AEH tae .
+---  AEI = RAI TAE + RCI TAE + AEI tae .
+---  AEJ = RAJ TAE + RCJ TAE + AEJ tae .
+---  AEK = RAK TAE + RCK TAE + AEK tae .
+---  AEL = RAL TAE + RCL TAE + AEL tae .
+---  AEM = RAM TAE + RCM TAE + AEM tae .
+---  AEN = RAN TAE + RCN TAE + AEN tae .
+---  AEO = RAO TAE + RCO TAE + AEO tae .
+---  AEP = RAP TAE + RCP TAE + AEP tae . 15
+
+---  AFA = RAA TAF + RCA TAF + AFA taf . O         Shared register 5
+---  AFB = RAB TAF + RCB TAF + AFB taf .
+---  AFC = RAC TAF + RCC TAF + AFC taf .
+---  AFD = RAD TAF + RCD TAF + AFD taf .
+---  AFE = RAE TAF + RCE TAF + AFE taf .
+---  AFF = RAF TAF + RCF TAF + AFF taf .
+---  AFG = RAG TAF + RCG TAF + AFG taf .
+---  AFH = RAH TAF + RCH TAF + AFH taf .
+---  AFI = RAI TAF + RCI TAF + AFI taf .
+---  AFJ = RAJ TAF + RCJ TAF + AFJ taf .
+---  AFK = RAK TAF + RCK TAF + AFK taf .
+---  AFL = RAL TAF + RCL TAF + AFL taf .
+---  AFM = RAM TAF + RCM TAF + AFM taf .
+---  AFN = RAN TAF + RCM TAF + AFN taf .
+---  AFO = RAO TAF + RCO TAF + AFO taf .
+---  AFP = RAP TAF + RCP TAF + AFP taf . 15
+
+---  AGA = RAA TAG + RCA TAG + AGA tag . O         Shared regìster 6
+---  AGB = RAB TAG + RCB TAG + AGB tag .
+---  AGC = RAC TAG + RCC TAG + AGC tag .
+---  AGD = RAD TAG + RCD TAG + AGD tag .
+---  AGE = RAE TAG + RCE TAG + AGE tag .
+---  AGF = RAF TAG + RCF TAG + AGF tag .
+---  AGG = RAG TAG + RCG TAG + AGG tag .
+---  AGH = RAH TAG + RCH TAG + AGH tag .
+---  AGI = RAI TAG + RCI TAG + AGI tag .
+---  AGJ = RAJ TAG + RCJ TAG + AGJ tag .
+---  AGK = RAK TAG + RCK TAG + AGK tag .
+---  AGL = RAL TAG + RCL TAG + AGL tag .
+---  AGM = RAM TAG + RCM TAG + AGM tag .
+---  AGN = RAN TAG + RCN TAG + AGN tag .
+---  AGO = RAO TAG + RCO TAG + AGO tag .
+---  AGP = RAP TAG + RCP TAG + AGP tag . 15
+
+---  AHA = RAA TAH + RCA TAH + AHA tah . O         Shared register 7
+---  AHB = RAB TAH + RCB TAH + AHB tah .
+---  AHC = RAC TAH + RCC TAH + AHC tah .
+---  AHD = RAD TAH + RCD TAH + AHD tah .
+---  AHE = RAE TAH + RCE TAH + AHE tah .
+---  AHF = RAF TAH + RCF TAH + AHF tah .
+---  AHG = RAG TAH + RCG TAH + AHG tah .
+---  AHH = RAH TAH + RCH TAH + AHH tah .
+---  AHI = RAI TAH + RCI TAH + AHI tah .
+---  AHJ = RAJ TAH + RCJ TAH + AHJ tah .
+---  AHK = RAK TAH + RCK TAH + AHK tah .
+---  AHL = RAL TAH + RCL TAH + AHL tah .
+---  AHM = RAM TAH + RCM TAH + AHM tah .
+---  AHN = RAN TAH + RCN TAH + AHN tah .
+---  AHO = RAO TAH + RCO TAH + AHO tah .
+---  AHP = RAP TAH + RCP TAH + AHP tah . 15
+
+---  AIA = RBA TAI + RDA TAI + AIA tai . 16        Shared register O
+---  AIB = RBB TAI + RDB TAI + AIB tai .
+---  AIC = RBC TAI + RDC TAI + AIC tai .
+---  AID = RBD TAI + RDD TAI + AID tai .
+---  AIE = RBE TAI + RDE TAI + AIE tai .
+---  AIF = RBF TAI + RDF TAI + AIF tai .
+---  AIG = RBG TAI + RDG TAI + AIG tai .
+---  AIH = RBH TAI + RDH TAI + AIH tai .
+---  AII = RBI TAI + RDI TAI + AII tai .
+---  AIJ = RBJ TAI + RDJ TAI + AIJ tai .
+---  AIK = RBK TAI + RDK TAI + AIK tai .
+---  AIL = RBL TAI + RDL TAI + AIL tai .
+---  AIM = RBM TAI + RDM TAI + AIM tai .
+---  AIN = RBN TAI + RDN TAI + AIN tai .
+---  AIO = RBO TAI + RDO TAI + AIO tai .
+---  AIP = RBP TAI + RDP TAI + AIP tai . 31
+
+---  AJA = RBA TAJ + RDA TAJ + AJA taj . 16         Shared register 1
+---  AJB = RBB TAJ + RDB TAJ + AJB taj .
+---  AJC = RBC TAJ + RDC TAJ + AJC taj .
+---  AJD = RBD TAJ + RDD TAJ + AJD taj .
+---  AJE = RBE TAJ + RDE TAJ + AJE taj .
+---  AJF = RBF TAJ + RDF TAJ + AJF taj .
+---  AJG = RBG TAJ + RDG TAJ + AJG taj .
+---  AJH = RBH TAJ + RDH TAJ + AJH taj .
+---  AJI = RBI TAJ + RDI TAJ + AJI taj .
+---  AJJ = RBJ TAJ + RDJ TAJ + AJJ taj .
+---  AJK = RBK TAJ + RDK TAJ + AJK taj .
+---  AJL = RBL TAJ + RDL TAJ + AJL taj .
+---  AJM = RBM TAJ + RDM TAJ + AJM taj .
+---  AJN = RBN TAJ + RDN TAJ + AJN taj .
+---  AJO = RBO TAJ + RDO TAJ + AJO taj .
+---  AJP = RBP TAJ + RDP TAJ + AJP taj . 31
+
+---  AKA = RBA TAK + RDA TAK + AKA tak . 16         Shared register 2
+---  AKB = RBB TAK + RDB TAK + AKB tak .
+---  AKC = RBC TAK + RDC TAK + AKC tak .
+---  AKD = RBD TAK + RDD TAK + AKD tak .
+---  AKE = RBE TAK + RDE TAK + AKE tak .
+---  AKF = RBF TAK + RDF TAK + AKF tak .
+---  AKG = RBG TAK + RDG TAK + AKG tak .
+---  AKH = RBH TAK + RDH TAK + AKH tak .
+---  AKI = RBI TAK + RDI TAK + AKI tak .
+---  AKJ = RBJ TAK + RDJ TAK + AKJ tak .
+---  AKK = RBK TAK + RDK TAK + AKK tak .
+---  AKL = RBL TAK + RDL TAK + AKL tak .
+---  AKM = RBM TAK + RDM TAK + AKM tak .
+---  AKN = RBN TAK + RDN TAK + AKN tak .
+---  AKO = RBO TAK + RDO TAK + AKO tak .
+---  AKP = RBP TAK + RDP TAK + AKP tak . 31
+
+---  ALA = RBA TAL + RDA TAL + ALA tal . 16         Shared regiser 3
+---  ALB = RBB TAL + RDB TAL + ALB tal .
+---  ALC = RBC TAL + RDC TAL + ALC tal .
+---  ALD = RBD TAL + RDD TAL + ALD tal .
+---  ALE = RBE TAL + RDE TAL + ALE tal .
+---  ALF = RBF TAL + RDF TAL + ALF tal .
+---  ALG = RBG TAL + RDG TAL + ALG tal .
+---  ALH = RBH TAL + RDH TAL + ALH tal .
+---  ALI = RBI TAL + RDI TAL + ALI tal .
+---  ALJ = RBJ TAL + RDJ TAL + ALJ tal .
+---  ALK = RBK TAL + RDK TAL + ALK tal .
+---  ALL = RBL TAL + RDL TAL + ALL tal .
+---  ALM = RBM TAL + RDM TAL + ALM tal .
+---  ALN = RBN TAL + RDN TAL + ALN tal .
+---  ALO = RBO TAL + RDO TAL + ALO tal .
+---  ALP = RBP TAL + RDP TAL + ALP tal . 31
+
+---  AMA = RBA TAM + RDA TAM + AMA tam . 16        Shared register 4
+---  AMB = RBB TAM + RDB TAM + AMB tam .
+---  AMC = RBC TAM + RDC TAM + AMC tam .
+---  AMD = RBD TAM + RDD TAM + AMD tam .
+---  AME = RBE TAM + RDE TAM + AME tam .
+---  AMF = RBF TAM + RDF TAM + AMF tam .
+---  AMG = RBG TAM + RDG TAM + AMG tam .
+---  AMH = RBH TAM + RDH TAM + AMH tam .
+---  AMI = RBI TAM + RDI TAM + AMI tam .
+---  AMJ = RBJ TAM + RDJ TAM + AMJ tam .
+---  AMK = RBK TAM + RDK TAM + AMK tam .
+---  AML = RBL TAM + RDL TAM + AML tam .
+---  AMM = RBM TAM + RDM TAM + AMM tam .
+---  AMN = RBN TAM + RDN TAM + AMN tam .
+---  AMO = RBO TAM + RDO TAM + AMO tam .
+---  AMP = RBP TAM + RDP TAM + AMP tam . 31
+
+---  ANA = RBA TAN + RDA TAN + AMA tan . 16        Shared register 5
+---  ANB = RBB TAN + RDB TAN + ANB tan .
+---  ANC = RBC TAN + RDC TAN + ANC tan .
+---  AND = RBD TAN + RDD TAN + AND tan .
+---  ANE = RBE TAN + RDE TAN + ANE tan .
+---  ANF = RBF TAN + RDF TAN + ANF tan .
+---  ANG = RBG TAN + RDG TAN + ANG tan .
+---  ANH = RBH TAN + RDH TAN + ANH tan .
+---  ANI = RBI TAN + RDI TAN + ANI tan .
+---  ANJ = RBJ TAN + RDJ TAN + ANJ tan .
+---  ANK = RBK TAN + RDK TAN + ANK tan .
+---  ANL = RBL TAN + RDL TAN + ANL tan .
+---  ANM = RBM TAN + RDM TAN + ANM tan .
+---  ANN = RBN TAN + RDN TAN + ANN tan .
+---  ANO = RBO TAN + RDO TAN + ANO tan .
+---  ANP = RBP TAN + RDP TAN + ANP tan . 31
+
+---  AOA = RBA TAO + RDA TAO + AOA tao . 16        Shared register 6
+---  AOB = RBB TAO + RDB TAO + AOB tao .
+---  AOC = RBC TAO + RDC TAO + AOC tao .
+---  AOD = RBD TAO + RDD TAO + AOD tao .
+---  AOE = RBE TAO + RDE TAO + AOE tao .
+---  AOF = RBF TAO + RDF TAO + AOF tao .
+---  AOG = RBG TAO + RDG TAO + AOG tao .
+---  AOH = RBH TAO + RDH TAO + AOH tao .
+---  AOI = RBI TAO + RDI TAO + AOI tao .
+---  AOJ = RBJ TAO + RDJ TAO + AOJ tao .
+---  AOK = RBK TAO + RDK TAO + AOK tao .
+---  AOL = RBL TAO + RDL TAO + AOL tao .
+---  AOM = RBM TAO + RDM TAO + AOM tao .
+---  AON = RBN TAO + RDN TAO + AON tao .
+---  AOO = RBO TAO + RDO TAO + AOO tao .
+---  AOP = RBP TAO + RDP TAO + AOP tao . J1
+
+---  APA = RBA TAP + RDA TAP + APA tap . 16         Shared register 7
+---  APB = RBB TAP + RDB TAP + APB tap .
+---  APC = RBC TAP + RDC TAP + APC tap .
+---  APD = RBD TAP + RDD TAP + APD tap .
+---  APE = RBE TAP + RDE TAP + APE tap .
+---  APF = RBF TAP + RDF TAP + APF tap .
+---  APG = RBG TAP + RDG TAP + APG tap .
+---  APH = RBH TAP + RDH TAP + APH tap .
+---  API = RBI TAP + RDI TAP + API tap .
+---  APJ = RBJ TAP + RDJ TAP + APJ tap .
+---  APK = RBK TAP + RDK TAP + APK tap .
+---  APL = RBL TAP + RDL TAP + APL tap .
+---  APM = RBM TAP + RDM TAP + APM tap .
+---  APN = RBN TAP + RDN TAP + APN tap .
+---  APO = RBO TAP + RDO TAP + APO tap .
+---  APP = RBP TAP + RDP TAP + APP tap .  31
+
+
+---  CAA = JAA + JBA . O                Bit carry input reg
+---  CAB = JAB + JBB .                 (logical product)
+---  CAC = JAC + JBC .
+---  CAD = JAD + JBD .
+---  CBA = JAE + JBE .
+---  CBB = JAF + JBF .
+---  CBC = JAG + JBG .
+---  CBD = JAH + JBH .
+---  CCA = JAI + JBI .
+---  CCB = JAJ + JBJ .
+---  CCC = JAK + JBK .
+---  CCD = JAL + JBL .
+---  CDA = JAM + JBM .
+---  CDB = JAN + JBN .
+---  CDC = JAO + JBO .
+---  CDD = JAP + JBP . 15
+---  CDE = JAM + JBM . 16
+
+---  CEA = JCA + JDA . 16
+---  CEB = JCB + JDB .
+---  CEC = JCC + JDC .
+---  CED = JCD + JDD .
+---  CFA = JCE + JDE .
+---  CFB = JCF + JDF .
+---  CFC = JCG + JDG .
+---  CFD = JCH + JDH .
+---  CGA = JCI + JDI .
+---  CGB = JCJ + JDJ .
+---  CGC = JCK + JDK .
+---  CGD = JCL + JDL .
+---  CHA = JCM + JDM .
+---  CHB = JCN + JDN .
+---  CHC = JCO + JDO .
+---  CHD = JCP + JDP . 31
+
+---  EAA = QEA .   Readout control Shared reg 0
+---  EAB = QEA .
+---  EAC = QEA .
+---  EAD = QEA .
+---  EAE = QEA .
+---  EAF = QEA .
+---  EAG = QEA .
+---  EAH = QEA .
+
+---  EBA = QEB .   Shared reg 1
+---  EBB = QEB .
+---  EBC = QEB .
+---  EBD = QEB .
+---  EBE = QEB .
+---  EBF = QEB .
+---  EBG = QEB .
+---  EBH = QEB .
+
+---  ECA = QEC .   Shared reg 2
+---  ECB = QEC .
+---  ECC = QEC .
+---  ECD = QEC .
+---  ECE = QEC .
+---  ECF = QEC .
+---  ECG = QEC .
+---  ECH = QEC .
+
+---  EDA = QED .   Shared reg 3
+---  EDB = QED .
+---  EDC = QED .
+---  EDD = QED .
+---  EDE = QED .
+---  EDF = QED .
+---  EDG = QED .
+---  EDH = QED .
+
+---  EEA = QEE .   Shared reg 4
+---  EEB = QEE .
+---  EEC = QEE .
+---  EED = QEE .
+---  EEE = QEE .
+---  EEF = QEE .
+---  EEG = QEE .
+---  EEH = QEE .
+
+---  EFA = QEF .   Shared reg 5
+---  EFB = QEF .
+---  EFC = QEF .
+---  EFD = QEF .
+---  EFE = QEF .
+---  EFF = QEF .
+---  EFG = QEF .
+---  EFH = QEF .
+
+---  EGA = QEG .   Shared reg 6
+---  EGB = QEG .
+---  EGC = QEG .
+---  EGD = QEG .
+---  EGE = QEG .
+---  EGF = QEG .
+---  EGG = QEG .
+---  EGH = QEG .
+
+---  EHA = QEH .   Shared reg 7
+---  EHB = QEH .
+---  EHC = QEH .
+---  EHD = QEH .
+---  EHE = QEH .
+---  EHF = QEH .
+---  EHG = QEH .
+---  EHH = QEH .
+
+---  eia = qea .   Readout control Shared reg 0
+---  eib = qea .
+---  eic = qea .
+---  eid = qea .
+---  eie = qea .
+---  eif = qea .
+---  eig = qea .
+---  eih = qea .
+
+---  eja = qeb .   Shared reg 1
+---  ejb = qeb .
+---  ejc = qeb .
+---  ejd = qeb .
+---  eje = qeb .
+---  ejf = qeb .
+---  ejg = qeb .
+---  ejh = qeb .
+
+---  eka = qec .   Shared reg 2
+---  ekb = qec .
+---  ekc = qec .
+---  ekd = qec .
+---  eke = qec .
+---  ekf = qec .
+---  ekg = qec .
+---  ekh = qec .
+
+---  ela = qed .   Shared reg 3
+---  elb = qed .
+---  elc = qed .
+---  eld = qed .
+---  ele = qed .
+---  elf = qed .
+---  elg = qed .
+---  elh = qed .
+
+---  ema = qee .   Shared reg 4
+---  emb = qee .
+---  emc = qee .
+---  emd = qee .
+---  eme = qee .
+---  emf = qee .
+---  emg = qee .
+---  emh = qee .
+
+---  ena = qef .   Shared reg 5
+---  enb = qef .
+---  enc = qef .
+---  end = qef .
+---  ene = qef .
+---  enf = qef .
+---  eng = qef .
+---  enh = qef .
+
+---  eoa = QEG .   Shared reg 6
+---  eob = QEG .
+---  eoc = QEG .
+---  eod = QEG .
+---  eoe = QEG .
+---  eof = QEG .
+---  eog = QEG .
+---  eoh = QEG .
+
+---  epa = QEH .   Shared reg 7
+---  epb = QEH .
+---  epc = QEH .
+---  epd = QEH .
+---  epe = QEH .
+---  epf = QEH .
+---  epg = QEH .
+---  eph = QEH .
+
+---  FAA FAB FAC FAD FAE FAF FAG FAH FAI = QDC QDB QDA ; QCL . Write Select
+---  FBA FBB FBC FBD FBE FBF FBG FBH FBI = QDF QDE QDD ; QCM .
+
+---  GAB = CAA .                       Carry translations 0-3
+---  GAC = CAA CAB .
+---  GAD = CAA CAB CAC .
+---  GAE = CAA CAB CAC CAD .
+
+---  GBB = CBA .                       Carry translations 4-7
+---  GBC = CBA CBB .
+---  GBD = CBA CBB CBC .
+---  GBE = CBA CBB CBC CBD .
+
+---  GCB = CCA .                       Carry translations 8-11
+---  GCC = CCA CCB .
+---  GCD = CCA CCB CCC .
+---  GCE = CCA CCB CCC CCD .
+
+---  GDB = CDA .                       Carry translations 12-15
+---  GDC = CDA CDB .
+---  GDD = CDA CDB CDC .
+---  GDE = CDE CDB CDC CDD .
+
+---  GEB = CEA .                       Carry translations 16-19
+---  GEC = CEA CEB .
+---  GED = CEA CEB CEC .
+---  GEE = CEA CEB CEC CED .
+
+---  GFB = CFA .                       Carry translations 20-23
+---  GFC = CFA CFB .
+---  GFD = CFA CFB CFC .
+---  GFE = CFA CFB CFC CFD .
+
+---  GGB = CGA .                       Carry translations 24-27
+---  GGC = CGA CGB .
+---  GGD = CGA CGB CGC .
+---  GGE = CGA CGB CGC CGD .
+
+---  GHB = CHA .                       Carry translations 28-31
+---  GHC = CHA CHB .
+---  GHD = CHA CHB CHC .
+
+---  HAA = caa .                              Bits 0-3
+---  HAB = cab .                              bit enables
+---  HAC = cac .                              for group
+---  HAD = cad .
+---  HBA = cba .                              Bits 4-7
+---  HBB = cbb .
+---  HBC = cbc .
+---  HBD = cbd .
+---  HCA = cca .                              Bits 8-11
+---  HCB = ccb .
+---  HCC = ccc .
+---  HCD = ccd .
+---  HDA = cda .                              Bits 12-15
+---  HDB = cdb .
+---  HDC = cdc .
+---  HDD = cdd .
+---  HEA = cea .                              Bits 16-19
+---  HEB = ceb .                                 
+---  HEC = cec .
+---  HED = ced .
+---  HFA = cfa .                              Bits 20-23
+---  HFB = cfb .
+---  HFC = cfc .
+---  HFD = cfd .
+---  HGA = cga .                              Bits 24-27
+---  HGB = cgb .
+---  HGC = cgc .
+---  HGD = cgd .
+---  HHA = cha .                              Bits 28-31
+---  HHB = chb .
+---  HHC = chc .
+---  HHD = chd .
+
+---  JAA = AAA EAA + ABA EBA + ACA ECA + ADA EDA . O    Shared reg 0-3
+---  JAB = AAB EAA + ABB EBA + ACB ECA + ADB EDA .
+---  JAC = AAC EAB + ABC EBB + ACC ECB + ADC EDB .
+---  JAD = AAD EAB + ABD EBB + ACD ECB + ADD EDB .
+---  JAE = AAE EAC + ABE EBC + ACE ECC + ADE EDC .
+---  JAF = AAF EAC + ABF EBC + ACF ECC + ADF EDC .
+---  JAG = AAG EAD + ABG EBD + ACG ECD + ADG EDD .
+---  JAH = AAH EAD + ABH EBD + ACH ECD + ADH EDD .
+---  JAI = AAI EAE + ABI EBE + ACI ECE + ADI EDE .
+---  JAJ = AAJ EAE + ABJ EBE + ACJ ECE + ADJ EDE .
+---  JAK = AAK EAF + ABK EBF + ACK ECF + ADK EDF .
+---  JAL = AAL EAF + ABL EBF + ACL ECF + ADL EDF .
+---  JAM = AAM EAG + ABM EBG + ACM ECG + ADM EDG .
+---  JAN = AAN EAG + ABN EBG + ACN ECG + ADN EDG .
+---  JAO = AAO EAH + ABO EBH + ACO ECH + ADO EDH .
+---  JAP = AAP EAH + ABP EBH + ACP ECH + ADP EDH . 15
+
+---  JBA = AEA EEA + AFA EFA + AGA EGA + AHA EHA . O    Shared reg 4-7
+---  JBB = AEB EEA + AFB EFA + AGB EGA + AHB EHA .
+---  JBC = AEC EEB + AFC EFB + AGC EGB + AHC EHB .
+---  JBD = AED EEB + AFD EFB + AGD EGB + AHD EHB .
+---  JBE = AEE EEC + AFE EFC + AGE EGC + AHE EHC .
+---  JBF = AEF EEC + AFF EFC + AGF EGC + AHF EHC .
+---  JBG = AEG EED + AFG EFD + AGG EGD + AHG EHD .
+---  JBH = AEH EED + AFH EFD + AGH EGD + AHH EHD .
+---  JBI = AEI EEE + AFI EFE + AGI EGE + AHI EHE .
+---  JBJ = AEJ EEE + AFJ EFE + AGJ EGE + AHJ EHE .
+---  JBK = AEK EEF + AFK EFF + AGK EGF + AHK EHF .
+---  JBL = AEL EEF + AFL EFF + AGL EGF + AHL EHF .
+---  JBM = AEM EEG + AFM EFG + AGM EGG + AHM EHG .
+---  JBN = AEN EEG + AFN EFG + AGN EGG + AHN EHG .
+---  JBO = AEO EEH + AFO EFH + AGO EGH + AHO EHH .
+---  JBP = AEP EEH + AFP EFH + AGP EGH + AHP EHH . 15
+
+---  JCA = AIA EIA + AJA EJA + AKA EKA + ALA ELA . 16  Shared reg 0-3
+---  JCB = AIB EIA + AJB EJA + AKB EKA + ALB ELA .
+---  JCC = AIC EIB + AJC EJB + AKC EKB + ALC ELB .
+---  JCD = AID EIB + AJD EJB + AKD EKB + ALD ELB .
+---  JCE = AIE EIC + AJE EJC + AKE EKC + ALE ELC .
+---  JCF = AIF EIC + AJF EJC + AKF EKC + ALF ELC .
+---  JCG = AIG EID + AJG EJD + AKG EKD + ALG ELD .
+---  JCH = AIH EID + AJH EJD + AKH EKD + ALH ELD .
+---  JCI = AII EIE + AJI EJE + AKI EKE + ALI ELE .
+---  JCJ = AIJ EIE + AJJ EJE + AKJ EKE + ALJ ELE .
+---  JCK = AIK EIF + AJK EJF + AKK EKF + ALK ELF .
+---  JCL = AIL EIF + AJL EJF + AKL EKF + ALL ELF .
+---  JCM = AIM EIG + AJM EJG + AKM EKG + ALM ELG .
+---  JCN = AIN EIG + AJN EJG + AKN EKG + ALN ELG .
+---  JCO = AIO EIH + AJO EJH + AKO EKH + ALO ELH .
+---  JCP = AIP EIH + AJP EJH + AKP EKH + ALP ELH . 31
+
+---  JDA = AMA EMA + ANA ENA + AOA EOA + APA EPA . 16      Shared reg 4-7
+---  JDB = AMB EMA + ANB ENA + AOB EOA + APB EPA .
+---  JDC = AMC EMB + ANC ENB + AOC EOB + APC EPB .
+---  JDD = AMD EMB + AND ENB + AOD EOB + APD EPB .
+---  JDE = AME EMC + ANE ENC + AOE EOC + APE EPC .
+---  JDF = AMF EMC + ANF ENC + AOF EOC + APF EPC .
+---  JDG = AMG EMD + ANG END + AOG EOD + APG EPD .
+---  JDH = AMH EMD + ANH END + AOH EOD + APH EPD .
+---  JDI = AMI EME + ANI ENE + AOI EOE + API EPE .
+---  JDJ = AMJ EME + ANJ ENE + AOJ EOE + APJ EPE .
+---  JDK = AMK EMF + ANK ENF + AOK EOF + APK EPF .
+---  JDL = AML EMF + ANL ENF + AOL EOF + APL EPF .
+---  JDM = AMM EMG + ANM ENG + AOM EOG + APM EPG .
+---  JDN = AMN EMG + ANN ENG + AON EOG + APN EPG .
+---  JDO = AMO EMH + ANO ENH + AOO EOH + APO EPH .
+---  JDP = AMP EMH + ANP ENH + AOP EOH + APP EPH . 31
+
+---  JEA = AAA EAA + ABA EBA + ACA ECA + ADA EDA . O      Shared reg 0-3
+---  JEB = AAB EAA + ABB EBA + ACB ECA + ADB EDA .
+---  JEC = AAC EAB + ABC EBB + ACC ECB + ADC EDB .
+---  JED = AAD EAB + ABD EBB + ACD ECB + ADD EDB .
+---  JEE = AAE EAC + ABE EBC + ACE ECC + ADE EDC .
+---  JEF = AAF EAC + ABF EBC + ACF ECC + ADF EDC .
+---  JEG = AAG EAD + ABG EBD + ACG ECD + ADG EDD .
+---  JEH = AAH EAD + ABH EBD + ACH ECD + ADH EDD .
+---  JEI = AAI EAE + ABI EBE + ACI ECE + ADI EDE .
+---  JEJ = AAJ EAE + ABJ EBE + ACJ ECE + ADJ EDE .
+---  JEK = AAK EAF + ABK EBF + ACK ECF + ADK EDF .
+---  JEL = AAL EAF + ABL EBF + ACL ECF + ADL EDF .
+---  JEM = AAM EAG + ABM EBG + ACM ECG + ADM EDG .
+---  JEN = AAN EAG + ABN EBG + ACN ECG + ADN EDG .
+---  JEO = AAO EAH + ABO EBH + ACO ECH + ADO EDH .
+---  JEP = AAP EAH + ABP EBH + ACP ECH + ADP EDH . 15
+
+---  JFA = AEA EEA + AFA EFA + AGA EGA + AHA EHA . O     Shared reg 4-7
+---  JFB = AEB EEA + AFB EFA + AGB EGA + AHB EHA .
+---  JFC = AEC EEB + AFC EFB + AGC EGB + AHC EHB .
+---  JFD = AED EEB + AFD EFB + AGD EGB + AHD EHB .
+---  JFE = AEE EEC + AFE EFC + AGE EGC + AHE EHC .
+---  JFF = AEF EEC + AFF EFC + AGF EGC + AHF EHC .
+---  JFG = AEG EED + AFG EFD + AGG EGD + AHG EHD .
+---  JFH = AEH EED + AFH EFD + AGH EGD + AHH EHD .
+---  JFI = AEI EEE + AFI EFE + AGI EGE + AHI EHE .
+---  JFJ = AEJ EEE + AFJ EFE + AGJ EGE + AHJ EHE .
+---  JFK = AEK EEF + AFK EFF + AGK EGF + AHK EHF .
+---  JFL = AEL EEF + AFL EFF + AGL EGF + AHL EHF .
+---  JFM = AEM EEG + AFM EFG + AGM EGG + AHM EHG .
+---  JFN = AEN EEG + AFN EFG + AGN EGG + AHN EHG .
+---  JFO = AEO EEH + AFO EFH + AGO EGH + AHO EHH .
+---  JFP = AEP EEH + AFP EFH + AGP EGH + AHP EHH . 15
+
+---  JGA = AIA EIA + AJA EJA + AKA EKA + ALA ELA . 16    Shared reg 0-3
+---  JGB = AIB EIA + AJB EJA + AKB EKA + ALB ELA .
+---  JGC = AIC EIB + AJC EJB + AKC EKB + ALC ELB .
+---  JGD = AID EIB + AJD EJB + AKD EKB + ALD ELB .
+---  JGE = AIE EIC + AJE EJC + AKE EKC + ALE ELC .
+---  JGF = AIF EIC + AJF EJC + AKF EKC + ALF ELC .
+---  JGG = AIG EID + AJG EJD + AKG EKD + ALG ELD .
+---  JGH = AIH EID + AJH EJD + AKH EKD + ALH ELD .
+---  JGI = AII EIE + AJI EJE + AKI EKE + ALI ELE .
+---  JGJ = AIJ EIE + AJJ EJE + AKJ EKE + ALJ ELE .
+---  JGK = AIK EIF + AJK EJF + AKK EKF + ALK ELF .
+---  JGL = AIL EIF + AJL EJF + AKL EKF + ALL ELF .
+---  JGM = AIM EIG + AJM EJG + AKM EKG + ALM ELG .
+---  JGN = AIN EIG + AJN EJG + AKN EKG + ALN ELG .
+---  JGO = AIO EIH + AJO EJH + AKO EKH + ALO ELH .
+---  JGP = AIP EIH + AJP EJH + AKP EKH + ALP ELH . 31
+
+---  JHA = AMA EMA + ANA ENA + AOA EOA + APA EPA . 16    Shared reg 4-7
+---  JHB = AMB EMA + ANB ENA + AOB EOA + APB EPA .
+---  JHC = AMC EMB + ANC ENB + AOC EOB + APC EPB .
+---  JHD = AMD EMB + AND ENB + AOD EOB + APD EPB .
+---  JHE = AME EMC + ANE ENC + AOE EOC + APE EPC .
+---  JHF = AMF EMC + ANF ENC + AOF EOC + APF EPC .
+---  JHG = AMG EMD + ANG END + AOG EOD + APG EPD .
+---  JHH = AMH EMD + ANH END + AOH EOD + APH EPD .
+---  JHI = AMI EME + ANI ENE + AOI EOE + API EPE .
+---  JHJ = AMJ EME + ANJ ENE + AOJ EOE + APJ EPE .
+---  JHK = AMK EMF + ANK ENF + AOK EOF + APK EPF .
+---  JHL = AML EMF + ANL ENF + AOL EOF + APL EPF .
+---  JHM = AMM EMG + ANM ENG + AOM EOG + APM EPG .
+---  JHN = AMN EMG + ANN ENG + AON EOG + APM EPG .
+---  JHO = AMO EMH + ANO ENH + AOO EOH + APO EPH .
+---  JHP = AMP EMH + AMP ENH + AOP EOH + APP EPH . 31
+
+---  KAA = HAA .                      Sum bits with
+---  KAB = gab hab + GAB HAB .              input carry
+---  KAC = gac hac + GAC HAC .
+---  KAD = gad had + GAD HAD .
+
+---  KBA = HBA .
+---  KBB = gbb hbb + GBB HBB .
+---  KBC = gbc hbc + GBC HBC .
+---  KBD = gbd hbd + GBD HBD .
+
+---  KBE = TBA hba .
+---  KBF = TBB hbb .
+---  KBG = TBA hbc .
+---  KBH = TBB hbd .
+
+---  KCA = HCA .   
+---  KCB = gcb hcb + GCB HCB .
+---  KCC = gcc hcc + GCC HCC .
+---  KCD = gcd hcd + GCD HCD .
+
+---  KCE = TBA hca .
+---  KCF = TBB hcb .
+---  KCG = TBA hcc .
+---  KCH = TBB hcd .
+
+---  KDA = HDA .
+---  KDB = gdb hdb + GDB HDB .
+---  KDC = gdc hdc + GDC HDC .
+---  KDD = gdd hdd + GDD HDD .
+
+---  KDE = TBA hda .
+---  KDF = TBB hdb .
+---  KDG = TBA hdc .
+---  KDH = TBB hdd .
+
+---  KEA = HEA . 
+---  KEB = geb heb + GEB HEB .
+---  KEC = gec hec + GEC HEC .
+---  KED = ged hed + GED HED .
+
+---  KEE = TBC hea .
+---  KEF = TBD heb .
+---  KEG = TBC hec .
+---  KEH = TBD hed .
+
+---  KFA = HFA .
+---  KFB = gfb hfb + GFB HFB .
+---  KFC = gfc hfc + GFC HFC .
+---  KFD = gfd hfd + GFD HFD .
+
+---  KFE = TBC hfa .
+---  KFF = TBD hfb .
+---  KFG = TBC hfc .
+---  KFH = TBD hfd .
+
+---  KGA = HGA .
+---  KGB = ggb hgb + GGB HGB .
+---  KGC = ggc hgc + GGC HGC .
+---  KGD = ggd hgd + GGD HGD .
+
+---  KGE = TBC hga .
+---  KGF = TBD hgb .
+---  KGG = TBC hgc .
+---  KGH = TBD hgd .
+
+---  KHA = HHA .
+---  KHB = ghb hhb + GHB HHB .
+---  KHC = ghc hhc + GHC HHC .
+---  KHD = ghd hhd + GHD HHD .
+
+---  KHE = TBC hha .
+---  KHF = TBD hhb .
+---  KHG = TBC hhc .
+---  KHH = TBD hhd .
+
+---  maa = gae .                           Group carry latches
+---  mab = gbe .
+---  mac = gce .
+---  mae = gee .
+---  maf = gfe .
+---  mag = gge .
+
+---  NAA = JEA + JFA . O                External data mux
+---  NAB = JEB + JFB .
+---  NAC = JEC + JFC .
+---  NAD = JED + JFD .
+---  NAE = JEE + JFE .
+---  NAF = JEF + JFF .
+---  NAG = JEG + JFG .
+---  NAH = JEH + JFH .
+---  NAI = JEI + JFI .
+---  NAJ = JEJ + JFJ .
+---  NAK = JEK + JFK .
+---  NAL = JEL + JFL .
+---  NAM = JEM + JFM .
+---  NAN = JEN + JFN .
+---  NAO = JEO + JFO .                  
+---  NAP = JEP + JFP . 15
+
+---  NBA = JGA + JHA . 16
+---  NBB = JGB + JHB .
+---  NBC = JGC + JHC .
+---  NBD = JGD + JHD .
+---  NBE = JGE + JHE .
+---  NBF = JGF + JHF .
+---  NBG = JGG + JHG .
+---  NBH = JGH + JHH .
+---  NBI = JGI + JHI .
+---  NBJ = JGJ + JHJ .
+---  NBK = JGK + JHK .
+---  NBL = JGL + JHL .
+---  NBM = JGM + JHM .
+---  NBN = JGN + JHN .
+---  NBO = JGO + JHO .
+---  NBP = JGP + JHP . 31
+
+---  nca = nai .
+---  ncb = naj .
+---  ncc = nak .
+---  ncd = nal .
+---  nce = nam .
+---  ncf = nan .
+---  ncg = nao .
+---  nch = nap .
+---  nci = nba .
+---  ncj = nbb .
+---  nck = nbc .
+---  ncl = nbd .
+---  ncm = nbe .
+---  ncn = nbf .
+---  nco = nbg .
+---  ncp = nbh .
+
+---  nda = nbi .
+---  ndb = nbj .
+---  ndc = nbk .
+---  ndd = nbl .
+---  nde = nbm .
+---  ndf = nbn .
+---  ndg = nbo .
+---  ndh = nbp .
+
+---  nea = nci .
+---  neb = ncj .
+---  nec = nck .
+---  ned = ncl .
+---  nee = ncm .
+---  nef = ncn .
+---  neg = nco .
+---  neh = ncp .
+---  nei = nda .
+---  nej = ndb .
+---  nek = ndc .
+---  nel = ndd .
+---  nem = nde .
+---  nen = ndf .
+---  neo = ndg .
+---  nep = ndh .
+
+---  nfa = nei .
+---  nfb = nej .
+---  nfc = nek .
+---  nfd = nel .
+---  nfe = nem .
+---  nff = nen .
+---  nfg = neo .
+---  nfh = nep .
+
+---  NGA = TXA NAA + TXB NCA + TXC NEA + TXD NFA .
+---  NGB = TXA NAB + TXB NCB + TXC NEB + TXD NFB .
+---  NGC = TXA NAC + TXB NCC + TXC NEC + TXD NFC .
+---  NGD = TXA NAD + TXB NCD + TXC NED + TXD NFD .
+---  NGE = TXE NAE + TXF NCE + TXG NEE + TXH NFE .
+---  NGF = TXE NAF + TXF NCF + TXG NEF + TXH NFF .
+---  NGG = TXE NAG + TXF NCG + TXG NEG + TXH NFG .
+---  NGH = TXE NAH + TXF NCH + TXG NEH + TXH NFH .
+
+---  nha = nga .
+---  nhb = ngb .
+---  nhc = ngc .
+---  nhd = ngd .
+---  nhe = nge .
+---  nhf = ngf .
+---  nhg = ngg .
+---  nhh = ngh .
+
+---  OAA = NHA .           Shared reg data to CPU A
+---  OAB = NHB .
+---  OAC = NHC .
+---  OAD = NHD .
+---  OAE = NHE .
+---  OAF = NHF .
+---  OAG = NHG .
+---  OAH = NHH .
+
+---  OBA = NGA .           Shared reg data to CPU B
+---  OBB = NGB .
+---  OBC = NGC .
+---  OBD = NGD .
+---  OBE = NGE .
+---  OBF = NGF .
+---  OBG = NGG .
+---  OBH = NGH .
+
+---  OCA = NGA .           Shared reg data to CPU C
+---  OCB = NGB .
+---  OCC = NGC .
+---  OCD = NGD .
+---  OCE = NGE .
+---  OCF = NGF .
+---  OCG = NGG .
+---  OCH = NGH .
+
+---  ODA = NGA .           Shared reg data to CPU D
+---  ODB = NGB .
+---  ODC = NGC .
+---  ODD = NGD .
+---  ODE = NGE .
+---  ODF = NGF .
+---  ODG = NGG .
+---  ODH = NGH .
+
+---  OKA = QIA qza + --- QZA .       Grant to CPU A
+---  OKB = QIB qzb + --- QZB .       Grant to CPU B
+---  OKC = QIC qzc + --- QZC .       Grant to CPU C
+---  OKD = QID qzd + --- QZD .       Grant to CPU D
+
+---  paa = TBE .                           Group input translation
+---  pab = TBE MAA .
+---  pac = TBE MAA MAB .
+---  pad = TBE MAA MAB MAC .
+
+---  pae = TBF QAF .
+---  paf = TBF QAF MAE .
+---  pag = TBF QAF MAE MAF .
+---  pah = TBF QAF MAE MAF MAG .
+---  QAF = GAE GBE GCE GDE .
+
+---  QCA = TLA + TLB + TLC + TLD .   Enable write shared register
+
+---  QCC = QUA QUD .
+---  QCD = QVA QVC .
+---  QCE = QWA QWC .
+---  QCF = QXA QXC .
+
+---  QCG = QCC + QCD + QCE + QCF . Any Shared Reg  Read or SR Read and Inc
+
+---  qch = qca .
+---  qci = qch .
+---  qcj = qci .
+
+---  QCL = QCJ + TPA .
+---  QCM = QCJ + TPA .
+
+---  qcn = qcj .
+---  qcp = qcg .
+---  qcq = qcp .
+---  qcr = qcq .
+---  qcs = qcr .
+---  qct = qcs .
+---  qcu = qcq .
+
+---  QDA = QPD QYD + QPJ qyd .
+---  QDB = QPE QYD + QPK qyd .
+---  QDC = QPF QYD + QPL qyd .
+---  QDD = QPD QYD + QPJ qyd .
+---  QDE = QPE QYD + QPK qyd .
+---  QDF = QPF QYD + QPL qyd .
+
+---  qea = QNC + QNB + QNA . O                Readout pointer
+---  qeb = QNC + QNB + qna .      
+---  qec = QNC + qnb + QNA .      
+---  qed = QNC + qnb + qna .
+---  qee = qnc + QNB + QNA .
+---  qef = qnc + QNB + qna .      
+---  qeg = qnc + qnb + QNA .
+---  qeh = qnc + qnb + qna . 7
+
+---  qfa = qii qij qik qil .
+---  qfb = qfa .
+---  QFC = QFA qfb .
+---  qfg = qfc .
+---  qfh = qfg .
+---  qfi = qfh .
+---  qfj = qfi .
+---  qfk = qfj .
+---  qfl = qfk .
+---  qfm = qfl .
+---  QFN = QFM + QZE .
+---  qhg = qie qif qig qih .    Cpu Active
+---  qhh = qie qif qig qih .
+---  qhi = qie qif qig qih .
+
+---  QIA = QQA qhh IIA + QIA twa .
+---  QIB = QQB qhi IJA + QIB twe .
+---  QIC = QQC qhg IKA + QIC twe .
+---  QID = QQD qhg ILA + QID twe .
+---  QIE = QQA qhh IIA + QIA twa .
+---  QIF = QQB qhi IJA + QIB twe .
+---  QIG = QQC qhg IKA + QIC twe .
+---  QIH = QQD qhg ILA + QID twe .
+---  QII = QQA qhh IIA + QIA twa .
+---  QIJ = QQB qhi IJA + QIB twe .
+---  QIK = QQC qhg IKA + QIC twe .
+---  QIL = QQD qhg ILA + QID twe .
+
+---  qja = iga .       Cpu A pointer
+---  qjb = igb .
+---  qjc = igc .
+
+---  qka = ira .       Cpu B pointer
+---  qkb = irb .
+---  qkc = irc .
+
+---  qla = isa .       Cpu C pointer
+---  qlb = isb .
+---  qlc = isc .
+
+---  qma = ita .      Cpu D pointer
+---  qmb = itb .
+---  qmc = itc .
+
+---  QNA = QJA TKA + QKA TKB + QLA TKC + QMA TKD .
+---  QNB = QJB TKA + QKB TKB + QLB TKC + QMB TKD .
+---  QNC = QJC TKA + QKC TKB + QLC TKC + QMC TKD .
+---  QND = QJA TKA + QKA TKB + QLA TKC + QMA TKD .
+---  QNE = QJB TKA + QKB TKB + QLB TKC + QMB TKD .
+---  QNF = QJC TKA + QKC TKB + QLC TKC + QMC TKD .
+
+---  qoa = qnd .          Read out pointer delay
+---  qob = qne . 
+---  qoc = qnf .
+
+---  qpa = qoa .
+---  qpb = qob .
+---  qpc = qoc .
+
+---  qpd = qpa .           Increment write pointer
+---  qpe = qpb .
+---  qpf = qpc .
+
+---  qpg = qpd .
+---  qph = qpe .
+---  qpi = qpf .
+
+---  qpj = qpg .            Set write pointer
+---  qpk = qph .
+---  qpl = qpi .
+
+---  QQA = ipa .             Cpu phase
+---  qqb = qqa .  
+---  qqc = qqb .
+---  qqd = qqc .
+
+---  QUA = IUA .          Go Shared Reg CPU A     Instruction issue
+---  QUB = IUB .                                    
+---  QUC = IUC .
+---  QUD = IUC .
+
+---  QVA = IVA .          Go Shared Reg CPU B     Instruction issue
+---  QVB = IVB .                                    
+---  QVC = IVC .
+---  QVD = IVA .
+---  QVE = IVB .
+
+---  QWA = IWA .          Go Shared Reg CPU C    Instruction issue
+---  QWB = IWB .                                    
+---  QWC = IWC .
+
+---  QXA = IXA .          Go Shared Reg CPU D    Instruction issue
+---  QXB = IXB .                                    
+---  QXC = IXC .
+
+---  QYA = QUA QUB + QVA QVB + QWA QWB + QXA QXB .  Read and Increment (137)
+---  QYB = QYA QYE .
+---  QYC = QYB .
+---  QYD = QYC .
+---  QYE = QUA QUC + QVA QVC + QWA QWC + QXA QXC .
+
+---  qza = qia .
+---  qzb = qib .
+---  qzc = qic .
+---  qzd = qid .
+
+---  qze = iya .
+
+---  RAA = KAA paa . O          Shared reg input data paths
+---  RAB = KAB paa .           (internal)
+---  RAC = KAC paa .
+---  RAD = KAD paa .
+
+---  RAE = KBA pab + KBE PAB .
+---  RAF = KBB pab + KBF PAB .          
+---  RAG = KBC pab + KBG PAB .                    
+---  RAH = KBD pab + KBH PAB .
+
+---  RAI = KCA pac + KCE PAC .
+---  RAJ = KCB pac + KCF PAC .
+---  RAK = KCC pac + KCG PAC .
+---  RAL = KCD pac + KCH PAC .
+
+---  RAM = KDA pad + KDE PAD .
+---  RAN = KDB pad + KDF PAD .
+---  RAO = KDC pad + KDG PAD .
+---  RAP = KDD pad + KDH PAD . 15
+
+---  RBA = KEA pae + KEE PAE . 16
+---  RBB = KEB pae + KEF PAE .
+---  RBC = KEC pae + KEG PAE .
+---  RBD = KED pae + KEH PAE .
+
+---  RBE = KFA paf + KFE PAF .
+---  RBF = KFB paf + KFF PAF .
+---  RBG = KFC paf + KFG PAF .
+---  RBH = KFD paf + KFH PAF .
+
+---  RBI = KGA pag + KGE PAG .
+---  RBJ = KGB pag + KGF PAG .
+---  RBK = KGC pag + KGG PAG .
+---  RBL = KGD pag + KGH PAG .
+
+---  RBM = KHA pah + KHE PAH .
+---  RBN = KHB pah + KHF PAH .
+---  RBO = KHC pah + KHG PAH .
+---  RBP = KHD pah + KHH PAH . 31
+
+---  rca = rci .
+---  rcb = rcj .
+---  rcc = rck .
+---  rcd = rcl .
+---  rce = rcm .
+---  rcf = rcn .
+---  rcg = rco .
+---  rch = rcp .
+
+---  rci = rda .
+---  rcj = rdb .
+---  rck = rdc .
+---  rcl = rdd .
+---  rcm = rde .
+---  rcn = rdf .
+---  rco = rdg .
+---  rcp = rdh .
+
+---  rda = rdi .
+---  rdb = rdj .
+---  rdc = rdk .
+---  rdd = rdl .
+---  rde = rdm .
+---  rdf = rdn .
+---  rdg = rdo .
+---  rdh = rdp .
+
+---  RDI = REA TCE + ICA TDE + IEA TEA + IGA TFE . 0  Select Input Data
+---  RDJ = REB TCF + ICB TDF + IEB TEB + IGB TFF .
+---  RDK = REC TCE + ICC TDE + IEC TEA + IGC TFE .
+---  RDL = RED TCF + ICD TDF + IED TEB + IGD TFF .
+---  RDM = REE TCE + ICE TDE + IEE TEA + IGE TFE .
+---  RDN = REF TCF + ICF TDF + IEF TEB + IGF TFF .
+---  RDO = REG TCE + ICG TDE + IEG TEA + IGG TFE .
+---  RDP = REH TCF + ICH TDF + IEH TEB + IGH TFF . 7
+
+---  REA = IAA .                  Delay CPU A Input Data 1 CP
+---  REB = IAB .
+---  REC = IAC .
+---  RED = IAD .
+---  REE = IAE .
+---  REF = IAF .
+---  REG = IAG .
+---  REH = IAH .
+
+---  TAA = FAA . O                     Shared register select
+---  TAB = FAB .                         
+---  TAC = FAC .
+---  TAD = FAD .
+---  TAE = FAE .
+---  TAF = FAF .
+---  TAG = FAG .
+---  TAH = FAH . 7
+
+---  TAI = FBA . O
+---  TAJ = FBB .
+---  TAK = FBC .
+---  TAL = FBD .
+---  TAM = FBE .
+---  TAN = FBF .
+---  TAO = FBG .
+---  TAP = FBH . 7
+
+---  TBA = TJF .    Gate incremented data to shared register
+---  TBB = TJF .
+---  TBC = TJF .
+---  TBD = TJF .
+---  TBE = TJG .
+---  TBF = TJG .
+---  TCE = TLM .
+---  TCF = TLM .
+---  TDE = TLN .
+---  TDF = TLN .
+---  TEA = TLO .
+---  TEB = TLO .
+---  TFE = TLP .
+---  TFF = TLP .
+
+---  TJA = QII .   Set Shared Reg Cpu A write pointer select
+---  TJB = QIJ .                  Cpu B
+---  TJC = QIK .                  Cpu C
+---  TJD = QIL .                  Cpu D
+---  TJE = QYB .
+---  TJF = QYB .
+---  tjg = qyc .
+
+---  TKA = QII .   Read Shared Reg Cpu A Read pointer select
+---  TKB = QIJ .                   Cpu B
+---  TKC = QIK .                   Cpu C
+---  TKD = QIL .                   Cpu D
+
+---  TLA = QUA quc + --- QUC .  Set shared reg cpu a write enable (134-5)
+---  TLB = QVD qve + --- QVE .                 cpu b
+---  TLC = QWA qwc + --- QWC .                 cpu c
+---  TLD = QXA qxc + --- QXC .                 cpu d
+
+---  tle = tla .
+---  tlf = tlb .
+---  tlg = tlc .
+---  tlh = tld .
+
+---  TLM = TLM qcn + TLE .
+---  TLN = TLN qcn + TLF .
+---  TLO = TLO qcn + TLG .
+---  TLP = TLP qcn + TLH .
+
+---  TPA = TJE .      Increment shared register write enable
+
+---  twa = qfn .           or qfa + qze ?
+---  twe = qfn .
+
+---  TXA = QCQ .
+---  TXB = QCR .
+---  TXC = QCS .
+---  TXD = QCT .
+---  TXE = QCQ .
+---  TXF = QCU .
+---  TXG = QCS .
+---  TXH = QCT .
