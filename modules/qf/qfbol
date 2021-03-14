@@ -145,24 +145,24 @@
 ---  kac = kab .                                    2
 ---  kad = kac .                                    3
 
----  laa = iia KAA + laa kaa .         Write CPU A Bank N + 00
----  lab = iib KAA + lab kaa .                              10
----  lac = iic KAA + lac kaa .                              20
----  lad = iid KAA + lad kaa .                              30
+---  LAA = IIA KAA + LAA kaa .         Write CPU A Bank N + 00
+---  LAB = IIB KAA + LAB kaa .                              10
+---  LAC = IIC KAA + LAC kaa .                              20
+---  LAD = IID KAA + LAD kaa .                              30
 
----  lba = iia KAB + lba kab .         Write CPU B Bank N + 00
----  lbb = iib KAB + lbb kab .                              10
----  lbc = iic KAB + lbc kab .                              20
----  lbd = iid KAB + lbd kab .                              30
+---  LBA = IIA KAB + LBA kab .         Write CPU B Bank N + 00
+---  LBB = IIB KAB + LBB kab .                              10
+---  LBC = IIC KAB + LBC kab .                              20
+---  LBD = IID KAB + LBD kab .                              30
 
----  lca = iia KAC + lca kac .         Write CPU C Bank N + 00
----  lcb = iib KAC + lcb kac .                              10
----  lcc = iic KAC + lcc kac .                              20
----  lcd = iid KAC + lcd kac .                              30
+---  LCA = IIA KAC + LCA kac .         Write CPU C Bank N + 00
+---  LCB = IIB KAC + LCB kac .                              10
+---  LCC = IIC KAC + LCC kac .                              20
+---  LCD = IID KAC + LCD kac .                              30
 
----  lda = iia KAD + lda kad .         Write CPU D Bank N + 00
----  ldb = iib KAD + ldb kad .                              10
----  ldc = iic KAD + ldc kad .                              20
----  ldd = iid KAD + ldd kad .                              30
+---  LDA = IIA KAD + LDA kad .         Write CPU D Bank N + 00
+---  LDB = IIB KAD + LDB kad .                              10
+---  LDC = IIC KAD + LDC kad .                              20
+---  LDD = IID KAD + LDD kad .                              30
 
 
