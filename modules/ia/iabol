@@ -763,7 +763,7 @@
 ---  QQC = QQC jqb + QDK .
 ---  QQD = QQD jqb + QDL .
 
----  RAA RAB RAC RAD = WAA WAB WAC VAD ; uaa uab uac uad ; uae UAF .
+---  RAA RAB RAC RAD = WAA WAB WAC WAD ; uaa uab uac uad ; uae UAF .
 ---  RAA RAB RAC RAD = WEA WEB WEC WED ; UAA UAB UAC UAD ; UAE UAF .
 ---  RAE RAF RAG RAH = WAE WAF WAG WAH ; uai uaj uak ual ; uam UAN .
 ---  RAE RAF RAG RAH = WEE WEF WEG WEH ; UAI UAJ UAK UAL ; UAM UAN .
@@ -796,7 +796,7 @@
 ---  RDM RDN RDO RDP = WDM WDN WDO WDP ; udi udj udk udl ; udm UDO .
 ---  RDM RDN RDO RDP = WHM WHN WHO WHP ; UDI UDJ UDK UDL ; UDM UDO .
 ---  REA REB REC RED = WAA WAB WAC WAD ; uea ueb uec ued ; uee UEF .
----  REA REB REC RED = WEA WEB WEC VED ; UEA UEB UEC UED ; UEE UEF .
+---  REA REB REC RED = WEA WEB WEC WED ; UEA UEB UEC UED ; UEE UEF .
 ---  REE REF REG REH = WAE WAF WAG WAH ; uei uei uek uel ; uem UEN .
 ---  REE REF REG REH = WEE WEF WEG WEH ; UEI UEJ UEK UEL ; UEM UEN .
 ---  REI REJ REK REL = WAI WAJ WAK WAL ; uea ueb uec ued ; uee UEG .
@@ -810,8 +810,8 @@
 ---  RFI RFJ RFK RFL = WBI WBJ WBK WBL ; ufa ufb ufc ufd ; ufe UFG .
 ---  RFI RFJ RFK RFL = WFI WFJ WFK WFL ; UFA UFB UFC UFD ; UFE UFG .
 ---  RFM RFN RFO RFP = WBM WBN WBO WBP ; ufi ufj ufk ufl ; ufm UFO .
----  RFM RFN RFO RFP = VFM WFN WFO WFP ; UFI UFJ UFK UFL ; UFM UFO .
----  RGA RGB RGC RGD = WCA WCB WCC VCD ; uga ugb ugc ugd ; uge UGF .
+---  RFM RFN RFO RFP = WFM WFN WFO WFP ; UFI UFJ UFK UFL ; UFM UFO .
+---  RGA RGB RGC RGD = WCA WCB WCC WCD ; uga ugb ugc ugd ; uge UGF .
 ---  RGA RGB RGC RGD = WGA WGB WGC WGD ; UGA UGB UGC UGD ; UGE UGF .  
 ---  RGE RGF RGG RGH = WCE WCF WCG WCH ; ugi ugj ugk ugl ; ugm UGN .
 ---  RGE RGF RGG RGH = WGE WGF WGG WGH ; UGI UGJ UGK UGL ; UGM UGN .
@@ -828,7 +828,7 @@
 ---  RHM RHN RHO RHP = WDM WDN WDO WDP ; uhi uhj uhk uhl ; uhm UHO .
 ---  RHM RHN RHO RHP = WHM WHN WHO WHP ; UHI UHJ UHK UHL ; UHM UHO .
 ---  RIA RIB RIC RID = WAA WAB WAC WAD ; uia uib uic uid ; uie UIF .
----  RIA RIB RIC RID = WEA WEB WEC VED ; UIA UIB UIC UID ; UIE UIF .
+---  RIA RIB RIC RID = WEA WEB WEC WED ; UIA UIB UIC UID ; UIE UIF .
 ---  RIE RIF RIG RIH = WAE WAF WAG WAH ; uii uii uik uil ; uim UIN .
 ---  RIE RIF RIG RIH = WEE WEF WEG WEH ; UII UIJ UIK UIL ; UIM UIN .
 ---  RII RIJ RIK RIL = WAI WAJ WAK WAL ; uia uib uic uid ; uie UIG .
@@ -843,7 +843,7 @@
 ---  RJI RJJ RJK RJL = WFI WFJ WFK WFL ; UJA UJB UJC UJD ; UJE UJG .
 ---  RJM RJN RJO RJP = WBM WBN WBO WBP ; uji ujj ujk ujl ; ujm UJO .
 ---  RJM RJN RJO RJP = WFM WFN WFO WFP ; UJI UJJ UJK UJL ; UJM UJO .
----  RKA RKB RKC RKD = WCA WCB WCC VCD ; uka ukb ukc ukd ; uke UKF .
+---  RKA RKB RKC RKD = WCA WCB WCC WCD ; uka ukb ukc ukd ; uke UKF .
 ---  RKA RKB RKC RKD = WGA WGB WGC WGD ; UKA UKB UKC UKD ; UKE UKF .  
 ---  RKE RKF RKG RKH = WCE WCF WCG WCH ; uki ukj ukk ukl ; ukm UKN .
 ---  RKE RKF RKG RKH = WGE WGF WGG WGH ; UKI UKJ UKK UKL ; UKM UKN .
@@ -860,7 +860,7 @@
 ---  RLM RLN RLO RLP = WDM WDN WDO WDP ; uli ulj ulk ull ; ulm ULO .
 ---  RLM RLN RLO RLP = WHM WHN WHO WHP ; ULI ULJ ULK ULL ; ULM ULO .
 ---  RMA RMB RMC RMD = WAA WAB WAC WAD ; uma umb umc umd ; ume UMF .
----  RMA RMB RMC RMD = WEA WEB WEC VED ; UMA UMB UMC UMD ; UME UMF .
+---  RMA RMB RMC RMD = WEA WEB WEC WED ; UMA UMB UMC UMD ; UME UMF .
 ---  RME RMF RMG RMH = WAE WAF WAG WAH ; umi umi umk uml ; umm UMN .
 ---  RME RMF RMG RMH = WEE WEF WEG WEH ; UMI UMJ UMK UML ; UMM UMN .
 ---  RMI RMJ RMK RML = WAI WAJ WAK WAL ; uma umb umc umd ; ume UMG .
@@ -874,8 +874,8 @@
 ---  RNI RNJ RNK RNL = WBI WBJ WBK WBL ; una unb unc und ; une UNG .
 ---  RNI RNJ RNK RNL = WFI WFJ WFK WFL ; UNA UNB UNC UND ; UNE UNG .
 ---  RNM RNN RNO RNP = WBM WBN WBO WBP ; uni unj unk unl ; unm UNO .
----  RNM RNN RNO RNP = VFM WFN WFO WFP ; UNI UNJ UNK UNL ; UNM UNO .
----  ROA ROB ROC ROD = WCA WCB WCC VCD ; uoa uob uoc uod ; uoe UOF .
+---  RNM RNN RNO RNP = WFM WFN WFO WFP ; UNI UNJ UNK UNL ; UNM UNO .
+---  ROA ROB ROC ROD = WCA WCB WCC WCD ; uoa uob uoc uod ; uoe UOF .
 ---  ROA ROB ROC ROD = WGA WGB WGC WGD ; UOA UOB UOC UOD ; UOE UOF .  
 ---  ROE ROF ROG ROH = WCE WCF WCG WCH ; uoi uoj uok uol ; uom UON .
 ---  ROE ROF ROG ROH = WGE WGF WGG WGH ; UOI UOJ UOK UOL ; UOM UON .
