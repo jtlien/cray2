@@ -248,12 +248,14 @@ HNL - thm thn tho thp .
 HOS - SFD .
 HPS - SJD .
 HQS - SBE .
+HRT - JMA .
 HSS - SFE .
 HTS - SJE .
 HUS - SBF .
 HWS - SFF .
 HXS - SJF .
 I1S - SNG .
+I2T - JMB .
 I3X - OBI .
 I4L - NDA NDB NDC NDD .
 I5S - SNH .
@@ -262,6 +264,8 @@ I7X - OBH .
 I8L - ndi ndj ndk ndl .
 IAS - SNA .
 IBX - OBA .
+ICT - JMC .
+IDT - JMD .
 IES - SNB .
 IFX - OBB .
 IGL - ndm ndn ndo ndp .
@@ -404,6 +408,7 @@ MOM - BCG .
 MPM - BCH .
 MQL - TEI TEJ tek tel .
 MRL - tem ten teo tep .
+MST - JME .
 MTL - WDA WDB WDC WDD .
 MWL - WDE WDF WDG WDH .
 MXL - wdi wdj wdk wdl .
@@ -640,8 +645,11 @@ V5P - AHI AHJ .
 V6P - AHK AHL .
 V7T - MAW .
 V8T - MAX .
+VAT - JMF .
 VCM - BDI .
 VDM - BDJ .
+VET - JMG .
+VFT - JMH .
 VGM - BDK .
 VHM - BDL .
 VKM - BDM .
