@@ -1,3 +1,440 @@
+module wa( IZZ,
+ IAA, 
+ IAB, 
+ IAC, 
+ IAD, 
+ IAE, 
+ IAF, 
+ IAG, 
+ IAH, 
+ IAI, 
+ IAJ, 
+ IAK, 
+ IAL, 
+ IAM, 
+ IAN, 
+ IAO, 
+ IAP, 
+ IBA, 
+ IBB, 
+ IBC, 
+ IBD, 
+ IBE, 
+ IBF, 
+ IBG, 
+ IBH, 
+ IBI, 
+ IBJ, 
+ IBK, 
+ IBL, 
+ IBM, 
+ IBN, 
+ IBO, 
+ IBP, 
+ ICA, 
+ ICB, 
+ ICC, 
+ ICD, 
+ ICE, 
+ ICF, 
+ ICG, 
+ ICH, 
+ ICI, 
+ ICJ, 
+ ICK, 
+ ICL, 
+ ICM, 
+ ICN, 
+ ICO, 
+ ICP, 
+ IDA, 
+ IDB, 
+ IDC, 
+ IDD, 
+ IDE, 
+ IDF, 
+ IDG, 
+ IDH, 
+ IDI, 
+ IDJ, 
+ IDK, 
+ IDL, 
+ IDM, 
+ IDN, 
+ IDO, 
+ IDP, 
+ IEA, 
+ IEB, 
+ IEC, 
+ IED, 
+ IEE, 
+ IEF, 
+ IEG, 
+ IEH, 
+ IEI, 
+ IEJ, 
+ IEK, 
+ IEL, 
+ IEM, 
+ IEN, 
+ IEO, 
+ IEP, 
+ IFA, 
+ IFB, 
+ IFC, 
+ IFD, 
+ IFE, 
+ IFFF , 
+ IFG, 
+ IFH, 
+ IFI, 
+ IFJ, 
+ IFK, 
+ IFL, 
+ IFM, 
+ IFN, 
+ IFO, 
+ IFP, 
+ IGA, 
+ IGB, 
+ IGC, 
+ IGD, 
+ IGE, 
+ IGF, 
+ IGG, 
+ IGH, 
+ IGI, 
+ IGJ, 
+ IGK, 
+ IGL, 
+ IGM, 
+ IGN, 
+ IGO, 
+ IGP, 
+ IHA, 
+ IHB, 
+ IIA, 
+ IIB, 
+ IJA, 
+ IJB, 
+ IJC, 
+ IJD, 
+ OAA, 
+ OAB, 
+ OAC, 
+ OAD, 
+ OAE, 
+ OAF, 
+ OAG, 
+ OAH, 
+ OAI, 
+ OAJ, 
+ OAK, 
+ OAL, 
+ OAM, 
+ OAN, 
+ OAO, 
+ OAP, 
+ OBA, 
+ OBB, 
+ OBC, 
+ OBD, 
+ OBE, 
+ OBF, 
+ OBG, 
+ OBH, 
+ OBI, 
+ OBJ, 
+ OBK, 
+ OBL, 
+ OBM, 
+ OBN, 
+ OBO, 
+ OBP, 
+ OCA, 
+ OCB, 
+ OCC, 
+ OCD, 
+ OCE, 
+ OCF, 
+ OCG, 
+ OCH, 
+ OCI, 
+ OCJ, 
+ OCK, 
+ OCL, 
+ OCM, 
+ OCN, 
+ OCO, 
+ OCP, 
+ ODA, 
+ ODB, 
+ ODC, 
+ ODD, 
+ ODE, 
+ ODF, 
+ ODG, 
+ ODH, 
+ ODI, 
+ ODJ, 
+ ODK, 
+ ODL, 
+ ODM, 
+ ODN, 
+ ODO, 
+ ODP, 
+ OEA, 
+ OEB, 
+ OEC, 
+ OED, 
+ OEE, 
+ OEF, 
+ OEG, 
+ OEH, 
+ OEI, 
+ OEJ, 
+ OEK, 
+ OEL, 
+ OEM, 
+ OEN, 
+ OEO, 
+ OEP, 
+ OFA, 
+ OFB, 
+ OFC, 
+ OFD, 
+ OFE, 
+ OFF, 
+ OFG, 
+ OFH, 
+ OFI, 
+ OFJ, 
+ OFK, 
+ OFL, 
+ OFM, 
+ OFN, 
+ OFO, 
+OFP ); 
+    
+ input IZZ; 
+ input IAA; 
+ input IAB; 
+ input IAC; 
+ input IAD; 
+ input IAE; 
+ input IAF; 
+ input IAG; 
+ input IAH; 
+ input IAI; 
+ input IAJ; 
+ input IAK; 
+ input IAL; 
+ input IAM; 
+ input IAN; 
+ input IAO; 
+ input IAP; 
+ input IBA; 
+ input IBB; 
+ input IBC; 
+ input IBD; 
+ input IBE; 
+ input IBF; 
+ input IBG; 
+ input IBH; 
+ input IBI; 
+ input IBJ; 
+ input IBK; 
+ input IBL; 
+ input IBM; 
+ input IBN; 
+ input IBO; 
+ input IBP; 
+ input ICA; 
+ input ICB; 
+ input ICC; 
+ input ICD; 
+ input ICE; 
+ input ICF; 
+ input ICG; 
+ input ICH; 
+ input ICI; 
+ input ICJ; 
+ input ICK; 
+ input ICL; 
+ input ICM; 
+ input ICN; 
+ input ICO; 
+ input ICP; 
+ input IDA; 
+ input IDB; 
+ input IDC; 
+ input IDD; 
+ input IDE; 
+ input IDF; 
+ input IDG; 
+ input IDH; 
+ input IDI; 
+ input IDJ; 
+ input IDK; 
+ input IDL; 
+ input IDM; 
+ input IDN; 
+ input IDO; 
+ input IDP; 
+ input IEA; 
+ input IEB; 
+ input IEC; 
+ input IED; 
+ input IEE; 
+ input IEF; 
+ input IEG; 
+ input IEH; 
+ input IEI; 
+ input IEJ; 
+ input IEK; 
+ input IEL; 
+ input IEM; 
+ input IEN; 
+ input IEO; 
+ input IEP; 
+ input IFA; 
+ input IFB; 
+ input IFC; 
+ input IFD; 
+ input IFE; 
+ input IFFF ; 
+ input IFG; 
+ input IFH; 
+ input IFI; 
+ input IFJ; 
+ input IFK; 
+ input IFL; 
+ input IFM; 
+ input IFN; 
+ input IFO; 
+ input IFP; 
+ input IGA; 
+ input IGB; 
+ input IGC; 
+ input IGD; 
+ input IGE; 
+ input IGF; 
+ input IGG; 
+ input IGH; 
+ input IGI; 
+ input IGJ; 
+ input IGK; 
+ input IGL; 
+ input IGM; 
+ input IGN; 
+ input IGO; 
+ input IGP; 
+ input IHA; 
+ input IHB; 
+ input IIA; 
+ input IIB; 
+ input IJA; 
+ input IJB; 
+ input IJC; 
+ input IJD; 
+ output OAA; 
+ output OAB; 
+ output OAC; 
+ output OAD; 
+ output OAE; 
+ output OAF; 
+ output OAG; 
+ output OAH; 
+ output OAI; 
+ output OAJ; 
+ output OAK; 
+ output OAL; 
+ output OAM; 
+ output OAN; 
+ output OAO; 
+ output OAP; 
+ output OBA; 
+ output OBB; 
+ output OBC; 
+ output OBD; 
+ output OBE; 
+ output OBF; 
+ output OBG; 
+ output OBH; 
+ output OBI; 
+ output OBJ; 
+ output OBK; 
+ output OBL; 
+ output OBM; 
+ output OBN; 
+ output OBO; 
+ output OBP; 
+ output OCA; 
+ output OCB; 
+ output OCC; 
+ output OCD; 
+ output OCE; 
+ output OCF; 
+ output OCG; 
+ output OCH; 
+ output OCI; 
+ output OCJ; 
+ output OCK; 
+ output OCL; 
+ output OCM; 
+ output OCN; 
+ output OCO; 
+ output OCP; 
+ output ODA; 
+ output ODB; 
+ output ODC; 
+ output ODD; 
+ output ODE; 
+ output ODF; 
+ output ODG; 
+ output ODH; 
+ output ODI; 
+ output ODJ; 
+ output ODK; 
+ output ODL; 
+ output ODM; 
+ output ODN; 
+ output ODO; 
+ output ODP; 
+ output OEA; 
+ output OEB; 
+ output OEC; 
+ output OED; 
+ output OEE; 
+ output OEF; 
+ output OEG; 
+ output OEH; 
+ output OEI; 
+ output OEJ; 
+ output OEK; 
+ output OEL; 
+ output OEM; 
+ output OEN; 
+ output OEO; 
+ output OEP; 
+ output OFA; 
+ output OFB; 
+ output OFC; 
+ output OFD; 
+ output OFE; 
+ output OFF; 
+ output OFG; 
+ output OFH; 
+ output OFI; 
+ output OFJ; 
+ output OFK; 
+ output OFL; 
+ output OFM; 
+ output OFN; 
+ output OFO; 
+ output OFP; 
+  
+  
 reg  AAA ;
 reg  AAB ;
 reg  AAC ;
@@ -258,6 +695,14 @@ reg  GAI ;
 reg  GAJ ;
 reg  GAK ;
 reg  GAL ;
+reg  JMA ;
+reg  JMB ;
+reg  JMC ;
+reg  JMD ;
+reg  JME ;
+reg  JMF ;
+reg  JMG ;
+reg  JMH ;
 reg  KAA ;
 reg  KAB ;
 reg  KAC ;
@@ -788,6 +1233,30 @@ wire  afi ;
 wire  afj ;
 wire  afk ;
 wire  afl ;
+wire  aga ;
+wire  agb ;
+wire  agc ;
+wire  agd ;
+wire  age ;
+wire  agf ;
+wire  agg ;
+wire  agh ;
+wire  agi ;
+wire  agj ;
+wire  agk ;
+wire  agl ;
+wire  aha ;
+wire  ahb ;
+wire  ahc ;
+wire  ahd ;
+wire  ahe ;
+wire  ahf ;
+wire  ahg ;
+wire  ahh ;
+wire  ahi ;
+wire  ahj ;
+wire  ahk ;
+wire  ahl ;
 wire  baa ;
 wire  bab ;
 wire  bac ;
@@ -836,6 +1305,22 @@ wire  bcm ;
 wire  bcn ;
 wire  bco ;
 wire  bcp ;
+wire  bda ;
+wire  bdb ;
+wire  bdc ;
+wire  bdd ;
+wire  bde ;
+wire  bdf ;
+wire  bdg ;
+wire  bdh ;
+wire  bdi ;
+wire  bdj ;
+wire  bdk ;
+wire  bdl ;
+wire  bdm ;
+wire  bdn ;
+wire  bdo ;
+wire  bdp ;
 wire  bea ;
 wire  beb ;
 wire  bec ;
@@ -920,6 +1405,7 @@ wire  faq ;
 wire  FAQ ;
 wire  fba ;
 wire  fbb ;
+wire  fbc ;
 wire  fbd ;
 wire  fbe ;
 wire  fbf ;
@@ -945,6 +1431,126 @@ wire  gai ;
 wire  gaj ;
 wire  gak ;
 wire  gal ;
+wire  iaa ;
+wire  iab ;
+wire  iac ;
+wire  iad ;
+wire  iae ;
+wire  iaf ;
+wire  iag ;
+wire  iah ;
+wire  iai ;
+wire  iaj ;
+wire  iak ;
+wire  ial ;
+wire  iam ;
+wire  ian ;
+wire  iao ;
+wire  iap ;
+wire  iba ;
+wire  ibb ;
+wire  ibc ;
+wire  ibd ;
+wire  ibe ;
+wire  ibf ;
+wire  ibg ;
+wire  ibh ;
+wire  ibi ;
+wire  ibj ;
+wire  ibk ;
+wire  ibl ;
+wire  ibm ;
+wire  ibn ;
+wire  ibo ;
+wire  ibp ;
+wire  ica ;
+wire  icb ;
+wire  icc ;
+wire  icd ;
+wire  ice ;
+wire  icf ;
+wire  icg ;
+wire  ich ;
+wire  ici ;
+wire  icj ;
+wire  ick ;
+wire  icl ;
+wire  icm ;
+wire  icn ;
+wire  ico ;
+wire  icp ;
+wire  ida ;
+wire  idb ;
+wire  idc ;
+wire  idd ;
+wire  ide ;
+wire  idf ;
+wire  idg ;
+wire  idh ;
+wire  idi ;
+wire  idj ;
+wire  idk ;
+wire  idl ;
+wire  idm ;
+wire  idn ;
+wire  ido ;
+wire  idp ;
+wire  iea ;
+wire  ieb ;
+wire  iec ;
+wire  ied ;
+wire  iee ;
+wire  ief ;
+wire  ieg ;
+wire  ieh ;
+wire  iei ;
+wire  iej ;
+wire  iek ;
+wire  iel ;
+wire  iem ;
+wire  ien ;
+wire  ieo ;
+wire  iep ;
+wire  ifa ;
+wire  ifb ;
+wire  ifc ;
+wire  ifd ;
+wire  ife ;
+wire  ifff  ;
+wire  ifg ;
+wire  ifh ;
+wire  ifi ;
+wire  ifj ;
+wire  ifk ;
+wire  ifl ;
+wire  ifm ;
+wire  ifn ;
+wire  ifo ;
+wire  ifp ;
+wire  iga ;
+wire  igb ;
+wire  igc ;
+wire  igd ;
+wire  ige ;
+wire  igf ;
+wire  igg ;
+wire  igh ;
+wire  igi ;
+wire  igj ;
+wire  igk ;
+wire  igl ;
+wire  igm ;
+wire  ign ;
+wire  igo ;
+wire  igp ;
+wire  iha ;
+wire  ihb ;
+wire  iia ;
+wire  iib ;
+wire  ija ;
+wire  ijb ;
+wire  ijc ;
+wire  ijd ;
 wire  jca ;
 wire  JCA ;
 wire  jcb ;
@@ -969,6 +1575,14 @@ wire  jec ;
 wire  JEC ;
 wire  jed ;
 wire  JED ;
+wire  jma ;
+wire  jmb ;
+wire  jmc ;
+wire  jmd ;
+wire  jme ;
+wire  jmf ;
+wire  jmg ;
+wire  jmh ;
 wire  kaa ;
 wire  kab ;
 wire  kac ;
@@ -993,6 +1607,22 @@ wire  mae ;
 wire  maf ;
 wire  mag ;
 wire  mah ;
+wire  mai ;
+wire  maj ;
+wire  mak ;
+wire  mal ;
+wire  mam ;
+wire  man ;
+wire  mao ;
+wire  map ;
+wire  maq ;
+wire  mar ;
+wire  mas ;
+wire  mat ;
+wire  mau ;
+wire  mav ;
+wire  maw ;
+wire  max ;
 wire  naa ;
 wire  nab ;
 wire  nac ;
@@ -1105,6 +1735,22 @@ wire  ocm ;
 wire  ocn ;
 wire  oco ;
 wire  ocp ;
+wire  oda ;
+wire  odb ;
+wire  odc ;
+wire  odd ;
+wire  ode ;
+wire  odf ;
+wire  odg ;
+wire  odh ;
+wire  odi ;
+wire  odj ;
+wire  odk ;
+wire  odl ;
+wire  odm ;
+wire  odn ;
+wire  odo ;
+wire  odp ;
 wire  oea ;
 wire  oeb ;
 wire  oec ;
@@ -1124,9 +1770,27 @@ wire  oep ;
 wire  ofa ;
 wire  ofb ;
 wire  ofc ;
+wire  ofd ;
+wire  ofe ;
 wire  off ;
 wire  ofg ;
 wire  ofh ;
+wire  ofi ;
+wire  ofj ;
+wire  ofk ;
+wire  ofl ;
+wire  ofm ;
+wire  ofn ;
+wire  ofo ;
+wire  ofp ;
+wire  oha ;
+wire  ohb ;
+wire  ohc ;
+wire  ohd ;
+wire  ohe ;
+wire  ohf ;
+wire  ohg ;
+wire  ohh ;
 wire  paa ;
 wire  pab ;
 wire  pac ;
@@ -1445,6 +2109,264 @@ wire  WDO ;
 wire  WDP ;
 wire  ZZI ;
 wire  ZZO ;
+   
+wire SAA;
+wire SAB;
+wire SAC;
+wire SAD;
+wire SAE;
+wire SAF;
+wire SAG;
+wire SAH;
+wire SAI;
+wire SAJ;
+wire SAK;
+wire SAL;
+wire SAM;
+wire SAN;
+wire SAO;
+wire SAP;
+wire SBA;
+wire SBB;
+wire SBC;
+wire SBD;
+wire SBE;
+wire SBF;
+wire SBG;
+wire SBH;
+wire SBI;
+wire SBJ;
+wire SBK;
+wire SBL;
+wire SBM;
+wire SBN;
+wire SBO;
+wire SBP;
+wire SCA;
+wire SCB;
+wire SCC;
+wire SCD;
+wire SCE;
+wire SCF;
+wire SCG;
+wire SCH;
+wire SCI;
+wire SCJ;
+wire SCK;
+wire SCL;
+wire SCM;
+wire SCN;
+wire SCO;
+wire SCP;
+wire SDA;
+wire SDB;
+wire SDC;
+wire SDD;
+wire SDE;
+wire SDF;
+wire SDG;
+wire SDH;
+wire SDI;
+wire SDJ;
+wire SDK;
+wire SDL;
+wire SDM;
+wire SDN;
+wire SDO;
+wire SDP;
+wire SEA;
+wire SEB;
+wire SEC;
+wire SED;
+wire SEE;
+wire SEF;
+wire SEG;
+wire SEH;
+wire SEI;
+wire SEJ;
+wire SEK;
+wire SEL;
+wire SEM;
+wire SEN;
+wire SEO;
+wire SEP;
+wire SFA;
+wire SFB;
+wire SFC;
+wire SFD;
+wire SFE;
+wire SFF;
+wire SFG;
+wire SFH;
+wire SFI;
+wire SFJ;
+wire SFK;
+wire SFL;
+wire SFM;
+wire SFN;
+wire SFO;
+wire SFP;
+wire SGA;
+wire SGB;
+wire SGC;
+wire SGD;
+wire SGE;
+wire SGF;
+wire SGG;
+wire SGH;
+wire SGI;
+wire SGJ;
+wire SGK;
+wire SGL;
+wire SGM;
+wire SGN;
+wire SGO;
+wire SGP;
+wire SHA;
+wire SHB;
+wire SHC;
+wire SHD;
+wire SHE;
+wire SHF;
+wire SHG;
+wire SHH;
+wire SHI;
+wire SHJ;
+wire SHK;
+wire SHL;
+wire SHM;
+wire SHN;
+wire SHO;
+wire SHP;
+wire SIA;
+wire SIB;
+wire SIC;
+wire SID;
+wire SIE;
+wire SIF;
+wire SIG;
+wire SIH;
+wire SII;
+wire SIJ;
+wire SIK;
+wire SIL;
+wire SIM;
+wire SIN;
+wire SIO;
+wire SIP;
+wire SJA;
+wire SJB;
+wire SJC;
+wire SJD;
+wire SJE;
+wire SJF;
+wire SJG;
+wire SJH;
+wire SJI;
+wire SJJ;
+wire SJK;
+wire SJL;
+wire SJM;
+wire SJN;
+wire SJO;
+wire SJP;
+wire SKA;
+wire SKB;
+wire SKC;
+wire SKD;
+wire SKE;
+wire SKF;
+wire SKG;
+wire SKH;
+wire SKI;
+wire SKJ;
+wire SKK;
+wire SKL;
+wire SKM;
+wire SKN;
+wire SKO;
+wire SKP;
+wire SLA;
+wire SLB;
+wire SLC;
+wire SLD;
+wire SLE;
+wire SLF;
+wire SLG;
+wire SLH;
+wire SLI;
+wire SLJ;
+wire SLK;
+wire SLL;
+wire SLM;
+wire SLN;
+wire SLO;
+wire SLP;
+wire SMA;
+wire SMB;
+wire SMC;
+wire SMD;
+wire SME;
+wire SMF;
+wire SMG;
+wire SMH;
+wire SMI;
+wire SMJ;
+wire SMK;
+wire SML;
+wire SMM;
+wire SMN;
+wire SMO;
+wire SMP;
+wire SNA;
+wire SNB;
+wire SNC;
+wire SND;
+wire SNE;
+wire SNF;
+wire SNG;
+wire SNH;
+wire SNI;
+wire SNJ;
+wire SNK;
+wire SNL;
+wire SNM;
+wire SNN;
+wire SNO;
+wire SNP;
+wire SOA;
+wire SOB;
+wire SOC;
+wire SOD;
+wire SOE;
+wire SOF;
+wire SOG;
+wire SOH;
+wire SOI;
+wire SOJ;
+wire SOK;
+wire SOL;
+wire SOM;
+wire SON;
+wire SOO;
+wire SOP;
+wire SPA;
+wire SPB;
+wire SPC;
+wire SPD;
+wire SPE;
+wire SPF;
+wire SPG;
+wire SPH;
+wire SPI;
+wire SPJ;
+wire SPK;
+wire SPL;
+wire SPM;
+wire SPN;
+wire SPO;
+wire SPP;
+
 assign ZZI = 1'b1;
 assign ZZO = 1'b0;
 assign bea = ~BEA;  //complement 
@@ -1787,6 +2709,7 @@ assign THM = ~thm;  //complement
 assign THN = ~thn;  //complement 
 assign THO = ~tho;  //complement 
 assign THP = ~thp;  //complement 
+assign jma = ~JMA;  //complement 
 assign thi = ~THI;  //complement 
 assign thj = ~THJ;  //complement 
 assign THK = ~thk;  //complement 
@@ -1796,6 +2719,8 @@ assign tfb = ~TFB;  //complement
 assign tfc = ~TFC;  //complement 
 assign tfd = ~TFD;  //complement 
 assign oba = ~OBA;  //complement 
+assign jmc = ~JMC;  //complement 
+assign jmd = ~JMD;  //complement 
 assign obb = ~OBB;  //complement 
 assign NDM = ~ndm;  //complement 
 assign NDN = ~ndn;  //complement 
@@ -1843,6 +2768,7 @@ assign TNH = ~tnh;  //complement
 assign obf = ~OBF;  //complement 
 assign obg = ~OBG;  //complement 
 assign paa = ~PAA;  //complement 
+assign jmb = ~JMB;  //complement 
 assign obi = ~OBI;  //complement 
 assign nda = ~NDA;  //complement 
 assign ndb = ~NDB;  //complement 
@@ -2015,6 +2941,7 @@ assign TEM = ~tem;  //complement
 assign TEN = ~ten;  //complement 
 assign TEO = ~teo;  //complement 
 assign TEP = ~tep;  //complement 
+assign jme = ~JME;  //complement 
 assign wda = ~WDA;  //complement 
 assign wdb = ~WDB;  //complement 
 assign wdc = ~WDC;  //complement 
@@ -2173,7 +3100,222 @@ assign oco = ~OCO;  //complement
 assign ofa = ~OFA;  //complement 
 assign ofb = ~OFB;  //complement 
 assign ocp = ~OCP;  //complement 
-assign ofc = ~OFC;  //compalways@(posedge IZZ )
+assign ofc = ~OFC;  //complement 
+assign ofd = ~OFD;  //complement 
+assign ofe = ~OFE;  //complement 
+assign fbc = ~FBC;  //complement 
+assign mai = ~MAI;  //complement 
+assign bda = ~BDA;  //complement 
+assign bdb = ~BDB;  //complement 
+assign mam = ~MAM;  //complement 
+assign bdc = ~BDC;  //complement 
+assign bdd = ~BDD;  //complement 
+assign maj = ~MAJ;  //complement 
+assign bde = ~BDE;  //complement 
+assign bdf = ~BDF;  //complement 
+assign bdg = ~BDG;  //complement 
+assign bdh = ~BDH;  //complement 
+assign mak = ~MAK;  //complement 
+assign mal = ~MAL;  //complement 
+assign man = ~MAN;  //complement 
+assign mao = ~MAO;  //complement 
+assign map = ~MAP;  //complement 
+assign aga = ~AGA;  //complement 
+assign agb = ~AGB;  //complement 
+assign agc = ~AGC;  //complement 
+assign agd = ~AGD;  //complement 
+assign age = ~AGE;  //complement 
+assign agf = ~AGF;  //complement 
+assign agg = ~AGG;  //complement 
+assign agh = ~AGH;  //complement 
+assign agi = ~AGI;  //complement 
+assign agj = ~AGJ;  //complement 
+assign agk = ~AGK;  //complement 
+assign agl = ~AGL;  //complement 
+assign oda = ~ODA;  //complement 
+assign odb = ~ODB;  //complement 
+assign maq = ~MAQ;  //complement 
+assign odc = ~ODC;  //complement 
+assign mar = ~MAR;  //complement 
+assign mas = ~MAS;  //complement 
+assign odd = ~ODD;  //complement 
+assign ode = ~ODE;  //complement 
+assign mat = ~MAT;  //complement 
+assign odf = ~ODF;  //complement 
+assign mau = ~MAU;  //complement 
+assign mav = ~MAV;  //complement 
+assign odg = ~ODG;  //complement 
+assign ofi = ~OFI;  //complement 
+assign odh = ~ODH;  //complement 
+assign jmf = ~JMF;  //complement 
+assign bdi = ~BDI;  //complement 
+assign bdj = ~BDJ;  //complement 
+assign jmg = ~JMG;  //complement 
+assign jmh = ~JMH;  //complement 
+assign bdk = ~BDK;  //complement 
+assign bdl = ~BDL;  //complement 
+assign bdm = ~BDM;  //complement 
+assign bdn = ~BDN;  //complement 
+assign bdo = ~BDO;  //complement 
+assign bdp = ~BDP;  //complement 
+assign oha = ~OHA;  //complement 
+assign ohb = ~OHB;  //complement 
+assign ohc = ~OHC;  //complement 
+assign ohd = ~OHD;  //complement 
+assign ohe = ~OHE;  //complement 
+assign ohf = ~OHF;  //complement 
+assign ohg = ~OHG;  //complement 
+assign ohh = ~OHH;  //complement 
+assign aha = ~AHA;  //complement 
+assign ahb = ~AHB;  //complement 
+assign ahc = ~AHC;  //complement 
+assign ahd = ~AHD;  //complement 
+assign ahe = ~AHE;  //complement 
+assign ahf = ~AHF;  //complement 
+assign ahg = ~AHG;  //complement 
+assign ahh = ~AHH;  //complement 
+assign ahi = ~AHI;  //complement 
+assign ahj = ~AHJ;  //complement 
+assign ahk = ~AHK;  //complement 
+assign ahl = ~AHL;  //complement 
+assign maw = ~MAW;  //complement 
+assign max = ~MAX;  //complement 
+assign odi = ~ODI;  //complement 
+assign ofn = ~OFN;  //complement 
+assign ofo = ~OFO;  //complement 
+assign ofp = ~OFP;  //complement 
+assign odj = ~ODJ;  //complement 
+assign odk = ~ODK;  //complement 
+assign odl = ~ODL;  //complement 
+assign odm = ~ODM;  //complement 
+assign odn = ~ODN;  //complement 
+assign odo = ~ODO;  //complement 
+assign ofj = ~OFJ;  //complement 
+assign ofk = ~OFK;  //complement 
+assign odp = ~ODP;  //complement 
+assign ofl = ~OFL;  //complement 
+assign ofm = ~OFM;  //complement 
+assign iaa = ~IAA; //complement 
+assign iab = ~IAB; //complement 
+assign iac = ~IAC; //complement 
+assign iad = ~IAD; //complement 
+assign iae = ~IAE; //complement 
+assign iaf = ~IAF; //complement 
+assign iag = ~IAG; //complement 
+assign iah = ~IAH; //complement 
+assign iai = ~IAI; //complement 
+assign iaj = ~IAJ; //complement 
+assign iak = ~IAK; //complement 
+assign ial = ~IAL; //complement 
+assign iam = ~IAM; //complement 
+assign ian = ~IAN; //complement 
+assign iao = ~IAO; //complement 
+assign iap = ~IAP; //complement 
+assign iba = ~IBA; //complement 
+assign ibb = ~IBB; //complement 
+assign ibc = ~IBC; //complement 
+assign ibd = ~IBD; //complement 
+assign ibe = ~IBE; //complement 
+assign ibf = ~IBF; //complement 
+assign ibg = ~IBG; //complement 
+assign ibh = ~IBH; //complement 
+assign ibi = ~IBI; //complement 
+assign ibj = ~IBJ; //complement 
+assign ibk = ~IBK; //complement 
+assign ibl = ~IBL; //complement 
+assign ibm = ~IBM; //complement 
+assign ibn = ~IBN; //complement 
+assign ibo = ~IBO; //complement 
+assign ibp = ~IBP; //complement 
+assign ica = ~ICA; //complement 
+assign icb = ~ICB; //complement 
+assign icc = ~ICC; //complement 
+assign icd = ~ICD; //complement 
+assign ice = ~ICE; //complement 
+assign icf = ~ICF; //complement 
+assign icg = ~ICG; //complement 
+assign ich = ~ICH; //complement 
+assign ici = ~ICI; //complement 
+assign icj = ~ICJ; //complement 
+assign ick = ~ICK; //complement 
+assign icl = ~ICL; //complement 
+assign icm = ~ICM; //complement 
+assign icn = ~ICN; //complement 
+assign ico = ~ICO; //complement 
+assign icp = ~ICP; //complement 
+assign ida = ~IDA; //complement 
+assign idb = ~IDB; //complement 
+assign idc = ~IDC; //complement 
+assign idd = ~IDD; //complement 
+assign ide = ~IDE; //complement 
+assign idf = ~IDF; //complement 
+assign idg = ~IDG; //complement 
+assign idh = ~IDH; //complement 
+assign idi = ~IDI; //complement 
+assign idj = ~IDJ; //complement 
+assign idk = ~IDK; //complement 
+assign idl = ~IDL; //complement 
+assign idm = ~IDM; //complement 
+assign idn = ~IDN; //complement 
+assign ido = ~IDO; //complement 
+assign idp = ~IDP; //complement 
+assign iea = ~IEA; //complement 
+assign ieb = ~IEB; //complement 
+assign iec = ~IEC; //complement 
+assign ied = ~IED; //complement 
+assign iee = ~IEE; //complement 
+assign ief = ~IEF; //complement 
+assign ieg = ~IEG; //complement 
+assign ieh = ~IEH; //complement 
+assign iei = ~IEI; //complement 
+assign iej = ~IEJ; //complement 
+assign iek = ~IEK; //complement 
+assign iel = ~IEL; //complement 
+assign iem = ~IEM; //complement 
+assign ien = ~IEN; //complement 
+assign ieo = ~IEO; //complement 
+assign iep = ~IEP; //complement 
+assign ifa = ~IFA; //complement 
+assign ifb = ~IFB; //complement 
+assign ifc = ~IFC; //complement 
+assign ifd = ~IFD; //complement 
+assign ife = ~IFE; //complement 
+assign ifff  = ~IFFF ; //complement 
+assign ifg = ~IFG; //complement 
+assign ifh = ~IFH; //complement 
+assign ifi = ~IFI; //complement 
+assign ifj = ~IFJ; //complement 
+assign ifk = ~IFK; //complement 
+assign ifl = ~IFL; //complement 
+assign ifm = ~IFM; //complement 
+assign ifn = ~IFN; //complement 
+assign ifo = ~IFO; //complement 
+assign ifp = ~IFP; //complement 
+assign iga = ~IGA; //complement 
+assign igb = ~IGB; //complement 
+assign igc = ~IGC; //complement 
+assign igd = ~IGD; //complement 
+assign ige = ~IGE; //complement 
+assign igf = ~IGF; //complement 
+assign igg = ~IGG; //complement 
+assign igh = ~IGH; //complement 
+assign igi = ~IGI; //complement 
+assign igj = ~IGJ; //complement 
+assign igk = ~IGK; //complement 
+assign igl = ~IGL; //complement 
+assign igm = ~IGM; //complement 
+assign ign = ~IGN; //complement 
+assign igo = ~IGO; //complement 
+assign igp = ~IGP; //complement 
+assign iha = ~IHA; //complement 
+assign ihb = ~IHB; //complement 
+assign iia = ~IIA; //complement 
+assign iib = ~IIB; //complement 
+assign ija = ~IJA; //complement 
+assign ijb = ~IJB; //complement 
+assign ijc = ~IJC; //complement 
+assign ijd = ~IJD; //complement 
+always@(posedge IZZ )
    begin 
  BEA <=  BEA & tca & tda  |  NAA & TCA  |  IAA & TDA  ; 
  BEB <=  BEB & tca & tda  |  NAB & TCA  |  IAB & TDA  ; 
@@ -2471,6 +3613,7 @@ assign ofc = ~OFC;  //compalways@(posedge IZZ )
  thn <= pcd ; 
  tho <= pcd ; 
  thp <= pcd ; 
+ JMA <=  MAA & mab & mac  |  maa & MAB & mac  |  maa & mab & MAC  |  MAA & MAB & MAC  ;
  THI <= PCD ; 
  THJ <= PCD ; 
  thk <= pcd ; 
@@ -2480,6 +3623,8 @@ assign ofc = ~OFC;  //compalways@(posedge IZZ )
  TFC <= PCB ; 
  TFD <= PCB ; 
  OBA <=  SBA & TEK  |  SFA & TFK  |  SJA & TGK  |  SNA & THK  ; 
+ JMC <=  MAG & mah & mai  |  mag & MAH & mai  |  mag & mah & MAI  |  MAG & MAH & MAI  ;
+ JMD <=  MAJ & mak & mal  |  maj & MAK & mal  |  maj & mak & MAL  |  MAJ & MAK & MAL  ;
  OBB <=  SBB & TEL  |  SFB & TFL  |  SJB & TGL  |  SNB & THL  ; 
  ndm <= ifp ; 
  ndn <= ifp ; 
@@ -2511,6 +3656,7 @@ assign ofc = ~OFC;  //compalways@(posedge IZZ )
  OBF <=  SBF & TEN  |  SFF & TFN  |  SJF & TGN  |  SNF & THM  ; 
  OBG <=  SBG & TEM  |  SFG & TFM  |  SJG & TGM  |  SNG & THM  ; 
  PAA <=  JCA  |  JDA  |  JEA  ; 
+ JMB <=  MAD & mae & maf  |  mad & MAE & maf  |  mad & mae & MAF  |  MAD & MAE & MAF  ;
  OBI <=  SBI & TEO  |  SFI & TFO  |  SJI & TGO  |  SNI & THO  ; 
  NDA <= IFP ; 
  NDB <= IFP ; 
@@ -2671,6 +3817,7 @@ assign ofc = ~OFC;  //compalways@(posedge IZZ )
  ten <= pca ; 
  teo <= pca ; 
  tep <= pca ; 
+ JME <=  MAM & man & mao  |  mam & MAN & mao  |  mam & man & MAO  |  MAM & MAN & MAO  ;
  WDA <= PED ; 
  WDB <= PED ; 
  WDC <= PED ; 
@@ -2848,8 +3995,11 @@ assign ofc = ~OFC;  //compalways@(posedge IZZ )
  ODG <=  SDG & TEM  |  SHG & TFM  |  SLG & TGM  |  SPG & THM  ; 
  OFI <=  SDI & TUO  |  SHI & TVO  |  SLI & TWO  |  SPI & TXO  ; 
  ODH <=  SDH & TEN  |  SHH & TFN  |  SLH & TGN  |  SPH & THN  ; 
+ JMF <=  MAP & maq & mar  |  map & MAQ & mar  |  map & maq & MAR  |  MAP & MAQ & MAR  ;
  BDI <=  BDI & tad & tbd  |  NDI & TAD  |  IDI & TBD  ; 
  BDJ <=  BDJ & tad & tbd  |  NDJ & TAD  |  IDJ & TBD  ; 
+ JMG <=  MAS & mat & mau  |  mas & MAT & mau  |  mas & mat & MAU  |  MAS & MAT & MAU  ;
+ JMH <=  MAV & maw & max  |  mav & MAW & max  |  mav & maw & MAX  |  MAV & MAW & MAX  ;
  BDK <=  BDK & tad & tbd  |  NDK & TAD  |  IDK & TBD  ; 
  BDL <=  BDL & tad & tbd  |  NDL & TAD  |  IDL & TBD  ; 
  BDM <=  BDM & tad & tbd  |  NDM & TAD  |  IDM & TBD  ; 
@@ -2893,7 +4043,7 @@ assign ofc = ~OFC;  //compalways@(posedge IZZ )
  ODP <=  SDP & TER  |  SHP & TFR  |  SLP & TGR  |  SPP & THR  ; 
  OFL <=  SDL & TUP  |  SHL & TVP  |  SLL & TWP  |  SPL & TXP  ; 
  OFM <=  SDM & TUQ  |  SHM & TVQ  |  SLM & TWQ  |  SPM & TXQ  ; 
-end 
+end
 ram_4096x1 sinst_000(SAA,BAA,{AAA,AAB,AAC,AAD,AAE,AAF,AAG,AAH,AAI,AAJ,AAK,AAL}, ZZI, WAA, IZZ); 
 ram_4096x1 sinst_001(SEA,BEA,{ABA,ABB,ABC,ABD,ABE,ABF,ABG,ABH,ABI,ABJ,ABK,ABL}, ZZI, WBA, IZZ); 
 ram_4096x1 sinst_002(SIA,BAA,{ACA,ACB,ACC,ACD,ACE,ACF,ACG,ACH,ACI,ACJ,ACK,ACL}, ZZI, WCA, IZZ); 
@@ -3147,4 +4297,7 @@ ram_4096x1 sinst_249(SLN,BDN,{aca,acb,acc,acd,ace,acf,acg,ach,aci,acj,ack,acl}, 
 ram_4096x1 sinst_250(SDO,BDO,{AEA,AEB,AEC,AED,AEE,AEF,AEG,AEH,AEI,AEJ,AEK,AEL}, ZZI, WAO, IZZ); 
 ram_4096x1 sinst_251(SHO,BHO,{AFA,AFB,AFC,AFD,AFE,AFF,AFG,AFH,AFI,AFJ,AFK,AFL}, ZZI, WBO, IZZ); 
 ram_4096x1 sinst_252(SLO,BDO,{AGA,AGB,AGC,AGD,AGE,AGF,AGG,AGH,AGI,AGJ,AGK,AGL}, ZZI, WCO, IZZ); 
-ram_4096x1 sinst_253(SDP,BDP,{aea,aendmodule;
+ram_4096x1 sinst_253(SDP,BDP,{aea,aeb,aec,aed,aee,aef,aeg,aeh,aei,aej,aek,ael}, ZZI, WAP, IZZ); 
+ram_4096x1 sinst_254(SHP,BHP,{afa,afb,afc,afd,afe,aff,afg,afh,afi,afj,afk,afl}, ZZI, WBP, IZZ); 
+ram_4096x1 sinst_255(SLP,BDP,{aga,agb,agc,agd,age,agf,agg,agh,agi,agj,agk,agl}, ZZI, WCP, IZZ); 
+endmodule;
