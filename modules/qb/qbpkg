@@ -10,7 +10,7 @@ ABO - DAC DAB DAA .
 ACR - RAA RAB RAC RAD .
 ADP - HAA HAB .
 AFL - waa tdb .
-AGR - RAE RAF *** *** .
+AGR - RAE RAF RAG RAH .
 AHP - HAE HAF .
 AIH - KAA JCA .
 AJX - caa cad .
@@ -65,7 +65,7 @@ DBO - DBC DBB DBA .
 DCR - RBA RBB RBC RBD .
 DDP - HAC HAD .
 DFL - wab tdc .
-DGR - RBE RBF *** *** .
+DGR - RBE RBF RBG RBH .
 DIH - KAB .
 DJX - cab cae .
 DLP - DKA DKB .
@@ -117,7 +117,7 @@ GBO - DCC DCB DCA .
 GCR - RCA RCB RCC RCD .
 GDL - QCB QCC .
 GFL - wac tda .
-GGR - RCE RCF *** *** .
+GGR - RCE RCF RCG RCH .
 GHM - QCA QCD .
 GIH - KAC .
 GJX - cac caf .
@@ -211,7 +211,7 @@ MBP - DDC DDD .
 MCR - RDA RDB RDC RDD .
 MDP - HBA HBB .
 MFL - wad tfb .
-MGR - RDE RDF *** *** .
+MGR - RDE RDF RDG RDH .
 MHI - EBE .
 MIH - KBA .
 MJX - cba cbe .
@@ -265,7 +265,7 @@ PBP - DEC DED .
 PCR - REA REB REC RED .
 PDP - HBC HBD .
 PFL - wae tfc .
-PGR - REE REF *** *** .
+PGR - REE REF REG REH .
 PIH - KBB .
 PJX - cbb cbf .
 PLP - DQB .
@@ -318,7 +318,7 @@ SBP - DFC DFD .
 SCR - RFA RFB RFC RFD .
 SDL - QDB QDC .
 SFL - waf tfa .
-SGR - RFE RFF *** *** .
+SGR - RFE RFF RFG RFH .
 SHM - QDA QDD .
 SIH - KBC .
 SJX - cbc cbg .

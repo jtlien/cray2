@@ -720,18 +720,18 @@
 --- qfb = qac qad .                       error address
 
 --- RAA RAB RAC RAD = AEA AEB AEC AED ; *** DAC DAB DAA ; *** WAA . p0
---- RAE RAF *** *** = AEE AEF *** *** ; *** DAC DAB DAA ; *** WAA .
+--- RAE RAF RAG RAH = AEE AEF *** *** ; *** DAC DAB DAA ; *** WAA .
 --- RBA RBB RBC RBD = AEA AEB AEC AED ; *** DBC DBB DBA ; *** WAB . p1   
---- RBE RBF *** *** = AEE AEF *** *** ; *** DBC DBB DBA ; *** WAB .     
+--- RBE RBF RBG RBH = AEE AEF *** *** ; *** DBC DBB DBA ; *** WAB .     
 --- RCA RCB RCC RCD = AEA AEB AEC AED ; *** DCC DCB DCA ; *** WAC . p2
---- RCE RCF *** *** = AEE AEF *** *** ; *** DCC DCB DCA ; *** WAC .
+--- RCE RCF RCG RCH = AEE AEF *** *** ; *** DCC DCB DCA ; *** WAC .
 
 --- RDA RDB RDC RDD = AEG AEH AEI AEJ ; DDD DDC DDB DDA ; *** WAD . p0
---- RDE RDF *** *** = AEK AEL *** *** ; DDD DDC DDB DDA ; *** WAD .
+--- RDE RDF RDG RDH = AEK AEL *** *** ; DDD DDC DDB DDA ; *** WAD .
 --- REA REB REC RED = AEG AEH AEI AEJ ; DED DEC DEB DEA ; *** WAE . p1
---- REE REF *** *** = AEK AEL *** *** ; DED DEC DEB DEA ; *** WAE .
+--- REE REF REG REH = AEK AEL *** *** ; DED DEC DEB DEA ; *** WAE .
 --- RFA RFB RFC RFD = AEG AEH AEI AEJ ; DFD DFC DFB DFA ; *** WAF . p2
---- RFE RFF *** *** = AEK AEL *** *** ; DFD DFC DFB DFA ; *** WAF .
+--- RFE RFF RFG RFH = AEK AEL *** *** ; DFD DFC DFB DFA ; *** WAF .
 
 --- RGA RGB RGC RGD = GEA GEB GEC GED ; DGD DGC DGB DGA ; *** WAG . p0
 --- RGE RGF RGG RGH = GEE GEF GEG GEH ; DGD DGC DGB DGA ; *** WAG .
@@ -755,11 +755,11 @@
 --- ROE ROF ROG ROH = GGE GGF GGG GGH ; DOD DOC DOB DOA ; *** WAO .
 
 --- RPA RPB RPC RPD = GHA GHB GHC GHD ; DPD DPC DPB DPA ; *** WAP . p0
---- RPE *** *** *** = GHE *** *** *** ; DPD DPC DPB DPA ; *** WAP .
+--- RPE RPF RPG RPH = GHE *** *** *** ; DPD DPC DPB DPA ; *** WAP .
 --- RQA RQB RQC RQD = GHA GHB GHC GHD ; DQD DQC DQB DQA ; *** WAQ . p1
---- RQE *** *** *** = GHE *** *** *** ; DQD DQC DQB DQA ; *** WAQ .
+--- RQE RQF RQG RQH = GHE *** *** *** ; DQD DQC DQB DQA ; *** WAQ .
 --- RRA RRB RRC RRD = GHA GHB GHC GHD ; DRD DRC DRB DRA ; *** WAR . p2
---- RRE *** *** *** = GHE *** *** *** ; DRD DRC DRB DRA ; *** WAR .
+--- RRE RRF RRG RRH = GHE *** *** *** ; DRD DRC DRB DRA ; *** WAR .
 
 --- TAA = QAA jab .  A                     Request package
 --- TAB = QAA jab .  B                     merge registers
