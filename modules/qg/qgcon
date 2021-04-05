@@ -75,7 +75,7 @@ ZFO ZFP - IBT .
 ZFQ ZFR - IBU .
 ZFS ZFT - IBW .
 ZFU ZFV - IBX .
-ZFW ZFX - *** .
+ZFW ZFX - IBV .
   
 ZGA ZGB - ICA .
 ZGC ZGD - ICB .
@@ -127,9 +127,9 @@ ZJS ZJT - IDU .
 ZJU ZJV - IDV .
 ZJW ZJX - IDW .
 ZKA ZKB - IDX .
-ZKC ZKD - *** .
+ZKC ZKD - III .
 ZKE ZKF - IIA .
-ZKG ZKH - *** .
+ZKG ZKH - IIB .
 ZKI ZKJ - OBA .
 ZKK ZKL - OBB .
 ZKM ZKN - OBC .
@@ -179,8 +179,8 @@ ZOA ZOB - OCU .
 ZOC ZOD - OCV .
 ZOE ZOF - OCW .
 ZOG ZOH - OCX .
-ZOI ZOJ - *** .
-ZOK ZOL - *** .
+ZOI ZOJ - IIC .
+ZOK ZOL - IID .
 ZOM ZON - *** .
 ZOO ZOP - *** .
 ZOQ ZOR - *** .

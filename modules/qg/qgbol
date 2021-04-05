@@ -1,7 +1,10 @@
 
                    Fanout for each memory quad packet bus
 		   One of these in each cpu quad
-	
+	           It handles one 24 bit outbound packet from each mem div to each
+		   quad and delivers one oubound packet to each of the
+		   four cpus
+		   
 	   CPU A     CPU B    CPU C     CPU D
 	   Ph 0      PH 1     PH 2      PH 3
 	   
@@ -32,7 +35,7 @@
 ---  AAX = IAX LAD + IBX LBD + ICX LCD + IDX LDD .
 
 
----  OAA = AAA .
+---  OAA = AAA .              Inbound packets to each memory division
 ---  OAB = AAB .
 ---  OAC = AAC .
 ---  OAD = AAD .
@@ -145,6 +148,8 @@
 ---  kac = kab .                                    2
 ---  kad = kac .                                    3
 
+                                       II(A-D) terms are Go Writes from CPU A-D
+				       
 ---  laa = iia KAA + laa kaa .         Write CPU A Bank N + 00
 ---  lab = iib KAA + lab kaa .                              10
 ---  lac = iic KAA + lac kaa .                              20

@@ -1,6 +1,6 @@
 
 *
-* QF Module - Package Definitions
+* QG Module - Package Definitions
 * 
 *
 BBX - AAA .
@@ -27,15 +27,19 @@ CEX - AAU .
 CFX - AAV .
 CGX - AAW .
 CHX - AAX .
+FGP - lac .
+FHP - lbc .
+FIP - lcc .
+FJP - ldc .
 FKL - kaa kab kac kad .
-FLO - LAA LAB LAC .
-FMO - LBA LBB LBC .
-FNO - LCA LCB LCC .
-FOO - LDA LDB LDC .
-FPO - LAD .
-FQO - LBD .
-FRO - LCD .
-FSO - LDD .
+FLP - laa lab .
+FMP - lba lbb .
+FNP - lca lcb .
+FOP - lda ldb .
+FPP - lad .
+FQP - lbd .
+FRP - lcd .
+FSP - ldd .
 G1L - OAA OAB OAC OAD .
 G2L - OAE OAF OAG OAH .
 G3L - OAI OAJ OAK OAL .
