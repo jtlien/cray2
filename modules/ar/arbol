@@ -1080,14 +1080,14 @@
 ---   PAG = QAF NAE NAF + MAE NAF + MAF .
 ---   PAH = QAF NAE NAF NAG + MAE NAF NAG + MAF NAG + MAG .
 
----   QAA = IKA .
+---   QAA = IKA .                                                    Go write to AR
 ---   QAB = QAA .
 ---   QAC = QAB .
 ---   QAD = QAC .
 ---   QAE = QAD .
 ---   QAF = QAD HAE HBE HCE HDE + GAE HBE HCE HDE + GBE HCE HDE + GCE HDE  + GDE .
 
----   QBA = IKB .
+---   QBA = IKB .                                                     Go write to AR
 ---   QBB = QBA .
 ---   QBC = QBB .
 
