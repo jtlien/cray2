@@ -325,7 +325,7 @@
 ---   BCL = ICL .
 ---   BCM = ICM .
 ---   BCN = ICN .
----   BCO = IFO .
+---   BCO = ICO .
 
 ---   bcp = IAO ico ieo + iao ICO ieo + iao ico IEO + iao ico ieo .
 ---   bcq = IAP icp iep + iap ICP iep + iap icp IEP + iap icp iep . (from MC)
