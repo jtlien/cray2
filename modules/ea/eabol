@@ -893,7 +893,7 @@
                                         
 --- SDM = SAM tce + EAM TCE + QJP .       Copies of SAM
 --- SEM = SAM tce + EAM TCE + QJP .       
---- SFM = SAM tce + EAM TCE + QJP . 
+--- SFM = SFM tce + EAM TCE + QJP . 
                                       
 --- TAA = qob qia .                      Enable channel bypass
 --- TAB = QLC .                          Enable P data to channel
