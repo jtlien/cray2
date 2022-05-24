@@ -134,7 +134,7 @@
 ---  BJF = SYF tbb + ICF + syf TBB .
 ---  BJG = SYG tbb + ICG + syg TBB .
 
----  BKA = SYI tac + ICI + syi TAC .             4O-4J
+---  BKA = SYI tac + ICI + syi TAC .             40-43
 ---  BKB = SYJ tbc + ICJ + syj TBC .
 ---  BKC = SYK tbc + ICK + syk TBC .
 ---  BKD = SYL tac + ICL + syl TAC .
@@ -169,7 +169,7 @@
 ---  BOF = SZJ tbg + IDJ + szj TBG .
 ---  BOG = SZK tbg + IDK + szk TBG .
 
----  BPA = SZM tah + IDM + szm TAH .                   6O-63
+---  BPA = SZM tah + IDM + szm TAH .                   60-63
 ---  BPB = SZN tah + IDN + szn TAH .
 ---  BPC = SZO tah + IDO + szo TAH .
 ---  BPD = SZP tah + IDP + szp TAH .
@@ -410,19 +410,19 @@
 ---  FAH = BHA BHF BHG BHD .                  28-31
 ---  FAI = BIA BIF BIG BID .                  32-35
 ---  FAJ = BJA BJF BJG BJD .                  36-39
----  FAK = BKA BKF BKG BKD .                  4O-43
+---  FAK = BKA BKF BKG BKD .                  40-43
 ---  FAL = BLA BLF BLG BLD .                  44-47
 ---  FAM = BMA BMF BMG BMD .                  48-51
 ---  FAN = BNA BNF BNG BND .                  52-55
 ---  FAO = BOA BOF BOG BOD .                  56-59
----  FBF = BFA BFF BFG BFD .                  2O-23
+---  FBF = BFA BFF BFG BFD .                  20-23
 ---  FBG = BGA BGF BGG BGD .                  24-27
 ---  FBJ = BJA BJF BJG BJD .                  36-39
----  FBK = BKA BKF BKG BKD .                  3O-43
+---  FBK = BKA BKF BKG BKD .                  30-43
 ---  FBN = BNA BNF BNG BND .                  52-55
 ---  FBO = BOA BOF BOG BOD .                  56-59
 
----  gaa = eaa + tda .                      Group O
+---  gaa = eaa + tda .                      Group 0
 ---  gab = cab eab + CAB EAB + tda .
 ---  gac = cac eac + CAC EAC + tda .
 ---  gad = cad ead + CAD EAD + tda .
@@ -668,6 +668,8 @@
 ---  ndb = fam + fan .
 ---  ndc = fam + fan + fao .
 
+                  pc   lz
+                       
 ---  OAA = GAA + XBA + RMA .                   Merged data to VR
 ---  OAB = GAB + XBB + RMB .
 ---  OAC = GAC + XBC yac + xbc YAC + RMC .
@@ -971,6 +973,7 @@
 ---  TAF = QDB .
 ---  TAG = QDB .
 ---  TAH = QDB .
+
 ---  tba = qdb .
 ---  tbb = qdb .
 ---  tbc = qdb .
@@ -987,7 +990,8 @@
 ---  TCE = QEF .
 ---  TCF = QEF .
 ---  TCG = QEF .           
----  TCH = QEF .           
+---  TCH = QEF .
+
 ---  TCI = QEG .                          Enable difference
 ---  TCJ = QEG .
 ---  TCK = QEG .
@@ -1142,7 +1146,7 @@
 ---  xbe = tea + WEB WEA + wea web .
 ---  xbf = wfa + tea .
 
----  XMA = WMA VNA + WMB VNB + WMC VNC + vmd VND .     O-15
+---  XMA = WMA VNA + WMB VNB + WMC VNC + vmd VND .     0-15
 ---  XMB = WMA VOA + WMB VOB + WMC VOC + vmd VOD .
 ---  xmc = wmc vmb + wmc vmd .
 ---  xmd = vmd + vmc .
