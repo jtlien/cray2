@@ -1,3 +1,5 @@
+
+
 ---  aaa = uaa TAA + waa + taa .                 Bit carry input reg
 ---  aab = uab TAA + wab + wib taa .
 ---  aac = uac TAA + wac + wic taa .
@@ -30,7 +32,8 @@
 ---  ahb = uhb TAH + whb + wpb tah .
 ---  ahc = uhc TAH + whc + wpc tah .
 ---  ahd = uhd TAH + whd + wpd tah .
----  aia = uia + sia .                        Bit carry input reg
+
+---  aia = uia + sia .                        Bit carry input reg   
 ---  aib = uib + sib .              
 ---  aic = uic + sic .
 ---  aid = uid + sid .
@@ -46,6 +49,7 @@
 ---  alb = ulb + slb .
 ---  alc = ulc + slc .
 ---  ald = uld + sld .
+
 ---  ama = uma + sma .                      Bit carry input reg
 ---  amb = umb + smb .
 ---  amc = umc + smc .
@@ -61,8 +65,9 @@
 ---  apa = upa + spa .
 ---  apb = upb + spb .
 ---  apc = upc + spc .
----  apd = upd + spd .
----  BAA = UAA TAA + WAA .                    Bit enable input reg
+---  apd = upd + spd .                                           
+
+---  BAA = UAA TAA + WAA .                    Bit enable input reg   
 ---  BAB = UAB TAA + WAB + WIB taa .
 ---  BAC = UAC TAA + WAC + WIC taa .
 ---  BAD = UAD TAA + WAD + WID taa .
@@ -70,14 +75,14 @@
 ---  BBB = UBB TAB + WBB + WJB tab .
 ---  BBC = UBC TAB + WBC + WJC tab .
 ---  BBD = UBD TAB + WBD + WJD tab .
----  BBF = UBB TAB + WBB + WJB tab .
----  BBG = UBC TAB + WBC + WJC tab .
+---  BBF = UBB TAB + WBB + WJB tab .  copy BBB
+---  BBG = UBC TAB + WBC + WJC tab .  copy BBC
 ---  BCA = UCA TAC + WCA + WKA tac .
 ---  BCB = UCB TAC + WCB + WKB tac .
 ---  BCC = UCC TAC + WCC + WKC tac .
 ---  BCD = UCD TAC + WCD + WKD tac .
----  BCF = UCB TAC + WCB + WKB tac .
----  BCG = UCC TAC + WCC + WKC tac .
+---  BCF = UCB TAC + WCB + WKB tac .  copy BCB
+---  BCG = UCC TAC + WCC + WKC tac .  copy BCC
 ---  BDA = UDA TAD + WDA + WLA tad .
 ---  BDB = UDB TAD + WDB + WLB tad .
 ---  BDC = UDC TAD + WDC + WLC tad .
@@ -107,8 +112,9 @@
 ---  BHC = UHC TAH + WHC + WPC tah .
 ---  BHD = UHD TAH + WHD + WPD tah .
 ---  BHF = UHB TAH + WHB + WPB tah .
----  BHG = UHC TAH + WHC + WPC tah .
----  BIA = UIA + SIA .                       Bit enable input reg
+---  BHG = UHC TAH + WHC + WPC tah .                                
+
+---  BIA = UIA + SIA .                       Bit enable input reg   
 ---  BIB = UIB + SIB .
 ---  BIC = UIC + SIC .
 ---  BID = UID + SID .
@@ -153,116 +159,148 @@
 ---  BPA = UPA + SPA .
 ---  BPB = UPB + SPB .              
 ---  BPC = UPC + SPC .
----  BPD = UPD + SPD .
+---  BPD = UPD + SPD .                                  
+
 ---  caa = qfd .                           Carry within group 
 ---  cab = aaa qfd + baa .                     assuming no input
 ---  CAC = QFD BAA BAB + AAA BAB + AAB .
 ---  CAD = QFD BAA BAB BAC + AAA BAB BAC + AAB BAC + AAC .
 ---  CAE = QFD BAA BAB BAC BAD + AAA BAB BAC BAD + AAB BAC BAD + AAC BAD + AAD .
+
 ---  CBB = ABA .
 ---  CBC = BBB ABA + ABB .
 ---  CBD = ABA BBB BBC + ABB BBC + ABC .
 ---  CBE = ABA BBB BBC BBD + ABB BBC BBD + ABC BBD + ABD .
+
 ---  CCB = ACA .
 ---  CCC = BCB ACA + ACB .
 ---  CCD = ACA BCB BCC + ACB BCC + ACC .
 ---  CCE = ACA BCB BCC BCD + ACB BCC BCD + ACC BCD + ACD .
+
 ---  CDB = ADA .
 ---  CDC = BDB ADA + ADB .
 ---  CDD = ADA BDB BDC + ADB BDC + ADC .
 ---  CDE = ADA BDB BDC BDD + ADB BDC BDD + ADC BDD + ADD .
+
 ---  CEB = AEA .
 ---  CEC = BEB AEA + AEB .
 ---  CED = AEA BEB BEC + AEB BEC + AEC .
 ---  CEE = AEA BEB BEC BED + AEB BEC BED + AEC BED + AED .
+
 ---  CFB = AFA .
 ---  CFC = BFB AFA + AFB .                          
 ---  CFD = AFA BFB BFC + AFB BFC + AFC .
 ---  CFE = AFA BFB BFC BFD + AFB BFC BFD + AFC BFD + AFD .
+
 ---  CGB = AGA .                                
 ---  CGC = BGB AGA + AGB .
 ---  CGD = AGA BGB BGC + AGB BGC + AGC .
 ---  CGE = AGA BGB BGC BGD + AGB BGC BGD + AGC BGD + AGD .
+
 ---  CHB = AHA .
 ---  CHC = BHB AHA + AHB .           
 ---  CHD = AHA BHB BHC + AHB BHC + AHC .
 ---  CHE = AHA BHB BHC BHD + AHB BHC BHD + AHC BHD + AHD .
+
 ---  CIB = AIA .
 ---  CIC = BIB AIA + AIB .
 ---  CID = AIA BIB BIC + AIB BIC + AIC .               
 ---  CIE = AEA BIB BIC BID + AIB BIC BID + AIC BID + AID .
+
 ---  CJB = AJA .
 ---  CJC = BJB AJA + AJB .
 ---  CJD = AJA BJB BJC + AJB BJC + AJC .
 ---  CJE = AJA BJB BJC BJD + AJB BJC BJD + AJC BJD + AJD .
+
 ---  CKB = AKA .                            Carry within group 
 ---  CKC = BKB AKA + AKB .                      assuming no input
 ---  CKD = AKA BKB BKC + AKB BKC + AKC .
 ---  CKE = AKA BKB BKC BKD + AKB BKC BKD + AKC BKD + AKD .
+
 ---  CLB = ALA .
 ---  CLC = BLB ALA + ALB .
 ---  CLD = ALA BLB BLC + ALB BLC + ALC .
 ---  CLE = ALA BLB BLC BLD + ALB BLC BLD + ALC BLD + ALD .
+
 ---  CMB = AMA .
 ---  CMC = BMB AMA + AMB .
 ---  CMD = AMA BMB BMC + AMB BMC + AMC .
 ---  CME = AMA BMB BMC BMD + AMB BMC BMD + AMC BMD + AMD .
+
 ---  CNB = ANA .
 ---  CNC = BNB ANA + ANB .
 ---  CND = ANA BNB BNC + ANB BNC + ANC .
 ---  CNE = ANA BNB BNC BND + ANB BNC BND + ANC BND + AND .
+
 ---  COB = AOA .
 ---  COC = BOB AOA + AOB .
 ---  COD = AOA BOB BOC + AOB BOC + AOC .
 ---  COE = AOA BOB BOC BOD + AOB BOC BOD + AOC BOD + AOD .
+
 ---  CPB = APA .
 ---  CPC = BPB APA + APB .
 ---  CPD = APA BPB BPC + APB BPC + APC .
+
 ---  dbb = bba .                            Carry within group
 ---  dbc = abb bba + bbb .                      assuming input
----  dbd = bba abb abc + bbb abc + bbc .                  
+---  dbd = bba abb abc + bbb abc + bbc .
+
 ---  dcb = bca .                               
 ---  dcc = acb bca + bcb .
 ---  dcd = bca acb acc + bcb acc + bcc .
+
 ---  ddb = bda .
 ---  ddc = adb bda + bdb .           
 ---  ddd = bda adb adc + bdb adc + bdc .
+
 ---  deb = bea .
 ---  dec = aeb bea + beb .
 ---  ded = bea aeb aec + beb aec + bec .
+
 ---  dfb = bfa .
 ---  dfc = afb bfa + bfb .
 ---  dfd = bfa afb afc + bfb afc + bfc .
+
 ---  dgb = bga .
 ---  dgc = agb bga + bgb .
 ---  dgd = bga agb agc + bgb agc + bgc .
+
 ---  dhb = bha .
 ---  dhc = ahb bha + bhb .
----  dhd = bha ahb ahc + bhb ahc + bhc .     .
+---  dhd = bha ahb ahc + bhb ahc + bhc .
+
 ---  dib = bia .                              Carry within group
 ---  dic = aib bia + bib .                     assuming input
 ---  did = bia aib aic + bib aic + bic .
+
 ---  djb = bja .
 ---  djc = ajb bja + bjb .     
 ---  djd = bja ajb ajc + bjb ajc + bjc .
+
 ---  dkb = bka .
 ---  dkc = akb bka + bkb .
 ---  dkd = bka akb akc + bkb akc + bkc .
+
 ---  dlb = bla .
 ---  dlc = alb bla + blb .
 ---  dld = bla alb alc + blb alc + blc .
+
 ---  dmb = bma .
 ---  dmc = amb bma + bmb .
 ---  dmd = bma amb amc + bmb amc + bmc .
+
 ---  dnb = bna .
 ---  dnc = anb bna + bnb .
 ---  dnd = bna anb anc + bnb anc + bnc .
+
 ---  dob = boa .
 ---  doc = aob boa + bob .
 ---  dod = boa aob aoc + bob aoc + boc .
+
 ---  dpb = bpa .
 ---  dpc = apb bpa + bpb .
 ---  dpd = bpa apb apc + bpb apc + bpc .
+
 ---  EAA = --- AAA BAA + --- AAA baa + *** aaa BAA + --- aaa baa .
 ---  EAB = --- AAB BAB + --- AAB bab + *** aab BAB + --- aab bab .
 ---  EAC = --- AAC BAC + --- AAC bac + *** aac BAC + --- aac bac .
@@ -327,180 +365,219 @@
 ---  EPB = --- APB BPB + --- APB bpb + *** apb BPB + --- apb bpb .
 ---  EPC = --- APC BPC + --- APC bpc + *** apc BPC + --- apc bpc .
 ---  EPD = --- APD BPD + --- APD bpd + *** apd BPD + --- apd bpd .
+
 ---  FAB = BBA BBF BBG BBD . Bits 4-7           4 bit group enables
----  FAC = BCA BCF BCG BCD .     8-l1
+---  FAC = BCA BCF BCG BCD .     8-11
 ---  FAD = BDA BDF BDG BDD .     12-15
 ---  FAE = BEA BEF BEG BED .     16-19
----  FAF = BFA BFF BFG BFD .     2O-23
----  FAG = BGA BGF BGG BGD .     2Q-27
+---  FAF = BFA BFF BFG BFD .     20-23
+---  FAG = BGA BGF BGG BGD .     24-27
 ---  FAH = BHA BHF BHG BHD .     28-31
----  FAI = BIA BEF BIG BID .     32-35
----  FAJ = BJA BJF BJG BJD .     36-35
----  FAK = BKA BKF BKG BKD .     4O-43
+---  FAI = BIA BIF BIG BID .     32-35
+---  FAJ = BJA BJF BJG BJD .     36-39
+---  FAK = BKA BKF BKG BKD .     40-43
 ---  FAL = BLA BLF BLG BLD .     44-47
 ---  FAM = BMA BMF BMG BMD .     48-51
 ---  FAN = BNA BNF BNG BND .     52-55
 ---  FAO = BOA BOF BOG BOD .     56-59
----  FBF = BFA BFF BFG BFD .
----  FBG = BGA BGF BGG BGD .
----  FBJ = BJA BJF BJG BJD .
----  FBK = BKA BKF BKG BKD .
----  FBN = BNA BNF BNG BND .
----  FBO = BOA BOF BOG BOD .
----  gaa = caa eaa + CAA EAA + tda .              4 bit add
----  gab = cab eab + CAB EAB + tda .              assuming no ir
+---  FBF = BFA BFF BFG BFD .     20-23 Copy
+---  FBG = BGA BGF BGG BGD .     24-27 Copy
+---  FBJ = BJA BJF BJG BJD .     36-39 Copy
+---  FBK = BKA BKF BKG BKD .     40-43 Copy
+---  FBN = BNA BNF BNG BND .     52-55 Copy
+---  FBO = BOA BOF BOG BOD .     56-59 Copy
+
+---  gaa = caa eaa + CAA EAA + tda .              4 bit add       Lower Adder
+---  gab = cab eab + CAB EAB + tda .              assuming no carry in
 ---  gac = cac eac + CAC EAC + tda .
 ---  gad = cad ead + CAD EAD + tda .
+
 ---  gba = eba + tdb .
 ---  gbb = cbb ebb + CBB EBB + tdb .
 ---  gbc = cbc ebc + CBC EBC + tdb .
 ---  gbd = cbd ebd + CBD EBD + tdb .
+
 ---  gca = eca + tdc .
 ---  gcb = ccb ecb + CCB ECB + tdc .                  
 ---  gcc = ccc ecc + CCC ECC + tdc .
 ---  gcd = ccd ecd + CCD ECD + tdc .
+
 ---  gda = eda + tdd . 
 ---  gdb = cdb edb + CDB EDB + tdd .     
 ---  gdc = cdc edc + CDC EDC + tdd .
 ---  gdd = cdd edd + CDD EDD + tdd .
+
 ---  gea = eea + tde .
 ---  geb = ceb eeb + CEB EEB + tde .
 ---  gec = cec eec + CEC EEC + tde .
 ---  ged = ced eed + CED EED + tde .
+
 ---  gfa = efa + tdf .
 ---  gfb = cfb efb + CFB EFB + tdf .
 ---  gfc = cfc efc + CFC EFC + tdf .
 ---  gfd = cfd efd + CFD EFD + tdf .
+
 ---  gga = ega + tdg .                              assuming no input
 ---  ggb = cgb egb + CGB EGB + tdg .
 ---  ggc = cgc egc + CGC EGC + tdg .
 ---  ggd = cgd egd + CGD EGD + tdg .
+
 ---  gha = eha + tdh .
 ---  ghb = chb ehb + CHB EHB + tdh .
 ---  ghc = chc ehc + CHC EHC + tdh .
 ---  ghd = chd ehd + CHD EHD + tdh .
----  gia = eia + tdi .
+
+---  gia = eia + tdi .                                 Upper Adder
 ---  gib = cib eib + CIB EIB + tdi .
 ---  gic = cic eic + CIC EIC + tdi .
 ---  gid = cid eid + CID EID + tdi .
+
 ---  gja = eja + tdj .
 ---  gjb = cjb ejb + CJB EJB + tdj .
 ---  gjc = cjc ejc + CJC EJC + tdj .
 ---  gjd = cjd ejd + CJD EJD + tdj .
+
 ---  gka = eka + tdk .
 ---  gkb = ckb ekb + CKB EKB + tdk .
 ---  gkc = ckc ekc + CKC EKC + tdk .
 ---  gkd = ckd ekd + CKD EKD + tdk .
+
 ---  gla = ela + tdl .
 ---  glb = clb elb + CLB ELB + tdl .
 ---  glc = clc elc + CLC ELC + tdl .
 ---  gld = cld eld + CLD ELD + tdl .
+
 ---  gma = ema + tdm .
 ---  gmb = cmb emb + CMB EMB + tdm .
 ---  gmc = cmc emc + CMC EMC + tdm .
 ---  gmd = cmd emd + CMD EMD + tdm .
+
 ---  gna = ena + tdn .
 ---  gnb = cnb enb + CNB ENB + tdn .
 ---  gnc = cnc enc + CNC ENC + tdn .
 ---  gnd = cnd end + CND END + tdn .
+
 ---  goa = eoa + tdo .
 ---  gob = cob eob + COB EOB + tdo .
 ---  goc = coc eoc + COC EOC + tdo .
 ---  god = cod eod + COD EOD + tdo .
+
 ---  gpa = epa + tdp .
 ---  gpb = cpb epb + CPB EPB + tdp .
 ---  gpc = cpc epc + CPC EPC + tdp .
 ---  gpd = cpd epd + CPD EPD + tdp .
----  hba = EBA + tdb .                        4  bit add
+
+---  hba = EBA + tdb .                        4  bit add              Lower Adder
 ---  hbb = dbb ebb + DBB EBB + tdb .              assuming input
 ---  hbc = dbc ebc + DBC EBC + tdb .
 ---  hbd = dbd ebd + DBD EBD + tdb .
+
 ---  hca = ECA + tdc .
 ---  hcb = dcb ecb + DCB ECB + tdc .
 ---  hcc = dcc ecc + DCC ECC + tdc .
 ---  hcd = dcd ecd + DCD ECD + tdc .
+
 ---  hda = EDA + tdd .
 ---  hdb = ddb edb + DDB EDB + tdd .
 ---  hdc = ddc edc + DDC EDC + tdd .
 ---  hdd = ddd edd + DDD EDD + tdd .
+
 ---  hea = EEA + tde .
 ---  heb = deb eeb + DEB EEB + tde .
 ---  hec = dec eec + DEC EEC + tde .
 ---  hed = ded eed + DED EED + tde .
+
 ---  hfa = EFA + tdf .
 ---  hfb = dfb efb + DFB EFB + tdf .
 ---  hfc = dfc efc + DFC EFC + tdf .
 ---  hfd = dfd efd + DFD EFD + tdf .
+
 ---  hga = EGA + tdg .
 ---  hgb = dgb egb + DGB EGB + tdg .
 ---  hgc = dgc egc + DGC EGC + tdg .
----  hgd = dgd egd + DGD EGD + tdg .                      
+---  hgd = dgd egd + DGD EGD + tdg .
+
 ---  hha = EHA + tdh .
 ---  hhb = dhb ehb + DHB EHB + tdh .
 ---  hhc = dhc ehc + DHC EHC + tdh .
----  hhd = dhd ehd + DHD EHD + tdh .                   
----  hia = EIA + tdi .
+---  hhd = dhd ehd + DHD EHD + tdh .
+
+---  hia = EIA + tdi .                                   Upper Adder
 ---  hib = dib eib + DIB EIB + tdi .
 ---  hic = dic eic + DIC EEC + tdi .
----  hid = did eid + DID EID + tdi .     
+---  hid = did eid + DID EID + tdi .
+
 ---  hja = EJA + tdj .
 ---  hjb = djb ejb + DJB EJB + tdj .
 ---  hjc = djc ejc + DJC EJC + tdj .
 ---  hjd = djd ejd + DJD EJD + tdj .
+
 ---  hka = EKA + tdk .
 ---  hkb = dkb ekb + DKB EKB + tdk .
 ---  hkc = dkc ekc + DKC EKC + tdk .
 ---  hkd = dkd ekd + DKD EKD + tdk .
+
 ---  hla = ELA + tdl .
 ---  hlb = dlb elb + DLB ELB + tdl .
 ---  hlc = dlc elc + DLC ELC + tdl .
 ---  hld = dld eld + DLD ELD + tdl .
+
 ---  hma = EMA + tdm .                  4 bit add, assuming input
 ---  hmb = dmb emb + DMB EMB + tdm .
 ---  hmc = dmc emc + DMC EMC + tdm .
 ---  hmd = dmd emd + DMD EMD + tdm .
+
 ---  hna = ENA + tdn .
 ---  hnb = dnb enb + DNB ENB + tdn .
 ---  hnc = dnc enc + DNC ENC + tdn .
 ---  hnd = dnd end + DND END + tdn .
+
 ---  hoa = EOA + tdo .
 ---  hob = dob eob + DOB EOB + tdo .
 ---  hoc = doc eoc + DOC EOC + tdo .
 ---  hod = dod eod + DOD EOD + tdo .
+
 ---  hpa = EPA + tdp .
 ---  hpb = dpb epb + DPB EPB + tdp .
 ---  hpc = dpc epc + DPC EPC + tdp .
 ---  hpd = dpd epd + DPD EPD + tdp .
----  jaa = uaa uab uac uad . O-3             Si mask zero test
+
+---  jaa = uaa uab uac uad . 0-3             Si mask zero test
 ---  jab = uba ubb ubc ubd . 4-7
 ---  jac = uca ucb ucc ucd . 8-11
----  jad = uda udb udc udd . 12-l5
+---  jad = uda udb udc udd . 12-15
 ---  jae = uea ueb uec ued . 16-19
----  jaf = ufa ufb ufc ufd . 2O-23
+---  jaf = ufa ufb ufc ufd . 20-23
 ---  jag = uga ugb ugc ugd . 24-27
 ---  jah = uha uhb uhc uhd . 28-31
 ---  jai = uia uib uic uid . 32-35
 ---  jaj = uja ujb ujc ujd . 36-39
----  jak = uka ukb ukc ukd . 4O-43
+---  jak = uka ukb ukc ukd . 40-43
 ---  jal = ula ulb ulc uld . 44-47                       
 ---  jam = uma umb umc umd . 48-51
 ---  jan = una unb unc und . 52-55
 ---  jao = uoa uob uoc uod . 56-59
----  jap = upa upb upc .     6O-62
+---  jap = upa upb upc .     60-62
+
 ---  jba = qja qjb qjc qjd .             Zero test, bits 0-55 (176-7 inst)
----  jbb = qja qjb qjc qjd qje .         Zero test, bits O-62 (176-7 inst)
+---  jbb = qja qjb qjc qjd qje .         Zero test, bits 0-62 (176-7 inst)
+
 ---  JCA = QDA qeb qec .                 Zero cp 5, set cp 6 ( 176-7 inst)
----  JDA = QBE qbf .                     Add mode (l6O-1 inst)
----  jqa = qaa qad .             .       Clear control latches ( 160-3 inst)
----  KAB = CAE FAB FAC FAD + CBE FAC FAD + CCE FAD + CDE .   Section carries
+---  JDA = QBE qbf .                     Add mode (160-1 inst)
+
+---  jqa = qaa qad .     Clear control latches ( 160-3 inst) or (176-177) iota
+
+---  KAB = CAE FAB FAC FAD + CBE FAC FAD + CCE FAD + CDE .   Section carries, 1
 ---  KAC = CAE FAB FAC FAD + CBE FAC FAD + CCE FAD + CDE .
 ---  KAD = CAE FAB FAC FAD + CBE FAC FAD + CCE FAD + CDE .
----  KBC = CEE FAF FAG FAH + CFE FAG FAH + CGE FAH + CHE .
----  KBD = CEE FAF FAG FAH + CFE FAG FAH + CGE FAH + CHE .
----  KCD = CIE FAJ FAK FAL + CJE FAK FAL + CKE FAL + CLE .
----  lbc = fae + faf + fag + fah .           Section enables
+---  KBC = CEE FAF FAG FAH + CFE FAG FAH + CGE FAH + CHE .                    2
+---  KBD = CEE FAF FAG FAH + CFE FAG FAH + CGE FAH + CHE .                    
+---  KCD = CIE FAJ FAK FAL + CJE FAK FAL + CKE FAL + CLE .                    3
+
+---  lbc = fae + faf + fag + fah .           Section enables,   1
 ---  lbd = fae + faf + fag + fah .
----  lcd = fai + faj + fak + fal  .
+---  lcd = fai + faj + fak + fal .                              2
+
 ---  maa = cae .
 ---  mab = cae cbe + fab cbe .
 ---  mac = *** + *** cae cbe cce + fab cbe cce + *** fac cce .
@@ -513,16 +590,21 @@
 ---  mda = cme .
 ---  mdb = cme cne + fbn cne .
 ---  mdc = *** + *** cme cne coe + fbn cne coe + *** fbo coe .
+
 ---  nba = fae .                              16-28
 ---  nbb = fae + faf .
----  nbc = fae + faf + fag .                  32-43
----  nca = fai .
+---  nbc = fae + faf + fag .
+
+---  nca = fai .                              32-43
 ---  ncb = fai + faj .
----  ncc = fai + faj + fak .                  48-59
----  nda = fam .
+---  ncc = fai + faj + fak .
+
+---  nda = fam .                              48-59
 ---  ndb = fam + fan .
----  ndc = fam + fan + fao .                  Data to Vi Via VB
----  OAA = GAA .
+---  ndc = fam + fan + fao .                  
+
+---  OAA = GAA .                                  Data to Vr Via VB
+
 ---  OAB = GAB .
 ---  OAC = GAC .
 ---  OAD = GAD .
@@ -530,128 +612,160 @@
 ---  OAF = GBB pab + HBB PAB .
 ---  OAG = GBC pab + HBC PAB .
 ---  OAH = GBD pab + HBD PAB .
+
 ---  OAI = GCA pac + HCA PAC .
 ---  OAJ = GCB pac + HCB PAC .
 ---  OAK = GCC pac + HCC PAC .
 ---  OAL = GCD pac + HCD PAC .
+
 ---  OAM = GDA pad + HDA PAD .
 ---  OAN = GDB pad + HDB PAD .
 ---  OAO = GDC pad + HDC PAD .
 ---  OAP = GDD pad + HDD PAD .
+
 ---  OBA = GEA pba + HEA PBA .
 ---  OBB = GEB pba + HEB PBA .
 ---  OBC = GEC pba + HEC PBA .
 ---  OBD = GED pba + HED PBA .
+
 ---  OBE = GFA pbb + HFA PBB .
 ---  OBF = GFB pbb + HFB PBB .
 ---  OBG = GFC pbb + HFC PBB .
 ---  OBH = GFD pbb + HFD PBB .
+
 ---  OBI = GGA pbc + HGA PBC .
 ---  OBJ = GGB pbc + HGB PBC .
 ---  OBK = GGC pbc + HGC PBC .
 ---  OBL = GGD pbc + HGD PBC .
+
 ---  OBM = GHA pbd + HHA PBD .
 ---  OBN = GHB pbd + HHB PBD .
 ---  OBO = GHC pbd + HHC PBD .
 ---  OBP = GHD pbd + HHD PBD .
----  OCA = GIA pca + HEA PCA .             Data to Vi via VB
----  OCB = GEB pca + HIB PCA .
----  OCC = GEC pca + HIC PCA .
+
+---  OCA = GIA pca + HIA PCA .             Data to Vr via VB
+---  OCB = GIB pca + HIB PCA .
+---  OCC = GIC pca + HIC PCA .
 ---  OCD = GID pca + HID PCA .
+
 ---  OCE = GJA pcb + HJA PCB .
 ---  OCF = GJB pcb + HJB PCB .
 ---  OCG = GJC pcb + HJC PCB .
 ---  OCH = GJD pcb + HJD PCB .
+
 ---  OCI = GKA pcc + HKA PCC .
 ---  OCJ = GKB pcc + HKB PCC .
 ---  OCK = GKC pcc + HKC PCC .
 ---  OCL = GKD pcc + HKD PCC .
+
 ---  OCM = GLA pcd + HLA PCD .
 ---  OCN = GLB pcd + HLB PCD .
 ---  OCO = GLC pcd + HLC PCD .
 ---  OCP = GLD pcd + HLD PCD .
+
 ---  ODA = GMA pda + HMA PDA .
 ---  ODB = GMB pda + HMB PDA .
 ---  ODC = GMC pda + HMC PDA .
 ---  ODD = GMD pda + HMD PDA .
+
 ---  ODE = GNA pdb + HNA PDB .
 ---  ODF = GNB pdb + HNB PDB .
 ---  ODG = GNC pdb + HNC PDB .
 ---  ODH = GND pdb + HND PDB .
+
 ---  ODI = GOA pdc + HOA PDC .
 ---  ODJ = GOB pdc + HOB PDC .
 ---  ODK = GOC pdc + HOC PDC .
 ---  ODL = GOD pdc + HOD PDC .
+
 ---  ODM = GPA pdd + HPA PDD .
 ---  ODN = GPB pdd + HPB PDD .
 ---  ODO = GPC pdd + HPC PDD .
 ---  ODP = GPD pdd + HPD PDD .
----  oea = JBA + qga .                      Release, to JB
+
+---  oea = JBA + qga .                      Release, to JB,IJA to Clear VI on ja
 ---  OEB = QHA .                            Release, to JC
 ---  OEC = QHA .                            Release, to JC
+
 ---  OFA = UPE QGB .                       Advance, to JC
 ---  OFB = UPE QGB .                       Advance, to JC
+
 ---  ONA = QNC .                          Go stream data to VB
+
 ---  PAB = MAA .                          Final group carry
 ---  PAC = MAB .
 ---  PAD = MAC .
+
 ---  pba = kab .
 ---  PBB = KAB NBA + MBA .
 ---  PBC = KAB NBB + MBB .
 ---  PBD = KAB NBC + MBC .
+
 ---  PCA = KAC LBC + KBC .
 ---  PCB = KAC LBC NCA + KBC NCA + MCA .
 ---  PCC = KAC LBC NCB + KBC NCB + MCB .
 ---  PCD = KAC LBC NCC + KBC NCC + MCC .
+
 ---  PDA = KAD LBD LCD + KBD LCD + KCD .
 ---  PDB = KAD LBD LCD NDA + KBD LCD NDA + KCD NDA + MDA .
 ---  PDC = KAD LBD LCD NDB + KBD LCD NDB + KCD NDB + MDB .
 ---  PDD = KAD LBD LCD NDC + KBD LCD NDC + KCD NDC + MDC .
----  qaa = ira .                           Go adder from J
+
+---  QAA = IRA .                           Go adder from JA
 ---  QAB = IRB .                           Bit O f field field from JA
----  QAC = IRC .                           Bit l f field field from JA
----  qad = ird .                           Go iota from JA
+---  QAC = IRC .                           Bit 1 f field field from JA
+---  QAD = IRD .                           Go iota from JA
+
 ---  qba = QAC + QAB + qaa .                   16O instruction
 ---  QBB = qac QAB QAA + QBB jqa .               161
 ---  qbc = qac + QAB + qaa .                   162
 ---  QBD = QAC QAB QAA + QBD jqa .               163
----  QBE = QBE jqa + QAA .                    Go adder (16O-3)
+---  QBE = QBE jqa + QAA .                    Go adder (160-3)
 ---  QBF = QBF jqa + QAC QAA .                 Subtract mode (162-3)
----  QBI = QBI jqa + QAD .                    Go iota (l76-7)
+---  QBI = QBI jqa + QAD .                    Go iota (176-7)
 ---  QCA = QBB + QBD .                       Gate Vj data (161,163)
----  QCB = QBA + QBC + QEB .                   Gate Sj data, Sk stride
----  QCE = QBE .                           Go adder (16O-3)
----  QCF = QCE .                           Go adder (16O-3)
----  QCG = JDA + QEA .                       Gate +Vk  16O-l
----  QDA = QBI  .                           Go iota (l76-7)
+---  QCB = QBA + QBC + QEB .             Gate Sj data, Sk stride (161,163,iota)
+---  QCE = QBE .                           Go adder (160-3)
+---  QCF = QCE .                           Go adder (160-3)
+---  QCG = JDA + QEA .                       Gate +Vk  160-1
+
+---  QDA = QBI  .                           Go iota (176-7)
 ---  QDB = QDA .
 ---  QDC = QDB .
 ---  QDD = QDC .
 ---  QDE = QDD .                           Zero upper add, cp 8
----  qea = qad .                           Go iota l76-7
+
+---  qea = qad .                           Go iota 176-7
 ---  QEB = QEA .                           Capture Sj mask
 ---  QEC = QEB .
 ---  QED = QEC .
 ---  QEE = QED .
 ---  QEF = QEE .                           Zero lower add, cp 8
+
 ---  QFA = QBF .                           Subt, gate -Vk
 ---  QFB = QFA .                  
 ---  QFC = QFB .
 ---  QFD = QFC .                           Subtract mode, cp 7
+
 ---  qga = jba qed + qga qed .           Enable release to JB, cp 7 (176-7)
 ---  qgb = jbb qed + qgb qed .           Enable advance to JC, cp 7 (176-7)
----  QHA = jbb QGB .                     Gate advance to JC
+---  QHA = jbb QGB .                     Gate advance to JC if mask 0-62 zero
+
 ---  QIA = JCA .                         Toggle & enable recirc (x--)
 ---  QIB = QIA .                           (176-7)
----  QJA = JAA + JAB + JAE + JAJ .       Zero test (l76-7)
+
+---  QJA = JAA + JAB + JAE + JAJ .       Zero test (176-7)
 ---  QJB = JAC + JAD + JAK + JAL .
 ---  QJC = JAE + JAF + JAM + JAN .
 ---  QJD = JAG + JAH .
 ---  QJE = JAO + JAP .
+
 ---  QNA = JQA .                        Go stream VA data to VB module
----  QNB = QNA .                          (16O-3,  176-77)
+---  QNB = QNA .                          (160-3,  176-77)
 ---  QNC = QNB .
----  SAA = SAA TEA + IAA TFA + IEA TGA .           Scalar or vector input
+                      V reg     S Reg
+                      
+---  SAA = SAA TEA + IAA TFA + IEA TGA .           Scalar or vector input  63
 ---  SAB = SAB TEA + IAB TFA + IEB TGA .           reg and holding reg
 ---  SAC = SAC TEB + IAC TFB + IEC TGB .           For scalar data
 ---  SAD = SAD TEB + IAD TFB + IED TGB .
@@ -666,9 +780,9 @@
 ---  SDA = SDA TEA + IAM TFA + IEM TGA .
 ---  SDB = SDB TEA + IAN TFA + IEN TGA .
 ---  SDC = SDC TEB + IAO TFB + IEO TGB .
----  SDD = SDD TEB + IAP TFB + IEP TGB .
+---  SDD = SDD TEB + IAP TFB + IEP TGB .                                48
 
----  SEA = SEA TEA + IBA TFA + IFA TGA .
+---  SEA = SEA TEA + IBA TFA + IFA TGA .                                47
 ---  SEB = SEB TEA + IBB TFA + IFB TGA .
 ---  SEC = SEC TEB + IBC TFB + IFC TGB .
 ---  SED = SED TEB + IBD TFB + IFD TGB .
@@ -683,9 +797,9 @@
 ---  SHA = SHA TEA + IBM TFA + IFM TGA .
 ---  SHB = SHB TEA + IBN TFA + IFN TGA .                  
 ---  SHC = SHC TEB + IBO TFB + IFO TGB .
----  SHD = SHD TEB + IBP TFB + IFP TGB .
+---  SHD = SHD TEB + IBP TFB + IFP TGB .                                  32
 
----  SIA = SIA TEC + ICA TFC + IGA TGC .
+---  SIA = SIA TEC + ICA TFC + IGA TGC .                                  31
 ---  SIB = SIB TEC + ICB TFC + IGB TGC .
 ---  SIC = SIC TED + ICC TFD + IGC TGD .
 ---  SID = SID TED + ICD TFD + IGD TGD .  
@@ -700,9 +814,9 @@
 ---  SLA = SLA TEC + ICM TFC + IGM TGC .
 ---  SLB = SLB TEC + ICN TFC + IGN TGC .
 ---  SLC = SLC TED + ICO TFD + IGO TGD .
----  SLD = SLD TED + ICP TFD + IGP TGD .
+---  SLD = SLD TED + ICP TFD + IGP TGD .                                    16
 
----  SMA = SMA TEC + IDA TFC + IHA TGC .           Scalar or vector input
+---  SMA = SMA TEC + IDA TFC + IHA TGC .           Scalar or vector input   15
 ---  SMB = SMB TEC + IDB TFC + IHB TGC .           reg and holding reg
 ---  SMC = SMC TED + IDC TFD + IHC TGD .           for scalar data
 ---  SMD = SMD TED + IDD TFD + IHD TGD .
@@ -717,7 +831,7 @@
 ---  SPA = SPA TEC + IDM TFC + IHM TGC .
 ---  SPB = SPB TEC + IDN TFC + IHN TGC .
 ---  SPC = SPC TED + IDO TFD + IHO TGD .
----  SPD = SPD TED + IDP TFD + IHP TGD .
+---  SPD = SPD TED + IDP TFD + IHP TGD .                                  0
 
 ---  TAA = QCF .                            Go adder (160-163)
 ---  TAB = QCF .
@@ -727,6 +841,7 @@
 ---  TAF = QCF .       
 ---  TAG = QCF .
 ---  TAH = QCF .
+
 ---  TDA = qef .                            Zero lower add, cp 8
 ---  TDB = qef .                            (176-7)
 ---  TDC = qef .
@@ -734,7 +849,8 @@
 ---  TDE = qef .
 ---  TDF = qef .                                   
 ---  TDG = qef .
----  TDH = qef .                                
+---  TDH = qef .
+
 ---  TDI = qde .                            Zero upper add, cp 8
 ---  TDJ = qde .                            (176-7)
 ---  TDK = qde .      
@@ -743,33 +859,41 @@
 ---  TDN = qde .
 ---  TDO = qde .
 ---  TDP = qde .
+
 ---  TEA = qca qcb .                         Hold S register data
 ---  TEB = qca qcb .
 ---  TEC = qca qcb .
 ---  TED = qca qcb .
+
 ---  TFA = QCA .                            Gate Vj to S register
 ---  TFB = QCA .                            (161,163)
 ---  TFC = QCA .                                   
 ---  TFD = QCA .
+
 ---  TGA = QCB .                            Gate Sj or Sk to S reg
 ---  TGB = QCB .                            (160,2, 176-7)
 ---  TGC = QCB .                                
----  TGD = QCB .     
+---  TGD = QCB .
+
 ---  tha = qfa .                            Gate -Vk to U register
 ---  thb = qfa .                            (162-3)
 ---  thc = qfa .
 ---  thd = qfa .
+
 ---  TIA = qfa qcg .                         Enable iota mask shift
 ---  TIB = qfa qcg .                         in U register
 ---  TIC = qfa qcg .
 ---  TID = qfa qcg .
+
 ---  tja = qcg .                            Gate +Vk or Sj
 ---  tjb = qcg .                            (16O-1,  176-7)
 ---  tjc = qcg .
 ---  tjd = qcg .
+
 ---  tka = qib .                            Recirculate enable
 ---  tkb = qib .
----  UAA = iea THA + *** + IEA TJA .               Vector or Scalar input
+
+---  UAA = iea THA + --- + IEA TJA .               Vector or Scalar input
 ---  UAB = ieb THA + UAA TIA + IEB TJA .           data register amd
 ---  UAC = iec THB + UAB TIB + IEC TJB .           mask shift register
 ---  UAD = ied THB + UAC TIB + IED TJB .
@@ -833,7 +957,11 @@
 ---  UPB = ihn THC + UPA TIC + IHN TJC .
 ---  UPC = iho THD + UPB TID + IHO TJD .
 ---  UPD = ihp THD + UPC TID + IHP TJD .
+
 ---  UPE = UPD .
+
+                 S Reg + Recirculate
+                 
 ---  WAA = SAA xaa + saa XAA .         
 ---  WAB = SAB xab xib + sab XAB xib + sab xab XIB + SAB XAB XIB .
 ---  WAC = SAC xac xic + sac XAC xic + sac xac XIC + SAC XAC XIC .
@@ -866,6 +994,7 @@
 ---  WHB = SHB xhb xpb + shb XHB xpb + shb xhb XPB + SHB XHB XPB .
 ---  WHC = SHC xhc xpc + shc XHC xpc + shc xhc XPC + SHC XHC XPC .
 ---  WHD = SHD xhd xpd + shd XHD xpd + shd xhd XPD + SHD XHD XPD .
+
 ---  wib = SAA xaa + saa XAA + saa xaa .
 ---  wic = SAB xab xib + sab XAB xib + sab xab XIB + sab xab xib .
 ---  wid = SAC xac xic + sac XAC xic + sac xac XIC + sac xac xic .
@@ -897,6 +1026,7 @@
 ---  wpb = SHA xha xpa + sha XHA xpa + sha xha XPA + sha xha xpa .
 ---  wpc = SHB xhb xpb + shb XHB xpb + shb xhb XPB + shb xhb xpb .
 ---  wpd = SHC xhc xpc + shc XHC xpc + shc xhc XPC + shc xhc xpc .
+
 ---  XAA = WAA TKA .                        Recirculate enable
 ---  XAB = WAB TKA .
 ---  XAC = WAC TKB .
@@ -928,7 +1058,8 @@
 ---  XHA = WHA TKA .
 ---  XHB = WHB TKA .
 ---  XHC = WHC TKB .
----  XHD = WHD TKB .                               
+---  XHD = WHD TKB .
+
 ---  XIB = WIB TKA .                        Recirculate carry
 ---  XIC = WIC TKB .
 ---  XID = WID TKB .

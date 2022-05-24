@@ -41,7 +41,7 @@ C7L - QDA QDB QDC QDD .
 C8P - UIC UID .
 CAP - aaa BAA .
 CBL - XAA XAB XIB .
-CCQ - WAA wib .
+CCA - WAA .
 CDP - SAA SAB .
 CEP - aab aac .
 CFP - OAA OAB .
@@ -63,6 +63,7 @@ CUP - aib .
 CVP - OCA OCB .
 CWX - QJA .
 CXP - UIB UIA .
+D2Q - ___ wib .
 D3P - gjc .
 D4A - djd .
 D7P - gjd hjd .
@@ -148,7 +149,8 @@ GJP - hkc .
 GKP - gcc hcc .
 GLA - dcd .
 GOP - gcd hcd .
-GSP - gka gkb .
+GRP - gka .
+GSP - gkb .
 GWP - hkb .
 GXK - dkb dkc .
 H1U - EKC EKD .
@@ -273,7 +275,7 @@ LOQ - WDD wma .
 LPP - UDC UDD .
 LQP - ala BLA .
 LRH - jad jqa .
-LSL - qaa QAB QAC qad .
+LSL - QAA QAB QAC QAD .
 LTP - SLA SLB .
 LUP - alb .
 LVP - OCM OCN .
@@ -521,6 +523,7 @@ WNH - FAH .
 WOD - CHE .
 WPA - PBD .
 WQM - ndc .
+WRL - UPE .
 WSX - lbc lbd .
 WTD - PDD .
 WUU - EPA EPB .
@@ -531,7 +534,7 @@ X3L - OFA OFB .
 X4P - SPC SPD .
 X5P - apd BPD .
 X6P - ODO ODP .
-X7L - QHA UPE .
+X7L - QHA .
 X8P - UPC UPD .
 XAP - aha BHA .
 XBL - XHA XHB XPA XPB .
