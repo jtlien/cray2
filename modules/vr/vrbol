@@ -8,12 +8,15 @@
 ---  AAE = ISE .
 ---  AAF = ISF .
 ---  AAG = ISG .                           Vector write flag
+
 ---  aba = isa .                           Source code
 ---  abb = isb .
 ---  abc = isc .
+
 ---  BAD = AAD .                           Primary source code to
 ---  BAE = AAE .                             gate correct V reg
 ---  BAF = AAF .                             input data
+
 ---  BAJ = FCB .                           Vector integer
 ---  BAK = FCC .                           Local memory
 ---  BAL = FCD .                           Common memory
@@ -21,12 +24,15 @@
 ---  BAN = FCF .                           Floating mul
 ---  BAO = FCG .                           Vector logical
 ---  BAP = FCH .                           Scalar logical
+
 ---  BBA = ABA .                           V reg select j data
 ---  BBB = ABB .
 ---  BBC = ABC .
+
 ---  CAA = ITA .                           Scalar reg dest code
 ---  CAB = ITB .
 ---  CAC = ITC .
+
 ---  CAD = ITF + ITE + ITD .               Enable data to scalar
 ---  cae = ITF + ITE + itd .               Constant to scalar
 ---  caf = ITF + ite + ITD .               Local memory to scalar
@@ -198,10 +204,11 @@
 ---  FBA FBB FBC FBD FBE FBF FBG FBH FBI = CAC CAB CAA ; CAD .  S reg
 ---  FCH FCG FCF FCE FCD FCC FCB FCA FCI = aaf aae aad ; QAA .  V reg
 ---  FDA FDB FDC FDD FDE FDF FDG FDH FDI = AAF AAE AAD ; QBA .  V reg
+
 ---  FEA FEB FEC FED FEE FEF FEG FEH FEI = AAF AAE AAD ; QAB .  S reg
 
             constant    LM        CM    Logical
----  GAA = IRA CAE + IPA CAF + IQA CAG + MAA .             SO-S3
+---  GAA = IRA CAE + IPA CAF + IQA CAG + MAA .             S0-S3
 ---  GAB = IRB CAE + IPB CAF + IQB CAG + MAB .             input
 ---  GAC = IRC CAE + IPC CAF + IQC CAG + MAC .
 ---  GAD = IRD CAE + IPD CAF + IQD CAG + MAD .
@@ -220,7 +227,7 @@
 ---  GAP = IRH CAE + IPH CAF + IQH CAG + MAH .
 
               FA       FM       VL       GA    GB
----  GBA = INA CAH + IOA CAI + IMA CAJ + IIA + IJA .         SO-S3
+---  GBA = INA CAH + IOA CAI + IMA CAJ + IIA + IJA .         S0-S3
 ---  GBB = INB CAH + IOB CAI + IMB CAJ + IIB + IJB .
 ---  GBC = INC CAH + IOC CAI + IMC CAJ + IIC + IJC .
 ---  GBD = IND CAH + IOD CAI + IMD CAJ + IID + IJD .
@@ -777,6 +784,9 @@
 ---  LTB = ABB BAO + LTB bao .
 ---  LTC = ABC BAO + LTC bao .
 
+            And          And not
+                         Xor           Xor
+                         
 ---  MAA = SJA SKA QDA + SJA ska QDB + sja SKA QDC .   Scalar logic
 ---  MAB = SJB SKB QDA + SJB skb QDB + sjb SKB QDC .
 ---  MAC = SJC SKC QDA + SJC skc QDB + sjc SKC QDC .
@@ -844,7 +854,7 @@
 ---  obg = jag jbg .
 ---  obh = jah jbh .
 
----  oca = jaa jba .                        A register data
+---  oca = jaa jba .                        S register data
 ---  ocb = jab jbb .                         to AR
 ---  occ = jac jbc .
 ---  ocd = jad jbd .
@@ -907,6 +917,8 @@
 ---  OIG = HLG HLO .
 ---  OIH = HLH HLP .
 
+            vector         scalar   scalar
+            
 ---  OJA = HRA HRI tje + JAI TJE + JBI TKE .        Floating add data
 ---  OJB = HRB HRJ tje + JAJ TJE + JBJ TKE .        k operand to FA
 ---  OJC = HRC HRK tje + JAK TJE + JBK TKE .
@@ -921,7 +933,7 @@
 ---  OKC = HMC HMK .                        MB, ME or RA
 ---  OKD = HMD HML .
 ---  OKE = HME HMM .
----  OKF = HMF HMM .
+---  OKF = HMF HMN .
 ---  OKG = HMG HMO .
 ---  OKH = HMH HMP .
 
@@ -966,9 +978,9 @@
 
 ---  ORA = QEA qeb qec + qea QEB qec + qea qeb QEC + QEA QEB QEC .
 
----  QAA = ISF qaa + ISE qaa + ISD qaa .           Vector read
----  QAB = ISF qaa + ISE qaa + ISD qaa .           Scalar read
----  QAC = ISF qaa + ISE qaa + ISD qaa .           Vector write
+---  QAA = ISF qaa + ISE qaa + ISD qaa .           Valid Decode
+---  QAB = ISF qaa + ISE qaa + ISD qaa .           Valid Decode
+---  QAC = ISF qaa + ISE qaa + ISD qaa .           Valid Decode
 
 ---  QBA = QAC AAG .
 
