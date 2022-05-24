@@ -84,6 +84,7 @@
 --- BDF = AAF RAM + ABF RAN + ACF RAO + ADF RAP .
 --- BDG = AAG RAM + ABG RAN + ACG RAO + ADG RAP .
 --- BDH = AAH RAM + ABH RAN + ACH RAO + ADH RAP .
+
 --- cqa = bda TCA + cqa tca .
 --- cqb = bdb TCB + cqb tcb .
 --- cqc = bdc TCC + cqc tcc .
@@ -276,7 +277,8 @@
 --- EEL = DEL TEL + EEL tel .
 --- EEM = DGM TEE + EEM tee .
 --- EEN = DAN TEF + EEN tef .
---- EQA = CQA TEA + EQA tea .
+
+--- EQA = CQA TEA + EQA tea .               Rank E Instruction Parcel
 --- EQB = CQB TEB + EQB teb .
 --- EQC = CQC TEC + EQC tec .
 --- EQD = CQD TED + EQD ted .
@@ -292,6 +294,7 @@
 --- EQN = CQN TEF + EQN tef .
 --- EQO = CQO TEG + EQO teg .
 --- EQP = CQP TEH + EQP teh .
+
 --- FAA FAB FAC FAD FAE FAF FAG FAH *** = EQI EQH EQG .
 --- FBA FBB FBC FBD FBE FBF FBG FBH *** = EQF EQE EQD .
 --- FCA FCB FCC FCD FCE FCF FCG FCH *** = EQC EQB EQA .
@@ -431,6 +434,7 @@
 --- gqn = eqn THK + gqn thk .
 --- gqo = eqo THL + gqo thl .
 --- gqp = eqp THL + gqp thl .
+
 --- HAA = TII JCA + HAA qaa .
 --- HAB = TII JCB + HAB qab .
 --- HAC = TII JCC + HAC qac .
@@ -439,14 +443,16 @@
 --- HAF = TII JCF + HAF qaf .
 --- HAG = TII JCG + HAG qag .
 --- HAH = TII JCH + HAH qah .
---- HBA = TIJ JCA + HBA qaa .
---- HBB = TIJ JCB + HBB qab .
---- HBC = TIJ JCC + HBC qac .
---- HBD = TIJ JCD + HBD qad .
---- HBE = TIJ JCE + HBE qae .
---- HBF = TIJ JCF + HBF qaf .
---- HBG = TIJ JCG + HBG qag .
---- HBH = TIJ JCH + HBH qah .
+
+--- HBA = TIJ JCA + HBA qba .
+--- HBB = TIJ JCB + HBB qbb .
+--- HBC = TIJ JCC + HBC qbc .
+--- HBD = TIJ JCD + HBD qbd .
+--- HBE = TIJ JCE + HBE qbe .
+--- HBF = TIJ JCF + HBF qbf .
+--- HBG = TIJ JCG + HBG qbg .
+--- HBH = TIJ JCH + HBH qbh .
+
 --- HCA = NCA TJA + HCA iea .
 --- HCB = NCB TJB + HCB ieb .
 --- HCC = NCC TJC + HCC iec .
@@ -478,6 +484,7 @@
 --- HFG = GIG TJG + IKC + qka HFG .
 --- HFH = GHG TJP + QLA + QLB + QGA + QLC .
 --- HFI = JFC TJC + JDI qhi .
+
 --- JAA = rai raj rak ral QCB .
 --- JAB = rai raj rak ral QCB .
 --- JAC = raa rab rac rad QCB .
@@ -485,7 +492,8 @@
 --- JAE = rae raf rag rah QCC .
 --- jaf = rae raf rag rah .
 --- JAG = rae raf rag rah QCC .
---- JAH = rai raj rak ral QCB .
+--- JAH = rai raj rak ral QCB.
+
 --- JBA = RAQ qce .
 --- JBB = RAR qce .
 --- JBC = RAS qce .
@@ -937,7 +945,7 @@
 --- opa = gic + tjc .
 --- OPB = JOA .
 --- OPC = JOB .
---- opd = gqa .
+--- OPD = GQA .
 --- oqa = ghc + tjc .
 --- OQB = JOA .
 --- OQC = JOB .
@@ -949,7 +957,7 @@
 --- OSB = JOA .
 --- OSC = JOB .
 --- OSD = GHH TJD .
---- ose = gqa .
+--- OSE = GQA .
 --- ota = gha + tja .
 --- otb = gia + tja .
 --- OTC = GHD TJD .
@@ -1058,10 +1066,13 @@
 --- qdb = IGB + iga .
 --- qdc = igb + IGA .
 --- qdd = igb + iga .
+
 --- qea = jaf TCE + qea tce + QCD .
 --- qed = jaf TCF + qea tcf + QCD .
+
 --- qfa = qea TES + qfb tes + QCD .
 --- qfd = qea TED + qfb ted + QCD .
+
 --- QGA = qfa qga THM + GJE TJH + JFD .
 --- QGC = JPA TJL .
 --- qgd = tji .
@@ -1090,6 +1101,7 @@
 --- QMB = IKQ .
 --- QMC = IKQ .
 --- QMD = IKQ .
+
 --- RAA = JAE jbe + QDA JBE + JBA tca .
 --- RAB = JBA TCB + QDB JBE + JBB tcb .
 --- RAC = JBB TCC + QDC JBE + JBC tcc .
@@ -1098,6 +1110,7 @@
 --- RAF = JBA TCF + QDB JBE + JBB tcf .
 --- RAG = JBB TCG + QDC JBE + JBC tcg .
 --- RAH = JBC TCH + QDD JBE + JBD tch .
+
 --- TCA = wac wbc + --- + *** qeb + *** qfc .
 --- TCB = wac wbc + --- + *** qeb + *** qfc .
 --- TCC = wac wbc + --- + *** qeb + *** qfc .
@@ -1106,6 +1119,7 @@
 --- TCF = wad wbd + --- + *** qec + *** qfe .
 --- TCG = wae wbe + --- + *** qed + *** qff .
 --- TCH = wae wbe + --- + *** qed + *** qff .
+
 --- tea = WAA QFB + WBA QFC .
 --- teb = WAA QFB + WBA QFC .
 --- tec = WAC QFB + WBC QFC .
@@ -1114,6 +1128,7 @@
 --- tef = WAE QFD + WBE QFE .
 --- teg = WAG QFD + WBG QFE .
 --- teh = WAG QFD + WBG QFE .
+
 --- TGA = waa wba eaa .
 --- TGB = waa wba eab .
 --- TGC = wab wbb eac eak .
@@ -1123,10 +1138,12 @@
 --- TGG = wah wbh eag .
 --- TGH = wah wbh eah .
 --- TGI = waa wba eai .
+
 --- TGQ = waf wbf .
 --- TGR = waf wbf .
 --- TGS = waf wbf .
 --- TGT = waf wbf .
+
 --- tha = WAB + WBB .
 --- thc = WAB + WBB .
 --- the = WAH + WBH .

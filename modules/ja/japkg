@@ -8,7 +8,9 @@ AGI - DCA DCI DCQ .
 AHM - PED PEE .
 AIH - DDA DDI .
 AJH - DEA DEI .
+AKP - HBA .
 ALP - cqa cqi .
+AMP - HBB .
 ANP - ECA ECI .
 AOP - EDA EDI .
 APB - teq tea tei .
@@ -20,9 +22,14 @@ AUP - EEA EEI .
 AVP - EQA EQI .
 AWF - FCA FCB FCC FCD FCE FCF FCG FCH .
 AXM - GLA .
+A1P - HBC .
 A2H - fdb fdj .
 A3H - fdn fdy .
+A4P - HBD .
+A5P - HBE .
 A6H - FDZ .
+A7P - HBF .
+A8P - HBG .
 BAB - BAA BBA BCA .
 BBW - ZZA ZZA ZZA ZZA ZZA ZZA .
 BCP - AAA AAI .
@@ -61,13 +68,13 @@ CCL - KBA KCA KDA KEA .
 CDL - oaa oba oca OWA .
 CEI - jgf .
 CFP - KAA KFA .
-CGP - LQA LRA .
+CGP - LQA .
 CHL - oai obi oci OFA .
 CIP - gqa gqi .
 CJP - KIA KJA .
 CKP - KLA LSA .
 CLL - KGA KHA KKA OEA .
-CMP - HAA HBA .
+CMP - HAA .
 CNP - otd qgd .
 COP - OGA .
 CPP - OHA .
@@ -78,15 +85,16 @@ CTP - ola .
 CUF - JCH JCG JCF JCE JCD JCC JCB JCA .
 CVI - jfa jda JWA .
 CWL - QHF QHK hea .
-CXL - OOA OOD OWD .
+CXL - OOA OOD OWD LRA .
 C1L - naa nia nca ndj .
 C2P - QHJ QHL .
 C3M - nda .
-C4L - ona owg opd ose .
+C4L - ona owg OPD OSE .
 C5L - nea .
 C6L - LBA LDA LEA LGA .
 C7L - *** LIA LJA LKA .
 C8L - LLA LOA LPA LAA .
+DAP - HBH .
 DBM - PJA *** PJC .
 DCM - PFA PFB PFC .
 DDM - PBA PBB PBC .
@@ -148,18 +156,18 @@ FCL - KBB KCB KDB KEB .
 FDL - oab obb ocb OWB .
 FEI - jgg .
 FFP - KAB KFB .
-FGP - LQB LRB .
+FGP - LQB .
 FHL - oaj obj ocj OFB .
 FIJ - JKA JKB JKC JKD .
 FJP - KIB KJB .
 FKP - KLB LSB .
 FLL - KGB KHB KKB OEB .
-FMP - HAB HBB .
+FMP - HAB .
 FNP - QHA QHB .
 FOP - OGB .
-FPL - OOB OOE OWE .
+FPL - OOB OOE OWE LRB .
 FQP - HCB HDB .
-FRP - heb HFB .
+FRP - HFB .
 FSP - ora osa .
 FTP - olb .
 FUP - QHD QHI .
@@ -167,7 +175,7 @@ FVI - jfb jdb JWB .
 FWI - jfc jfi .
 FXP - OHB .
 F1L - QHG nib ncb ndk .
-F2L - neb oza ozb .
+F2L - neb oza ozb heb .
 F3M - ndb .
 F4L - owh OXA OXB .
 F5P - LHA LHB .
@@ -235,13 +243,13 @@ IBP - qac qbc .
 ICL - KBC KCC KDC KEC .
 IDL - oac obc occ OWC .
 IFP - KAC KFC .
-IGP - LQC LRC .
+IGP - LQC .
 IHL - oak obk ock OFC .
 IIJ - JLA JLB JLC JLD .
 IJP - KIC KJC .
 IKP - KLC LSC .
 ILL - KGC KHC KKC OEC .
-IMP - HAC HBC .
+IMP - HAC .
 INP - oua oub .
 IOP - OGC .
 IPP - OHC .
@@ -252,7 +260,7 @@ ITP - olc .
 IUL - hec OWF *** nic .
 IVI - jdi jdc JWC .
 IWP - HFI .
-IXL - OOC OOF OWT .
+IXL - OOC OOF OWT LRC .
 I1L - nac *** ncc ndl .
 I2L - nec .
 I3M - ndc .
@@ -323,13 +331,13 @@ LCL - KBD KCD KDD KED .
 LDL - oad obd ocd owj .
 LEI - jga JLE .
 LFP - KAD KFD .
-LGP - LQD LRD .
+LGP - LQD .
 LHL - oal obl ocl OFD .
 LII - JKE JKH JMD .
 LJP - KID KJD .
 LKP - KLD LSD .
 LLL - KGD KHD KKD OED .
-LMP - HAD HBD .
+LMP - HAD .
 LNP - ova qge .
 LOP - QGC OHD .
 LPI - jxa .
@@ -338,12 +346,13 @@ LRP - hed HFD .
 LSP - QJA OTC .
 LTP - old OSD .
 LUH - jma .
-LVI - joc jpa JWD .
+LVI - joc jpa .
+LWI - JWD .
 LXL - OJD *** OTG OUE .
 L1L - nad *** ncd ndd .
 L2P - LFD .
 L3M - ndg .
-L4L - owk owl .
+L4L - owk owl LRD .
 L5P - LND .
 L6L - *** LDD LED LGD .
 L7L - LHD LID LJD LKD .
@@ -410,13 +419,13 @@ OBP - qae qbe .
 ODL - oae obe oce OWM .
 OEI - jgb JLF .
 OFP - *** KFE .
-OGP - LQE LRE .
+OGP - LQE .
 OHL - oam obm ocm OFE .
 OII - JKF JNB JME .
 OJP - KIE KJE .
 OKP - KLE LSE .
 OLL - KGE KHE KKE OEE .
-OMP - HAE HBE .
+OMP - HAE .
 OOP - OVB OHE .
 OQP - HCE HDE .
 ORP - hee HFE .
@@ -424,7 +433,7 @@ OSP - oja ojb .
 OTP - ole OMA .
 OUH - jmb JNA .
 OVI - *** *** JWE .
-O1L - *** *** nce nde .
+O1L - LRE *** nce nde .
 O3M - ndh .
 O6L - *** LDE LEE LGE .
 O7L - LHE LIE LJE LKE .
@@ -492,13 +501,13 @@ RCL - KBF KCF KDF KEF .
 RDL - oaf obf ocf OWN .
 REI - jgc JLG .
 RFP - KAF KFF .
-RGP - LQF LRF .
+RGP - LQF .
 RHL - oan obn ocn OFF .
 RII - JKG JKI JMF .
 RJP - KIF KJF .
-RKP - KLF LSF .
+RKP - KLF .
 RLL - KGF KHF KKF OEF .
-RMP - HAF HBF .
+RMP - HAF .
 ROP - OVC OHF .
 RQP - HCF HDF .
 RRP - hef HFF .
@@ -507,7 +516,7 @@ RTP - olf OMB .
 RUH - jmc jfd .
 RVI - *** *** JWF .
 RWL - QIC QID qie .
-RXL - onb OWS .
+RXL - onb OWS LRF LSF .
 R1L - *** *** ncf ndf .
 R3M - ndi .
 R5P - LNF .
@@ -577,7 +586,7 @@ UHL - oao obo oco .
 UII - JOA .
 UJP - KIG KJG .
 ULL - KGG KHG .
-UMP - HAG HBG .
+UMP - HAG .
 UOP - OVD OHG .
 UQP - HCG HDG .
 URX - HFG .
@@ -652,7 +661,7 @@ XII - JOB .
 XJP - qda qdb .
 XKP - qdc qdd .
 XLL - oka .
-XMP - HAH HBH .
+XMP - HAH .
 XNP - QLA QLB .
 XOL - QLC .
 XQP - HCH HDH .

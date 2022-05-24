@@ -1,13 +1,13 @@
-BCPB  AAA = IAA JAA + AAA jaa .  kO             Parcel O
+BCPB  AAA = IAA JAA + AAA jaa .  k0             Parcel 0
 ECPB  AAB = IAB JAA + AAB jaa .  k1
 HCPB  AAC = IAC JAA + AAC jaa .  k2             bits 2(48) - 2(63) from
-KCPB  AAD = IAD JAA + AAD jaa .  jO             the instruction stack
+KCPB  AAD = IAD JAA + AAD jaa .  j0             the instruction stack
 NCPB  AAE = IAE JAH + AAE jah .  j1
 QCPB  AAF = IAF JAH + AAF jah .  j2
-TCPB  AAG = IAG JAH + AAG jah .  iO
+TCPB  AAG = IAG JAH + AAG jah .  i0
 WCPB  AAH = IAH JAH + AAH jah .  i1
 BCPD  AAI = IAI JAA + AAI jaa .  i2
-ECPD  AAJ = IAJ JAA + AAJ jaa .  fO
+ECPD  AAJ = IAJ JAA + AAJ jaa .  f0
 HCPD  AAK = IAK JAA + AAK jaa .  f1
 KCPD  AAL = IAL JAA + AAL jaa .  f2
 NCPD  AAM = IAM JAH + AAM jah .  f3
@@ -69,7 +69,7 @@ WHPD  ADP = IDP JAD + ADP jad .
                    Selected Parcel according to parcel pointer
 
 BABI  BAA = AAI RAA + ABI RAB + ACI RAC + ADI RAD .   i2   b8
-EABI  BAB = AAJ RAA + ABJ RAB + ACJ RAC + ADJ RAD .   fO
+EABI  BAB = AAJ RAA + ABJ RAB + ACJ RAC + ADJ RAD .   f0
 HABI  BAC = AAK RAA + ABK RAB + ACK RAC + ADK RAD .   f1
 KABI  BAD = AAL RAA + ABL RAB + ACL RAC + ADL RAD .   f2
 NABI  BAE = AAM RAU + ABM RAV + ACM RAG + ADM RAH .   f3
@@ -106,16 +106,16 @@ WEBI  BDH = AAH RAM + ABH RAN + ACH RAO + ADH RAP .   i1   b7
 
           Latched selected parcel
 
-ALPB  cqa = bda TCA + cqa tca .   kO             16 bit                0
+ALPB  cqa = bda TCA + cqa tca .   k0             16 bit                0
 DLPB  cqb = bdb TCB + cqb tcb .   k1             Instruction parcel
 GLPB  cqc = bdc TCC + cqc tcc .   k2             Rank C
-JLPB  cqd = bdd TCD + cqd tcd .   jO
+JLPB  cqd = bdd TCD + cqd tcd .   j0
 MLPB  cqe = bde TCE + cqe tce .   j1
 PLPB  cqf = bdf TCF + cqf tcf .   j2
-SLPB  cqg = bdg TCG + cqg tcg .   iO
+SLPB  cqg = bdg TCG + cqg tcg .   i0
 VLPB  cqh = bdh TCH + cqh tch .   i1
 ALPD  cqi = baa TCA + cqi tca .   i2
-DLPD  cqj = bab TCB + cqj tcb .   fO
+DLPD  cqj = bab TCB + cqj tcb .   f0
 GLPD  cqk = bac TCC + cqk tcc .   f1            
 JLPD  cql = bad TCD + cql tcd .   f2
 MLPD  cqm = bae TCE + cqm tce .   f3
@@ -123,106 +123,106 @@ PLPD  cqn = baf TCF + cqn tcf .   f4
 SLPD  cqo = bag TCG + cqo tcg .   f5
 VLPD  cqp = bah TCH + cqp tch .   f6                                  15
 
-AEII  DAA = PAA PHA pna .                    Inst group translations
-DEII  DAB = PAB PGB pnb .                    of Rank C
-GEII  DAC = PBC poc .
+AEII  DAA = PAA PHA pna .             030-3      Inst group translations
+DEII  DAB = PAB PGB pnb .             020-3           of Rank C
+GEII  DAC = PBC poc .                 040,041,044,045,050,051,054,055,060,061,064,065,070,071,074,075
 JEIT  DAD = PBD pfc pgc .
 PEII  DAF = PCF PEF plf .
-SEII  DAG = PBG PHG plf .
-VEII  DAH = PBH PHH PJF .
-AEIE  DAI = PCA PHA PJA .
+SEII  DAG = PBG PHG plf .       
+VEII  DAH = PBH PHH PJF .             072-073
+AEIE  DAI = PCA PHA PJA .             132-133
 DEIE  DAJ = PBB POB PIB .
 GEIE  DAK = PBC pob PLB .
-JEIE  DAL = PCD PHD PND .
-MEIE  DAM = PCE PGE PIE .
-PEIE  DAN = PBF PFF pnf .
-SEIE  DAO = PDG PHG PLA .
-VEIE  DAP = PDH pfh pme .
-AEIG  DAQ = PAA .      
-DEIG  DAR = PAB pob .
-GEIG  DAS = PAC PEC .
-JEIG  DAT = PDD .
-MEIG  DAU = pce pde .
-PEIG  DAV = PCF PGF .
-SEIG  DAW = pdg .      
-AFII  DBA = PDA PGA pna .
-DFIT  DBB = PAB PGB PIB .       
-GFII  DBC = PAC PGC PNC .       
-JFII  DBD = PAD PGD PJD . 
-MFII  DBE = PCE PGE PNE .    
-PFII  DBF = PCF PHF pnf .
-SFII  DBG = PBG POD PMF .
-VFII  DBH = PDH POD PNF .    
-AFIE  DBI = PDA PEA .
-DFIE  DBJ = PCB PEB PLB .
-GFIE  DBK = PAC PHC plc .
-JFIE  DBL = PCD PED PKD .
-MFIE  DBM = PAE PHE PLE .                  
-PFIE  DBN = PAF PGF PLF .
-VFIE  DBP = PDH PHH PLF .
-AFIG  DBQ = PAA PGA .
-GFIG  DBS = PBC PGC .
-JFIG  DBT = PAD PFD .
-MFIG  DBU = PCE pee .
-PFIG  DBV = PCF phf .
-AGII  DCA = pba paa .                    Rank C translations
-DGII  DCB = PCB PFB pnb .
-GGII  DCC = PCC PFC PJC .
-JGII  DCD = PCD PFD PKD .
-MGII  DCE = PDE PHE PKC .
-PGII  DCF = PBF PEF pnf .
-AGEE  DCI = PDA PGA PKA .
-DGIE  DCJ = PDB PFB pnb .
-GGIE  DCK = PCC PHC PIC .
-JGIE  DCL = PDD PFD PND .
-MGIE  DCM = PCE PEE pne .
-PGIE  DCN = PCF PFF PLF .
-AGIG  DCQ = PBA pea .
+JEIE  DAL = PCD PHD PND .             134-137
+MEIE  DAM = PCE PGE PIE .             120-121
+PEIE  DAN = PBF PFF pnf .             050-053
+SEIE  DAO = PDG PHG PLA .             176-177
+VEIE  DAP = PDH pfh pme .             161,163,165,167,141,143,145,147
+AEIG  DAQ = PAA .                     000-037
+DEIG  DAR = PAB pob .                 000,001,004,005,010,011,014,015,020,021,024,025,030,031,034,035
+GEIG  DAS = PAC PEC .                 000-007
+JEIG  DAT = PDD .                     140-177
+MEIG  DAU = pce pde .                 000-077
+PEIG  DAV = PCF PGF .                 120-127
+SEIG  DAW = pdg .                     000-037
+AFII  DBA = PDA PGA pna .             160-163
+DFIT  DBB = PAB PGB PIB .             020-021
+GFII  DBC = PAC PGC PNC .             024-027
+JFII  DBD = PAD PGD PJD .             022-023
+MFII  DBE = PCE PGE PNE .             124-127
+PFII  DBF = PCF PHF pnf .             130-133
+SFII  DBG = PBG POD PMF .             0 1xx x11
+VFII  DBH = PDH POD PNF .             146-7,156-7,166-7,176-7
+AFIE  DBI = PDA PEA .                 140-147
+DFIE  DBJ = PCB PEB PLB .             106-107
+GFIE  DBK = PAC PHC plc .             030,031,032,033,034,035
+JFIE  DBL = PCD PED PKD .             104-105
+MFIE  DBM = PAE PHE PLE .             036-037
+PFIE  DBN = PAF PGF PLF .             026-027
+VFIE  DBP = PDH PHH PLF .             176-177
+AFIG  DBQ = PAA PGA .                 020-027
+GFIG  DBS = PBC PGC .                 060-067
+JFIG  DBT = PAD PFD .                 040-047
+MFIG  DBU = PCE pee .                 120-127,130-137,110-117
+PFIG  DBV = PCF phf .                 100-107,110-117,120-127
+AGII  DCA = pba paa .                              Rank C translations
+DGII  DCB = PCB PFB pnb .             110-113 Scalar shift
+GGII  DCC = PCC PFC PJC .             112-113
+JGII  DCD = PCD PFD PKD .             114-115
+MGII  DCE = PDE PHE PKC .             176-177
+PGII  DCF = PBF PEF pnf .             040-043
+AGEE  DCI = PDA PGA PKA .             164-165
+DGIE  DCJ = PDB PFB pnb .             150-153
+GGIE  DCK = PCC PHC PIC .             130-131
+JGIE  DCL = PDD PFD PND .             154-157
+MGIE  DCM = PCE PEE pne .             100-103
+PGIE  DCN = PCF PFF PLF .             116-117
+AGIG  DCQ = PBA pea .                 060-067,050-057
 JGIG  DCT = pbb pca .
-MGIG  DCU = PDE PGE .
-PGIG  DCV = PDF PFF .
+MGIG  DCU = PDE PGE .                 160-167
+PGIG  DCV = PDF PFF .                 150-157
 PJHH  DCW = PDF PHF PMF plf .
-AEHG  DDA = PAA PEA PJA pma .
-DIHG  DDB = PBB PEB PLB PMD .
-GIHG  DDC = PBC PEC PKC PMD .
-JIHG  DDD = PBD PFD PKD PMD .     
+AEHG  DDA = PAA PEA PJA pma .         002
+DIHG  DDB = PBB PEB PLB PMD .         047
+GIHG  DDC = PBC PEC PKC PMD .         045
+JIHG  DDD = PBD PFD PKD PMD .         055
 MIHG  DDE = PAE POE PKE pme .
 PIHG  DDF = PAF PGF PKF PMF .
-SEHG  DDG = PAG PGG PKF pmf .
+SEHG  DDG = PAG PGG PKF pmf .         024
 VEHG  DDH = PBH PHH pld pme .
-AIHH  DDI = PBA PEA PNA PMB .
-DIHH  DDJ = PDB PGB plb .
-GIHH  DDK = PDC PFC pnc .         
-JIHH  DDL = PBD PFD PKD pmb .
-MIHH  DDM = PBE PEE PLE pme .
-PEHH  DDN = PBF pef phf pmf .
-SIHH  DDO = PBG PFG PLA PMF .
-VIHH  DDP = PAH PHH PKE PMF .
-AJHG  DEA = PAA PHA PKA pma .
-DJHG  DEB = PBB PEB PKB pmb .
-GJHG  DEC = PBC POC PLC .
-JJHG  DED = PDD PGD PLD .          
-MJHG  DEE = PDE PEE PME .
+AIHH  DDI = PBA PEA PNA PMB .         045,047
+DIHH  DDJ = PDB PGB plb .             160-3, 164-5
+GIHH  DDK = PDC PFC pnc .             150-153
+JIHH  DDL = PBD PFD PKD pmb .         054
+MIHH  DDM = PBE PEE PLE pme .         046
+PEHH  DDN = PBF pef phf pmf .         052,054,056,062,064,066
+SIHH  DDO = PBG PFG PLA PMF .         057
+VIHH  DDP = PAH PHH PKE PMF .         035
+AJHG  DEA = PAA PHA PKA pma .         034 
+DJHG  DEB = PBB PEB PKB pmb .         044
+GJHG  DEC = PBC POC PLC .             046,047,056,057,066,067,076,077
+JJHG  DED = PDD PGD PLD .             166-167
+MJHG  DEE = PDE PEE PME .             141,143,145,147
 PJHG  DEF = PDF POF pnf pmf .
-AJHH  DEI = PBA poa PKA pma .
-DJHH  DEJ = PBB pob PNB .
-GJHH  DEK = PAC PFC PNC .
-JJHH  DEL = PDD PGD PKF .
-MJHH  DEM = PDE PFE PKE pme .         
-DXHG  DFB = PBB PHB PKB .                        
-GKHG  DFC = PBC PFC PLC pmc .
-JKHG  DFD = PCD ped pgd PJD .
-MKHG  DFE = PBE PFE PJE PME .
-PKHG  DFF = PBF pof plf .              
+AJHH  DEI = PBA poa PKA pma .         044
+DJHH  DEJ = PBB pob PNB .             044-045,054-055,064-065,074-075
+GJHH  DEK = PAC PFC PNC .             014-017
+JJHH  DEL = PDD PGD PKF .             164-165
+MJHH  DEM = PDE PFE PKE pme .         154
+DXHG  DFB = PBB PHB PKB .             074-075        
+GKHG  DFC = PBC PFC PLC pmc .         056
+JKHG  DFD = PCD ped pgd PJD .         
+MKHG  DFE = PBE PFE PJE PME .         052-053
+PKHG  DFF = PBF pof plf .             040,041,044,045,050,051,054,055,060,061,064,065,070,071,074,075 
 SKHG  DFG = PBG pof PKC .
-DKHH  DFJ = PAB PEB PLB .
-GKHH  DFK = PCC PGC pnc .
-MXHH  DFM = PAE PEE gie ple .
-PXHH  DFN = PBF PEF PIE .
-GMHG  DGC = PDC PHC plc .                    Rank C xlations
-MMHG  DGE = PBE PGE PNE .
-GMHH  DGK = PBC PHC pnc .
-MMHH  DGM = PBE PEE PJE .                
+DKHH  DFJ = PAB PEB PLB .             004-005
+GKHH  DFK = PCC PGC pnc .             120-123
+MXHH  DFM = PAE PEE pie ple .         002,003,004,005
+PXHH  DFN = PBF PEF PIE .             040-041
+GMHG  DGC = PDC PHC plc .             170-173,174-175    Rank C xlations
+MMHG  DGE = PBE PGE PNE .             064-067
+GMHH  DGK = PBC PHC pnc .             070-073
+MMHH  DGM = PBE PEE PJE .             042-043
         
 ARNI  EAA = DAQ dbq dda TEQ + DDI dda TEQ + DCQ TEQ + DCA TEQ + EAA teq .
 DRNI  EAB = dab ddb daj TEB + EAB teb .
@@ -230,70 +230,72 @@ GRNI  EAC = DAC ddc dak TEC + DBC dak TEC + DBK TEC + EAC tec .
 JRNI  EAD = DCT TED + DAD TED + DDD TED + DAL TED + EAD ted .
 MRNI  EAE = DAU dek dde ddd TEE + DCE dde ddd TEE + DCW ddd TEE + DCU def TEE  + EAE tee .
 PRNI  EAF = daf dav dbg TEF + EAF tef .
-SRNI  EAG = DAM dag TEG + EAG teg .
+SRNI  EAG = DAW dag TEG + EAG teg .
 VRNI  EAH = DAW dah dci TEH + DAP dci TEH + DEM TEH + DBH dci TEH + EAH teh .
 ASNI  EAI = DAW daa TEQ + DDK TEQ + DAO TEQ + DCI TEQ + EAI teg .
 GSNI  EAK = DCA dcc dck ddk TES + DEC dck ddk TES + DEK ddk TES + DAS dda TES + EAK tes .
 MSNI  EAM = DBU dfd dam dbe TEE + DEE dam dbe TEE + DCV dem TEE + EAM tee .
-PSNI  EAN = DAN TEF + DDN TEF + DBV TEF + DBF TEF + EAN tef .
-VSNI  EAP = DAT TEH + DDH TEH + EAP teh .
+PSNI  EAN = DAN TEF + DDN TEF + DBV TEF + DBF TEF + EAN tef .       050-053, 052,054,056,062,064,066, 130-133
+VSNI  EAP = DAT TEH + DDH TEH + EAP teh .       140-177
 
-AQPB  EBA = DDA TEI + EBA tei .
-DQPB  EBB = DBB TEJ + EBB tej .
-GQPB  EBC = DFC TEK + EBC tek .
-JQPB  EBD = DBD TEL + EBD tel .
-MQPB  EBE = DDM TEM + EBE tem .
+AQPB  EBA = DDA TEI + EBA tei .        002
+DQPB  EBB = DBB TEJ + EBB tej .        020-021
+GQPB  EBC = DFC TEK + EBC tek .        056
+JQPB  EBD = DBD TEL + EBD tel .        022-023
+MQPB  EBE = DDM TEM + EBE tem .        046
 PQPB  EBF = DDF TEN + EBF ten .
 SQPB  EBG = DDG TEO + EBG teo .
-AQPD  EBI = DAI TEI + EBI tei .      
-DQPD  EBJ = DEB TEJ + EBJ tej .
-GQPD  EBK = DBJ TEK + EBK tek .
-JQPD  EBL = DDL TEL + EBL tel .
-MQPD  EBM = DFE TEM + EBM tem .
+AQPD  EBI = DAI TEI + EBI tei .       132-133
+DQPD  EBJ = DEB TEJ + EBJ tej .       044
+GQPD  EBK = DBJ TEK + EBK tek .       106-107
+JQPD  EBL = DDL TEL + EBL tel .       054
+MQPD  EBM = DFE TEM + EBM tem .       052-053
 PQPD  EBN = DBN TEN + EBN ten .
 
-ANPB  ECA = DAA TEI + ECA tei .
-DNPB  ECB = DAV TEJ + ECB tej .
-GNPB  ECC = DCB TEK + ECC tek .
-JNPB  ECD = DBL TEL + ECD tel .
-MNPB  ECE = DCK TEM + ECE tem .
-PNPB  ECF = DCF TEN + ECF ten .
-SNPB  ECG = DBG TEO + ECG teo .
-ANPD  ECI = DEA TEI + ECI tei .
-DMPD  ECJ = DCJ TEJ + ECJ tej . 
-GNPD  ECK = DGC TEK + ECK tek .
-JNPD  ECL = DCD TEL + ECL tel .
-MNPD  ECM = DCM TEM + ECM tem .
-PNPD  ecn = dan TEN + ecn ten + DFE TEN .
-SNPD  ECO = DBM TEO + ECO teo .
+ANPB  ECA = DAA TEI + ECA tei .      030-033
+DNPB  ECB = DAV TEJ + ECB tej .      120-127
+GNPB  ECC = DCB TEK + ECC tek .          110xxx-113xxx Scalar Shift
+JNPB  ECD = DBL TEL + ECD tel .      104-105
+MNPB  ECE = DCK TEM + ECE tem .      130-131
+PNPB  ECF = DCF TEN + ECF ten .      040-043
+SNPB  ECG = DBG TEO + ECG teo .      0 1xx x11
+ANPD  ECI = DEA TEI + ECI tei .      034
+DMPD  ECJ = DCJ TEJ + ECJ tej .      150-153
+GNPD  ECK = DGC TEK + ECK tek .      170-173,174-175
+JNPD  ECL = DCD TEL + ECL tel .      114-115
+MNPD  ECM = DCM TEM + ECM tem .      100-103
+PNPD  ecn = dan TEN + ecn ten + DFE TEN .           050-051
+SNPD  ECO = DBM TEO + ECO teo .                     036-037
 
-AOPB  EDA = DBI TEI + EDA tei .                Rank E instruction
-DOPB  EDB = DDJ TEJ + EDB tej .                Xlation
-GOPB  EDC = DFK TEK + EDC tek .
-JOPB  EDD = DBE TEL + EDD tel .
-MOPB  ede = dfm TEM + DDA TEM + ede tem .
-POPB  EDF = DCN TEN + EDF ten .
-SOPB  EDG = DDO TEO + EDG teo .
-VOPB  EDH = DBP TEP + EDH tep .
-AOPD  EDI = DAB TEI + EDI tei .
-DOPD  EDJ = DFB TEJ + EDJ tej .
-GOPD  EDK = DGK TEK + EDK tek .
-JOPD  EDL = DCL TEL + EDL tel .         
-MOPD  EDM = DBT TEM + EDM tem .
-POPD  EDN = DFF TEN + EDM ten .
+                            Rank E instruction xlation
+                            
+AOPB  EDA = DBI TEI + EDA tei .            140-147
+DOPB  EDB = DDJ TEJ + EDB tej .            160-3, 164-5    
+GOPB  EDC = DFK TEK + EDC tek .            120-123
+JOPB  EDD = DBE TEL + EDD tel .            124-127
+MOPB  ede = dfm TEM + DDA TEM + ede tem .  003-005
+POPB  EDF = DCN TEN + EDF ten .            116-117
+SOPB  EDG = DDO TEO + EDG teo .            057
+VOPB  EDH = DBP TEP + EDH tep .            176-177
+AOPD  EDI = DAB TEI + EDI tei .            020-023
+DOPD  EDJ = DFB TEJ + EDJ tej .            070-074
+GOPD  EDK = DGK TEK + EDK tek .            072-073
+JOPD  EDL = DCL TEL + EDL tel .            154-157
+MOPD  EDM = DBT TEM + EDM tem .            040-047
+POPD  EDN = DFF TEN + EDN ten .        040,041,044,045,050,051,054,055,060,061,064,065,070,071,074,075 
 SOPD  EDO = DFG TEO + EDO teo .
-VOPD  EDP = DDP TEP + EDP tep .
+VOPD  EDP = DDP TEP + EDP tep .            035
 
 AUPB  EEA = DEI TEA + EEA tea .
 DUPB  eeb = dej TEB + DEI TEB + eeb teb .
-GUPB  EEC = DBS TEC + EEC tec .
-JUPB  EED = DED TEL + EED tel  .
-MUPB  EEE = DGE TEE + EEE tee .
-PUPB  EEF = DFN TEF + EEF tef .
-AUPD  EEI = DBA TEA + EEI tea .
-DUPD  EEJ = DAR TEB + EEJ teb .
-JUPD  EEL = DEL TEL + EEL tel .
-MUPD  EEM = DGM TEE + EEM tee .
+GUPB  EEC = DBS TEC + EEC tec .              060-067
+JUPB  EED = DED TEL + EED tel .
+MUPB  EEE = DGE TEE + EEE tee .              064-067
+PUPB  EEF = DFN TEF + EEF tef .              040-041
+AUPD  EEI = DBA TEA + EEI tea .              160-163
+DUPD  EEJ = DAR TEB + EEJ teb .   000,001,004,005,010,011,014,015,020,024,025,030,031,034,035
+JUPD  EEL = DEL TEL + EEL tel .              164-165
+MUPD  EEM = DGM TEE + EEM tee .              042-043
 PUPD  EEN = DAN TEF + EEN tef .
 
 AVPB  EQA = CQA TEA + EQA tea .   kO             16 bit
@@ -317,33 +319,37 @@ VMFL  FAA FAB FAC FAD FAE FAF FAG FAH *** = EQI EQH EQG .       i
 JWFL  FBA FBB FBC FBD FBE FBF FBG FBH *** = EQF EQE EQD .       j
 AMFL  FCA FCB FCC FCD FCE FCF FCG FCH *** = EQC EQB EQA .       k
 
-SJHG  FDA = EAN ecn edf .                      Translation of 
-A2HG  fdb = eba edi ebg ebj ebe .              Rank E data
+                  Translations of Rank E data
+                  
+SJHG  FDA = EAN ecn edf .                         052-053,054,056,062,064,066, 130-133  
+A2HG  fdb = eba edi ebg ebj ebe .              
 D2HG  fdc = ebb ebj .
-P2HH  fdd = ebf ebn ecf .
-M2HH  fde = ebm ece .
-G2HG  fdf = ebk .         
+P2HH  fdd = ebf ebn ecf .                      025 + 026-7 + 040-3
+M2HH  fde = ebm ece .                          052-053,130-131
+G2HG  fdf = ebk .                              106-107
 J2HG  fdg = ebc ecd ecc .
-M2HG  fdh = ebm ebl ecm ece ecl  .
-PJHG  fdi = ecn edf .
-A2HH  fdj = eca ecl eda eci  .
-D2HH  fdk = ecj edb edh .
-G2HH  fdl = edc eck .
+M2HG  fdh = ebm ebl ecm ece ecl .              052-053, 054 , 100-103 , 130-131 , 114-115
+PJHG  fdi = ecn edf .                            050-051  ,116-7
+A2HH  fdj = eca ecl eda eci  .                 030-033,114-115,140-147,034
+D2HH  fdk = ecj edb edh .                      150-153,160-3, 164-5,  176,177  
+G2HH  fdl = edc eck .                          120-123, 170-173,174-175
 J2HH  fdm = edd ebi edl eed .
 AJHG  fdn = eca eda .
 JJHG  fdo = ebi edl eed .
-V2HG  fdp = eap .
+V2HG  fdp = eap .                               140-177
 S2HG  fdq = ecc ecg edg .
 DJHG  fdr = eeb edj .
 GJHG  fds = eec edk .
-MJHG  fdt = ede edm eee ecn eem .                   
+MJHG  fdt = ede edm eee ecn eem .               ,040-047,064-067,050-051,042-43
 PJHH  fdu = eef edo .
-MJHH  fdv = ede edn edm eee .
-MQHG  fdw = ede edm eem een eee .
+MJHH  fdv = ede edn edm eee .                  003-005,040,041,044,045,050,051,054,055,060,061,064,065,070,071,074,075, 064-067
+MQHG  fdw = ede edm eem een eee .              ,,042-043,050-3,064-067
 P2HG  FDX = EDN EEB .
-AJHH  fdy = ebe eba .
-GJHH  fea = ecd ebk .
+AJHH  fdy = ebe eba .                          046,002
+GJHH  fea = ecd ebk .                          104-105,106-107
 
+               i        j          k
+               
 BUXE  GAA = FAA TGA + FBA TGB + FCA TGC + GAA tha .     A reg access req
 EUXE  GAB = FAB TGA + FBB TGB + FCB TGC + GAB thb .     i,j, or k
 HUXE  GAC = FAC TGA + FBC TGB + FCC TGC + GAC thc .
@@ -353,6 +359,8 @@ QUXE  GAF = FAF TGA + FBF TGB + FCF TGC + GAF thf .
 TUXE  GAG = FAG TGA + FBG TGB + FCG TGC + GAG thg .
 WUXE  GAH = FAH TGA + FBH TGB + FCH TGC + GAH thh .
 
+               i         j         k
+               
 B1XE  GBA = FAA TGD + FBA TGE + FCA TGF + GBA tha .     S reg access req
 E1XE  GBB = FAB TGD + FBB TGE + FCB TGF + GBB thb .     i,j, or k
 H1XE  GBC = FAC TGD + FBC TGE + FCC TGF + GBC thc .
@@ -362,6 +370,8 @@ QlXE  GBF = FAF TGD + FBF TGE + FCF TGF + GBF thf .
 TlXE  GBG = FAG TGD + FBG TGE + FCG TGF + GBG thg .
 HlXE  GBH = FAH TGD + FBH TGE + FCH TGF + GBH thh .  
 
+               i         j         k
+               
 B5XE  GCA = FAA TGG + FBA TGH + FCA TGI + GCA tha .     V reg access req
 E5XE  GCB = FAB TGG + FBB TGH + FCB TGI + GCB thb .     i,j, or k
 H5XE  GCC = FAC TGG + FBC TGH + FCC TGI + GCC thc .
@@ -373,7 +383,7 @@ W5XE  GCH = FAH TGG + FBH TGH + FCH TGI + GCH thh .
 
 BVPB  GDA = FDJ TGQ + GDA tgq .                Vector loqical
 EWPB  GDB = FDK TGQ + GDB tgq .                Vector integer
-HWPB  GDC = FDL TGQ + GDC tgq .                Floating add
+HWPB  GDC = FDL TGQ + GDC tgq .                Floating add, int to float
 XVPB  GDD = FDM TGQ + GDD tgq .                Floating multiply
 NWPB  GDE = FDY TGQ + GDE tgq .                CP10  46, 02
 QMPB  GDF = FDC TGQ + GDF tgq .                CP 7  44, 20-21
@@ -384,21 +394,21 @@ BWPD  GEA = EBI TGQ + GEA tgq .                CP 21
 EWPD  GEB = ECB TGQ + GEB tgq .                ''  18
 HWPD  GEC = FDF TGQ + GEC tgq .                ''  11
 KWPD  GED = FDG TGQ + GED tgq .                ''  10
-NWPD  GEE = FDH TGQ + GEE tgq .                ''  7
+NWPD  GEE = FDH TGQ + GEE tgq .                ''  7     052-053, 054 , 100-103 , 130-131 , 114-115
 QWPD  GEF = FDI TGQ + GEF tgq .                ''  5
 
 BJPB  GFA = EEA TGR + GFA tgr .                LM required free cp 2
 EJPB  GFB = FDR TGR + GFB tgr .                ''    ''     ''  cp 4
 HJPB  GFC = FDS TGR + GFC tgr .                Common memory cp4
-KJPB  GFD = EBM TGR + GFD tgr .                4 parcels required ready
+KJPB  GFD = EBM TGR + GFD tgr .                4 parcels required ready,052-053
 NJPB  GFE = FDT TGR + GFE tgr .                Next 2 parcels
 QJPB  GFF = FDU TGR + GFF tgr .                Next parcel
 
 BJPD  GGA = EBA TGR + GGA tgr .                Inst group translations
-EJPD  GGB = EBB TGR + GGB tgr .
-HJPD  GGC = EDK TGR + GGC tgr .                (translations in front
-KJPD  GGD = EBD TGR + GGD tgr .                of boolean book )
-NJPD  GGE = FDE TGR + GGE tgr .
+EJPD  GGB = EBB TGR + GGB tgr .                020-021
+HJPD  GGC = EDK TGR + GGC tgr .                072-073 (translations in front
+KJPD  GGD = EBD TGR + GGD tgr .                          of boolean book )
+NJPD  GGE = FDE TGR + GGE tgr .                052-053,130-131
 QJPD  GGF = EBF TGR + GGF tgr .
 TJPD  GGG = FDQ TGR + GGG tgr .
 WJPD  GGH = FDP TGR + GGH tgr .
@@ -406,39 +416,39 @@ WJPD  GGH = FDP TGR + GGH tgr .
 BXPB  GHA = ECA TGS + GHA tgs .
 EXPa  GHB = EEI TGS + GHB tgs .
 HXPB  GHC = ECC TGS + GHC tgs .
-KXPB  GHD = ECL TGS + GHD tgs .
+KXPB  GHD = ECL TGS + GHD tgs .     114-115
 NXPB  GHE = FDB TGS + GHE tgs .  
 QXPB  GHF = FDA TGS + GHF tgs .
-TXPB  GHG = ECO TGS + GHG tgs .
+TXPB  GHG = ECO TGS + GHG tgs .     036-037
 WXPB  GHH = EEL TGS + GHH tgs .
 
-BXPD  GIA = ECI TGS + GIA tgs .
+BXPD  GIA = ECI TGS + GIA tgs .   034
 EXPD  GIB = EBJ TGS + GIB tgs .
-HXPD  GIC = FEA TGS + GIC tgs .
-KXPD  GID = EBL TGS + GID tgs .
+HXPD  GIC = FEA TGS + GIC tgs .    104-105,106-107
+KXPD  GID = EBL TGS + GID tgs .   054
 NXPD  GIE = ECM TGS + GIE tgs .  
 QXPD  GIF = FDX TGS + GIF tgs .
 TXPD  GIG = EEJ TGS + GIG tgs .
-WXPD  GIH = EDH TGS + GIH tgs .
+WXPD  GIH = EDH TGS + GIH tgs .                 176-177
 
 B4PB  GJA = FDN TGT + GJA tgt .                Instruction group
 E4PB  GJB = FDK TGT + GJB tgt .                xlations
 H4PB  GJC = ECK TGT + GJC tgt .
 K4PB  GJD = FDO TGT + GJD tgt .
-N4PB  GJE = FDV TGT + GJE tgt .
-N4PB  GJF = FDW TGT + GJF tgt .
-T4PB  GJG = EBM TGT + GJG tgt .
-H4PB  GJH = EDP TGT + GJH tgt .
+N4PB  GJE = FDV TGT + GJE tgt .      003-005,040,041,044,045,050,051,054,055,060,061,064,065,070,071,074,075, 064-067       1 or 2 more parcels
+N4PB  GJF = FDW TGT + GJF tgt .        ,,042-043,050-3,064-067
+T4PB  GJG = EBM TGT + GJG tgt .       052-053
+H4PB  GJH = EDP TGT + GJH tgt .       035
 
 B4PD  GKA = EDA TGT + GKA tgt .
-E4PD  GKB = ECJ TGT + GKB tgt .
-H4PD  GKC = EDC TGT + GKC tgt .
+E4PD  GKB = ECJ TGT + GKB tgt .        150-153
+H4PD  GKC = EDC TGT + GKC tgt .        120-123
 KQPD  GKD = EDD TGT + GKD tgt .
 N4PD  GKE = EBI TGT + GKE tgt .
 Q4PD  GKF = EDL TGT + GKF tgt .
 T4PD  GKG = EED TGT + GKG tgt .
 
-AXME  GLA = FAA EAP THA + GLA tha .             Vector O write ref
+AXME  GLA = FAA EAP THA + GLA tha .             Vector 0 write ref
 DXME  GLB = FAB EAP THB + GLB thb .              ''    1
 GXME  GLC = FAC EAP THC + GLC thc .              ''    2
 JXME  GLD = FAD EAP THD + GLD thd .              ''    3
@@ -447,16 +457,16 @@ PXME  GLF = FAF EAP THF + GLF thf .              ''    5
 SXME  GLG = FAG EAP THG + GLG thg .              ''    6
 VXME  GLH = FAH EAP THH + GLH thh .              ''    7
 
-CIPB  gqa = eqa THI + gqa thi .   kO             Inst waiting to issue
+CIPB  gqa = eqa THI + gqa thi .   k0             Inst waiting to issue
 ELPB  gqb = eqb THJ + gqb thj .   k1
 HLPB  gqc = eqc THJ + gqc thj .   k2
-KLPB  gqd = eqd THJ + gqd thj .   jO 
+KLPB  gqd = eqd THJ + gqd thj .   j0
 NLPB  gqe = eqe THK + gqe thk .   j1
 QLPB  gqf = eqf THK + gqf thk .   j2            
-TLPB  gqg = eqg THL + gqg thl .   iO
+TLPB  gqg = eqg THL + gqg thl .   i0
 WLPB  gqh = eqh THL + gqh thl .   i1
 CIPD  gqi = eqi THI + gqi thi .   i2
-ELPD  gqj = eqj THJ + gqj thj .   fO                 
+ELPD  gqj = eqj THJ + gqj thj .   f0                 
 HLPD  gqk = eqk THJ + gqk thj .   f1
 KLPD  gql = eql THJ + gql thj .   f2
 NLPD  gqm = eqm THK + gqm thk .   f3
@@ -471,7 +481,8 @@ LMPB  HAD = TII JCD + HAD qad .
 OMPB  HAE = TII JCE + HAE qae .
 RMPB  HAF = TII JCF + HAF qaf .
 UMPB  HAG = TII JCG + HAG qag .               
-XMPB  HAH = TII JCH + HAH qah .               
+XMPB  HAH = TII JCH + HAH qah .
+
 CMPD  HBA = TIJ JCA + HBA qba .                S register busy
 FMPD  HBB = TIJ JCB + HBB qbb .
 EMPD  HBC = TIJ JCC + HBC qbc .
@@ -480,6 +491,7 @@ OMPD  HBE = TIJ JCE + HBE qbe .
 RMPD  HBF = TIJ JCF + HBF qbf .
 UMPD  HBG = TIJ JCG + HBG qbg .
 XMPD  HBH = TIJ JCH + HBH qbh .
+
 CQPB  HCA = NCA TJA + HCA iea .                V register busy
 FQPB  HCB = NCB TJB + HCB ieb .                 
 IQPB  HCC = NCC TJC + HCC iec .
@@ -488,28 +500,32 @@ OQPB  HCE = NCE TJE + HCE iee .
 RQPB  HCF = NCF TJF + HCF ief .
 UQPB  HCG = NCG TJG + HCG ieg .
 XQPB  HCH = NCH TJH + HCH ieh .
+
 CQPD  HDA = GJA TJA + HDA ija .                Vector loqical busy
 FQPD  HDB = GJB TJB + HDB ijb .                Vector integer busy
 IQPD  HDC = GJC TJC + HDC ijc .                Floating add busy
 LQPD  HDD = GJD TJD + HDD ijd .                Floating multiply busy
+
 OQPD  HDE = KCG .                         A reg path busy
 RQPD  HDF = KFG .
 UQPD  HDG = KGG .
+
 XQPD  HDH = NKU TJH + KIG .
 CRPB  hea = ifd .                         S reg designator
 FRPB  heb = lcg .                         S reg path busy
 IULG  hec = ljg .
 LRPB  hed = lkg .
-ORPB  hee = lng .               
+ORPB  hee = lng .
+
 RRPB  hef = lpg nld + lpg tjf .               
 CRPD  HFA = JFA TJA + JDA jde .                LM busy
 FRPD  HFB = NEB TJB + JDB qhd .                LM busy
-IRXE  HFC = GGC TJC + JDC nec + IJJ + IJK .    CM busy (7O-3)
+IRXE  HFC = GGC TJC + JDC nec + IJJ + IJK .    70-73, CM busy, 
 LRPD  HFD = qca + qee .                        No data rdy/rank C empty
 ORPD  HFE = qee + jaf .                        Rank C empty
 RRPD  HFF = qee .                              Rank C_empty
 URXE  HFG = GIG TJG + IKC + QKB + qka HFG .         Branch or interupt
-XRXE  HFH = GHG TJP + QLA + QLB + QGA + QLC .       Block test
+XRXE  HFH = GHG TJP + QLA + QLB + QGA + QLC .       Block test, issue 036-037,036-037
 
 BKHG  JAA = rai raj rak ral QCB .               Parcel O
 EKHG  JAB = rai raj rak ral QCB .               ''     1
@@ -536,34 +552,40 @@ FWII  JDE = QHG hfb .
 CVII  jfa = nea neb .                      LM required free
 FVII  jfb = nea .
 RUHH  jfd = qia qic qid qie .              Multi parcel
+
 LEII  jga = ggd .                          A reg destination code
-QEII  jgb = gde .
-REII  jgc = gdf .
-UEII  jgd = gdg .          
-XEII  jge = gdh .
+QEII  jgb = gde .                          CP10  46, 02
+REII  jgc = gdf .                          CP 7   44, 20-21
+UEII  jgd = gdg .                          CP 6   24
+XEII  jge = gdh .                          CP 4   26-7, 40-43, 23
+
 CEII  jgf = gee .                          S reg destination code
 FEII  jgg = gef .
 W8II  jgi = GQP .                          f6 = O
 FIJG  JKA = KJA .
 FIJH  JKB = KJB .
 FEJN  JKC = kjc KJG .
-FIJA  JKD = KJC KJG .             
-LIII  JKE = GGA NKH .                      A reg destination code
+FIJA  JKD = KJC KJG .
+
+LIII  JKE = GGA NKH .                      V reg destination code
 OIII  JKF = gga NKH .             
 RIII  JKG = gib NKL .             
 LIIE  JKH = GGF NKT .
 RIIE  JKI = ggf NKT .
+
 IIJG  JLA = LQA .                          Clear S register busy
 IJJH  JLB = LQB .                   
 IIJN  JLC = lqc LQG .               
-IIJA  JLD = LQC LQG .               
-LEIE  JLE = gid ghd NLD .                 S reg destination code
-OETE  JLF = gge NLD .
-REIE  JLG = gid gge NLD .
+IIJA  JLD = LQC LQG .
+
+LEIE  JLE = gid ghd NLD .                 S reg destination code 054,114-115
+OETE  JLF = gge NLD .                      052,053,130,131
+REIE  JLG = gid gge NLD .                  054,052,053,130,131
+
 LUHG  jma = gdb gfc gdd gie .                 VI,CM,FM,SL
 OUHG  jmb = gfb gfc gda gie .                 LM,CM,VL,SL
 RUHG  jmc = gdc gdd gda gie .                 FA,FM,VL,SL
-LIIG  JMD = gqk gqj .                      f = xxO,xxQ
+LIIG  JMD = gqk gqj .                      f = xxO,xx4
 OIEG  JME = GQK GQJ .                      f = xx3,xx7
 RIIG  JMF = GQK .                          f = xx2,xx3,xx6,xx7
 
@@ -575,6 +597,7 @@ XIII  JOB = GQK .                         f2
 LVII  joc = gql .                         f2
 
 LVIE  jpa = ndd nde ndf .                 Functional unit select
+
 CVIG  JWA = qga .                         Block advance queue
 FVIG  JWB = qga .     
 IVIG  JWC = qga .
@@ -599,31 +622,36 @@ ICLG  KBC = KAC .
 LCLG  KBD = KAD .
 RCLG  KBF = KAF .
 UCLG  KBG = KAG .
+
 CCLH  KCA = KBA .                         2nd delay
 FCLH  KCB = KBB .
 ICLH  KCC = KBC .
 LCLH  KCD = KBD .
 RCLH  KCF = KBF .               
-UCLH  KCG = KBG .                        
+UCLH  KCG = KBG .
+
 CCLN  KDA = KCA .                         3rd delay
 FCLN  KDB = KCB .
 ICLN  KDC = KCC .
 LCLN  KDD = KCD .
 RCLN  KDF = KCF .
 UCLN  KDG = KCG .
+
 CCLA  KEA = KDA .                         4th delay
 FCLA  KEB = KDB .
 TCLA  KEC = KDC .
 LCLA  KED = KDD .
 RCLA  KEF = KDF .
 UCLA  KEG = KDG .
-CFPD  KFA = NKE TIE + KEA .  iO                Entry for O2 and 46
+
+CFPD  KFA = NKE TIE + KEA .  iO                Entry for 02 and 46
 FFPD  KFB = NKF TIE + KEB .  i1
 IFPD  KFC = NKG TIE + KEC .  i2
 LFPD  KFD = JKE TIE + KED .
 OFPD  KFE = JKF TIE .
 RFPD  KFF = JKE TIE + KEF .
 UFPD  KFG = NKH TIE + KEG .
+
 CLLG  KGA = KFA .                          6th delay
 FLLG  KGB = KFB .
 ILLG  KGC = KFC .
@@ -631,6 +659,7 @@ LLLG  KGD = KFD .
 OLLG  KGE = KFE .
 RLLG  KGF = KFF .
 ULLG  KGG = KFG .
+
 CLLH  KHA = KGA .                         7th delay
 FLLH  KHB = KGB .
 ILLH  KHC = KGC .
@@ -638,6 +667,7 @@ LLLH  KHD = KGD .
 OLLH  KHE = KGE .
 RLLH  KHF = KGF .
 ULLH  KHG = KGG .
+
 CJPB  KIA = NKI TIF + KHA .  iO             Entry for 20-1,44
 FJPB  KIB = NKJ TIF + KHB .  i1
 IJPB  KIC = NKK TIF + KHC .  i2
@@ -645,6 +675,7 @@ LJPB  KID = KHD .
 OJPB  KIE = NKL TIF + KHE .
 RJPB  KIF = JKG TIF + KHF .
 UJPB  KIG = NKL TIF + KHG .
+
 CJPD  KJA = NKM TIF + KIA .  iO              Entry for 24
 FJPD  KJB = NKN TIF + KIB .  i1
 IJPD  KJC = NKO TIF + KIC .  i2
@@ -652,12 +683,14 @@ LJPD  KJD = KID + NKP TEF .
 OJPD  KJE = NKP TIF + KIE .
 RJPD  KJF = KIF .
 UJPD  KJG = NKP TIF + KIG .
-CLLN  KKA = KJA .                         1Oth delay
+
+CLLN  KKA = KJA .                            1Oth delay
 FLLN  KKB = KJB .
 ILLN  KKC = KJC .
 LLLN  KKD = KJD .
 OLLN  KKE = KJE .
 RLLN  KKF = KJF .
+
 CKPB  KLA = NKQ TJI + KKA .  iO                Entry for 25-7
 FKPB  KLB = NKR TJJ + KKB .  i1
 IKPB  KLC = NKS TJK + KKC .  i2
@@ -668,17 +701,21 @@ RKPB. KLF = JKI TJN + KKF .
 C8LA  LAA = IFA .  iO                       Storage destination tag from
 F8LA  LAB = IFB .  il                       TD to S register for
 T8LA  LAC = IFC .  i2                       CM read refererence
-C6LG  LBA = LAA .                         lst delay
+
+C6LG  LBA = LAA .                         1st delay
 F6LG  LBB = LAB .
 I6LG  LBC = LAC .
+
 U6LG  lbg = hea .                         2(3) store destination tag TD
-B7PB  LCA = TIA NIA + LBA LBG .  iO              Entry for 132-133
+
+B7PB  LCA = TIA NIA + LBA LBG .  i0             Entry for 132-133
 E7PB  LCB = TIA NIB + LBB LBG .  i1
 H7PB  LCC = TIA NIC + LBC LBG .  i2
-KJPB  LCD = TEA + LBG .
+KJPB  LCD = TIA + LBG .
 N7PB  LCE = LBG .
 Q7PB  LCF = TIA .
 T7PB  LCG = TIA + LBG .
+
 C6LH  LDA = LCA .                         3rd delay
 F6LH  LDB = LCB .
 I6LH  LDC = LCC .
@@ -686,13 +723,15 @@ L6LH  LDD = LCD .
 O6LH  LDE = LCE .
 R6LH  LDF = LCF .
 U6LH  LDG = LCG .
+
 C6LN  LEA = LDA .                         4th delay
 F6LN  LEB = LDB .
 I6LN  LEC = LDC .
 L6LN  LED = LDD .
 O6LN  LEE = LDE .
 R6LN  LEF = LDF .
-U6LN  LEG = LDG .  
+U6LN  LEG = LDG .
+
 B7PD  LFA = TIB NIA + LEA .  iO                Entry for 120-127
 E7PD  LFB = TIB NIB + LEB .  i1
 H7PD  LFC = TIB NIC + LEC .  i2
@@ -724,6 +763,7 @@ L7LH  LID = LHD .
 O7LH  LIE = LHE .                      
 R7LH  LIF = LHF .
 U7LH  LIG = LHG .
+
 C7LN  LJA = LIA .                          9th delay
 F7LN  LJB = LIB .
 I7LN  LJC = LIC .
@@ -731,6 +771,7 @@ L7LN  LJD = LID .
 O7LN  LJE = LIE .               
 R7LN  LJF = LIF .
 U7LN  LJG = LIG .
+
 C7LA  LKA = LJA .                          1Oth delay
 F7LA  LKB = LJB .
 f7LA  LKC = LJC .
@@ -738,6 +779,7 @@ L7LA  LKD = LJD .
 O7LA  LKE = LJE .
 R7LA  LKF = LJF .
 U7LA  LKG = LJG .
+
 C8LG  LLA = LKA .                          11th delay
 F8LG  LLB = LKB .       
 I8LG  LLC = LKC .
@@ -745,15 +787,17 @@ L8LG  LLD = LKD .
 O8LG  LLE = LKE .
 R8LG  LLF = LKF .
 U8LG  LLG = LKG .
-B8PB  LMA = TIC NIA + LLA .  iO                Entry for 1O6-7_
-E8PB  LMB = TIC NIB + LLB .  i1
-H8PB  LMC = TIC NEC + LLC .  i2
+
+B8PB  LMA = TIC NIA + LLA .  iO                Entry for 106-7
+E8PB  LMB = TIC NIB + LLB .  i1                Pop,LZ inst
+H8PB  LMC = TIC NIC + LLC .  i2
 K8PB  LMD = TIC + LLD .
 N8PB  LME = TIC + LLE .
 Q8PB  LMF = TIC + LLF .
 T8PB  LMG = TIC + LLG .
+
 B8PD  LNA = TID NIA + LMA .  iO                Entry for
-E8PD  LNB = TID NIB + LMB .  i1                56,1O4-5,11O-3
+E8PD  LNB = TID NIB + LMB .  i1                56,104-5,110-3
 H8PD  LNC = TID NIC + LMC .  i2
 K8PD  LND = LMD + TID nee .
 N8PD  LNE = TID + LME .  
@@ -776,36 +820,40 @@ O8LN  LPE = LOE .
 R8LN  LPF = LOF .
 U8LN  LPG = LOG .                            
 
-CGPB  LQA = NLA TJI + LPA .  iO            Entry for 53-4
-FGPB  LQB = NLB TJJ + LPB .  il                114-15,13O-1
+CGPB  LQA = NLA TJI + LPA .  i0           Entry for 053-054
+FGPB  LQB = NLB TJJ + LPB .  i1                114-15,13O-1
 IGPB  LQC = NLC TJK + LPC .  i2               
 LGPB  LQD = JLE TJL + LPD .
 OGPB  LQE = JLF TJM + LPE .
 RGPB  LQF = JLG TJM + LPF .
 UGPB  LQG = NLD TJO + LPG .
+
 CGPD  LRA = LQA .                          17th delay
 FGPD  LRB = LQB .
 IGPD  LRC = LQC .
 LGPD  LRD = LQD .
 OGPD  LRE = LQE .
-RGPD  LRF = LQF .                          
-CKPD  LSA = NLE TJI + LRA .  iO                Entry for
-FKPD  LSB = NLF TJJ + LRB .  il                5O-2,116-7
+RGPD  LRF = LQF .
+
+CKPD  LSA = NLE TJI + LRA .  i0                Entry for
+FKPD  LSB = NLF TJJ + LRB .  i1                50-2,116-7
 IXPD  LSC = NLG TJK + LRC .  i2
 LKPD  LSD = NLH TJL + LRD .
 OKPD  LSE = LRE .                                  
 RKPD  LSF = LRF .
 
+             A Reg     S Reg     V Reg               S Path   Required
 BRCF  MAA = GAA HAA + GBA HBA + GCA HCA + GDA HDA + GEA HEA + GFA HFA .
 ERCF  MAB = GAB HAB + GBB HBB + GCB HCB + GDB HDB + GEB HEB + GFB HFB .
 HRCF  MAC = GAC HAC + GBC HBC + GCC HCC + GDC HDC + GEC HEC + GFC HFC .
-KRCF  MAD = GAD HAD + GBD HBD + GCD HCD + GDD HDD + GED HED + GFD HFC .
+KRCF  MAD = GAD HAD + GBD HBD + GCD HCD + GDD HDD + GED HED + GFD HFD .
 NRCF  MAE = GAE HAE + GBE HBE + GCE HCE + GDE HDE + GEE HEE + GFE HFE .
 QRCF  MAF = GAF HAF + GBF HBF + GCF HCF + GDF HDF + GEF HEF + GFF HFF .
 TRCF  MAG = GAG HAG + GBG HBG + GCG HCG + GDG HDG + HFG .
 WRCF  MAH = GAH HAH + GBH HBH + GCH HCH + GDH HDH + HFH .
+
 BNCF  MBA = GAA HAA + GBA HBA + GCA HCA + GDA HDA + GEA HEA + GFA HFA .
-ENCF  MBB = GAB HAB + GBB HBB + GCB HCB + GDB HDB + GEB HEB + GFB HFE .
+ENCF  MBB = GAB HAB + GBB HBB + GCB HCB + GDB HDB + GEB HEB + GFB HFB .
 HNCF  MBC = GAC HAC + GBC HBC + GCC HCC + GDC HDC + GEC HEC + GFC HFC .
 KNCF  MBD = GAD HAD + GBD HBD + GCD HCD + GDD HDD + GED HED + GFD HFD .
 NMCF  MBE = GAE HAE + GBE HBE + GCE HCE + GDE HDE + GEE HEE + GFE HFE .
@@ -814,9 +862,10 @@ TNCF  MBG = GAG HAG + GBG HBG + GCG HCG + GDG HDG + HFG .
 WNCF  MBH = GAH HAH + GBH HBH + GCH HCH + GDH HDH + HFH .
 
 C1LG  naa = gea .                         132-33
-F1LG  nab = geb .                         12O-7
-I1LG  nac = gec .                         1O6-7
-LlLG  nad = ged .                         56,1O4-5,11O-3
+F1LG  nab = geb .                         120-7
+I1LG  nac = gec .                         106-7
+LlLG  nad = ged .                         56,104-5,110-3
+
 C1LN  nca = gca .                        V reg access
 F1LN  ncb = gcb .                            request delay
 I1LN  ncc = gcc .
@@ -825,22 +874,26 @@ OlLN  nce = gce .
 R1LN  ncf = gcf .
 U1LN  ncg = gcg .
 X1LN  nch = gch .
+
 CJME  nda = gqg GGG + gqa ggg .           i or k designators
 FJME  ndb = gqh GGG + gqb ggg .
 IJME  ndc = gqi GGG + gqc ggg .
+
 LlLA  ndd = jma .                         Functional unit
 O1LA  nde = jmb .                         selection
 RlLA  ndf = jmc .                        
-LJME  ndg = jmd jme JNA + nia jna .  iO           Scalar logica
+LJME  ndg = jmd jme JNA + nia jna .  iO           Scalar logical
 OJME  ndh = JMD JNA + nib jna .      i1           for VR source
 RJME  ndi = jmf JNA + nic jna .      i2
 C1LA  ndj = gqd .                         j designator
 F1LA  ndk = gqe .
 I1LA  ndl = gqf .
+
 C2LG  nea = gfa .                         LM required free cp 2
 F2LG  neb = gfb .                          ''    ''   "    cp 4
 I2LG  nec = ijj qmd .                     CM busy or deadstart
 XlLG  nee = jgi  .                         f6 = O
+
 C1LH  nia = gqg .                          i designator
 F1LH  nib = gqh .
 EULA  nic = gqi  .
@@ -849,30 +902,36 @@ LALG  NKA = GQG JGA .                       Enter A register
 LALH  NKB = GQH JGA .                       with integer
 LALN  NKC = GQI JGA .                       22-3
 LALA  NKD = JGA .
+
 OALG  NKE = GQG JGB .                       A reg entry in CP 10
 OALH  NKF = GQH JGB .                       46,O2
 OALN  NKG = GQI JGB .
 OALA  NKH = JGB .
+
 RALG  NKI = GQG JGC .                       A reg entry in CP 7
-RALH  NKJ = GQH JGC .                       2O-l,44
+RALH  NKJ = GQH JGC .                       2O-1,44
 RALN  NKK = GQI JGC .
 RALA  NKL = JGC .
+
 UALG  NKM = GQG JGD .                       A reg entry in CP 6
 UALH  NKN = GQH JGD .                       24
 UALN  NKO = GQI JGD .
 UALA  NKP = JGD .
+
 XALG  NKQ = GQG JGE .                       A reg entry in CP 4
 XALH  NKR = GQH JGE .                       25-7,4O-3
 XALN  NKS = GQI JGE .
 XALA  NKT = JGE .
+
 TTLH  nku = jgd .                           A reg entry in CP 6 for 24
+
 CALG  NLA = GQG JGF .                       S reg entry in CP 7
-CALH  NLB = GQH JGF .                       53,54,1OO-3,l14-115
+CALH  NLB = GQH JGF .                       53,54,100-3,114-115
 CALN  NLC = GQI JGF .                       13O-1
 CALA  NLD = JGF .
 
 FALG  NLE = GQG JGG .                       S reg entry in CP 5
-FALH  NLF = GQH JGG .                       5O-2,116-7
+FALH  NLF = GQH JGG .                       050-2,116-7
 FALN  NLG = GQI JGG .
 FALA  NLH = JGG .
 
@@ -966,6 +1025,7 @@ IOPB  OGC = GQC TJK + NDL QGD .
 COPD  OHA = GQD TJI + NDA JXA .                VR source code
 FOPD  OHB = GQE TJJ + NDB JXA .                (to VR's via AM)
 IOPD  OHC = GQF TJK + NDC JXA .    
+
 LOPD  OHD = NDD TJL + NDG QGC .
 OOPD  OHE = NDE TJM + NDH QGC .
 ROPD  OHF = NDF TJN + NDI QGC .
@@ -1003,39 +1063,39 @@ CXLH  OOD = GQD .
 FPLH  OOE = GQE .
 IXLH  OOF = GQF .
 
-ISPB  opa = gic + tjc .                   1O4-7  Scalar Integer Control
+ISPB  opa = gic + tjc .                   104-7  Scalar Integer Control to ga
 U4LG  OPB = JOA .                         fO
 XQLG  OPC = JOB .                         f1
-C4LN  opd = gqa .                         kO
+C4LN  OPD = GQA .                         kO
 
-ISPD  oqa = ghc + tjc .                   11O-3 Scalar Shift Control
-UQLH  OQB = JOA .                         fO
+ISPD  oqa = ghc + tjc .                   110-3 Scalar Shift Control to gb
+UQLH  OQB = JOA .                         f0
 X4LH  OQC = JOB .                         f1
 
-FSPB  ora = ghb + tjb .                   16O-3  Vector Add Control VA
+FSPB  ora = ghb + tjb .                   160-3  Vector Add Control VA
 U4LN  ORB = JOA .                         fO
 X4LN  ORC = JOB .                         f1
 UTPD  ORD = GIH TJG .                     176-7
 
-FSPD  osa = gkb + tjb .                   15O-3  Vector Shift/Pop Count
-U4LA  OSB = JOA .                         fO
+FSPD  osa = gkb + tjb .                   150-3  Vector Shift/Pop Count
+U4LA  OSB = JOA .                         f0
 X4LA  OSC = JOB .                         f1
 LTPD  OSD = GHH TJD .                     164-5
-C4LA  ose = gqa .                         kO
+C4LA  OSE = GQA .                         k0
 
 CSPB  ota = gha + tja .                   30-33  Vector Mask /Rtc Vector Logic
 CSPD  otb = gia + tja .                   34
 LSPD  OTC = GHD TJD .                     114-5
-CNPB  otd = gka + tji  .                  14O-7
+CNPB  otd = gka + tji  .                  140-7
 
-U3LG  OTE = JOA .                         fO
+U3LG  OTE = JOA .                         f0
 X3LG  OTF = JOB .                         f1
 LXLN  OTG = JOC .                         f2
 
-INPB  oua = gjc + tjk .                    17O-5    Floating Add Control
-INPD  oub = gkc + tjk .                    12O-3
+INPB  oua = gjc + tjk .                    170-5    Floating Add Control
+INPD  oub = gkc + tjk .                    120-3
 
-U3LH  OUC = JOA .                          fO
+U3LH  OUC = JOA .                          f0
 X3LH  OUD = JOB .                          f1
 LXLA  OUE = JOC .                          f2
 
@@ -1046,7 +1106,7 @@ OOPB  OVB = GKE TJM .                      132-3  Scalar Recip Approx
 ROPB  OVC = GKF TJN .                      154-7  Vect Fl. Mult/Recip Iteration
 UOPB  OVD = GKG TJO .                      166-7  Vector Recip Approx
 
-U3LN  OVE = JOA .                          fO
+U3LN  OVE = JOA .                          f0
 X3LN  OVF = JOB .                          f1
 
             To Indicator Lights
@@ -1057,6 +1117,7 @@ IDLA  OWC = GQC .                          k2
 CPLG  OWD = GQD .                          jO
 FPLN  OWE = GQE .                          i1
 IPLG  OWF = GQF .                          j2
+
 C4LH  owg = gqg .                          iO
 FQLG  owh = gqh .                          i1
 IQLG  owi = gqi .                          i2
@@ -1085,100 +1146,135 @@ F2LH  oza = hfb .                            local memory control
 
               Latched dibit translations from selected parcel
 
-ADME  PAA = bbh bbg TCI + PAA tci  .             Rank C dibit ;
-ADMF  PAB = bbh bbg TCI + PAA tci  .
-ADMI  PAC = bbh bbg TCI + PAA tci  .             OOO-O37
-MDME  PAD = bbh bbg TCM + PAD tcm .
-MDMF  PAE = bbh bbg TCM + PAD tcm .
-MDMI  PAF = bbh bbg TCM + PAD tcm .
-MHME  PAG = bch bcg TCM + PAG tcm .
-MHMF  PAH = bch bcg TCM + PAG tcm .
-DDME  PBA = bbh BBG TCJ + PBA tcj .               O4O-O77
+ADME  PAA = bbh bbg TCI + PAA tci .             Rank C dibit ; 000-037
+ADMF  PAB = bbh bbg TCI + PAA tci .              0 0xx xxx
+ADMI  PAC = bbh bbg TCI + PAA tci .              
+
+MDME  PAD = bbh bbg TCM + PAD tcm .              copy
+MDMF  PAE = bbh bbg TCM + PAD tcm .             
+MDMI  PAF = bbh bbg TCM + PAD tcm .              
+
+MHME  PAG = bch bcg TCM + PAG tcm .              copy
+MHMF  PAH = bch bcg TCM + PAG tcm .    
+          
+DDME  PBA = bbh BBG TCJ + PBA tcj .              0 1xx xxx
 DDMF  PBB = bbh BBG TCJ + PBA tcj .
 DDMI  PBC = bbh BBG TCJ + PBA tcj .
-PDME  PBD = bbh BBG TCN + PBD tcn .
+
+PDME  PBD = bbh BBG TCN + PBD tcn .              copy
 PDMF  PBE = bbh BBG TCN + PBD tcn .
 PDMI  PBF = bbh BBG TCN + PBD tcn .
-PHME  PBG = bch BCG TCN + PBG tcn .
+
+PHME  PBG = bch BCG TCN + PBG tcn .              copy
 PHMF  PBH = bch BCG TCN + PBG tcn .
-GDME  PCA = BBH bbg TCK + PCA tck .               1OO-137
+
+GDME  PCA = BBH bbg TCK + PCA tck .              1 0xx xxx
 GDMF  PCB = BBH bbg TCK + PCA tck .
 GDMI  PCC = BBH bbg TCK + PCA tck .
-SDME  PCD = BBH bbg TCO + PCD tco .
+
+SDME  PCD = BBH bbg TCO + PCD tco .              copy
 SDMF  PCE = BBH bbg TCO + PCD tco .
 SDMI  PCF = BBH bbg TCO + PCD tco .
-JDME  PDA = BBH BBG TCL + PDA tcl .              14O-177
+
+JDME  PDA = BBH BBG TCL + PDA tcl .              1 1xx xxx
 JDMF  PDB = BBH BBG TCL + PDA tcl .
 JDMI  PDC = BBH BBG TCL + PDA tcl .
-VDME  PDD = BBH BBG TCP + PDD tcp .
+
+VDME  PDD = BBH BBG TCP + PDD tcp .              copy
 VDMF  PDE = BBH BBG TCP + PDD tcp .
 VDMI  PDF = BBH BBG TCP + PDD tcp .
-VHME  PDG = BCH BCG TCP + PDG tcp .
+
+VHME  PDG = BCH BCG TCP + PDG tcp .              copy
 VHMF  PDH = BCH BCG TCP + PDG tcp .
-ACME  PEA = bbf bbe TCI + PEA tci .             XOX-X4X
+
+ACME  PEA = bbf bbe TCI + PEA tci .              x x00 xxx
 ACMF  PEB = bbf bbe TCI + PEA tci .   
 ACMI  PEC = bbf bbe TCI + PEA tci .
-AHME  PED = bcf bce TCI + PED tci .            
+
+AHME  PED = bcf bce TCI + PED tci .              copy
 AHMF  PEE = bcf bce TCI + PED tci .
+
 MCME  PEF = bbf bbe TCM + PEF tcm .
-DCME  PFA = bbf BBE TCJ + PFA tcj .             X1X-X5X
+
+DCME  PFA = bbf BBE TCJ + PFA tcj .              x x01 xxx
 DCMF  PFB = bbf BBE TCJ + PFA tcj .
-DCMI  PFC = bbf BBE TCJ + PFA tcj .            
-DHME  PFD = bcf BCE TCJ + PFD tcj .
+DCMI  PFC = bbf BBE TCJ + PFA tcj .    
+        
+DHME  PFD = bcf BCE TCJ + PFD tcj .             copy
 DHMF  PFE = bcf BCE TCJ + PFD tcj .
-PCME  PFF = bbf BBE TCN + PFF tcn .
+
+PCME  PFF = bbf BBE TCN + PFF tcn .             copy
 PCMF  PFG = bbf BBE TCN + PFF tcn .
 PCMI  PFH = bbf BBE TCN + PFF tcn .
-GCME  PGA = BBF bbe TCK + PGA tck .             X2X-X6X
+
+GCME  PGA = BBF bbe TCK + PGA tck .             x x10 xxx
 GCMF  PGB = BBF bbe TCK + PGA tck .
 GCMI  PGC = BBF bbe TCK + PGA tck .                
+
 GHME  PGD = BCF bce TCK + PGD tck .
 GHMF  PGE = BCF bce TCK + PGD tck .
+
 SCME  PGF = BBF bbe TCO + PGF tco .
 SCMF  PGG = BBF bbe TCO + PGF tco .
-JCME  PHA = BBF BBE TCL + PHA tcl .             X3X-X7X
+
+JCME  PHA = BBF BBE TCL + PHA tcl .             x x11 xxx
 JCMF  PHB = BBF BBE TCL + PHA tcl .
 JCMI  PHC = BBF BBE TCL + PHA tcl .               
+
 JHME  PHD = BCF BCE TCL + PHD tcl .
 JHMF  PHE = BCF BCE TCL + PHD tcl .
+
 VCME  PHF = BBF BBE TCP + PHF tcp .
 VCMF  PHG = BBF BBE TCP + PHF tcp .
 VCMI  PHH = BBF BBE TCP + PHF tcp .
-ABME  PIA = bbd bbc TCQ + PIA tcq .             XXO-XX1
+
+ABME  PIA = bbd bbc TCQ + PIA tcq .             X xxx 00x
 ABMF  PIB = bbd bbc TCQ + PIA tcq .
 ABMI  PIC = bbd bbc TCQ + PIA tcq .
+
 MBME  PID = bcd bcc TCU + PID tcu .
 MBMF  PIE = bcd bcc TCU + PID tcu .
-DBME  PJA = bbd BAC TCR + PJA tcr .             XX2-XX3
+
+DBME  PJA = bbd BAC TCR + PJA tcr .             x xxx 01x
 DBMI  PJC = bbd BAC TCR + PJA tcr .
 PBME  PJD = bcd BBC TCV + PJD tcv .
+
 PBMF  PJE = bcd BBC TCV + PJD tcv .
 PBMI  PJF = bcd BBC TCV + PJD tcv .
-GBME  PKA = BBD bbc TCS + PKA tcs .             XX4-XX5
+
+GBME  PKA = BBD bbc TCS + PKA tcs .             x xxx 10x
 GBMF  PKB = BBD bbc TCS + PKA tcs .
 GBMI  PKC = BBD bbc TCS + PKA tcs .
+
 SBME  PKD = BCD bcc TCW + PKD tcw .
 SBMF  PKE = BCD bcc TCW + PKD tcw .
 SBMI  PKF = BCD bcc TCW + PKD tcw .
-JBME  PLA = BBD BAC TCT + PLA tct .             XX6-XX7
+
+JBME  PLA = BBD BAC TCT + PLA tct .             x xxx 11x
 JBMF  PLB = BBD BAC TCT + PLA tct .
 JBMI  PLC = BBD BAC TCT + PLA tct .
+
 VBME  PLD = BCD BBC TCX + PLD tcx .
 VBMF  PLE = BCD BBC TCX + PLD tcx .
 VBMI  PLF = BCD BBC TCX + PLD tcx .
-SAME  PMA = BBB TCW + PMA tcw .               XX1,XX3,XX5,X
+
+SAME  PMA = BBB TCW + PMA tcw .                x xxx xx1
 SAMF  PMB = BBB TCW + PMA tcw .
 SAME  PMC = BBB TCW + PMA tcw .
+
 VAME  PMD = BBB TCX + PMD tcx .             
 VAMF  PME = BBB TCX + PMD tcx .
-VAMI  PMF = BBB TCX + PMD tcx .             
-MAME  PNA = BAD TCU + PNA tcu .                XX4,XX5,XX6,XX7
+VAMI  PMF = BBB TCX + PMD tcx .     
+        
+MAME  PNA = BAD TCU + PNA tcu .                x xxx 1xx
 MAMF  PNB = BAD TCU + PNA tcu .
 MAMI  PNC = BAD TCU + PNA tcu .
+
 PAME  PND = BAD TCV + PND tcv .
 PAMF  PNE = BAD TCV + PND tcv .
 PAMI  PNF = BAD TCV + PND tcv .
-GAME  POA = BAF TCS + POA tcs .                XX2,XX3,XX6,XX7
+
+GAME  POA = BAF TCS + POA tcs .                x xxx x1x
 GAMF  POB = BAF TCS + POA tcs .               
 GAMI  POC = BAF TCS + POA tcs .               
 JAME  POD = BAF TCT + POD tct .               
@@ -1193,6 +1289,7 @@ OBPB  qae = jkd qma + JKB qmb + JKA qmc .
 RBPB  qaf = jkd qma + JKB qmb + jka qmc .
 UBPB  qag = jkd qma + jkb qmb + JKA qmc .
 XBPB  qah = jkd qma + jkb qmb + jka qmc .
+
 CBPD  qba = jlc qma + JLB qmb + JLA qmc .          Clear S reg busy
 FBPD  qbb = jlc qma + JLB qmb + jla qmc .
 IBPD  qbc = jlc qma + jlb qmb + JLA qmc .
@@ -1255,6 +1352,8 @@ XCLH  QMB = IKQ .
 XCLN  QMC = IKQ .
 XCLA  QMD = IKQ .
 
+                       Branch    Advance
+
 BIME  RAA = JAE jbe + QDA JBE + JBA tca .  O       Parcel pointers
 EIME  RAB = JBA TCB + QDB JBE + JBB tcb .  1
 HIME  RAC = JBB TCC + QDC JBE + JBC tcc .  2
@@ -1288,10 +1387,12 @@ WIMI  RAX = JBC TCH + QDD JBE + JBD tch .
 BMBI  TCA = wac wbc + qeb + qfc .              Enter Rank C
 EMBI  TCB = wac wbc + qeb + qfc .
 HMBT  TCC = wac wbc + qeb + qfc .              advance queue or
+
 KMBI  TCD = wad wbd + qec + qfd .              rank C empty 
 NMBI  TCE = wad wbd + qec + qfe .              rank E empty
 QMBI  TCF = wad wbd + qec + qfe .             
-TMBI  TCG = wae wbe + qed + qff .             
+
+TMBI  TCG = wae wbe + qed + qff .               
 WMBI  TCH = wae wbe + qed + qff .
 BMBF  TCI = wac wbc + qeb + qfc .
 EMBF  TCJ = wac wbc + qeb + qfc .
@@ -1314,10 +1415,10 @@ APBF  tea = WAA QFB + WBA QFC .               Enter Rank E
 DPBF  teb = WAA QFB + WBA QFC .
 GPBF  tec = WAC QFB + WBC QFC .               advance queue
 JPBF  ted = WAC QFB + WBC QFF .               rank E empty
-MPBF  tee = HAE QFD + WBE QFE .
+MPBF  tee = WAE QFD + WBE QFE .
 PPBF  tef = WAE QFD + WBE QFE .        
 SPBF  teg = WAG QFD + WBG QFE .           
-VPBF  teh = MAG QFD + WBG QFE .
+VPBF  teh = WAG QFD + WBG QFE .
 APBE  tei = WAA QFB + WBA QFC .
 DPBE  tej = WAA QFB + WBA QFC .
 GPBE  tek = WAC QFB + WBC QFC .
@@ -1328,19 +1429,24 @@ SPBE  teo = WAG QFD + WBG QFE .
 VPBE  tep = WAG QFD + WBG QFE .
 APBI  teq = WAA QFB + WBA QFC .
 GPBI  tes = WAC QFB + WBC QFC .
-BQHH  TGA = waa wba eaa .                    Enter Rank G
+
+BQHH  TGA = waa wba eaa .                    Enter Rank G         A Reg
 EQHG  TGB = waa wba eab .                    advance queue
 HQHG  TGC = wab wbb eac eak .
-KQHG  TGD = wab wbb ead .
+
+KQHG  TGD = wab wbb ead .                    S Reg
 NQHG  TGE = wag wbg eae eam .
 QQHG  TGF = wag wbg eaf .
-TQHG  TGG = wah wbh eag .
+
+TQHG  TGG = wah wbh eag .                    V Reg
 WQHG  TGH = wah wbh eah .
-BQHG  TGI = waa wba eai  .
+BQHG  TGI = waa wba eai .
+
 BTHG  TGQ = waf wbf .
 ETHG  TGR = waf wbf .
 HTHG  TGS = waf wbf .
 KTHG  TGT = waf wbf .
+
 ATBE  tha = WAB + WBB .                     Enter Rank G
 ATBF  thb = WAB + WBB .                     advance queue
 DTBE  thc = WAB + WBB .
@@ -1354,6 +1460,7 @@ DTBI  thj = WAB + WBB .
 STBI  thk = WAH + WBH .
 VTBI  thl = WAH + WBH .
 XUBI  thm = WAF + WBF .           
+
 BTHH  TIA = wca wda NAA .                   132,133
 ETHH  TIB = wca wda NAB .                   120-127
 HTNH  TIC = wca wda NAC .                   106-107
@@ -1362,7 +1469,8 @@ NTHH  TIE = wcb wdb .
 QTHH  TIF = wcb wdb .
 NTHG  TII = wcc wdc GHE .                   02,20-24,44,6
 QTHG  TIJ = wcc wdc GHF .                   53,4,6,60,2,4,6,100-115,120-33
-BPBI  tja = WCA + WDA .          
+
+BPBI  tja = WCA + WDA .                   issue clocks
 EPBI  tjb = WCA + WDA .          
 HPBI  tjc = WCA + WDA .
 KPBI  tjd = WCB + WDB .                           
@@ -1372,6 +1480,7 @@ TPBI  tjg = WCC + WDC .
 HPBI  tjh = WCC + WDC .
 BPBF  tji = WCA + WDA .
 EPBF  tjj = WCA + WDA .
+
 HPBF  tjk = WCA + WDA .
 KPBF  tjl = WCB + WDB .     
 NPBF  tjm = WCB + WDB .
@@ -1388,7 +1497,7 @@ BSXF  WAB = MAA JWA + MAB JWA + MAC JWA + MAD JWA + TJQ .      queue
 ESXE  WAC = MAA JWB + MAB JWB + MAC JWB + MAD JWB + TJR .
 ESXF  WAD = MAA JWB + MAB JWB + MAC JWB + MAD JWB + TJR .
 HSXE  WAE = MAA JWC + MAB JWC + MAC JWC + MAD JWC + TJS .
-HSXF  WAF = MAA JMC + MAB JWC + MAC JWC + MAD JWC + TJS .
+HSXF  WAF = MAA JWC + MAB JWC + MAC JWC + MAD JWC + TJS .
 KSXE  WAG = MAA JWD + MAB JWD + MAC JWD + MAD JWD + TJT .
 KSXF  WAH = MAA JWD + MAB JWD + MAC JWD + MAD JWD + TJT .
 
