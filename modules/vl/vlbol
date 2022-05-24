@@ -366,10 +366,10 @@
 ---  DDO = IHO .
 ---  DDP = IHP .
 
----  JCA = qsg qtg .             030 Instruction
----  JCB = QSG qtg .             031 Instruction
----  JCC = qsg QTG .             032 Intrruction
----  JCD = QSG QTG .             033 Instruction
+---  JCA = qsg qtg QAG .             030 Instruction
+---  JCB = QSG qtg QAG .             031 Instruction
+---  JCC = qsg QTG QAG .             032 Intrruction
+---  JCD = QSG QTG QAG .             033 Instruction
 
 ---  JFA = pea PEB PEC PED .              Bits 1,2,3 of real time cntr set
 ---  JFB = PEE PEF PEG PEH .             4-7
@@ -963,11 +963,13 @@
 ---  QCD = QCC .
 
 ---  QDA = IIC .                  Enter Si from M or RTC
+
 ---  QDB = QDA .
 ---  QDC = qsb QDB .              114 Instruction
 ---  QDD = QSB QDB .              115 Instruction
 
 ---  QFA = IID .                  Go Vector 140-147 from JA
+
 ---  QFB = QFA .
 ---  QFC = QFB .
 
@@ -1015,7 +1017,7 @@
 ---  QSE = QSD .
 
 ---  QSF = QSF QAE + QSE QBE .
----  QSG = QSG .
+---  QSG = QSF .
 
 ---  QTA = IIF .                 F Field bit 1 From JA
 ---  QTB = QTA .
