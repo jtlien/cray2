@@ -16,7 +16,7 @@
 ---  EAC = PBA .
 ---  EAD = PBA .
 
----  EAE = PBB .                            Bank l
+---  EAE = PBB .                            Bank 1
 ---  EAF = PBB .
 ---  EAG = PBB .
 ---  EAH = PBB .
@@ -32,7 +32,7 @@
 ---  EAP = PBD .
 
 ---  eaq = pbb pbd .  2(O)                  Bank select
----  ear = pbc pbd .  2(l)
+---  ear = pbc pbd .  2(1)
 
                        Vector 1
 ---  ECA = PDA .                            Bank 0
@@ -439,7 +439,7 @@
 ---  KAE = LBB + LBC + LBD .
 ---  KAF = LBB + LBC + LBD + LBE .
 
----  KCC = LDB .                          Vector l
+---  KCC = LDB .                          Vector 1
 ---  KCD = LDB + LDC .
 ---  KCE = LDB + LDC + LDD .
 ---  KCF = LDB + LDC + LDD + LDE .
@@ -607,7 +607,7 @@
 ---  OFG = HDA ECA + HDE ECE + HDI ECI + HDM ECM .
 ---  OFH = HDA ECA + HDE ECE + HDI ECI + HDM ECM .
 
----  OFI = HDB ECB + HDF ECF + HDJ ECJ + HDN ECN .     2(3) Chip Addres
+---  OFI = HDB ECB + HDF ECF + HDJ ECJ + HDN ECN .     2(3) Chip Address
 ---  OFJ = HDB ECB + HDF ECF + HDJ ECJ + HDN ECM .
 ---  OFK = HDB ECB + HDF ECF + HDJ ECJ + HDN ECN .
 ---  OFL = HDB ECB + HDF ECF + HDJ ECJ + HDN ECN .
@@ -804,9 +804,9 @@
 
 
 ---  OQA = TAC JAG jah + QIA + JAH QNB .           Vector O release
----  OQB = TCC JCG JCH + QIA + JCH QNB .           ''    1
+---  OQB = TCC JCG jch + QIA + JCH QNB .           ''     1
 ---  OQC = TEC JEG jeh + QIA + JEH QNB .           Vector 2 release
----  OQD = TGC JGG jgh + QIA + JGH QNB .           ''    3
+---  OQD = TGC JGG jgh + QIA + JGH QNB .           ''     3
 
 ---  PAA = JBA tak taa + ABA TAK + JBE TAA .  O      Vector O
 ---  PAB = JBB tak taa + ABB TAK + JBF TAA .  1
@@ -932,7 +932,7 @@
 ---  qla = ICA ibe + ICB ibe .             Enable read
 ---  qlb = ICA ibe + ICB ibe .
 
----  QNA = IHA .                           Enable iota
+---  QNA = IHA .                           Enable iota, advance from VA
 ---  QNB = IHB + QIA .                     Release iota
 
                           Vector 0
