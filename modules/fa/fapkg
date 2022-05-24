@@ -35,9 +35,10 @@ BPM - GAC GAI GAM .
 BRP - FBF FBL .
 BSM - GAG GAL GAN .
 BTM - GAH GAJ GAO .
+BUP - DCC .
 BWP - FCA FCD .
 BXM - GAB GAD GAF .
-C1X - DCB DCC .
+C1X - DCB .
 C2P - BBG cbg .
 C3D - DBE .
 C4X - ADP .
@@ -84,7 +85,7 @@ DJL - kja kjb kjc kjd .
 DKP - RAC RAD .
 DLL - FLA FLB FLC FLD .
 DNL - kka kkb kkc kkd .
-DOL - qfc .
+DOL - qfc qfd qfe .
 DPL - FPA FPB FPC FPD .
 DRL - kke kkf kkg kkh .
 DSL - QGA QGB .
