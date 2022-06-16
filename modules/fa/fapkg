@@ -99,6 +99,7 @@ E5L - OGE OGF OGG OGH .
 E7P - FBB FBH .
 E8K - dbh dbi .
 EAL - OGA OGB OGC OGD .
+ECL - OIA .
 EDD - daj .
 EGP - FAA FAG .
 EHD - dak .
@@ -106,7 +107,7 @@ EIJ - THA THB THC THD .
 EJP - FBA FBG .
 EKP - FAB FAH .
 ELB - jca jaa jba .
-EML - QYA OIA.
+EML - QYA .
 ENN - gca .
 EON - gap .
 EPO - FAE FAK .
@@ -292,7 +293,7 @@ MWP - keo kep .
 MXP - kej .
 N3K - HBO HBP .
 N4M - KBO KMO .
-N5X - HBK .
+N5K - HBK .
 N7P - oeo oep .
 N8M - KBP KMP .
 NCK - HBI HBJ .
@@ -312,11 +313,11 @@ NSK - HBM HBN .
 NTM - KBM KMM KNM .
 NWP - oem oen .
 NXM - KBN KMN .
-O1L - qka qkd qke .
+O1L - qka qkd qke qkb .
 O2B - LBO .
 O3X - obo .
 O4P - ABO ABP .
-O5P - qkb QKC .
+O5P - QKC .
 O6B - LBP LEP .
 O7X - obp .
 O8P - QIA QIB .
@@ -431,7 +432,7 @@ TSK - HAM HAN .
 TTM - KAM KLM KQM .
 TWP - odm .
 TXM - KLN .
-U1N - kar .
+U1M - KAR .
 U2B - LAO LDO .
 U3B - LAK LDK .
 U4P - AAP AAO .

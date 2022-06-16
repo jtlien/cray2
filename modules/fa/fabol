@@ -1,8 +1,10 @@
 
----  AAA = IAA TAA + IEA TDA + AAA TCA .  O          j operand
+           Scalar     Vector    Hold
+           
+---  AAA = IAA TAA + IEA TDA + AAA TCA .   0          j operand
 ---  AAB = IAB TAA + IEB TDA + AAB TCA .            Input register
 ---  AAC = IAC TAB + IEC TDB + AAC TCB .            Sj, Vj  
----  AAD = IAD TAB + IED TDB + AAD TCB .   0        (coefficient)
+---  AAD = IAD TAB + IED TDB + AAD TCB .           (coefficient)
 ---  AAE = IAE TAC + IEE TDC + AAE TCC .
 ---  AAF = IAF TAC + IEF TDC + AAF TCC .            TA = enter SJ
 ---  AAG = IAG TAD + IEG TDD + AAG TCD .            TC = hold SJ
@@ -206,7 +208,7 @@
 
 ---  dbh = bag .                         With
 ---  dbi = cah bag + bah .
----  dbj = bbg cbh cai + bbh cai + bai  .
+---  dbj = bbg cbh cai + bbh cai + bai .
 ---  dbk = bbg cbh cai caj + bbh cai caj + bai caj + baj .
 ---  dbl = bbg cbh cai caj cak + bbh cai caj cak + bai caj cak + baj cak + bak .
 
@@ -420,14 +422,16 @@
 ---  GAE = DAG EBG ECH + DBG ECG + DCD .
 ---  GAF = DDG EBG ECH + DBG ECG + DCD .
 ---  GAG = DAG EBG ECH + DBG ECG + DCD .
----  GAH = DDG EBG ECH + DBG ECG + DCD .
----  GAI = DAG EBG ECH + DBG ECG + DCD .
+
+---  GAH = DDG EBG ECH + DBG ECG + DCD .             Group carries
+---  GAI = DAG EBG ECH + DBG ECG + DCD .             Carry into group 1
 ---  GAJ = DDG EBG ECH + DBG ECG + DCD .
 ---  GAK = DAG EBG ECH + DBG ECG + DCD .
 ---  GAL = DAG EBG ECH + DBG ECG + DCD .
 ---  GAM = DAG EBG ECH + DBG ECG + DCD .
----  GAN = DAG EBG ECH + DBG ECG + DCD .
----  GAO = DDG EBG ECH + DBG ECG + DCD .
+
+---  GAN = DAG EBG ECH + DBG ECG + DCD .             Group carries
+---  GAO = DDG EBG ECH + DBG ECG + DCD .             Carry into group 2
 
 ---  gap = --- + *** dag dbg dcd + ebg dbg dcd + ecg dcd .
 ---  gaq = --- + *** ddg dbg dcd + ebg dbg dcd + ecg dcd .
@@ -504,20 +508,23 @@
 ---  JDA = QXA + QXD + QXG + QXJ .                 Clear shifted
 ---  JDB = QXA + QXD + QXG + QXJ .                 coefficient
 ---  JDC = QXA + QXD + QXG + QXJ .                 shift > or eq 48
+
 ---  JDD = QXB + QXE + QXK + QXH .
 ---  JDE = QXB + QXE + QXK + QXH .
 ---  JDF = QXB + QXE + QXK + QXH .
 ---  JDG = QXB + QXE + QXK + QXH .
 ---  JDH = QXB + QXE + QXK + QXH .
 ---  JDI = QXB + QXE + QXK + QXH .
+
 ---  JDJ = QXC + QXF + QXI + QXL .
 ---  JDK = QXC + QXF + QXI + QXL .
 ---  JDL = QXC + QXF + QXI + QXL .
 
 ---  JDM = tqa QXL + tma QXL + QXC + QXF + QXI + QXM .
 
----  jea = qdf qdg qec qed .                     Instruction decodes
----  jeb = qek qeg .
+---  jea = qdf qdg qec qed .          122,123,174,175   Instruction decodes
+---  jeb = qek qeg .                             175 cp 7, 123
+
 ---  jfc = gai FAC + GAI fai + QGF .               Exponenent difference
 ---  jgc = gai FAC + GAI fai + QGF .               3 copies of bit 2
 ---  jhc = gai FAC + GAI fai + QGF .
@@ -545,7 +552,11 @@
 
 ---  KAQ = HCP TUK TVK .
 
----  kar = TVK TUK + hap TUK + hbp TVK + tvd tud .        Round bit
+            sh 32     sh 16     sh 32    
+            
+         ---  kar = TVK TUK + hap TUK + hbp TVK + tvd tud .        Round bit
+         
+---  KAR = HAP TUD tvk + HBP tud .         add TVK to 2nd term
 
 ---  KBA = tue tve HBA + HCA TUE .                16
 ---  KBB = tue tve HBB + HCB TUE .
@@ -581,7 +592,10 @@
 ---  KCO = tul tvl HCO .
 ---  KCP = tul tvl HCP .                      47
 
----  kda = fia THE + fma the .                Unshifted
+
+           larger    smaller
+           
+---  kda = fia THE + fma the .                Unshifted              0
 ---  kdb = fib THE + fmb the .                operand selection
 ---  kdc = fic THF + fmc thf .
 ---  kdd = fid THF + fmd thf .
@@ -596,9 +610,9 @@
 ---  kdm = fim THG + fmm thg .
 ---  kdn = fin THG + fmn thg .
 ---  kdo = fio THH + fmo thh .
----  kdp = fip THH + fmp thh .
+---  kdp = fip THH + fmp thh .                                     15
 
----  kea = fja THE + fna the .
+---  kea = fja THE + fna the .                                     16
 ---  keb = fjb THE + fnb the .
 ---  kec = fjc THF + fnc thf .
 ---  ked = fjd THF + fnd thf .
@@ -613,9 +627,9 @@
 ---  kem = fjm THC + fnm thc .
 ---  ken = fjn THC + fnn thc .
 ---  keo = fjo THD + fno thd .
----  kep = fjp THD + fnp thd .
+---  kep = fjp THD + fnp thd .                                    31
 
----  kfa = fka THA + foa tha .
+---  kfa = fka THA + foa tha .                                    32
 ---  kfb = fkb THA + fob tha .
 ---  kfc = fkc THB + foc thb .
 ---  kfd = fkd THB + fod thb .
@@ -630,7 +644,7 @@
 ---  kfm = fkm THC + fom thc .
 ---  kfn = fkn THC + fon thc .
 ---  kfo = fko THD + foo thd .
----  kfp = fkp THD + fop thd .
+---  kfp = fkp THD + fop thd .                                    47
 
 ---  kja = fla .                         i operand
 ---  kjb = flb .                         (exponent delay)
@@ -668,16 +682,17 @@
 
              32 sh        16 sh     0 sh
 	     
----  KLD = tua tva HAD + HBD TUA + HCD TVE .       Coefficient shift
----  KLH = tub tvb HAH + HBH TUB + HCH TVB .       O,16,32 right
+---  KLD = tua tva HAD + HBD TUA + HCD TVE .       Coefficient shift         3
+
+---  KLH = tub tvb HAH + HBH TUB + HCH TVB .       0,16,32 right             8
 ---  KLI = tuc tvc HAI + HBI TUC + HCI TVC .
----  KLJ = tuc tvc HAJ + HBJ TUC + HCJ TVC .       copy
+---  KLJ = tuc tvc HAJ + HBJ TUC + HCJ TVC .       copy of KAA-KAP
 ---  KLK = tuc tvc HAK + HBK TUC + HCK TVG .
 ---  KLL = tuc tvc HAL + HBL TUC + HCL TVG .
 ---  KLM = tud tvd HAM + HBM TUD + HCM TVD .
 ---  KLN = tud tvd HAN + HBN TUD + HCN TVD .
 ---  KLO = tud tvd HAO + HBO TUD + HCO TVD .
----  KLP = tud tvd HAP + HBP TUD + HCP TVD .
+---  KLP = tud tvd HAP + HBP TUD + HCP TVD .                                15
 
 ---  KMA = tue tve HBA + HCA TUE .
 ---  KMB = tue tve HBB + HCB TUE .
@@ -735,8 +750,8 @@
 ---  KPL = tuk tvk HCL .
 ---  KPM = tul tvl HCM .
 
----  KQL = tuc tvc HAL + HBL TUC + HCL TVG .
----  KQM = tud tvd HAM + HBM TUD + HCM TVD .
+---  KQL = tuc tvc HAL + HBL TUC + HCL TVG .          Same as KAL,KLL
+---  KQM = tud tvd HAM + HBM TUD + HCM TVD .          Same as KAM
 
 ---  LAA = KAA TQA + KAE TRA + KLI TSA + KQM TTA .      Coefficient shift
 ---  LAB = KAB TQA + KAF TRA + KLJ TSA + KAN TTA .      O,4,8,12 right
@@ -755,8 +770,12 @@
 ---  LAO = KLO TQD + KBC TRD + KMG TSD + KNK TTD .
 ---  LAP = KLP TQD + KBD TRD + KMH TSD + KNL TTD .
 
+           sh 48     sh 32,16   sh 4     sh 8      sh 12
+           
 ---  LAR = KAQ TQE + KAR TQE + KLD TRL + KLH TSE + KQL TTL .  Round bit 
 
+           sh 0      sh 4     sh 8       sh 12
+           
 ---  LBA = KMA TQN + KBE TRE + KMI TSL + KNM TTE .
 ---  LBB = KMB TQE + KBF TRE + KMJ TSE + KBN TTE .
 ---  LBC = KMC TQE + KBG TRE + KMK TSE + KBO TTE .
@@ -790,18 +809,20 @@
 ---  LCN = KON TQL .
 ---  LCO = KOO TQL .
 ---  LCP = KOP TQL .
-
+                                                    Coefficient 0,4,8,12 right
           
----  LDC = KAC TQA + KAG TRA + KLK TSA + KAO TTA .       Coefficient
----  LDD = KAD TQA + KAH TRA + KLL TSA + KAP TTA .       O,4,8,12 right
+---  LDC = KAC TQA + KAG TRA + KLK TSA + KAO TTA .      Copy of LAA..LAD
+---  LDD = KAD TQA + KAH TRA + KLL TSA + KAP TTA . 
 ---  LDH = KAH TQB + KAL TRB + KLP TSB + KND TTB .
----  LDI = KLI TQN + KAM TRC + KMA TSL + KNE TTC .       copy
+
+---  LDI = KLI TQN + KAM TRC + KMA TSL + KNE TTC .       copy of LAI..LAP
 ---  LDJ = KLJ TQC + KAN TRC + KMB TSC + KBF TTC .
 ---  LDK = KLK TQC + KAO TRC + KMC TSC + KBG TTC .
 ---  LDL = KLL TQC + KAP TRC + KMD TSC + KBH TTC .
 ---  LDO = KLO TQD + KBC TRD + KMG TSD + KNK TTD .
 ---  LDP = KLP TQD + KBD TRD + KMH TSD + KNL TTD .
----  LEA = KMA TQN + KBE TRE + KMI TSL + KNM TTE .
+
+---  LEA = KMA TQN + KBE TRE + KMI TSL + KNM TTE .       copy of LBA..LBP
 ---  LEB = KMB TQE + KBF TRE + KMJ TSE + KBN TTE .
 ---  LEC = KMC TQE + KBG TRE + KMK TSE + KBO TTE .
 ---  LED = KMD TQE + KBH TRE + KML TSE + KBP TTE .
@@ -811,7 +832,8 @@
 ---  LEK = KMK TQG + KBO TRG + KOC TSG + KCG TTG .
 ---  LEL = KML TQG + KBP TRG + KOD TSG + KCH TTG .
 ---  LEP = KMP TQH + KCD TRH + KOH TSH + KPL TTH .
----  LFA = KOA TQM + KCE TRI + KOI TSK + KPM TTI .
+
+---  LFA = KOA TQM + KCE TRI + KOI TSK + KPM TTI .      copy of LCA..P
 ---  LFB = KOB TQI + KCF TRI + KOJ TSI + KCN TTI .
 ---  LFC = KOC TQI + KCG TRI + KOK TSI + KCO TTI .
 ---  LFD = KOD TQI + KCH TRI + KOL TSI + KCP TTI .
@@ -823,25 +845,26 @@
 ---  LFP = KOP TQL .
 
 ---  LGI = KLI TQN + KAM TRC + KMA TSL + KNE TTC .      Coefficient shift
----  LHA = KMA TQN + KBE TRE + KMI TSL + KNM TTE .      O,4,8,12 right
+---  LHA = KMA TQN + KBE TRE + KMI TSL + KNM TTE .      0,4,8,12 right
 ---  LHT = KMI TQM + KBM TRG + KOA TSK + KPE TTG .
 ---  LIA = KOA TQM + KCE TRI + KOI TSK + KPM TTI .      copy
 ---  LII = KOI TQO + KCM TRK .
 
----  NBA = FBG GAN GBA + FBA GAN gba + fbg gan GBA + fba gan gba .
+---  NBA = FBG GAN GBA + FBA GAN gba + fbg gan GBA + fba gan gba .  Group 1
 ---  NBB = FBH GAN GBA + FBB GAN gba + fbh gan GBA + fbb gan gba .
 ---  NBC = FBI GAN GBA + FBC GAN gba + fbi gan GBA + fbc gan gba .
 ---  NBD = FBJ GAN GBA + FBD GAN gba + fbj gan GBA + fbd gan gba .
----  NBE = fbe gan gba + fbk gan GBA + FBE GAN gba + FBK GAN GBA .
+---  NBE = fbe gan gba + fbk gan GBA + FBE GAN gba + FBK GAN GBA . 
 ---  NBF = fbf gan gba + fbl gan GBA + FBF GAN gba + FBL GAN GBA .
----  NCA = fca gap gca + fcd gap GCA + FCA GAP gca + FCD GAP GCA .
+
+---  NCA = fca gap gca + fcd gap GCA + FCA GAP gca + FCD GAP GCA .  Group 2
 ---  NCB = fcb gap gca + fce gap GCA + FCB GAP gca + FCE GAP GCA .
 ---  NCC = fcc gap gca + fcf gap GCA + FCC GAP gca + FCF GAP GCA .
 
             0 sh       1 sh     2 sh      3 sh
 	    
 ---  oaa = TMA laa + TNA lab + TOA lac + TPA lad + JDL . Coefficient shift
----  oab = TMA lab + TNA lac + TOA lad + TPA lae + JDL .   O,1,2,3
+---  oab = TMA lab + TNA lac + TOA lad + TPA lae + JDL .   0,1,2,3
 ---  oac = TMA lac + TNA ldd + TOA lae + TPA laf + JDL .   and shifted op
 ---  oad = TMA ldd + TNA lae + TOA laf + TPA lag + JDL .   coefficient
 ---  oae = TMA lae + TNA laf + TOA lag + TPA lah + JDK .   (49 bits) to FB
@@ -964,7 +987,7 @@
 ---  OHA = QJM .                    Subtract mode to FB, CP 10
 
 ---  OIA = QYA .                    Overflow to FC
----  OJA = QHA .                    12O-1,17O-3 Adder control to FB, CP 10
+---  OJA = QHA .                    120-1,170-3 Adder control to FB, CP 10
 
 ---  OJB = QHB .                    122,174 Constant control to FC
 ---  OJC = QHC .                    123,175 Constant contol to FC
@@ -999,13 +1022,13 @@
 
 ---  QCI = IKA .                     Vector length control
 
----  QDA = QCA QCI + QDA QCI  .            17O-173 inst Hold for VL,  CP 5
----  QDB = QCB QCI + QDB QCI  .            17O,172  ''    ''   ''
----  QDC = QCC QCI + QDC QCI  .            174      ''    ''   ''
----  QDD = QCD QCI + QDD QCI  .            175      ''    ''   ''
+---  QDA = QCA QCI + QDA QCI .             17O-173 inst Hold for VL,  CP 5
+---  QDB = QCB QCI + QDB QCI .             17O,172  ''    ''   ''
+---  QDC = QCC QCI + QDC QCI .             174      ''    ''   ''
+---  QDD = QCD QCI + QDD QCI .             175      ''    ''   ''
 ---  QDE = QCE .                           12O,121  ''    ''   ''
 ---  QDF = QCF .                           122      ''    ''   ''
----  QDG = QCG .                           l23      ''    ''   ''
+---  QDG = QCG .                           123      ''    ''   ''
 ---  QDH = QDH QCI + QCH .                 121,172,173    ''   ''     Cp 5
 ---  qdi = qci .                     Delay
 ---  qdj = qdb .
@@ -1026,7 +1049,8 @@
 ---  qfa = qei qee .                   Adder control  12O,121,170-173, CP 7
 ---  qfb = qej qef .                            122,174
 ---  qfc = qek qeg .                            123,175
-
+---  qfd = qfc .
+---  qfe = qfd .
 ---  QGA = QFA .                     Delay, CP 8  12O,121,170-173, CP 7
 ---  QGB = QFB .                            CP 8   122,174
 ---  QGC = QFC .                            CP 8   123,175 Block coeff shift
@@ -1059,24 +1083,27 @@
 ---  qkg = qkf .
 ---  qkh = qkg .
 ---  qki = qkh .
----  qkj = qki  .
+---  qkj = qki .
 ---  qkk = qkj .
 ---  qkl = qkk .
 
 ---  qxa = nca nba ncb .                  Test shift count eq or gt 48
 ---  qxb = nca nba ncb .
 ---  qxc = nca nba ncb .
+
 ---  qxd = nbb nbc ncc .
 ---  qxe = nbb nbc ncc .
 ---  qxf = nbb nbc ncc .
+
 ---  qxg = nbd nbe nbf .
 ---  qxh = nbd nbe nbf .
 ---  qxi = nbd nbe nbf .
 
 ---  QXJ = TUJ TVJ .                     Shift 48
----  QXK = TUJ TVJ .
+---  QXK = TUJ TVJ .                      16 + 32
 ---  QXL = TUJ TVJ .
----  qxm = qgb qgc .
+
+---  qxm = qgb qgc .           CP 8   122,174  123,175 Block coeff shift
 ---  QYA = GAP QGB .                     Overflow
 
 ---  RAA = KJA TFA + KKA tfa .              Exponent selection
@@ -1156,7 +1183,7 @@
                                                             174,175 CP 5
 
 ---  TFA = QGH + gap .                       Select j as exponent
----  TFB = QGH + gap .
+---  TFB = QGH + gap .                    123,179 cp 9 j larger
 
 ---  tga = qja .                            Invert
 ---  tgb = qja .                            unshifted coefficient
@@ -1164,6 +1191,7 @@
 ---  tgd = qja .
 ---  tge = qja .
 ---  tgf = qja .
+
 ---  THA = gap .                            j is larger exponent
 ---  THB = gap .
 ---  THC = gap .
@@ -1179,6 +1207,7 @@
 ---  TMD = jaa jab .
 ---  TME = jaa jab .
 ---  TMF = jaa jab .
+
 ---  TNA = JCA jbb .                          Shift control 1
 ---  TNB = JAA jbb .
 ---  TNC = JAA jab .
@@ -1212,9 +1241,11 @@
 ---  TQJ = jac jad .
 ---  TQK = jac jad .
 ---  TQL = jac jad .
+
 ---  tqm = JHC + JCD .
 ---  tqn = JHC + JCD .
 ---  tqo = JHC + JCD .
+
 ---  TRA = JCC jcd .                            Shift control 4
 ---  TRB = JBC jcd .
 ---  TRC = JCC jcd .
@@ -1227,6 +1258,7 @@
 ---  TRJ = JAC jad .
 ---  TRK = JAC jad .
 ---  TRL = JAC jad .
+
 ---  TSA = jhc JBD .                            Shift control 8
 ---  TSB = jgc JBD .
 ---  TSC = jhc JBD .
@@ -1239,6 +1271,7 @@
 ---  TSJ = jfc JAD .
 ---  TSK = jfc JAD .
 ---  TSL = jfc JAD .
+
 ---  TTA = JHC JBD .                            Shift control 12
 ---  TTB = JGC JBD .
 ---  TTC = JHC JBD .
