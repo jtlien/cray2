@@ -1,4 +1,4 @@
----  AAA = IAA + IDA + IAR .  O                Coefficient input
+---  AAA = IAA + IDA + IAR .                Coefficient input
 ---  AAB = IDB + IAB .                      register from FA
 ---  AAC = IDC + IAC .                      coefficient add
 ---  AAD = IDD + IAD .                      (logical sum)
@@ -57,7 +57,7 @@
 ---  BAB = IAB IDB .    
 ---  BAC = IAC IDC .
 ---  BAD = IAD IDD .                        ia-ic = shifted
----  BAE = IAE IDE .                        id-if = unshiFte
+---  BAE = IAE IDE .                        id-if = unshiFted
 ---  BAF = IAF IDF .
 ---  BAG = IAG IDG .
 ---  BAH = IAH IDH .
@@ -121,7 +121,7 @@
 ---  CBH = AAE AAF AAG + BAF AAG + BAG .
 
 ---  ccb = bai .                        Group 2
----  ccc = baj bai + aai .
+---  ccc = baj bai + aaj .
 ---  ccd = bai baj bak + aaj bak + aak .
 ---  cce = bai baj bak bal + aaj bak bal + aak bal + aal .
 
@@ -194,7 +194,7 @@
 ---  CJH = ACE ACF ACG + BCF ACG + BCG .
 
 ---  ckb = bci .                        Group 10
----  ckc = bcj bci + aci .
+---  ckc = bcj bci + acj .
 ---  ckd = bci bcj bck + acj bck + ack .
 ---  cke = bci bcj bck bcl + acj bck bcl + ack bcl + acl .
 
@@ -215,57 +215,68 @@
 ---  EAB = AAB bab .                      Bit enables
 ---  EAC = AAC bac .
 ---  EAD = AAD bad .
+
 ---  EAE = AAB AAC AAD .                 Group enables
 ---  EBA = AAE bae .                      Group 1
 ---  EBB = AAF baf .
 ---  EBC = AAG bag .
 ---  EBD = AAH bah .
+
 ---  EBE = AAE AAF AAG AAH .
 ---  ECA = AAI bai .                      Group 2
 ---  ECB = AAJ baj .
 ---  ECC = AAK bak .
 ---  ECD = AAL bal .
+
 ---  ECE = AAI AAJ AAK AAL .
 ---  EDA = AAM bam .                      Group 3
 ---  EDB = AAN ban .
 ---  EDC = AAO bao .
 ---  EDD = AAP bap .
+
 ---  EDE = AAM AAN AAO AAP .
 ---  EEA = ABA bba .                      Group 4
 ---  EEB = ABB bbb .
 ---  EEC = ABC bbc .
 ---  EED = ABD bbd .
+
 ---  EEE = ABA ABB ABC ABD .
 ---  EFA = ABE bbe .                      Group 5
 ---  EFB = ABF bbf .
 ---  EFC = ABG bbg .
 ---  EFD = ABH bbh .
+
 ---  EFE = ABE ABF ABG ABH .
 ---  EGA = ABI bbi .                      Group 6
 ---  EGB = ABJ bbj .
 ---  EGC = ABK bbk .
 ---  EGD = ABL bbl .
+
 ---  EGE = ABI ABJ ABK ABL .
 ---  EHA = ABM bbm .                      Group 7
 ---  EHB = ABN bbn .
 ---  EHC = ABO bbo .
----  EHD = ABP bbg .
+---  EHD = ABP bbp .
 ---  EHE = ABM ABN ABO ABP .
+
 ---  EIA = ACA bca .                      Group 8
 ---  EIB = ACB bcb .                             
 ---  EIC = ACC bcc .
 ---  EID = ACD bcd .
 ---  EIE = ACA ACB ACC ACD .
+
 ---  EJA = ACE bce .                      Group 9
 ---  EJB = ACF bcf .
 ---  EJC = ACG bcg .
 ---  EJD = ACH bch .
 ---  EJE = ACE ACF ACG ACH .
+
 ---  EKA = ACI bci .                      Group 1O
 ---  EKB = ACJ bcj .
 ---  EKC = ACK bck .
 ---  EKD = ACL bcl .
 ---  EKE = ACI ACJ ACK ACL .
+
 ---  ELA = ACM bcm .                     Group 11
 ---  ELB = ACN bcn .
 ---  ELC = ACO bco .
@@ -344,13 +355,14 @@
 ---  gfa = cee .                               Propagated
 ---  gga = cfe cee + cfe efe .                      group carry
 ---  gha = --- + *** cee cfe cge + efe cfe cge + ege cge .
+
 ---  GIA = CEE EFE EGE EHE + CFE EGE EHE + CGE EHE + CHE .    Section 1
 ---  GIB = CEE EFE EGE EHE + CFE EGE EHE + CGE EHE + CHE .    carry
 ---  GIC = CEE EFE EGE EHE + CFE EGE EHE + CGE EHE + CHE .
 ---  GID = CEE EFE EGE EHE + CFE EGE EHE + CGE EHE + CHE .
 
 ---  gja = cie .                               Propagated
----  gka = cje cie + cie eje .                      group carry
+---  gka = cje cie + cje eje .                      group carry
 ---  gla = --- + *** cie cje cke + eje cje cke + eke cke .
 
 ---  GMA = CIE EJE EKE ELE + CJE EKE ELE + CKE ELE + CLE .    Section 2
@@ -376,20 +388,22 @@
 ---  hcd = eie + eje + eke + ele .
 ---  hce = eie + eje + eke + ele .
 
----  JAA = GEA HBD HCD QAD + GID HCD QAD + GMC QAD .
----  JAB = GEB HBE HCE HAA QAC + GIA HCE HAA QAC + GMB HAA QAC + GBA .
----  JAC = GEA HBD HCD HAB QAD + GID HCD HAB QAD + GMC HAB QAD + GCA .
----  JAD = GEB HBE HCE HAC QAC + GIA HCE HAC QAC + GMB HAC QAC + GDA .
+                                    Group Selects
+                                    
+---  JAA = GEA HBD HCD QAD + GID HCD QAD + GMC QAD .                                 0  ge section 0, gi section 1
+---  JAB = GEB HBE HCE HAA QAC + GIA HCE HAA QAC + GMB HAA QAC + --- QAC + GBA .     1  gm section 2
+---  JAC = GEA HBD HCD HAB QAD + GID HCD HAB QAD + GMC HAB QAD + --- QAD + GCA .     2
+---  JAD = GEB HBE HCE HAC QAC + GIA HCE HAC QAC + GMB HAC QAC + --- QAC + GDA .     3
 
----  JAE = GIC HCD HAD QAD + GMC HAD QAD + GEA .
----  JAF = GIB HCE QAC HAE HBA + GMB QAC HAE HBA + --- + GED HBA + GFA .
----  JAG = GIC HCD QAF HAD HBB + GMA QAF HAD HBB + --- + GEC HBB + GGA .
----  JAH = GIB HCE QAE HAE HBC + GMD QAE HAE HBC + --- + GED HBC + GHA .
+---  JAE = GIC HCD HAD QAD + GMC HAD QAD + --- QAD + GEA .                           4
+---  JAF = GIB HCE QAC HAE HBA + GMB QAC HAE HBA + --- + GED HBA + GFA .             5
+---  JAG = GIC HCD QAF HAD HBB + GMA QAF HAD HBB + --- + GEC HBB + GGA .             6
+---  JAH = GIB HCE QAE HAE HBC + GMD QAE HAE HBC + --- + GED HBC + GHA .             7
 
----  JAI = --- + GMA QAF HAD HBD + --- + GEC HBD + GID .
----  JAJ = GMD HAE QAE HBE HCA + --- + GED HBE HCA + GIA HCA + GJA .
----  JAK = GMA HAD QAF HBD HCB + --- + GEC HBD HCB + GEC HCB + GKA .
----  JAL = GMD HAE QAE HBE HCC + --- + GED HBE HCC + GIB HCC + GLA .
+---  JAI = --- + GMA QAF HAD HBD + --- + GEC HBD + GID .                             8
+---  JAJ = GMD HAE QAE HBE HCA + --- + GED HBE HCA + GIA HCA + GJA .                 9
+---  JAK = GMA HAD QAF HBD HCB + --- + GEC HBD HCB + GIC HCB + GKA .                10
+---  JAL = GMD HAE QAE HBE HCC + --- + GED HBE HCC + GIB HCC + GLA .                11
 
 ---  jam = --- + *** ged gic gmb + hbd gic gmb + hcd gmb . Carry across bin pt
 
@@ -418,7 +432,7 @@
 ---  KBH = cbh EBD + CBH ebd .
 
 ---  KCA = ECA .                        Group 2
----  KCB = ccb ECB + CCB ecb .                Hithout
+---  KCB = ccb ECB + CCB ecb .                Without
 ---  KCC = ccc ECC + CCC ecc .
 ---  KCD = ccd ECD + CCD ecd .
 
@@ -517,9 +531,9 @@
 ---  KLG = clg ELC + CLG elc .
 ---  KLH = clh ELD + CLH eld .
 
----  MAA = kaa kab kac kad . grp O             Group leading zero count
+---  MAA = kaa kab kac kad . grp 0            Group leading zero count
 ---  MAB = kba kbb kbc kbd .    1                     
----  MAC = kca kcb kcc kcd .    2              (groups eq O)
+---  MAC = kca kcb kcc kcd .    2              (groups eq 0)
 ---  MAD = kda kdb kdc kdd .    3
 
 ---  MAE = kea keb kec ked .    4
@@ -529,10 +543,10 @@
 
 ---  MAI = kia kib kic kid .    8
 ---  MAJ = kja kjb kjc kjd .    9
----  MAK = kka kkb kkc kkd .    1O
+---  MAK = kka kkb kkc kkd .    10
 ---  MAL = kla klb klc kld .    11
 
----  MBA = kae kaf kag kah .    O
+---  MBA = kae kaf kag kah .    0
 ---  MBB = kbe kbf kbg kbh .    1
 ---  MBC = kce kcf kcg kch .    2
 ---  MBD = kde kdf kdg kdh .    3
@@ -544,11 +558,11 @@
 
 ---  MBI = kie kif kig kih .    8
 ---  MBJ = kje kjf kjg kjh .    9
----  MBK = kke kkf kkg kkh .    1O
+---  MBK = kke kkf kkg kkh .    10
 ---  MBL = kle klf klg klh .    11
 
                                    
----  MCA = KAA KAB KAC KAD . grp O             Group complement  Section 0
+---  MCA = KAA KAB KAC KAD . grp 0             Group complement  Section 0
 ---  MCB = KBA KBB KBC KBD .    1             leading zero count, no carries
 ---  MCC = KCA KCB KCC KCD .    2
 ---  MCD = KDA KDB KDC KDD .    3             (complement eq 0)
@@ -560,10 +574,10 @@
 
 ---  MCI = KIA KIB KIC KID .    8                         Section 2
 ---  MCJ = KJA KJB KJC KJD .    9
----  MCK = KKA KKB KKC KKD .    1O
+---  MCK = KKA KKB KKC KKD .    10
 ---  MCL = KLA KLB KLC KLD .    11
 
----  MDA = KAE KAF KAG KAH .    O        Section 0, With Carries, Complement 0
+---  MDA = KAE KAF KAG KAH .    0       Section 0, With Carries, Complement 0
 ---  MDB = KBE KBF KBG KBH .    1
 ---  MDC = KCE KCF KCG KCH .    2
 ---  MDD = KDE KDF KDG KDH .    3
@@ -583,7 +597,7 @@
 ---  nac = mac jac + mbc JAC + JBB .  8
 ---  nad = mad jad + mbd JAD + JBA .  4          (section O)
 
----  nae = mae jae + mbe JAE + JBB .  16        (section l)
+---  nae = mae jae + mbe JAE + JBB .  16        (section 1)
 ---  naf = maf jaf + mbf JAF + JBA .  12
 ---  nag = mag jag + mbg JAG + JBB .  8
 ---  nah = mah jah + mbh JAH + JBA .  4
@@ -598,7 +612,7 @@
 ---  nbc = mcc jac + mdc JAC + jbb .  8
 ---  nbd = mcd jad + mdd JAD + jba .  4          (section O)
 
----  nbe = mce jae + mde JAE + jbb .  16         (section l)
+---  nbe = mce jae + mde JAE + jbb .  16         (section 1)
 ---  nbf = mcf jaf + mdf JAF + jba .  12
 ---  nbg = mcg jag + mdg JAG + jbb .  8
 ---  nbh = mch jah + mdh JAH + jba .  4
@@ -659,34 +673,36 @@
 ---  OCO = FLC qbc + flc QBC .
 ---  OCP = FLD qbc + fld QBC .  47
 
----  ODA = PAB PAC .  2(5)                      Normalization count
----  ODB = pab PAC .  2(4)                      to FC
+---  ODA = PAB PAC .  2(5)        to IEJ,JC      Normalization count, 32 zeros
+---  ODB = pab PAC .  2(4)        to IEI,JC            to FC                16 zeros
 
                          Sec0           Sec 1       Sec 2
----  ODC = --- + --- + PFB PEB PEC + PGB peb PEC + PHB pec .   2(3)  8
----  ODD = --- + --- + PFC PEB PEC + PGC peb PEC + PHC pec .   2(2)  4
----  ode = --- + --- + pba PEB PEC + pca peb PEC + pda pec .   2(1)  12
+---  ODC = --- + --- + PFB PEB PEC + PGB peb PEC + PHB pec .   2(3)  8  IEH,JC
+---  ODD = --- + --- + PFC PEB PEC + PGC peb PEC + PHC pec .   2(2)  4  IEG,JC
+---  ode = --- + --- + pba PEB PEC + pca peb PEC + pda pec .   2(1)  2  IEK,JC
 
+                         Number of zeros
             15-12     11-8      7-4       3-0
 
----  OEA = RAA PBA + RBA PBB + RCA PBC + RDA PBD . 2^O   Section O
----  OEB = RAB PBA + RBB PBB + RCB PBC + RDB PBD . 2^1
+---  OEA = RAA PBA + RBA PBB + RCA PBC + RDA PBD . 2^O   Section O to IEA,JC
+---  OEB = RAB PBA + RBB PBB + RCB PBC + RDB PBD . 2^1                IEB,JC
 
----  OFA = REA PCA + RFA PCB + RGA PCC + RHA PCD . 2^O   Section 1
----  OFB = REB PCA + RFB PCB + RGB PCC + RHB PCD . 2^1
+---  OFA = REA PCA + RFA PCB + RGA PCC + RHA PCD . 2^O   Section 1    IEC,JC
+---  OFB = REB PCA + RFB PCB + RGB PCC + RHB PCD . 2^1                IED,JC
 
----  OGA = RIA PDA + RJA PDB + RKA PDC + RLA PDD . 2^0   Section 2
----  OGB = RIB PDA + RJB PDB + RKB PDC + RLB PDD . 2^1
+---  OGA = RIA PDA + RJA PDB + RKA PDC + RLA PDD . 2^0   Section 2    IEE,JC
+---  OGB = RIB PDA + RJB PDB + RKB PDC + RLB PDD . 2^1                IEF,JC
 
 ---  oha = qda .                       Toggle sign bit to FC
 ---  OHB = QDB qga .                    Normalize shift eq -1 to FC
 
 ---  OIA = qdb PAA PAC PAB .               Underflow to FC
+
 ---  oja = qec .                       Go add to FC
 ---  ojb = qfb .                       Unlike signs to FC
 
 ---  paa = naa nba + nab nbb + nac nbc + nad nbd .      Section O 16 0's
----  pab = nae nbe + naf nbf + nag nbg + nah nbh .      Section l 16 0's
+---  pab = nae nbe + naf nbf + nag nbg + nah nbh .      Section 1 16 0's
 ---  pac = nai nbi + naj nbj + nak nbk + nal nbl  .     Section 2 16 0's
 
 ---  pba = nab nbb + nac nbc + nad nbd .                Section 0 12 0's
@@ -694,23 +710,23 @@
 ---  pbc = NAC + NBC + nad nbd .                                   4 0's
 ---  pbd = NAD + NBD .                                             0 0's
 
----  pca = naf nbf + nag nbg + nah nbh .                Section l 12 0's
+---  pca = naf nbf + nag nbg + nah nbh .                Section 1 12 0's
 ---  pcb = NAF + NBF + nag nbg + nah nbh .                         8
 ---  pcc = nah nbh + NAG + NBG .                                   4
----  pcd = MAH + NBH .                                             0
+---  pcd = NAH + NBH .                                             0
 
 ---  pda = naj nbj + nak nbk + nal nbl  .               Section 2 12 0's
 ---  pdb = NAJ + NBJ + nak nbk + nal nbl  .                        8
 ---  pdc = nal nbl + NAK + NBK .                                   4
 ---  pdd = NAL + NBL .                                             0
 
----  peb = nae nbe + naf nbf + nag nbg + nah nbh .      Section l 16 0's
+---  peb = nae nbe + naf nbf + nag nbg + nah nbh .      Section 1 16 0's
 ---  pec = nai nbi + naj nbj + nak nbk + nal nbl  .     Section 2 16 0's
 
----  pfb = NAB + NBB + nac nbc + nad nbd .              Section O 8 0's
+---  pfb = NAB + NBB + nac nbc + nad nbd .              Section 0 8 0's
 ---  pfc = NAC + NBC + nad nbd .                        Section 0 4 0's
 
----  pgb = NAF + NBF + nag nbg + nah nbh .              Section l 12 0's copy
+---  pgb = NAF + NBF + nag nbg + nah nbh .              Section 1 12 0's copy
 ---  pgc = nah nbh + NAG + NBG .                        Section 1  8 0's copy
 
 ---  phb = NAJ + NBJ + nak nbk + nal nbl  .             Section 2 12 0's copy
@@ -752,8 +768,8 @@
 
 ---  qga = qca .                      Complement constant
 
----  RAA = UAA qbf + UAB QBF .      bit O    group O
----  RAB = fad fac qbf + FAD FAC QBF .    1
+---  RAA = UAA qbf + UAB QBF .          bit O    group O
+---  RAB = fad fac qbf + FAD FAC QBF .    
 ---  RBA = UBA qbe + UBB QBE .                1
 ---  RBB = fbd fbc qbe + FBD FBC QBE .
 ---  RCA = UCA qbf + UCB QBF .                2
@@ -846,9 +862,9 @@
 ---  UIB = SIB jai + SID JAI .
 ---  UJA = SJA jaj + SJC JAJ .                 group 9
 ---  UJB = SJB jaj + SJD JAJ .
----  UKA = SKA jak + SKC JAK .                 group lO
+---  UKA = SKA jak + SKC JAK .                 group 10
 ---  UKB = SKB jak + SKD JAK .
----  ULA = SLA jal + SLC JAL .                 group ll
+---  ULA = SLA jal + SLC JAL .                 group 11
 ---  ULB = SLB jal + SLD JAL .
 
 --- ZYA = IZZ / izz .
