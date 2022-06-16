@@ -85,29 +85,31 @@
 ---   aem = adm .
 ---   aen = adn .
 ---   aeo = ado .
----   aep = adp .                           Coefficient sign
+---   aep = adp .                            Coefficient sign
 
----   AFI = IAI  .  8                         Coefficient add results
----   AGA = IBA .   16                        from FB (2nd copy)
----   AGI = IBI  .  24
+---   AFI = IAI .   8                        Coefficient add results
+---   AGA = IBA .  16                        from FB (2nd copy)
+---   AGI = IBI .  24
 
----   BAA = IEA iej iei + IEC IEI + IEE IEJ .        Exponent normalization
----   BAB = IEB iej iei + IED IEI + IEF IEJ .        value
----   BAC = IEK + IEG .
----   BAD = IEK + IEH .
----   BAE = IEI .
----   BAF = IEJ .
+---   BAA = IEA iej iei + IEC IEI + IEE IEJ .    2(0)    Exponent normalization
+---   BAB = IEB iej iei + IED IEI + IEF IEJ .    2(1)      value
+---   BAC = IEK + IEG .                          2(2)
+---   BAD = IEK + IEH .                          2(3)
+---   BAE = IEI .                                2(4)
+---   BAF = IEJ .                                2(5)
 
 ---   CAA = baa AEA qfe .                    Exponent normalization
 ---   CAB = bab AEB qfe .                    Bit carries
 ---   CAC = bac AEC qfe .
 ---   CAD = bad AED qfe .
 ---   CAE = bae AEE qff .
+
 ---   CBA = baf AEF qff .
 ---   CBB = AEG qfh .
 ---   CBC = AEH qfh .
 ---   CBD = AEI qfg .
 ---   CBE = AEJ qfg .
+
 ---   CCA = AEK qfg .
 ---   CCB = AEL qfg .
 ---   CCC = AEM qfh .
@@ -119,12 +121,13 @@
 ---   dac = BAC aec + QFE aec .
 ---   dad = BAD aed + QFE aed .
 ---   dae = BAE aee + QFF aee .
----   dba = BAF aef + QFF aef .
 
+---   dba = BAF aef + QFF aef .
 ---   dbb = aeg QFH .                          
 ---   dbc = aeh QFH .
 ---   dbd = aei QFG .
 ---   dbe = aej QFG .
+
 ---   dca = aek QFG .
 ---   dcb = ael QFG .
 ---   dcc = aem QFH .
@@ -136,6 +139,7 @@
 ---   EAC = DAC cac .
 ---   EAD = DAD cad .
 ---   EAE = DAE cae .
+
 ---   EBA = DBA cba .
 ---   EBB = DBB cbb .
 ---   EBC = DBC cbc .
@@ -143,33 +147,36 @@
 ---   EBE = DBE cbe .
 
 ---   ebf = dbe + dbd + dbc + dbb + dba .          Group 1 enable
----   ECA = DCA cca .
+
+---   ECA = DCA cca .                                 (AEK | qfg) (aek | QFG) = AEK QFG | aek qfg
 ---   ECB = DCB ccb .
 ---   ECC = DCC ccc .
 ---   ECD = DCD ccd .
 ---   ECE = DCE cce .
 
----   fab = daa .
----   fac = cab daa + dab .
+---   fab = daa .                                          Group 1
+---   fac = cab daa + dab .                                    
 ---   fad = daa cab cac + dab cac + dac .
 ---   fae = daa cab cac cad + dab cac cad + dac cad + dad .
 ---   FAF = DAA DAB DAC DAD DAE + CAB DAC DAD DAE + CAC DAD DAE + CAD DAE + CAE .
----   FBB = CBA .
+
+---   FBB = CBA .                                         Group 2 without carry
 ---   FBC = DBB CBA + CBB .
 ---   FBD = CBA DBB DBC + CBB DBC + CBC .
 ---   FBE = CBA DBB DBC DBD + CBB DBC DBD + CBC DBD + CBD .
 ---   FBF = CBA DBB DBC DBD DBE + CBB DBC DBD DBE + CBC DBD DBE + CBD DBE + CBE .
----   fbg = dba .
+
+---   fbg = dba .                                          Group 2 with carry
 ---   fbh = cbb dba + dbb .
 ---   fbi = dba cbb cbc + dbb cbc + dbc .
 ---   fbj = dba cbb cbc cbd + dbb cbc cbd + dbc cbd + dbd .
 
----   FCB = CCA .
+---   FCB = CCA .                                         Group 3 without carry
 ---   FCC = DCB CCA + CCB .
 ---   FCD = CCA DCB DCC + CCB DCC + CCC .
 ---   FCE = CCA DCB DCC DCD + CCB DCC DCD + CCC DCD + CCD .
 
----   fcg = dca .
+---   fcg = dca .                                        Group 3 with carry
 ---   fch = ccb dca + dcb .
 ---   fci = dca ccb ccc + dcb ccc + dcc .
 ---   fcj = dca ccb ccc ccd + dcb ccc ccd + dcc ccd + dcd .
@@ -177,30 +184,31 @@
 ---   GAB = FAF qod .
 ---   GAC = FAF EBF qod + FBF qod .
 
----   haa = EAA qof .
+---   haa = EAA qof .                        Group 1
 ---   hab = fab eab qoe + FAB EAB qoe .                
 ---   hac = fac eac qoe + FAC EAC qoe .
 ---   had = fad ead qoe + FAD EAD qoe .
 ---   hae = fae eae qoe + FAE EAE qoe .
 
----   hba = eba qof .
+---   hba = eba qof .                        Group 2
 ---   hbb = fbb ebb qof + FBB EBB qof .
 ---   hbc = fbc ebc qof + FBC EBC qof .
 ---   hbd = fbd ebd qog + FBD EBD qog .
 ---   hbe = fbe ebe qog + FBE EBE qog .
----   hbf = EBA .
+
+---   hbf = EBA .                            Group 2
 ---   hbg = fbg ebb + FBG EBB .
 ---   hbh = fbh ebc + FBH EBC .
 ---   hbi = fbi ebd + FBI EBD .
 ---   hbj = fbj ebe + FBJ EBE .
 
----   hca = eca qog .
+---   hca = eca qog .                        Group 3
 ---   hcb = fcb ecb qoh + FCB ECB qoh .
 ---   hcc = fcc ecc qoh + FCC ECC qoh .
 ---   hcd = fcd ecd qoi + FCD ECD qoi .
 ---   hce = fce ece qoi + FCE ECE qoi .
 
----   hcf = ECA .
+---   hcf = ECA .                            Group 3
 ---   hcg = fcg ecb + FCG ECB .
 ---   hch = fch ecc + FCH ECC .
 ---   hci = fci ecd + FCI ECD .
@@ -215,8 +223,8 @@
 
 ---   LAA = AAA TAA + AAB TDA .               Rank 1
 ---   LAB = AAB TAA + AAC TDA .               Coefficient shift
----   LAC = AAC TAA + AAD TDA .               shift O,16,32,-1
----   LAD = AAD TAA + AAE TDA .               (lst copy)
+---   LAC = AAC TAA + AAD TDA .               shift 0,16,32,-1
+---   LAD = AAD TAA + AAE TDA .               (1st copy)
 ---   LAE = AAE TAB + AAF TDB .
 ---   LAF = AAF TAB + AAG TDB .
 ---   LAG = AAG TAB + AAH TDB .
@@ -266,7 +274,7 @@
 
 ---   LDA = AAA TAA + AAB TDA .               Rank 1
 ---   LDB = AAB TAA + AAC TDA .               Coefficient shift
----   LDC = AAC TAA + AAD TDA .               shift O,16,32,-1
+---   LDC = AAC TAA + AAD TDA .               shift 0,16,32,-1
 ---   LDD = AAD TAA + AAE TDA .               (2nd copy)
 ---   LDE = AAE TAB + AAF TDB .
 ---   LDF = AAF TAB + AAG TDB .
@@ -309,7 +317,7 @@
 
 ---   LGA = AAA TAA + AAB TDA .               Rank 1
 ---   LGB = AAB TAA + AAC TDA .               Coefficient shift
----   LGC = AAC TAA + AAD TDA .               shift O,16,32,-1
+---   LGC = AAC TAA + AAD TDA .               shift 0,16,32,-1
 ---   LGD = AAD TAA + AAE TDA .               (3rd copy)
 ---   LGE = AAE TAB + AAF TDB .
 ---   LGF = AAF TAB + AAG TDB .
@@ -343,7 +351,7 @@
 
 ---   MAA = LAA TEA .                      Rank 2
 ---   MAB = LAB TEA .                     Coefficient shift
----   MAC = LAC TEA .                     shift O,4,8,12
+---   MAC = LAC TEA .                     shift 0,4,8,12
 ---   MAD = LAD TEA .                     (1st copy)
 ---   MAE = LDE TEB + LGA TFA .
 ---   MAF = LDF TEB + LGB TFA .
@@ -392,7 +400,8 @@
 
 ---   MDF = LDF TEB + LGB TFA .                Rank 2
 ---   MDG = LDG TEB + LGC TFA .                Coefficient sh
----   MDH = LDH TEB + LGD TFA .                shift O,4,8,12
+---   MDH = LDH TEB + LGD TFA .                shift 0,4,8,12
+
 ---   MDN = LDN TED + LGJ TFC + LDF TGB + LDB THA .   (2nd copy)
 ---   MDO = LDO TED + LGK TFC + LDG TGB + LDC THA .
 ---   MDP = LDP TED + LGL TFC + LDH TGB + LDD THA .
@@ -405,16 +414,17 @@
 ---   MFF = LFF TEJ + LFB TFI + LEN TGH + LEJ THG .
 ---   MFG = LFG TEJ + LFC TFI + LEO TGH + LEK THG .
 ---   MFH = LFH TEJ + LFD TFI + LEP TGH + LEL THG .
+
 ---   MGP = LDP TED + LGL TFC + LDH TGB + LDD THA .   Rank 2
 ---   MHH = LEH TEF + LHD TFE + LDP TGD + LDL THC .   Coefficient sh
----   MHP = LEP TEH + LHL TFG + LEH TGF + LED THE .   shift O,4,8,12
+---   MHP = LEP TEH + LHL TFG + LEH TGF + LED THE .   shift 0,4,8,12
 ---   MIH = LFH TEJ + LFD TFI + LEP TGH + LEL THG .   (3rd copy)
 
 ---   OAA = MAA TIA .                      Rank 3
 ---   OAB = MAB TIA + MAA TJA .                Coefficient shift
 ---   OAC = MAC TIA + MAB TJA + MAA TKA .         and coefficient
 ---   OAD = MAD TIA + MAC TJA + MAB TKA + MAA TLA .   final result
----   OAE = MAE TIA + MAD TJA + MAC TKA + MAB TLA .   shift O,l,2,3
+---   OAE = MAE TIA + MAD TJA + MAC TKA + MAB TLA .   shift 0,1,2,3
 ---   OAF = MDF TIA + MAE TJA + MAD TKA + MAC TLA .
 ---   OAG = MDG TIA + MDF TJA + MAE TKA + MAD TLA .
 ---   OAH = MDH TIA + MDG TJA + MDF TKA + MAE TLA .
@@ -461,45 +471,51 @@
 ---   OCO = MCO TIF + MCN TJF + MCM TKF + MCL TLF .
 ---   OCP = MCP TIF + MCO TJF + MCN TKF + MCM TLF .
 
----   oda = haa + QOA .                       Exponent final
+---   oda = haa + QOA .                       Exponent final  Group 1
 ---   odb = hab + QOA .
 ---   odc = hac + QOA .
 ---   odd = had + QOA .
 ---   ode = hae + QOA .
 
----   odf = hba gab + hbf GAB + QOA .
+---   odf = hba gab + hbf GAB + QOA .                         Group 2
 ---   odg = hbb gab + hbg GAB + QOA .
 ---   odh = hbc gab + hbh GAB + QOA .
 ---   odi = hbd gab + hbi GAB + QOB .
 ---   odj = hbe gab + hbj GAB + QOB .
----   odk = hca gac + hcf GAC + QOB .
+
+---   odk = hca gac + hcf GAC + QOB .                         Group 3
 ---   odl = hcb gac + hcg GAC + QOB .
 ---   odm = hcc gac + hch GAC + QOB .
----   odn = hcd gac + hci GAC + QOJ  .
+---   odn = hcd gac + hci GAC + QOJ .
 ---   odo = hce gac + hcj GAC + QOJ .
 
 ---   odp = qok + QOC .                       Coefficient sig
+
 ---   OEA = QJD QOL .                         Range error to ea
----   QAA = iej iei ihb + QME .               Shift left = O
+
+---   QAA = iej iei ihb + QME .               Shift left =   0
 ---   QAB = IEI ihb qme .                      ''     ''    16
 ---   QAC = IEJ ihb qme .                      ''     ''    32
 ---   QAD = qme IHB .                          ''     ''    -1
----   QBA = ieh ieg iek + QMA .               Shift left  = O
+
+---   QBA = ieh ieg iek + QMA .               Shift left  = 0
 ---   QBB = IEG qma .                          ''     ''    4
 ---   QBC = IEH qma .                          ''     ''    8
 ---   QBD = IEK qma .                          ''     ''   12
 
----   QCA = IEA iej iei + IEC IEI + IEE IEJ  .        Normalize bit 0
----   QCB = IEB iej iei + IED IEI + IEF IEJ  .        ''       ''   1
+---   QCA = IEA iej iei + IEC IEI + IEE IEJ .        Normalize bit 0
+---   QCB = IEB iej iei + IED IEI + IEF IEJ .        ''       ''   1
 
----   QDA = iej iei ihb + QME .                  Shift left = O
+---   QDA = iej iei ihb + QME .                  Shift left = 0
 ---   QDB = IEI ihb qme .                        ''     ''    16
 ---   QDC = IEJ ihb qme .                        ''     ''    32
 ---   QDD = qme IHB .                            ''     ''    -1
----   QEA = ieh ieg iek + QMA .                  Shift left =   O
+
+---   QEA = ieh ieg iek + QMA .                  Shift left =   0
 ---   QEB = IEG qma .                             ''     ''     4
 ---   QEC = IEH qma .                             ''     ''     8
 ---   QED = IEK qma .                             ''     ''    12
+
 ---   QFD = qme IHB .                         Exponent +1
 ---   QFE = qme IHB .
 ---   QFF = qme IHB .
@@ -533,10 +549,10 @@
 ---   qnc = ija .                         Go add from FB
 ---   qnd = ijd .                         Unlike sign bit from FB
 
----   QNE = IIA + QMA ijd .               Coefficient underflow
+---   QNE = IIA + QMA ijd .          Coefficient underflow, 122,174 unlike signs
 
 ---   qnf = iha .                         Toggle sign bit
----   qng = qmc qmd .                     Clear result coefficient
+---   qng = qmc qmd .              Clear result coefficient,constant or exp ovfl
 ---   QNH = JAA IHB + ADO ADN .           Exponent overflow
 ---   QNI = QMC .                         Delay
 ---   QNJ = QMA .                         Sign extend
@@ -553,6 +569,7 @@
 ---   QOJ = QNE + QNG .                   Underflow (clear result)
 ---   QOK = QNF aep + qnf AEP + QND QNJ + QND QNB .   Coefficient sign
 ---   QOL = QNH QNC qne + QNI QNJ .       Range error
+
 ---   TAA = QAA .                               
 ---   TAB = QDA .
 ---   TAC = QAA .
@@ -632,6 +649,7 @@
 ---   THG = QED qdd .
 ---   THH = QBD qad .
 ---   THI = QED qdd .
+
 ---   TIA = JCA qng .                       Shift left eq 0
 ---   TIB = JCA qng .
 ---   TIC = JCA qng .

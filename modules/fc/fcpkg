@@ -10,6 +10,7 @@ B4L - aen aeo aep aem .
 B5N - FBF .
 B7J - CCC CCD dcc dcd .
 B8J - CCE .
+BAJ - hca .
 BDL - qla qlb qlc .
 BEL - EBD .
 BFL - EBE .
@@ -22,7 +23,7 @@ BLK - hbd hbe .
 BMN - FBE .
 BNP - FCC .
 BOX - ebf .
-BPJ - hca hcf .
+BPJ - hcf .
 BQN - FBD .
 BRN - FCD .
 BSN - FCE .
@@ -40,15 +41,15 @@ C6M - QOJ .
 C7L - OEA .
 C8P - odp .
 CAL - qng .
-CBL - qka qkb qkc .
+CBL - qka qkb qkc QNJ .
 CCP - QNE .
 CDL - qja qjb qjc qjd .
 CEL - QOE QOF QOG QOH .
 CFL - qma qmb qmc qme .
-CGL - qnc qnd qnf .
+CGL - qnc qnd qnf QNI .
 CHL - ADI ADJ ADK ADL .
 CIK - hbi hbj .
-CJL - QMD QNI QNJ .
+CJL - QMD .
 CKX - ads .
 CLP - odi odj .
 CMK - hcg hch .
