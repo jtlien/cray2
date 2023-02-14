@@ -5,6 +5,7 @@ A1T - OPS oqs .
 A2T - KKB klb KKD .
 A3T - HUA oha .
 A4Q - GMG gng .
+A5L - MBC .
 A6T - KSB ktb KSC .
 A7Q - GSC gtc .
 AAQ - LAA lba .
@@ -27,7 +28,7 @@ AQQ - NCA nda .
 ARQ - JUB jvb .
 AST - HMC hnc .
 ATQ - GIE gje .
-AUT - OPA oqa OPB .
+AUT - OPA oqa .
 AVT - KCC kdc .
 AWT - HQB hrb .
 AXQ - GKF glf .
@@ -76,7 +77,7 @@ DEQ - LKB llb .
 DFQ - JGB jhb .
 DGT - HCD hdd HCE .
 DHQ - GCF gdf .
-DIT - MAA mba MAC .
+DIT - MAA mba .
 DJQ - JKB jlb .
 DKT - HGC hhc .
 DLQ - GEF gff .
@@ -92,12 +93,15 @@ DUT - OPC oqc OPD .
 DVT - KEA kfa .
 DWT - HQC hrc .
 DXQ - GKG glg .
+E1L - OQD .
+E2L - OPD .
 E3T - FMB fnb .
 E4T - FMG fng .
 E5Q - GSD gtd .
 E7T - FOB fpb .
 E8T - FOG fpg .
 EAT - FQB frb .
+EBO - MAC .
 ECT - FAB fbb .
 EDT - FAG fbg .
 EET - FQG frg .
@@ -143,7 +147,7 @@ GEQ - LMA lna .
 GFQ - JGC jhc .
 GGT - HEA hfa .
 GHQ - GCG gdg .
-GIT - MAB mbb MAD .
+GIT - MAB mbb .
 GJQ - JKC jlc .
 GKT - HGD hhd HGF .
 GLQ - GEG gfg .
@@ -194,7 +198,7 @@ JMT - MQA mra MQB .
 JNQ - JQC jrc .
 JOT - HKC hlc .
 JPQ - GGH ghh .
-JQL - MGC MCC OPE OPF .
+JQL - MGC MCC .
 JRT - KAB kbb .
 JST - HOA hpa .
 JTQ - GKA gla .
@@ -202,6 +206,8 @@ JUT - OPI oqi .
 JVT - KGA kha .
 JWT - HQE hre .
 JXQ - GMB gnb .
+K1O - OPE .
+K2L - OPF .
 K3T - FMC fnc .
 K4T - FMH fnh .
 K7T - FOC fpc .
