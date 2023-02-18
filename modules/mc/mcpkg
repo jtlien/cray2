@@ -89,12 +89,12 @@ DQQ - NEA nfa .
 DRQ - JUC jvc .
 DST - HMD hnd .
 DTQ - GIF gjf .
-DUT - OPC oqc OPD .
+DUT - OPC oqc .
 DVT - KEA kfa .
 DWT - HQC hrc .
 DXQ - GKG glg .
 E1L - OQD .
-E2L - OPD .
+E2O - OPD .
 E3T - FMB fnb .
 E4T - FMG fng .
 E5Q - GSD gtd .
