@@ -1,0 +1,247 @@
+    1000 040001 144417 155242 004272        PIVAL:            DQ               3.1415926535 
+    1004 040514 121342 106403 101721        BIGVAL:           DQ               1.11334455e100 
+    1008 040044 162744 161610 100000        BIGVAL1:          DQ               123423453456 
+    1012 054764 100231 124346 015552        HUGVAL:           DQ               1.11e2000 
+    1016 000000 000000 000000 002000        INTVAL:           DW               1024 
+    1020 000000 000000 000001 000000        DECVAL:           DW               65536 
+    1024 000000 000007 035252 121054        INTVALB:          DW               0b011100111010101010101010001000101100 
+    1028 031463 042104 052525 063146        HEXEXAM:          DW               0x3333_4444_5555_6666 
+    1032 000000 000000 000000 001760        BINEXAM:          DW               0b11_11110000 
+    1036 000000 000000 000000 031504        SMLHEX:           DW               0x3344 
+    1040 060542 061544 062546 063550        ASCIIL:           DB8              "abcdefgh" 
+    1044 040001 144417 155242 004272                          DQ               3.1415926535 
+    1048 040514 121342 106403 101721                          DQ               1.11334455e100 
+    1052 040044 162744 161610 100000                          DQ               123423453456 
+    1056 054764 100231 124346 015552                          DQ               1.11e2000 
+    1060 000000 000000 000000 002000                          DW               1024 
+    1064 000000 000000 000001 000000                          DW               65536 
+    1068 000000 000007 035252 121054                          DW               0b011100111010101010101010001000101100 
+    1072 031463 042104 052525 063146                          DW               0x3333_4444_5555_6666 
+    1076 000000 000000 000000 001760                          DW               0b11_11110000 
+    1080 000000 000000 000000 031504                          DW               0x3344 
+    1084 060542 061544 062546 063550                          DB8              "abcdefgh" 
+    2000 003000 003745 000000               label2:           brabs            label4  
+    2003 010003 004003 000000               label3:           braz             A3 label33 
+    2006 011004 004315 000000                                 branz            A4 loopz10 
+    2009 012002                                               bragt            A2 loppx10 
+    2012 013004 004206 000000                                 bralt            A4 loopx11 
+    2015 014500 004214 000000                                 brsz             S5 loopx13 
+    2018 015200 004263 000000                                 brsnz            S2 loopy13 
+    2021 016400 004264 000000               label4:           brsgt            S4 loopy14 
+    2024 017700 004265 000000                                 brslt            S7 loopy15 
+    2027 005000 004204 000000                                 brabsss          loopx10  
+    2030 004000 004223 000000                                 brabssc          loopx20  
+    2033 022345                                               mula             A3,A4,A5 
+    2034 024507                                               cpstoa           A5,S7 
+    2035 025400                                               cpvltoa          A4 
+    2036 034250                                               cpstovm          S3 
+    2037 036002                                               cpatovl          A2 
+    2038 073324                                               scatter          V3,V2+A4 
+    2039 072432                                               gather           V4,V3+A2 
+    2040 002201                                               call             A2,A1 
+    2041 026316                                               setap            A3,14 
+    2042 027300                                               setan            A2,12 
+    2043 116316                                               setsp            S3,14 
+    2044 117264                                               setsn            S2,12 
+    2045 006000                             label99:          sss               
+    2048 006000                                               sss               
+    2051 007000                             label33:          ssc               
+    2054 007000                                               ssc               
+    2057 035001                                               enare             
+    2058 035003                                               enafe             
+    2059 035000                                               disre             
+    2060 035002                                               disfe             
+    2061 115400                                               rtctos           S4 
+    2062 050300 004257 010535                                 setssh           S3 2223 4445 
+    2065 051400 002167 006552                                 setsnsh          S4 1143 3434 
+    2068 052500 002156 030071                                 setshi           S5 1134 12345 
+    2071 056405                                               rdlmas           S4,A5 
+    2072 057703                                               wrlmas           A7,S3 
+    2073 074203                                               rdlmv            V2,A3 
+    2074 075304                                               wrlmv            A3,V4 
+    2075 114400                             loop1:            cpvmtos          S4 
+    2076 073324                             loop2:            scatter          V3,V2+A4 
+    2077 072432                                               gather           V4,V3+A2 
+    2078 020321                                               adda             A3,A2,A1 
+    2079 021456                                               suba             A4,A5,A6 
+    2080 100743                                               ands             S7,S4,S3 
+    2081 101245                                               andsnot          S2,S4,S5 
+    2082 104235                                               adds             S2,S3,S5 
+    2083 105412                                               subs             S4,S1,S2 
+    2084 102277                                               xors             S2,S7,S7 
+    2085 145243                                               orvv             V2,V4,V3 
+    2086 144432                                               orsv             V4,S3,V2 
+    2087 103224                                               ors              S2,S2,S4 
+    2088 126456                                               frecis           S4,S5,S6 
+    2089 127274                                               frecsqis         S2,S7,S4 
+    2090 130304                                               cpatos           S3,A4 
+    2091 131506                                               cpatose          S5,A6 
+    2092 132230                                               frecas           S2,S3 
+    2093 133450                                               frecsqas         S4,S5 
+    2094 166230                                               frecav           V2,V3 
+    2095 167450                                               frecsqav         V4,V5 
+    2096 022321                                               mula             A3,A2,A1 
+    2097 120654                                               fadds            S6,S5,S4 
+    2098 121123                                               fsubs            S1,S2,S3 
+    2099 124237                                               fmuls            S2,S3,S7 
+    2100 110231                                               shls             S3,39 
+    2101 142334                                               xorsv            V3,S3,V4 
+    2102 143234                                               xorvv            V2,V3,V4 
+    2103 140216                                               andsv            V2,S1,V6 
+    2104 141457                                               andvv            V4,V5,V7 
+    2105 160246                                               addsv            V2,S4,V6 
+    2106 161366                                               addvv            V3,V6,V6 
+    2107 163245                                               subvv            V2,V4,V5 
+    2108 162332                                               subsv            V3,S4,V4 
+    2109 106230                                               popc             S2,S3 
+    2110 107670                                               lzcnt            S6,S7 
+    2111 106451                                               popcpar          S4,S5 
+    2112 110250                                               shls             S3,24 
+    2113 111025                                               shrs             S2,19 
+    2114 112345                                               shlds            S3,S4,A5 
+    2115 113236                                               shrds            S2,S3,A6 
+    2116 155334                                               fmulvv           V3,V3,V4 
+    2117 170454                                               faddsv           V4,S5,V4 
+    2118 171356                                               faddvv           V3,V5,V6 
+    2119 172445                                               fsubsv           V4,S4,V5 
+    2120 173345                                               fsubvv           V3,V4,V5 
+    2121 122304                                               fctois           S3,S4 
+    2122 123607                                               ictofs           S6,S7 
+    2123 030300                                               setvmz           V3 
+    2124 031200                                               setvmnz          V2 
+    2125 033400                                               setvmlt          V4 
+    2126 032500                                               setvmgt          V5 
+    2127 146345                                               vmasksv          V3,S4,V5 
+    2128 147245                                               vmaskvv          V2,V4,V3 
+    2129 164341                                               vpoppar          V3,V4 
+    2130 164560                                               vpop             V5,V6 
+    2131 176345                                               vcmpio           V3,S4,S5 
+    2132 165670                                               vlz              V6,V7 
+    2133 040300 004451                                        setash           A3,2345 2345 
+    2135 041200 002127                                        setnash          A2,1111 1111 
+    2137 042300 002127 004256                                 seta             A3 1111 2222 
+    2140 060237                                               rdindas          S2 A3+A4 
+    2141 061343                                               wrindas          A3+A4 S3 
+    2142 062307                                               rds              S3,A7 
+    2143 063602                                               wrs              A2 ,S6 
+    2144 174302                                               fctoiv           V3,V2 
+    2145 175405                                               ictofv           V4,V5 
+    2146 070346                                               rdvi             V3,A4+A6 
+    2147 071247                                               wrvi             A4+A7 ,V2 
+    2148 064304 002127 004256                                 rdindcs          S3,A4 1111 2222 
+    2151 065504 006405 010534                                 wrindcs          A4 3333 4444 S5 
+    2154 066300 003767 010342                                 rdcs             S3 2039 4322 
+    2157 067400 010344 004256               label9:           wrcs             4324 2222 S4 
+    2160 053300 001750 004601 004256 006405                   sets             S3 22208 1000 2433 2222 
+    2165 053300 002127 000336 000515 000157 labelx:           sets             S3 1111 222 333 111 
+    2170 044300 006347                                        rdlma            A3 3303 
+    2172 044400 004446                                        rdlma            A4 2342 
+    2174 046304                                               rdlmaa           A3,A4 
+    2175 047450                                               wrlmaa           A5 ,A4 
+    2176 045004 004256                                        wrlma            2222 A4 
+    2178 054200 002127                                        rdlms            1111 1111 
+    2180 055030 010534                      loopx10:          wrlms            4444 S3 
+    2182 005000 004214 000000               loopx11:          brabsss          loopx13  
+    2185 004000 004215 000000               loopx12:          brabssc          loopx14  
+    2188 022345                             loopx13:          mula             A3,A4,A5 
+    2189 024507                             loopx14:          cpstoa           A5,S7 
+    2190 025400                             loopx15:          cpvltoa          A4 
+    2191 034250                             loopx16:          cpstovm          S3 
+    2192 036002                             loopx17:          cpatovl          A2 
+    2193 073324                             loopx18:          scatter          V3,V2+A4 
+    2194 072432                             loopx19:          gather           V4,V3+A2 
+    2195 002201                             loopx20:          call             A2,A1 
+    2196 026316                             loopx21:          setap            A3,14 
+    2197 027300                             loopx22:          setan            A2,12 
+    2198 116316                             loopx23:          setsp            S3,14 
+    2199 117264                             loopx24:          setsn            S2,12 
+    2200 006000                             loopx25:          sss               
+    2203 007000                             loopx26:          ssc               
+    2206 035001                             loopx27:          enare             
+    2207 035003                             loopx28:          enafe             
+    2208 035000                             loopx29:          disre             
+    2209 035002                             loopx30:          disfe             
+    2210 115400                             loopx31:          rtctos           S4 
+    2211 050300 004257 010535               loopx32:          setssh           S3 2223 4445 
+    2214 051400 002167 006552               loopx33:          setsnsh          S4 1143 3434 
+    2217 052500 002156 030071               loopx34:          setshi           S5 1134 12345 
+    2220 056405                             loopx35:          rdlmas           S4,A5 
+    2221 057703                             loopx36:          wrlmas           A7,S3 
+    2222 074203                             loopx37:          rdlmv            V2,A3 
+    2223 075304                             loopx38:          wrlmv            A3,V4 
+    2224 114400                             loopy10:          cpvmtos          S4 
+    2225 020321                             loopy11:          adda             A3,A2,A1 
+    2226 021456                             loopy12:          suba             A4,A5,A6 
+    2227 100743                             loopy13:          ands             S7,S4,S3 
+    2228 101245                             loopy14:          andsnot          S2,S4,S5 
+    2229 104235                             loopy15:          adds             S2,S3,S5 
+    2230 105412                             loopy16:          subs             S4,S1,S2 
+    2231 102277                             loopy17:          xors             S2,S7,S7 
+    2232 145243                             loopy18:          orvv             V2,V4,V3 
+    2233 144432                             loopy19:          orsv             V4,S3,V2 
+    2234 103224                             loopy20:          ors              S2,S2,S4 
+    2235 126456                             loopy21:          frecis           S4,S5,S6 
+    2236 127274                             loopy22:          frecsqis         S2,S7,S4 
+    2237 130304                             loopy23:          cpatos           S3,A4 
+    2238 131506                             loopy24:          cpatose          S5,A6 
+    2239 132230                             loopy25:          frecas           S2,S3 
+    2240 133450                             loopy26:          frecsqas         S4,S5 
+    2241 166230                             loopy27:          frecav           V2,V3 
+    2242 167450                             loopy28:          frecsqav         V4,V5 
+    2243 022321                             loopy29:          mula             A3,A2,A1 
+    2244 120654                             loopy30:          fadds            S6,S5,S4 
+    2245 121123                             loopy31:          fsubs            S1,S2,S3 
+    2246 124237                             loopy32:          fmuls            S2,S3,S7 
+    2247 110240                             loopy33:          shls             S3,32 
+    2248 142334                             loopy34:          xorsv            V3,S3,V4 
+    2249 143234                             loopy35:          xorvv            V2,V3,V4 
+    2250 140216                             loopy36:          andsv            V2,S1,V6 
+    2251 141457                             loopy37:          andvv            V4,V5,V7 
+    2252 160246                             loopy38:          addsv            V2,S4,V6 
+    2253 161366                             loopz10:          addvv            V3,V6,V6 
+    2254 163245                             loopz11:          subvv            V2,V4,V5 
+    2255 162332                             loopz12:          subsv            V3,S4,V4 
+    2256 106230                             loopz13:          popc             S2,S3 
+    2257 107670                             loopz14:          lzcnt            S6,S7 
+    2258 106451                             loopz15:          popcpar          S4,S5 
+    2259 110241                             loopz16:          shls             S3,31 
+    2260 111030                             loopz17:          shrs             S2,22 
+    2261 112345                             loopz18:          shlds            S3,S4,A5 
+    2262 113236                             loopz19:          shrds            S2,S3,A6 
+    2263 155334                             loopz20:          fmulvv           V3,V3,V4 
+    2264 170454                             loopz21:          faddsv           V4,S5,V4 
+    2265 171356                             loopz22:          faddvv           V3,V5,V6 
+    2266 172445                             loopz23:          fsubsv           V4,S4,V5 
+    2267 173345                             loopz24:          fsubvv           V3,V4,V5 
+    2268 122304                             loopz25:          fctois           S3,S4 
+    2269 123607                             loopz26:          ictofs           S6,S7 
+    2270 174304                             loopz27:          fctoiv           V3,V4 
+    2271 175607                             loopz28:          ictofv           V6,V7 
+    2272 030300                             loopz29:          setvmz           V3 
+    2273 031200                             loopz30:          setvmnz          V2 
+    2274 033400                             loopz31:          setvmlt          V4 
+    2275 032500                             loopz32:          setvmgt          V5 
+    2276 146345                             loopz33:          vmasksv          V3,S4,V5 
+    2277 147245                             loopz34:          vmaskvv          V2,V4,V3 
+    2278 164341                             loopz35:          vpoppar          V3,V4 
+    2279 164560                             loopz36:          vpop             V5,V6 
+    2280 176345                             loopz37:          vcmpio           V3,S4,S5 
+    2281 165670                             loopz38:          vlz              V6,V7 
+    2282 040300 004451                      loopz39:          setash           A3,2345 
+    2284 041200 002127                      loopz40:          setnash          A2,1111 
+    2286 042300 002127 004256               loopz41:          seta             A3 1111 2222 
+    2289 060237                             loopz42:          rdindas          S2 A3+A4
+    2290 061343                             loopz43:          wrindas          A3+A4 S3
+    2291 062307                             loopz44:          rds              S3,A7 
+    2292 063603                             loopz45:          wrs              A3,S6 
+    2293 174302                             loopz46:          fctoiv           V3,V2 
+    2294 175405                             loopz47:          ictofv           V4,V5 
+    2295 070346                             loopz48:          rdvi             V3,A4+A6 
+    2296 071247                             loopz49:          wrvi             A4+A7 ,V2 
+    2297 064304 002127 004256               loopz50:          rdindcs          S3,A4 1111 2222 
+    2300 065504 006405 010534               loopz50:          wrindcs          A4 3333,4444,S5
+    2303 066300 003767 010342               loopz51:          rdcs             S3 2039 4322 
+    2306 067400 010344 004256                                 wrcs             4324 2222 S4 
+    2309 000003                                               exit             3 
+
+

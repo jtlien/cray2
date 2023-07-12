@@ -1,0 +1,27 @@
+cat $1  | grep ":" | sed '1,$s/:.*//' | sort | uniq -c | grep -v "1 " >duplabels
+cat $1 | grep ":" | sed '1,$s/:.*//' | sort >bb
+gawk -f fixlabel <bb >sedbb
+cat $1 | expand | cut -c1-20 >$1.a
+cat $1 | expand | cut -c21-100 >$1.b
+sed -f sedbb $1.b >$1.c
+paste -d" " $1.a $1.c >$1.d
+gawk -f ascii.gawk <$1.dsect >$1.e
+m4  opcodes.m4 $1.e >outs1
+gawk -f postg <outs1 >redoout1
+m4 opcodes.m4 $1.d >outs2
+gawk -f postg <outs2 >redoout2
+sed -f sedcc $1.b >$1.c
+paste -d" " $1.a $1.c >$1.f
+m4 opcodes.m4 $1.f >outs3
+cat outs1 outs3 >outs4
+gawk -f postg <outs4 >$1.lst
+cat $1.lst | cut -c1-44 >$1.dat
+gawk -f postp <$1.dat >$1.mem
+rm $1.dat
+rm redoout1 redoout2 
+rm bb sedbb sedcc
+rm $1.a $1.b $1.c $1.d $1.e $1.f outs1 outs2 outs3 outs4 
+
+
+
+

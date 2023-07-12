@@ -1,0 +1,259 @@
+
+BEGIN {
+  locval = 0
+  i = 0  
+}
+
+{
+  if ( $1 ~ /:/ )    # starts with a label
+   {
+    labs[i] = $1
+    locs[i] = locval
+    i +=1
+    oloc = sprintf("%8d",locval)
+   if (NF == 1)
+   {
+   }
+   
+   if (NF == 2)   # should not be possible
+   {
+   }
+   
+   if (NF == 3)   # should not be possible
+   {
+    if ($2 ~ /ORG/)
+     {
+      locval = $3
+      
+     }
+   }
+   
+   if (NF == 4)   # label, binout, nemonic, length  ssc,scc
+   {
+     printf("%s %06o                             %-16s  %-16s  \n",oloc,$2,$1, substr($3,2) )
+     locval = locval + $4;
+   }
+   
+   if (NF == 5)   # label, binout, nemonic,  right side, length
+   {
+     printf("%s %06o                             %-16s  %-16s %s \n",oloc,$2,$1, substr($3,2),$4 )
+     locval = locval + $5;
+   }
+
+   if (NF == 6)   # label, binout1, binout2, nemonic,  right side, length
+   {
+     if ($3 ~ /indas/)
+      {
+      printf("%s %06o                             %-16s  %-16s %s %s\n",oloc,$2,$1, substr($3,2),$4, $5 )
+      }
+     else
+      {
+       if ($3 ~ /wrvi/)
+        {
+	 printf("%s %06o                             %-16s  %-16s %s %s \n",oloc,$2,$1, substr($3,2), $4,$5 )
+	}
+       else
+        {
+       printf("%s %06o %06o                      %-16s  %-16s %s \n",oloc,$2,$3,$1, substr($4,2),$5 )
+        }
+      }
+     
+     locval = locval + $6;
+   }
+   
+   if (NF == 7)   # label, binout1, binout2, binout3, nemonic,  right side, length
+   {
+     if (($4 ~ /rdlma/ ) || ($4 ~ /wrlms/ ))
+     
+      {
+      printf("%s %06o %06o                      %-16s  %-16s %s %s \n",oloc,$2,$3,$1, substr($4,2),$5,$6 )
+      }
+     else
+      {
+     printf("%s %06o %06o                      %-16s  %-16s %s %s \n",oloc,$2,$1, substr($3,2),$4,$5,$6 )
+      } 
+     locval = locval + $7;
+   }
+   
+   if (NF == 8)   # label, binout1, binout2,binout3, nemonic,  right side, length
+   {
+    if (($2 ~ /DW/) || ($2 ~ /DQ/) || ($2 ~ /DB8/))
+       {
+        printf("%s %06o %06o %06o %06o        %-16s  %-16s %s \n",oloc,$4,$5,$6,$7,$1, substr($2,2),$3 )
+	locval = locval + $8
+       }
+     else
+      {
+       printf("%s %06o %06o %06o               %-16s  %-16s %s %s \n",oloc,$2,$3,$4,$1,substr($5,2),$6,$7 )
+       locval = locval + $8;
+      }
+   }
+   
+   if (NF == 9)   # 
+   {
+     if ($5 ~ /br/ )  # br abs with label
+      {
+      printf("%s %06o %06o %06o               %-16s  %-16s %s  \n",oloc,$2,$3,$4,$1, substr($5,2),$6 )
+      locval = locval + $9;
+      }
+     else
+      {
+      printf("%s %06o %06o %06o               %-16s  %-16s %s %s %s \n",oloc,$2,$3,$4,$1, substr($5,2),$6,$7,$8 )
+      locval = locval + $9;
+     }
+   }
+   
+    if (NF == 10)   # br type instructions, branches or wrindcs
+   {
+     if ($5 ~ /br/)
+       {
+        printf("%s %06o %06o %06o               %-16s  %-16s %s %s \n",oloc,$2,$3,$4,$1, substr($5,2),$6,$7 )
+       }
+      else
+       {
+         printf("%s %06o %06o %06o               %-16s  %-16s %s %s,%s,%s\n",oloc,$2,$3,$4,$1, substr($5,2),$6,$7,$8,$9 )
+       }
+     locval = locval + $10;
+   }
+   
+   
+   if (NF == 12)   # label, binout1, binout2,binout3,binout 4,binout5,  nemonic,  right side, length
+   {
+     printf("%s %06o %06o %06o %06o %06o %-16s  %-16s %s %s %s %s \n",oloc,$2,$3,$4,$5,$6,$1, substr($7,2),$3,$4,$5,$6 )
+     locval = locval + $12;
+   }
+   
+   if (NF == 13)   # label, binout1, binout2,binout3,binout 4,binout5,  nemonic,  right side, length
+   {
+     printf("%s %06o %06o %06o %06o %06o %-16s  %-16s %s %s %s %s %s \n",oloc,$2,$3,$4,$5,$6,$1, substr($7,2),$8,$3,$4,$5,$6 )
+     locval = locval + $13;
+   }
+   if (NF > 13 )
+    {
+    }
+ }
+else    # line with no label
+ {
+   oloc = sprintf("%8d",locval)
+   if (NF == 1)
+   {
+   }
+   
+   if (NF == 2)   # should only be for ORG 
+   {
+       locval = $2;
+    printf("                                            %s %d \n", substr($1,2) , locval);
+    }
+   
+   if (NF == 3)   # should not be possible
+   {
+    if($1 == "ORG")
+      {
+       ORG = VAL
+      loccount = VAL
+      }
+    else
+    {
+         printf("%s %06o                                               %-16s  \n",oloc,$1, substr($2,2) )
+      locval = locval + $3;
+    }
+   }
+   
+   if (NF == 4)   #    binout, nemonic, length
+   {
+     printf("%s %06o                                               %-16s %s \n",oloc,$1, substr($2,2),$3 )
+      locval = locval + $4;
+    }
+   
+   if (NF == 5)   # , binout, nemonic,  right side, length
+   {
+     if ($3 ~ /ash/)   # any of the ashorts
+      {
+       printf("%s %06o %06o                                        %-16s %s %s \n",oloc,$1,$2, substr($3,2),$4,$2 )
+       locval = locval + $5;
+      }
+    else
+     {    
+      printf("%s %06o                                               %-16s %s %s \n",oloc,$1, substr($2,2), $3,$4 )
+       locval = locval + $5;
+     }
+    }
+   
+   if (NF == 6)   # , binout1, binout2, nemonic,  right side, length,   wrlma 
+   {
+      if ( $3 ~ /rdlma/)
+       {
+       printf("%s %06o %06o                                        %-16s %s %s \n",oloc,$1,$2, substr($3,2),$4,$5 )
+       }
+      else
+       {
+      printf("%s %06o %06o                                        %-16s %s %s \n",oloc,$1,$2, substr($3,2),$2,$5 )
+       }
+      locval = locval + $6; 
+    }
+   
+   if (NF == 7)   # , binout1, binout2, binout 3, nemonic,  right side, length
+    {
+     if (($1 ~ /DW/) || ($1 ~ /DQ/) || ($1 ~ /DB8/))
+       {
+        printf("%s %06o %06o %06o %06o                          %-16s %s \n",oloc,$3,$4,$5,$6, substr($1,2),$2 )
+	locval = locval + $7
+       }
+     else
+      {
+       printf("%s %06o %06o %06o                                 %-16s %s %s \n",oloc,$1,$2,$3, substr($4,2),$2,$3 )
+       locval = locval + $7;
+      }
+    }
+   
+   if (NF == 8)   # binout1, binout2,binout3,binout 4, nemonic,  right side, length
+   {
+     if ($4 ~ /wrcs/ )
+      {
+      printf("%s %06o %06o %06o                                 %-16s %s %s %s \n",oloc,$1,$2,$3, substr($4,2),$5,$6,$7 )
+      }
+     else
+      {
+      if($4 ~ /brab/)   # br abs
+       {
+         printf("%s %06o %06o %06o                                 %-16s %s  \n",oloc,$1,$2,$3, substr($4,2),$5  )
+       }
+      else
+       {
+       printf("%s %06o %06o %06o                                 %-16s %s %s %s \n",oloc,$1,$2,$3, substr($4,2),$5,$2,$3 )
+       }
+      }
+     locval = locval + $8;
+    }
+   
+   if (NF == 9)   # rdindcs, wrindcs
+   {
+     if ($4 ~ /br/)
+      {
+      printf("%s %06o %06o %06o                                 %-16s %s %s \n",oloc,$1,$2,$3, substr($4,2),$5,$6 )
+       locval = locval + $9;
+      }
+     else
+      {
+       printf("%s %06o %06o %06o                                 %-16s %s %s %s %s \n",oloc,$1,$2,$3, substr($4,2),$5,$6,$7,$8 )
+       locval = locval + $9;
+      }
+    }
+   
+   if (NF == 12)   # , binout1, binout2,binout3,binout 4,binout5,  nemonic,  right side, length
+   {
+     printf("%s %06o %06o %06o %06o %06o                   %-16s %s %s %s %s %s \n",oloc,$1,$2,$3,$4,$5, substr($6,2),$7,$1,$2,$3,$4 )
+     locval = locval + $12;
+  }
+}
+}
+END {
+  printf "\n"
+  printf "\n"
+#  for (i in labs)
+#       print "define(" "`" labs[i] "'"  "," locs[i]%65536 " " (int (locs[i]/65536)) ") dnl"
+  for (i in labs)
+       printf("1,$s/ %s /&,%d,%d/\n",substr(labs[i],1,length(labs[i])-1) ,locs[i]%65536, (int (locs[i]/65536)) ) > "sedcc"
+  
+ # printf "At end \n"
+}

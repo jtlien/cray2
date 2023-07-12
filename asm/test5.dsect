@@ -1,0 +1,28 @@
+
+BEGIN:          ORG( 1000)
+PIVAL:    DQ    3.1415926535
+BIGVAL:   DQ    1.11334455e100
+BIGVAL1:   DQ    123423453456
+HUGVAL:   DQ    1.11e2000
+INTVAL:   DW    1024
+DECVAL:   DW    65536
+INTVALB:  DW    0b011100111010101010101010001000101100
+HEXEXAM:  DW    0x3333_4444_5555_6666
+BINEXAM:  DW    0b11_11110000
+SMLHEX:   DW    0x3344
+ASCIIL:   DB8   "abcdefgh"
+          DQ    3.1415926535
+          DQ    1.11334455e100
+          DQ    123423453456
+          DQ    1.11e2000
+          DW    1024
+          DW    65536
+          DW    0b011100111010101010101010001000101100
+          DW    0x3333_4444_5555_6666
+          DW    0b11_11110000
+          DW    0x3344
+          DB8   "abcdefgh"
+	 
+	 
+	 
+	 
